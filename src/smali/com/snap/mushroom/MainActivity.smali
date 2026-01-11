@@ -1435,8 +1435,7 @@
 
 .method public final W(Landroid/os/Bundle;)V
     .locals 9
-const-string v0, "frida-gadget"
-invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+
     .line 1
     sget-object p1, LkD8;->b:LkD8;
 
@@ -1480,11 +1479,16 @@ invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
     move-result v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-  const-string v0, "frida-gadget"
-invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+:try_start_1
+    const-string v2, "frida-gadget"
+    
+    invoke-static {v2}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     :catch_0
+   
     .line 22
     :try_start_1
     invoke-virtual {p0}, Lcom/snap/mushroom/MainActivity;->B0()LOlc;
