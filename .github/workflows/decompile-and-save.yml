@@ -1,0 +1,104 @@
+name: JADX APK Decompilation
+
+on:
+  workflow_dispatch:
+    inputs:
+      apk_url:
+        description: 'Direct URL to APK file'
+        required: true
+        type: string
+  push:
+    paths:
+      - 'apks/**/*.apk'
+
+jobs:
+  decompile:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Critical: Allows pushing commits/branches
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Download JADX
+        run: |
+          JADX_VERSION="1.5.0"
+          wget https://github.com/skylot/jadx/releases/download/v${JADX_VERSION}/jadx-${JADX_VERSION}.zip -q
+          unzip -q jadx-${JADX_VERSION}.zip -d jadx
+          chmod +x jadx/bin/jadx
+          echo "JADX installed."
+
+      - name: Download APK
+        run: |
+          mkdir -p apks
+          
+          if [ -n "${{ inputs.apk_url }}" ]; then
+            echo "Downloading APK from URL..."
+            wget "${{ inputs.apk_url }}" -O apks/target.apk -q
+          fi
+          
+          # Verify we actually have a file
+          APK_FILE=$(find apks -name "*.apk" | head -n 1)
+          if [ -z "$APK_FILE" ]; then
+            echo "Error: No APK file found in apks/ directory."
+            exit 1
+          fi
+          
+          FILESIZE=$(stat -c%s "$APK_FILE")
+          echo "APK Found: $APK_FILE ($FILESIZE bytes)"
+          
+          if [ "$FILESIZE" -lt 1000 ]; then
+            echo "Error: File is too small. Download likely failed."
+            exit 1
+          fi
+
+      - name: Decompile APK
+        run: |
+          APK_FILE=$(find apks -name "*.apk" | head -n 1)
+          echo "Starting decompilation of $APK_FILE..."
+          
+          # Configuration for large APKs
+          export JAVA_OPTS="-Xmx6g"
+          
+          ./jadx/bin/jadx \
+            --output-dir decompiled_src \
+            --show-bad-code \
+            --no-res \
+            --threads-count 4 \
+            "$APK_FILE"
+            
+          echo "Decompilation complete."
+
+      - name: Push Source to Repository
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Configure Git
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Generate branch name
+          TIMESTAMP=$(date +%Y%m%d-%H%M)
+          BRANCH_NAME="source/decompiled-$TIMESTAMP"
+          
+          # Create and switch to new branch
+          git checkout -b "$BRANCH_NAME"
+          
+          # Add all decompiled files
+          # Note: This operation may take time for large file counts
+          echo "Adding files to git index..."
+          git add decompiled_src/
+          
+          # Commit and Push
+          echo "Committing..."
+          git commit -m "Add decompiled source code $TIMESTAMP"
+          
+          echo "Pushing to origin..."
+          git push origin "$BRANCH_NAME"
