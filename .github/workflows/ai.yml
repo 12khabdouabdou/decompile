@@ -29,7 +29,6 @@ jobs:
           wget "${{ inputs.apk_url }}" -O target.apk -q
           
           # Decompile (tuned for speed/memory)
-          # We purposefully skip resources (--no-res) as they clutter the LLM context
           export JAVA_OPTS="-Xmx6g"
           ./jadx/bin/jadx \
             --output-dir decompiled_src \
@@ -38,31 +37,49 @@ jobs:
             --threads-count 4 \
             target.apk
 
-      - name: Consolidate Source Code
+      - name: Consolidate Source Code (Filtered)
         run: |
           OUTPUT_FILE="full_source_context.txt"
           echo "Generating consolidated source file..."
           
-          # create header
+          # Create header
           echo "#################################################" > "$OUTPUT_FILE"
           echo "# CONSOLIDATED JAVA SOURCE FOR AI ANALYSIS" >> "$OUTPUT_FILE"
+          echo "# Excluded: Android, Google, Kotlin, FB, OkHttp" >> "$OUTPUT_FILE"
           echo "# Generated: $(date)" >> "$OUTPUT_FILE"
           echo "#################################################" >> "$OUTPUT_FILE"
           
-          # Find all java files, loop through them, and append to output
-          find decompiled_src -name "*.java" | sort | while read -r filepath; do
+          # Find Java files BUT EXCLUDE common libraries
+          find decompiled_src -name "*.java" \
+            -not -path "*/android/*" \
+            -not -path "*/androidx/*" \
+            -not -path "*/com/google/*" \
+            -not -path "*/kotlin/*" \
+            -not -path "*/kotlinx/*" \
+            -not -path "*/okhttp3/*" \
+            -not -path "*/retrofit2/*" \
+            -not -path "*/com/facebook/*" \
+            -not -path "*/META-INF/*" \
+            | sort | while read -r filepath; do
+            
+            # Optional: Skip files larger than 500KB (usually auto-generated garbage)
+            FILE_SIZE=$(stat -c%s "$filepath")
+            if [ "$FILE_SIZE" -gt 500000 ]; then
+                echo "Skipping large file ($FILE_SIZE bytes): $filepath"
+                continue
+            fi
+            
             echo "" >> "$OUTPUT_FILE"
             echo "////////////////////////////////////////////////////////////////////////////////" >> "$OUTPUT_FILE"
             echo "// FILE PATH: $filepath" >> "$OUTPUT_FILE"
             echo "////////////////////////////////////////////////////////////////////////////////" >> "$OUTPUT_FILE"
             echo "" >> "$OUTPUT_FILE"
             
-            # Append content of the file
             cat "$filepath" >> "$OUTPUT_FILE"
           done
           
-          FILE_SIZE=$(du -h "$OUTPUT_FILE" | cut -f1)
-          echo "Consolidation complete. Final size: $FILE_SIZE"
+          FINAL_SIZE=$(du -h "$OUTPUT_FILE" | cut -f1)
+          echo "Consolidation complete. Final size: $FINAL_SIZE"
 
       - name: Upload Context for Gemini
         uses: actions/upload-artifact@v4
