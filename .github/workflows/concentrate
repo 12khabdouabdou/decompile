@@ -1,0 +1,45 @@
+- name: Consolidate Source Code (Filtered)
+        run: |
+          OUTPUT_FILE="full_source_context.txt"
+          
+          echo "#################################################" > "$OUTPUT_FILE"
+          echo "# TARGET SOURCE ONLY - LIBRARIES STRIPPED" >> "$OUTPUT_FILE"
+          echo "#################################################" >> "$OUTPUT_FILE"
+          
+          # 1. Define the package to KEEP (The app's main ID)
+          # Replace 'com/snap' with the actual target path if known, or leave blank to scan all non-excluded.
+          TARGET_PATH="decompile/tree/source/decompiled-20260122-1956/decompiled_src/sources"
+          
+          # 2. Find files but EXCLUDE common libraries
+          # This command ignores standard Android/Google/Kotlin boilerplates
+          find "$TARGET_PATH" -name "*.java" \
+            -not -path "*/android/*" \
+            -not -path "*/androidx/*" \
+            -not -path "*/com/google/*" \
+            -not -path "*/kotlin/*" \
+            -not -path "*/kotlinx/*" \
+            -not -path "*/okhttp3/*" \
+            -not -path "*/retrofit2/*" \
+            -not -path "*/com/facebook/*" \
+            | sort | while read -r filepath; do
+            
+            # check file size (skip massive auto-generated files > 1MB)
+            if [ $(stat -c%s "$filepath") -gt 1000000 ]; then
+                echo "Skipping huge file: $filepath"
+                continue
+            fi
+
+            echo "" >> "$OUTPUT_FILE"
+            echo "//$filepath" >> "$OUTPUT_FILE"
+            cat "$filepath" >> "$OUTPUT_FILE"
+          done
+          
+          FILE_SIZE_BYTES=$(stat -c%s "$OUTPUT_FILE")
+          FILE_SIZE_MB=$(expr $FILE_SIZE_BYTES / 1024 / 1024)
+          
+          echo "Final Context Size: ${FILE_SIZE_MB} MB"
+          
+          if [ "$FILE_SIZE_MB" -gt 100 ]; then
+            echo "WARNING: File is ${FILE_SIZE_MB}MB. This is still likely too big for effective analysis."
+            echo "Recommendation: Narrow the TARGET_PATH to a specific sub-folder."
+          fi
