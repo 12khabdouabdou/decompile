@@ -1,0 +1,26 @@
+package com.snapchat.client.grpc;
+
+import defpackage.AbstractC21001f3j;
+
+/* loaded from: classes8.dex */
+public final class Header {
+    final String mKey;
+    final String mValue;
+
+    public Header(String str, String str2) {
+        this.mKey = str;
+        this.mValue = str2;
+    }
+
+    public String getKey() {
+        return this.mKey;
+    }
+
+    public String getValue() {
+        return this.mValue;
+    }
+
+    public String toString() {
+        return AbstractC21001f3j.g("Header{mKey=", this.mKey, ",mValue=", this.mValue, "}");
+    }
+}

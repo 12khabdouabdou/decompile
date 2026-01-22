@@ -1,0 +1,17 @@
+package defpackage;
+
+import android.graphics.Bitmap;
+
+/* loaded from: classes8.dex */
+public abstract /* synthetic */ class VY2 {
+    public static final /* synthetic */ int[] a;
+
+    static {
+        int[] iArr = new int[Bitmap.Config.values().length];
+        try {
+            iArr[Bitmap.Config.ARGB_8888.ordinal()] = 1;
+        } catch (NoSuchFieldError unused) {
+        }
+        a = iArr;
+    }
+}

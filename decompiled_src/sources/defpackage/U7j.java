@@ -1,0 +1,8 @@
+package defpackage;
+
+import java.util.Collections;
+
+/* loaded from: classes8.dex */
+public abstract class U7j {
+    public static final C39885tB6 a = new C39885tB6(0, Collections.singletonList(8), EB6.a, null, null, null, null, false, false, null, null, null, null, false, 16377, null);
+}

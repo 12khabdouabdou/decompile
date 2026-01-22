@@ -1,0 +1,15 @@
+package app.aifactory.sdk.api.model;
+
+import app.aifactory.sdk.api.model.ResourceId;
+
+/* loaded from: classes2.dex */
+public final class ResourceIdKt {
+    private static final int HEX_FORMAT = 16;
+
+    public static final ResourceId createResourceIdByUrl(String str) {
+        if (str.length() == 0) {
+            return ResourceId.EmptyResourceId.INSTANCE;
+        }
+        return new ResourceId.UrlResourceId(str);
+    }
+}

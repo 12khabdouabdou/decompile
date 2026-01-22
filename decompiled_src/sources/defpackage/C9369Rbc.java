@@ -1,0 +1,56 @@
+package defpackage;
+
+import java.util.Map;
+import java.util.Set;
+
+/* renamed from: Rbc, reason: case insensitive filesystem */
+/* loaded from: classes8.dex */
+public class C9369Rbc extends AbstractC37818re4 {
+    public EnumC10456Tbc r;
+    public Boolean s;
+
+    public C9369Rbc() {
+        super("MUSIC_SOUND_RECORD_SAVE_FAIL", EnumC1516Cre.BUSINESS, 1.0d, 1.0d, 1.0d);
+    }
+
+    @Override // defpackage.InterfaceC5193Jje
+    public final void c(AK3 ak3, Set set) {
+        byte[] bArr = new byte[2];
+        AbstractC20835ew8.B0(ak3, 2, bArr, this.k, set);
+        AbstractC20835ew8.y0(ak3, 3, bArr, this.r, set);
+        AbstractC20835ew8.w0(ak3, 4, bArr, this.s, set);
+        AbstractC20835ew8.B0(ak3, 5, bArr, this.j, set);
+        AbstractC20835ew8.y0(ak3, 6, bArr, this.m, set);
+        AbstractC20835ew8.y0(ak3, 7, bArr, this.n, set);
+        AbstractC20835ew8.B0(ak3, 8, bArr, this.l, set);
+        AbstractC20835ew8.B0(ak3, 9, bArr, this.o, set);
+        AbstractC20835ew8.B0(ak3, 10, bArr, this.p, set);
+        AbstractC20835ew8.B0(ak3, 11, bArr, this.q, set);
+        ak3.m(bArr);
+    }
+
+    @Override // defpackage.InterfaceC5193Jje
+    public final int d() {
+        return 2600;
+    }
+
+    @Override // defpackage.AbstractC37818re4, defpackage.AbstractC24724hqj, defpackage.MR6, defpackage.AXa
+    public final int e(Map map) {
+        int e = super.e(map);
+        if (map.containsKey("failure_reason")) {
+            Object obj = map.get("failure_reason");
+            if (obj instanceof String) {
+                this.r = EnumC10456Tbc.valueOf((String) obj);
+            } else {
+                this.r = (EnumC10456Tbc) obj;
+            }
+            e++;
+        }
+        Boolean bool = (Boolean) map.get("is_public");
+        this.s = bool;
+        if (bool != null) {
+            return e + 1;
+        }
+        return e;
+    }
+}

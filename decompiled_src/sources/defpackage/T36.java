@@ -1,0 +1,30 @@
+package defpackage;
+
+/* loaded from: classes7.dex */
+public final class T36 extends Z36 {
+    public final int b;
+
+    public T36(int i) {
+        super(AbstractC30628mG8.l("Downloading (", i, ")"));
+        this.b = i;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if ((obj instanceof T36) && this.b == ((T36) obj).b) {
+            return true;
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        return this.b;
+    }
+
+    @Override // defpackage.Z36
+    public final String toString() {
+        return EU0.y(new StringBuilder("Downloading(downloadingProgress="), this.b, ")");
+    }
+}

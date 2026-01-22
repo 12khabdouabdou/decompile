@@ -1,0 +1,126 @@
+package defpackage;
+
+import com.snap.mushroom.app.MushroomApplication;
+import com.snap.plus.lib.common.ComposerLocalSubscriptionStore;
+import io.reactivex.rxjava3.disposables.CompositeDisposable;
+
+/* loaded from: classes.dex */
+public final class Y55 implements InterfaceC3743Gs3 {
+    public final I45 A0;
+    public final I45 B0;
+    public final I45 C0;
+    public final I45 D0;
+    public final I45 E0;
+    public final I45 F0;
+    public final I45 G0;
+    public final I45 H0;
+    public final I45 I0;
+    public final I45 J0;
+    public final I45 K0;
+    public final FY4 X;
+    public final GZ4 Y;
+    public final C44964wz3 Z;
+    public final JK4 a;
+    public final YT4 b;
+    public final InterfaceC0853Blj c;
+    public final TI4 e0;
+    public final Z55 f0;
+    public final C35673q25 g0;
+    public final RZ4 h0;
+    public final S85 i0;
+    public final InterfaceC28353kZb j0;
+    public final I45 k0;
+    public final I45 l0;
+    public final I45 m0;
+    public final I45 n0;
+    public final I45 o0;
+    public final I45 p0;
+    public final I45 q0;
+    public final I45 r0;
+    public final I45 s0;
+    public final C36351qY4 t;
+    public final I45 t0;
+    public final I45 u0;
+    public final I45 v0;
+    public final I45 w0;
+    public final I45 x0;
+    public final I45 y0;
+    public final I45 z0;
+
+    public Y55(FY4 fy4, InterfaceC0853Blj interfaceC0853Blj, C36351qY4 c36351qY4, InterfaceC28353kZb interfaceC28353kZb, GZ4 gz4, RZ4 rz4, YT4 yt4, C35673q25 c35673q25, S85 s85, TI4 ti4, Z55 z55, JK4 jk4, C44964wz3 c44964wz3) {
+        this.a = jk4;
+        this.b = yt4;
+        this.c = interfaceC0853Blj;
+        this.t = c36351qY4;
+        this.X = fy4;
+        this.Y = gz4;
+        this.Z = c44964wz3;
+        this.e0 = ti4;
+        this.f0 = z55;
+        this.g0 = c35673q25;
+        this.h0 = rz4;
+        this.i0 = s85;
+        this.j0 = interfaceC28353kZb;
+        int i = 17;
+        this.k0 = new I45(this, 1, i);
+        new I45(this, 2, i);
+        this.l0 = new I45(this, 3, i);
+        this.m0 = new I45(this, 0, i);
+        this.n0 = new I45(this, 4, i);
+        this.o0 = new I45(this, 5, i);
+        this.p0 = new I45(this, 6, i);
+        this.q0 = new I45(this, 7, i);
+        this.r0 = new I45(this, 8, i);
+        this.s0 = new I45(this, 10, i);
+        this.t0 = new I45(this, 9, i);
+        this.u0 = new I45(this, 12, i);
+        this.v0 = new I45(this, 11, i);
+        this.w0 = new I45(this, 13, i);
+        this.x0 = new I45(this, 14, i);
+        this.y0 = new I45(this, 15, i);
+        this.z0 = new I45(this, 16, i);
+        this.A0 = new I45(this, 18, i);
+        this.B0 = new I45(this, 19, i);
+        this.C0 = new I45(this, 20, i);
+        this.D0 = new I45(this, 21, i);
+        this.E0 = new I45(this, 22, i);
+        this.F0 = new I45(this, 17, i);
+        this.G0 = new I45(this, 23, i);
+        this.H0 = new I45(this, 24, i);
+        int i2 = 17;
+        this.I0 = new I45(this, 25, i2);
+        this.J0 = new I45(this, 26, i2);
+        this.K0 = new I45(this, 27, i2);
+    }
+
+    public final C20978f2i u() {
+        C36351qY4 c36351qY4 = this.t;
+        MushroomApplication mushroomApplication = c36351qY4.b;
+        FY4 fy4 = this.X;
+        InterfaceC32875nwf s0 = fy4.s0();
+        I45 i45 = this.w0;
+        I45 i452 = this.x0;
+        I45 i453 = this.y0;
+        I45 i454 = this.n0;
+        I45 i455 = this.o0;
+        GZ4 gz4 = this.Y;
+        InterfaceC36376qZ8 z = gz4.z();
+        C10770Tqc m = gz4.m();
+        InterfaceC8509Pm9 w0 = gz4.w0();
+        I45 i456 = this.z0;
+        I45 i457 = this.F0;
+        InterfaceC15764b95 Z3 = this.i0.Z3();
+        CompositeDisposable d = C14501aCe.d();
+        InterfaceC24456hef interfaceC24456hef = (InterfaceC24456hef) this.G0.get();
+        C48674zlc s = fy4.s();
+        I45 i458 = this.H0;
+        LRi lRi = new LRi(22);
+        InterfaceC34553pC3 interfaceC34553pC3 = (InterfaceC34553pC3) this.r0.get();
+        fy4.s0();
+        J7i j7i = new J7i(new C34006on6(interfaceC24456hef, s, i458, lRi, c36351qY4.e, interfaceC34553pC3, fy4.G0(), fy4.T()));
+        InterfaceC34553pC3 interfaceC34553pC32 = (InterfaceC34553pC3) this.r0.get();
+        XSg xSg = (XSg) this.l0.get();
+        fy4.s0();
+        return new C20978f2i(mushroomApplication, s0, i45, i452, i453, i454, i455, z, m, w0, i456, i457, new ComposerLocalSubscriptionStore(Z3, d, j7i, new M7i(interfaceC34553pC32, xSg, c36351qY4.e, fy4.u()), this.I0), new C0805Bjd(8, (J7d) this.y0.get()), (C35930qE1) this.e0.u(), new C12192Wge(gz4.m(), gz4.w0(), fy4.s0(), this.J0, this.G0, fy4.e()), this.q0, this.r0, this.K0);
+    }
+}

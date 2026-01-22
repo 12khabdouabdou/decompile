@@ -1,0 +1,8 @@
+package defpackage;
+
+import java.util.HashMap;
+
+/* renamed from: rx2, reason: case insensitive filesystem */
+/* loaded from: classes2.dex */
+public final class C38234rx2 extends HashMap {
+}

@@ -1,0 +1,70 @@
+package defpackage;
+
+import com.google.protobuf.nano.MessageNano;
+
+/* renamed from: vE9, reason: case insensitive filesystem */
+/* loaded from: classes8.dex */
+public final class C42624vE9 extends AbstractC32978o17 {
+    public C18577dFi c = null;
+    public int a = 0;
+    public C30994mY b = null;
+
+    public C42624vE9() {
+        this.unknownFieldData = null;
+        this.cachedSize = -1;
+    }
+
+    @Override // defpackage.AbstractC32978o17, com.google.protobuf.nano.MessageNano
+    public final int computeSerializedSize() {
+        int computeSerializedSize = super.computeSerializedSize();
+        if (this.a == 1) {
+            computeSerializedSize += C39067sa3.l(1, this.b);
+        }
+        C18577dFi c18577dFi = this.c;
+        if (c18577dFi != null) {
+            return C39067sa3.l(3, c18577dFi) + computeSerializedSize;
+        }
+        return computeSerializedSize;
+    }
+
+    @Override // com.google.protobuf.nano.MessageNano
+    public final MessageNano mergeFrom(C36392qa3 c36392qa3) {
+        while (true) {
+            int u = c36392qa3.u();
+            if (u == 0) {
+                break;
+            }
+            if (u != 10) {
+                if (u != 26) {
+                    if (!storeUnknownField(c36392qa3, u)) {
+                        break;
+                    }
+                } else {
+                    if (this.c == null) {
+                        this.c = new C18577dFi();
+                    }
+                    c36392qa3.k(this.c);
+                }
+            } else {
+                if (this.a != 1) {
+                    this.b = new C30994mY();
+                }
+                c36392qa3.k(this.b);
+                this.a = 1;
+            }
+        }
+        return this;
+    }
+
+    @Override // defpackage.AbstractC32978o17, com.google.protobuf.nano.MessageNano
+    public final void writeTo(C39067sa3 c39067sa3) {
+        if (this.a == 1) {
+            c39067sa3.K(1, this.b);
+        }
+        C18577dFi c18577dFi = this.c;
+        if (c18577dFi != null) {
+            c39067sa3.K(3, c18577dFi);
+        }
+        super.writeTo(c39067sa3);
+    }
+}

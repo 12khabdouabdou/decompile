@@ -1,0 +1,433 @@
+package defpackage;
+
+import com.snapchat.client.messaging.ForceFailSendFlowStepName;
+import com.snapchat.client.messaging.ForceStepFailure;
+import java.util.HashMap;
+
+/* JADX WARN: Enum visitor error
+jadx.core.utils.exceptions.JadxRuntimeException: Init of enum field 'f0' uses external variables
+	at jadx.core.dex.visitors.EnumVisitor.createEnumFieldByConstructor(EnumVisitor.java:451)
+	at jadx.core.dex.visitors.EnumVisitor.processEnumFieldByField(EnumVisitor.java:372)
+	at jadx.core.dex.visitors.EnumVisitor.processEnumFieldByWrappedInsn(EnumVisitor.java:337)
+	at jadx.core.dex.visitors.EnumVisitor.extractEnumFieldsFromFilledArray(EnumVisitor.java:322)
+	at jadx.core.dex.visitors.EnumVisitor.extractEnumFieldsFromInsn(EnumVisitor.java:262)
+	at jadx.core.dex.visitors.EnumVisitor.convertToEnum(EnumVisitor.java:151)
+	at jadx.core.dex.visitors.EnumVisitor.visit(EnumVisitor.java:100)
+ */
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* renamed from: s80, reason: case insensitive filesystem */
+/* loaded from: classes.dex */
+public final class EnumC38475s80 implements BI3 {
+    public static final EnumC38475s80 A0;
+    public static final EnumC38475s80 A1;
+    public static final EnumC38475s80 B0;
+    public static final EnumC38475s80 B1;
+    public static final EnumC38475s80 C0;
+    public static final EnumC38475s80 C1;
+    public static final EnumC38475s80 D0;
+    public static final EnumC38475s80 D1;
+    public static final EnumC38475s80 E0;
+    public static final EnumC38475s80 E1;
+    public static final EnumC38475s80 F0;
+    public static final EnumC38475s80 F1;
+    public static final EnumC38475s80 G0;
+    public static final EnumC38475s80 G1;
+    public static final EnumC38475s80 H0;
+    public static final EnumC38475s80 H1;
+    public static final EnumC38475s80 I0;
+    public static final EnumC38475s80 I1;
+    public static final EnumC38475s80 J0;
+    public static final EnumC38475s80 J1;
+    public static final EnumC38475s80 K0;
+    public static final EnumC38475s80 K1;
+    public static final EnumC38475s80 L0;
+    public static final EnumC38475s80 L1;
+    public static final EnumC38475s80 M0;
+    public static final EnumC38475s80 M1;
+    public static final EnumC38475s80 N0;
+    public static final EnumC38475s80 N1;
+    public static final EnumC38475s80 O0;
+    public static final EnumC38475s80 O1;
+    public static final EnumC38475s80 P0;
+    public static final EnumC38475s80 P1;
+    public static final EnumC38475s80 Q0;
+    public static final EnumC38475s80 Q1;
+    public static final EnumC38475s80 R0;
+    public static final EnumC38475s80 R1;
+    public static final EnumC38475s80 S0;
+    public static final EnumC38475s80 S1;
+    public static final EnumC38475s80 T0;
+    public static final EnumC38475s80 T1;
+    public static final EnumC38475s80 U0;
+    public static final EnumC38475s80 U1;
+    public static final EnumC38475s80 V0;
+    public static final EnumC38475s80 V1;
+    public static final EnumC38475s80 W0;
+    public static final EnumC38475s80 W1;
+    public static final EnumC38475s80 X0;
+    public static final EnumC38475s80 X1;
+    public static final EnumC38475s80 Y0;
+    public static final EnumC38475s80 Y1;
+    public static final EnumC38475s80 Z0;
+    public static final EnumC38475s80 Z1;
+    public static final EnumC38475s80 a1;
+    public static final EnumC38475s80 a2;
+    public static final EnumC38475s80 b1;
+    public static final EnumC38475s80 b2;
+    public static final EnumC38475s80 c1;
+    public static final EnumC38475s80 c2;
+    public static final EnumC38475s80 d1;
+    public static final EnumC38475s80 d2;
+    public static final EnumC38475s80 e1;
+    public static final /* synthetic */ EnumC38475s80[] e2;
+    public static final EnumC38475s80 f0;
+    public static final EnumC38475s80 f1;
+    public static final EnumC38475s80 g0;
+    public static final EnumC38475s80 g1;
+    public static final EnumC38475s80 h0;
+    public static final EnumC38475s80 h1;
+    public static final EnumC38475s80 i0;
+    public static final EnumC38475s80 i1;
+    public static final EnumC38475s80 j0;
+    public static final EnumC38475s80 j1;
+    public static final EnumC38475s80 k0;
+    public static final EnumC38475s80 k1;
+    public static final EnumC38475s80 l0;
+    public static final EnumC38475s80 l1;
+    public static final EnumC38475s80 m0;
+    public static final EnumC38475s80 m1;
+    public static final EnumC38475s80 n0;
+    public static final EnumC38475s80 n1;
+    public static final EnumC38475s80 o0;
+    public static final EnumC38475s80 o1;
+    public static final EnumC38475s80 p0;
+    public static final EnumC38475s80 p1;
+    public static final EnumC38475s80 q0;
+    public static final EnumC38475s80 q1;
+    public static final EnumC38475s80 r0;
+    public static final EnumC38475s80 r1;
+    public static final EnumC38475s80 s0;
+    public static final EnumC38475s80 s1;
+    public static final EnumC38475s80 t0;
+    public static final EnumC38475s80 t1;
+    public static final EnumC38475s80 u0;
+    public static final EnumC38475s80 u1;
+    public static final EnumC38475s80 v0;
+    public static final EnumC38475s80 v1;
+    public static final EnumC38475s80 w0;
+    public static final EnumC38475s80 w1;
+    public static final EnumC38475s80 x0;
+    public static final EnumC38475s80 x1;
+    public static final EnumC38475s80 y0;
+    public static final EnumC38475s80 y1;
+    public static final EnumC38475s80 z0;
+    public static final EnumC38475s80 z1;
+    public final AI3 a;
+    public final EnumC48048zI3 b = EnumC48048zI3.L1;
+    public static final EnumC38475s80 c = new EnumC38475s80("FAIL_PARTICIPANT_RESOLUTIONS", 0, QR1.I(false));
+    public static final EnumC38475s80 t = new EnumC38475s80("SHOW_CONVERSATIONS_SYNCED", 1, QR1.I(false));
+    public static final EnumC38475s80 X = new EnumC38475s80("ARROYO_BACKEND", 2, QR1.K(O70.a));
+    public static final EnumC38475s80 Y = new EnumC38475s80("ARROYO_CUSTOM_API_GATEWAY", 3, QR1.R("aws.api.snapchat.com:443"));
+    public static final EnumC38475s80 Z = new EnumC38475s80("ARROYO_CUSTOM_STREAMING_SERVICE", 4, QR1.R("us-east-1.aws.duplex.snapchat.com:443"));
+    public static final EnumC38475s80 e0 = new EnumC38475s80("ARROYO_DEBUG_STRING", 5, QR1.I(false));
+
+    static {
+        AI3 I = QR1.I(true);
+        AI3.r(I, "ARROYO_FEED_ANDROID", "grpc_cronet_enabled", 4);
+        f0 = new EnumC38475s80("ARROYO_CRONET_STRING", 6, I);
+        AI3 I2 = QR1.I(true);
+        AI3.r(I2, "ARROYO_FEED_ANDROID", "grpc_quic_0rtt_enabled", 4);
+        g0 = new EnumC38475s80("ARROYO_QUIC_0RTT_ENABLED", 7, I2);
+        h0 = new EnumC38475s80("ENABLE_GATEWAY_MESSAGE_BUFFER", 8, QR1.I(false));
+        AI3 N = QR1.N(60L);
+        AI3.r(N, "ARROYO_FEED_ANDROID", "grpc_timeout_secs", 4);
+        i0 = new EnumC38475s80("ARROYO_GRPC_TIMEOUT", 9, N);
+        AI3 R = QR1.R("");
+        AI3.r(R, "ARROYO_1ON1_ANDROID_CANARY", "mcs_custom_route_tag", 4);
+        j0 = new EnumC38475s80("MCS_CUSTOM_ROUTE_TAG", 10, R);
+        k0 = new EnumC38475s80("MIN_NUM_MESSAGES_IN_CHAT", 11, QR1.N(20L));
+        l0 = new EnumC38475s80("ENABLE_FEED_VALIDATOR", 12, QR1.I(false));
+        m0 = new EnumC38475s80("ENABLE_END_TO_END_ENCRYPTION", 13, QR1.I(true));
+        AI3 I3 = QR1.I(false);
+        AI3.r(I3, "ARROYO_EXPERIENCE_ANDROID", "use_expired_messages_query", 4);
+        n0 = new EnumC38475s80("USE_EXPIRED_MESSAGES_QUERY", 14, I3);
+        o0 = new EnumC38475s80("UNREAD_MESSAGE_TIMEOUT", 15, QR1.N(-1L));
+        p0 = new EnumC38475s80("READ_MESSAGE_TIMEOUT", 16, QR1.N(-1L));
+        q0 = new EnumC38475s80("SEND_MESSAGE_FORCE_FAILURE_TYPE", 17, QR1.K(ForceStepFailure.NONE));
+        r0 = new EnumC38475s80("SEND_MESSAGE_FORCE_FAILURE_STEP", 18, QR1.K(ForceFailSendFlowStepName.MCSSENDSTEP));
+        AI3 I4 = QR1.I(false);
+        AI3.r(I4, "ARROYO_1ON1_ANDROID", "sendflow_ordering_after_prepare_media", 4);
+        s0 = new EnumC38475s80("SENDFLOW_ORDERING_AFTER_PREPARE_MEDIA", 19, I4);
+        AI3 K = QR1.K(EnumC32581nj7.a);
+        AI3.r(K, "ARROYO_1ON1_ANDROID", "feed_priority", 4);
+        t0 = new EnumC38475s80("FEED_SEND_STATE_PRIORITY", 20, K);
+        AI3 I5 = QR1.I(true);
+        AI3.r(I5, "ARROYO_1ON1_ANDROID", "enable_feed_stuck_snap_cleaner", 4);
+        u0 = new EnumC38475s80("ENABLE_FEED_STUCK_SNAP_CLEANER", 21, I5);
+        v0 = new EnumC38475s80("CLEAR_LOCAL_FEED_DATA_ON_P2R", 22, QR1.I(false));
+        w0 = new EnumC38475s80("ENABLE_INACTIVE_CONV_DELEGATE_UPDATES", 23, QR1.I(true));
+        AI3 I6 = QR1.I(true);
+        AI3.r(I6, "PURE_ARROYO_ANDROID", "enableOnConversationRemoved", 4);
+        x0 = new EnumC38475s80("ENABLE_ON_CONVERSATION_REMOVED", 24, I6);
+        AI3 R2 = QR1.R("en");
+        R2.t = "VOICE_NOTES_AUTOMATIC_TRANSCRIPTION_SUPPORTED_LANGUAGES";
+        y0 = new EnumC38475s80("VOICE_NOTES_AUTOMATIC_TRANSCRIPTION_SUPPORTED_LANGUAGES", 25, R2);
+        z0 = new EnumC38475s80("VOICE_NOTES_TRANSCRIPTION_SHOULD_RESET_NEW_USER_UPSELL", 26, QR1.I(false));
+        EnumC25602iVi enumC25602iVi = EnumC25602iVi.a;
+        A0 = new EnumC38475s80("ENABLE_NEW_CONVO_24HOUR_RETENTION", 27, QR1.K(enumC25602iVi));
+        B0 = new EnumC38475s80("ENABLE_MIGRATE_CONVO_24HOUR_RETENTION", 28, QR1.K(enumC25602iVi));
+        AI3 I7 = QR1.I(false);
+        I7.t = "MERLIN_DISABLE_PINNING";
+        C0 = new EnumC38475s80("DISABLE_MERLIN_PINNING", 29, I7);
+        AI3 I8 = QR1.I(false);
+        I8.t = "VNR_LAZY_INIT_SESSION";
+        D0 = new EnumC38475s80("VNR_LAZY_INIT_SESSION", 30, I8);
+        AI3 I9 = QR1.I(false);
+        I9.e0 = 649;
+        E0 = new EnumC38475s80("PIN_CONVERSATION_ONBOARDING", 31, I9);
+        F0 = new EnumC38475s80("LOCK_GROUP_CONVERSATIONS", 32, QR1.I(false));
+        G0 = new EnumC38475s80("REMOVE_USER_ENABLED_FROM_GROUP", 33, QR1.I(false));
+        H0 = new EnumC38475s80("SHOW_LOCKED_CONVERSATION_DIALOG", 34, QR1.I(false));
+        AI3 M = QR1.M(20);
+        M.t = "FF_PAGE_SIZE";
+        I0 = new EnumC38475s80("FF_PAGE_SIZE", 35, M);
+        AI3 I10 = QR1.I(false);
+        I10.t = "DEEPLINK_CHAT_CONTEXT_FEED_ID_DEPRECATED";
+        J0 = new EnumC38475s80("DEEPLINK_CHAT_CONTEXT_FEED_ID_DEPRECATED", 36, I10);
+        AI3 I11 = QR1.I(false);
+        I11.t = "NON_FRIEND_CHAT_SNAP_UPSELL_ACCEPT_BUTTON";
+        K0 = new EnumC38475s80("NON_FRIEND_CHAT_SNAP_UPSELL_ACCEPT_BUTTON", 37, I11);
+        AI3 I12 = QR1.I(false);
+        I12.e0 = 808;
+        L0 = new EnumC38475s80("SHOULD_SHOW_CBM_FOR_MINORS_ONBOARDING", 38, I12);
+        AI3 I13 = QR1.I(false);
+        I13.t = "SAVE_STORY_VIEWING_EXPERIENCE";
+        M0 = new EnumC38475s80("SAVE_STORY_VIEWING_EXPERIENCE", 39, I13);
+        AI3 N2 = QR1.N(0L);
+        N2.t = "SAVED_STORY_EDUCATION_COUNT";
+        N0 = new EnumC38475s80("SAVED_STORY_EDUCATION_COUNT", 40, N2);
+        AI3 N3 = QR1.N(0L);
+        N3.e0 = 821;
+        O0 = new EnumC38475s80("SAVED_STORY_MESSAGE_TOOLTIP", 41, N3);
+        AI3 I14 = QR1.I(false);
+        I14.t = "REMOVE_FEED_TABLE_ACCESS_IN_STORIES";
+        P0 = new EnumC38475s80("REMOVE_FEED_TABLE_ACCESS_IN_STORIES", 42, I14);
+        AI3 I15 = QR1.I(false);
+        I15.t = "STREAK_RESTORE_NO_CAPTURE_ENABLED";
+        Q0 = new EnumC38475s80("STREAK_RESTORE_NO_CAPTURE_ENABLED", 43, I15);
+        AI3 I16 = QR1.I(false);
+        I16.t = "QUEUE_CHAT_DEEPLINK";
+        R0 = new EnumC38475s80("QUEUE_CHAT_DEEPLINK", 44, I16);
+        AI3 M2 = QR1.M(0);
+        M2.t = "MERLIN_BIO_ENTRYPOINT_IN_CHAT";
+        S0 = new EnumC38475s80("MERLIN_BIO_ENTRYPOINT_IN_CHAT", 45, M2);
+        AI3 I17 = QR1.I(false);
+        I17.t = "MEDIA_URI_OPTIMIZATION";
+        T0 = new EnumC38475s80("MEDIA_URI_OPTIMIZATION", 46, I17);
+        AI3 I18 = QR1.I(false);
+        I18.t = "ENABLE_GROUP_STREAKS";
+        U0 = new EnumC38475s80("ENABLE_GROUP_STREAKS", 47, I18);
+        AI3 I19 = QR1.I(false);
+        I19.t = "FF_ENABLE_SCREEN_RECORDING_SUBTEXT";
+        V0 = new EnumC38475s80("FF_ENABLE_SCREEN_RECORDING_SUBTEXT", 48, I19);
+        AI3 I20 = QR1.I(false);
+        I20.t = "WALLPAPER_CAMERAROLL_MEDIA_ACCESS";
+        W0 = new EnumC38475s80("WALLPAPER_CAMERAROLL_MEDIA_ACCESS", 49, I20);
+        AI3 I21 = QR1.I(false);
+        I21.t = "REMOVE_FEED_REPOSITORY_ACCESS_FOR_FF_SHORTCUTS";
+        X0 = new EnumC38475s80("REMOVE_FEED_REPOSITORY_ACCESS_FOR_FF_SHORTCUTS", 50, I21);
+        AI3 I22 = QR1.I(false);
+        I22.t = "FF_STORY_SHORTCUT_BADGE_COUNT";
+        Y0 = new EnumC38475s80("FF_STORY_SHORTCUT_BADGE_COUNT", 51, I22);
+        AI3 I23 = QR1.I(false);
+        I23.t = "SEND_INSTANT_LOG_FOR_PUBLIC_STORY_REPLY";
+        Z0 = new EnumC38475s80("SEND_INSTANT_LOG_FOR_PUBLIC_STORY_REPLY", 52, I23);
+        AI3 M3 = QR1.M(15);
+        M3.t = "MAX_RECIPIENT_COUNT_LOG_TO_GALLERY_SNAP_SEND";
+        a1 = new EnumC38475s80("MAX_RECIPIENT_COUNT_LOG_TO_GALLERY_SNAP_SEND", 53, M3);
+        b1 = new EnumC38475s80("ENABLE_MESSAGING_DUPLEX_CONNECTION", 54, QR1.I(true));
+        AI3 I24 = QR1.I(false);
+        I24.t = "ENABLE_STREAK_API_RESTORES";
+        c1 = new EnumC38475s80("ENABLE_STREAK_API_RESTORES", 55, I24);
+        AI3 I25 = QR1.I(false);
+        I25.t = "REMOVE_BLOCK_OPTION_TEAM_SNAPCHAT";
+        d1 = new EnumC38475s80("REMOVE_BLOCK_OPTION_TEAM_SNAPCHAT_KILL_SWITCH", 56, I25);
+        AI3 I26 = QR1.I(false);
+        I26.t = "FETCH_TIMESTAMPS_FROM_NATIVE";
+        e1 = new EnumC38475s80("FETCH_TIMESTAMPS_FROM_NATIVE", 57, I26);
+        AI3 I27 = QR1.I(false);
+        AI3.r(I27, "FF_FRIEND_LINKES_ANDROID", "check_friend_links", 4);
+        f1 = new EnumC38475s80("CHECK_FRIEND_LINKS", 58, I27);
+        AI3 I28 = QR1.I(false);
+        I28.t = "SETTING_EXTERNAL_MEDIA_FLAG_FOR_DM_SNAP";
+        g1 = new EnumC38475s80("SETTING_EXTERNAL_MEDIA_FLAG_FOR_DM_SNAP", 59, I28);
+        AI3 I29 = QR1.I(false);
+        I29.t = "N2X_GROUP_NOTIFICATION";
+        h1 = new EnumC38475s80("N2X_GROUP_NOTIFICATION", 60, I29);
+        i1 = new EnumC38475s80("FRIENDS_FEED_UNREAD_COUNT", 61, QR1.N(0L));
+        AI3 M4 = QR1.M(5);
+        M4.t = "PROFILE_MEDIA_CAROUSEL_COUNT";
+        j1 = new EnumC38475s80("PROFILE_MEDIA_CAROUSEL_COUNT", 62, M4);
+        AI3 I30 = QR1.I(false);
+        I30.t = "MEDIA_ATTRIBUTION_FOR_CM";
+        k1 = new EnumC38475s80("MEDIA_ATTRIBUTION_FOR_CM", 63, I30);
+        AI3 N4 = QR1.N(24L);
+        N4.t = "RESURRECTED_RESTORE_ELIGIBILITY_WINDOW";
+        l1 = new EnumC38475s80("RESURRECTED_RESTORE_ELIGIBILITY_WINDOW", 64, N4);
+        AI3 I31 = QR1.I(false);
+        I31.t = "IS_RESURRECTED_USER";
+        m1 = new EnumC38475s80("IS_RESURRECTED_USER", 65, I31);
+        AI3 N5 = QR1.N(-1L);
+        N5.e0 = 1080;
+        n1 = new EnumC38475s80("STREAK_RESURRECTED_ELIGIBILITY_TIMESTAMP", 66, N5);
+        AI3 M5 = QR1.M(0);
+        M5.e0 = 1059;
+        o1 = new EnumC38475s80("STREAK_RESURRECTED_RESTORE_USED", 67, M5);
+        AI3 I32 = QR1.I(false);
+        I32.t = "ENABLE_FIX_SENDER_MEDIA_EDITS";
+        p1 = new EnumC38475s80("ENABLE_FIX_SENDER_MEDIA_EDITS", 68, I32);
+        AI3 I33 = QR1.I(false);
+        I33.t = "SPONSORED_SNAPS_ENABLED";
+        q1 = new EnumC38475s80("SPONSORED_SNAPS_ENABLED", 69, I33);
+        AI3 I34 = QR1.I(false);
+        I34.t = "SPONSORED_SNAPS_STORIES";
+        r1 = new EnumC38475s80("SPONSORED_SNAPS_STORIES", 70, I34);
+        AI3 M6 = QR1.M(-1);
+        M6.t = "SPONSORED_SNAPS_FEED_INSERTION_MODE";
+        s1 = new EnumC38475s80("SPONSORED_SNAPS_FEED_INSERT_MODE", 71, M6);
+        t1 = new EnumC38475s80("SPONSORED_SNAPS_FEED_INSERT_ENABLED", 72, QR1.I(false));
+        u1 = new EnumC38475s80("SPONSORED_SNAPS_FEED_INSERT_INDEX", 73, QR1.M(0));
+        AI3 I35 = QR1.I(true);
+        I35.t = "CHAT_BOT_DISCLAIMER_ENABLED";
+        v1 = new EnumC38475s80("CHAT_BOT_DISCLAIMER_ENABLED", 74, I35);
+        AI3 I36 = QR1.I(false);
+        I36.t = "PAGINATED_FETCH_FEED";
+        w1 = new EnumC38475s80("PAGINATED_FETCH_FEED", 75, I36);
+        AI3 I37 = QR1.I(false);
+        I37.t = "ANDROID_MESSAGING_EGRESS_FIX_FETCH_PRIORITY_ENABLED";
+        x1 = new EnumC38475s80("ANDROID_MESSAGING_EGRESS_FIX_FETCH_PRIORITY_ENABLED", 76, I37);
+        AI3 I38 = QR1.I(false);
+        I38.t = "ANDROID_MESSAGING_DONT_USE_OPERA_DOWNLOADER";
+        y1 = new EnumC38475s80("ANDROID_MESSAGING_DONT_USE_OPERA_DOWNLOADER", 77, I38);
+        AI3 I39 = QR1.I(false);
+        I39.t = "REMOVE_QUERY_FEED_LITE";
+        z1 = new EnumC38475s80("REMOVE_QUERY_FEED_LITE", 78, I39);
+        AI3 I40 = QR1.I(false);
+        I40.t = "REMOVE_QUERY_FEED_CALLBACK";
+        A1 = new EnumC38475s80("REMOVE_QUERY_FEED_CALLBACK", 79, I40);
+        AI3 M7 = QR1.M(30);
+        M7.t = "ANDROID_CHAT_REDUCE_INITIAL_CONVO_FETCH_MSG_COUNT";
+        B1 = new EnumC38475s80("ANDROID_CHAT_REDUCE_INITIAL_CONVO_FETCH_MSG_COUNT", 80, M7);
+        AI3 R3 = QR1.R("aws-proxy-gcp.api.snapchat.com");
+        R3.t = "ANDROID_API_GATEWAY_PROD_ENDPOINT";
+        C1 = new EnumC38475s80("ARROYO_API_GATEWAY_PROD_ENDPOINT_COF", 81, R3);
+        AI3 I41 = QR1.I(false);
+        I41.t = "FETCH_GROUP_COUNT_WAIT_FOR_INIT";
+        D1 = new EnumC38475s80("FETCH_GROUP_COUNT_WAIT_FOR_INIT", 82, I41);
+        AI3 I42 = QR1.I(false);
+        I42.t = "REMOVE_SYNC_FEED_CALLBACK";
+        E1 = new EnumC38475s80("REMOVE_SYNC_FEED_CALLBACK", 83, I42);
+        AI3 I43 = QR1.I(false);
+        I43.t = "ENSURE_CONVO_BEFORE_CHECKING_UNREAD";
+        F1 = new EnumC38475s80("ENSURE_CONVO_BEFORE_CHECKING_UNREAD", 84, I43);
+        AI3 I44 = QR1.I(false);
+        I44.t = "SKIP_UNREAD_MESSAGES_CHECK_NFM";
+        G1 = new EnumC38475s80("SKIP_UNREAD_MESSAGES_CHECK_NFM", 85, I44);
+        AI3 I45 = QR1.I(false);
+        I45.t = "NATIVE_POWERED_PREFETCH";
+        H1 = new EnumC38475s80("NATIVE_POWERED_PREFETCH", 86, I45);
+        I1 = new EnumC38475s80("SHORTCUT_DYNAMIC_RANKING_CONFIG", 87, new AI3("{}", new PWi<HashMap<String, Long>>() { // from class: r80
+        }.b));
+        AI3 I46 = QR1.I(false);
+        I46.t = "SHORTCUT_DYNAMIC_RANKING_CONFIG_ENABLED";
+        J1 = new EnumC38475s80("SHORTCUT_DYNAMIC_RANKING_CONFIG_ENABLED", 88, I46);
+        AI3 I47 = QR1.I(false);
+        I47.t = "SDN_SKIP_PAGE_LAUNCH_COMMAND_ANDROID";
+        K1 = new EnumC38475s80("SDN_SKIP_PAGE_LAUNCH_COMMAND_ANDROID", 89, I47);
+        AI3 I48 = QR1.I(false);
+        I48.t = "SDN_SNAPS_SKIP_PAGE_LAUNCH_COMMAND_ANDROID";
+        L1 = new EnumC38475s80("SDN_SNAPS_SKIP_PAGE_LAUNCH_COMMAND_ANDROID", 90, I48);
+        AI3 I49 = QR1.I(false);
+        I49.t = "RECENTLY_ACTIVE_FRIENDS_SHORTCUT";
+        M1 = new EnumC38475s80("RECENTLY_ACTIVE_FRIENDS_SHORTCUT", 91, I49);
+        AI3 M8 = QR1.M(10);
+        M8.t = "RECENTLY_ACTIVE_FRIENDS_SHORTCUT_THRESHOLD";
+        N1 = new EnumC38475s80("RECENTLY_ACTIVE_FRIENDS_SHORTCUT_THRESHOLD", 92, M8);
+        AI3 M9 = QR1.M(2);
+        M9.t = "RECENTLY_ACTIVE_FRIENDS_SHORTCUT_RANK";
+        O1 = new EnumC38475s80("RECENTLY_ACTIVE_FRIENDS_SHORTCUT_RANK", 93, M9);
+        AI3 I50 = QR1.I(false);
+        I50.t = "NATIVE_POWERED_POST_SYNC_PREFETCH";
+        P1 = new EnumC38475s80("NATIVE_POWERED_POST_SYNC_PREFETCH", 94, I50);
+        AI3 I51 = QR1.I(false);
+        I51.t = "NATIVE_POWERED_POST_SYNC_PREFETCH_FILTERING";
+        Q1 = new EnumC38475s80("NATIVE_POWERED_POST_SYNC_PREFETCH_FILTERING", 95, I51);
+        AI3 I52 = QR1.I(false);
+        I52.t = "ENABLE_FEED_SYNC_V4_CORRECTION";
+        R1 = new EnumC38475s80("ENABLE_FEED_SYNC_V4_CORRECTION", 96, I52);
+        AI3 M10 = QR1.M(0);
+        M10.t = "SHORTCUT_DECREASE_PADDING";
+        S1 = new EnumC38475s80("SHORTCUT_DECREASE_PADDING", 97, M10);
+        AI3 I53 = QR1.I(false);
+        I53.t = "SHORTCUT_AVOID_SCALING_ENABLED";
+        T1 = new EnumC38475s80("SHORTCUT_AVOID_SCALING_ENABLED", 98, I53);
+        AI3 I54 = QR1.I(false);
+        I54.t = "ENABLE_1_ON_1_STREAK_RESTORE_BY_CONVO_ID";
+        U1 = new EnumC38475s80("ENABLE_ONE_ON_ONE_STREAK_CONVERSATION_RESTORES", 99, I54);
+        AI3 I55 = QR1.I(false);
+        I55.t = "ENABLE_CONVERSATION_RESURRECTED_RESTORES";
+        V1 = new EnumC38475s80("ENABLE_CONVERSATION_RESURRECTED_RESTORES", 100, I55);
+        AI3 I56 = QR1.I(false);
+        I56.t = "ENABLE_GROUP_STREAK_REMINDERS";
+        W1 = new EnumC38475s80("ENABLE_GROUP_STREAK_REMINDERS", 101, I56);
+        X1 = new EnumC38475s80("ENABLE_AD_SYNC_ON_P2R", 102, QR1.I(false));
+        AI3 I57 = QR1.I(false);
+        I57.t = "N2X_CHAT_REPLIES";
+        Y1 = new EnumC38475s80("N2X_CHAT_REPLIES", 103, I57);
+        AI3 I58 = QR1.I(false);
+        I58.t = "N2X_STORY_REPLIES";
+        Z1 = new EnumC38475s80("N2X_STORY_REPLIES", 104, I58);
+        AI3 I59 = QR1.I(false);
+        I59.t = "N2X_VOICE_NOTES";
+        a2 = new EnumC38475s80("N2X_VOICE_NOTES", 105, I59);
+        AI3 I60 = QR1.I(false);
+        I60.t = "SKIP_STREAK_NULL_CHECK";
+        b2 = new EnumC38475s80("SKIP_STREAK_NULL_CHECK", 106, I60);
+        AI3 M11 = QR1.M(0);
+        M11.e0 = 1164;
+        EnumC38475s80 enumC38475s80 = new EnumC38475s80("STREAK_FRIENDSHIP_DAY_RESTORE_USED", 107, M11);
+        c2 = enumC38475s80;
+        AI3 M12 = QR1.M(5);
+        M12.t = "STREAK_RESTORE_FRIENDSHIP_DAY_PROMO_RESTORE_CAP";
+        EnumC38475s80 enumC38475s802 = new EnumC38475s80("STREAK_RESTORE_FRIENDSHIP_DAY_PROMO_RESTORE_CAP", 108, M12);
+        d2 = enumC38475s802;
+        e2 = new EnumC38475s80[]{c, t, X, Y, Z, e0, f0, g0, h0, i0, j0, k0, l0, m0, n0, o0, p0, q0, r0, s0, t0, u0, v0, w0, x0, y0, z0, A0, B0, C0, D0, E0, F0, G0, H0, I0, J0, K0, L0, M0, N0, O0, P0, Q0, R0, S0, T0, U0, V0, W0, X0, Y0, Z0, a1, b1, c1, d1, e1, f1, g1, h1, i1, j1, k1, l1, m1, n1, o1, p1, q1, r1, s1, t1, u1, v1, w1, x1, y1, z1, A1, B1, C1, D1, E1, F1, G1, H1, I1, J1, K1, L1, M1, N1, O1, P1, Q1, R1, S1, T1, U1, V1, W1, X1, Y1, Z1, a2, b2, enumC38475s80, enumC38475s802};
+    }
+
+    public EnumC38475s80(String str, int i, AI3 ai3) {
+        this.a = ai3;
+    }
+
+    public static EnumC38475s80 valueOf(String str) {
+        return (EnumC38475s80) Enum.valueOf(EnumC38475s80.class, str);
+    }
+
+    public static EnumC38475s80[] values() {
+        return (EnumC38475s80[]) e2.clone();
+    }
+
+    @Override // defpackage.BI3
+    public final EnumC48048zI3 e() {
+        return this.b;
+    }
+
+    @Override // defpackage.BI3
+    public final /* bridge */ /* synthetic */ String getName() {
+        return name();
+    }
+
+    @Override // defpackage.BI3
+    public final AI3 j() {
+        return this.a;
+    }
+}

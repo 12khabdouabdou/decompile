@@ -1,0 +1,107 @@
+package defpackage;
+
+import com.google.protobuf.nano.MessageNano;
+
+/* renamed from: xo8, reason: case insensitive filesystem */
+/* loaded from: classes9.dex */
+public final class C46063xo8 extends AbstractC32978o17 {
+    public C12943Xqd[] a;
+
+    public C46063xo8() {
+        if (C12943Xqd.X == null) {
+            synchronized (AbstractC10746Tp9.b) {
+                try {
+                    if (C12943Xqd.X == null) {
+                        C12943Xqd.X = new C12943Xqd[0];
+                    }
+                } finally {
+                }
+            }
+        }
+        this.a = C12943Xqd.X;
+        this.unknownFieldData = null;
+        this.cachedSize = -1;
+    }
+
+    @Override // defpackage.AbstractC32978o17, com.google.protobuf.nano.MessageNano
+    public final int computeSerializedSize() {
+        int computeSerializedSize = super.computeSerializedSize();
+        C12943Xqd[] c12943XqdArr = this.a;
+        if (c12943XqdArr != null && c12943XqdArr.length > 0) {
+            int i = 0;
+            while (true) {
+                C12943Xqd[] c12943XqdArr2 = this.a;
+                if (i >= c12943XqdArr2.length) {
+                    break;
+                }
+                C12943Xqd c12943Xqd = c12943XqdArr2[i];
+                if (c12943Xqd != null) {
+                    computeSerializedSize = C39067sa3.l(1, c12943Xqd) + computeSerializedSize;
+                }
+                i++;
+            }
+        }
+        return computeSerializedSize;
+    }
+
+    @Override // com.google.protobuf.nano.MessageNano
+    public final MessageNano mergeFrom(C36392qa3 c36392qa3) {
+        int length;
+        while (true) {
+            int u = c36392qa3.u();
+            if (u == 0) {
+                break;
+            }
+            if (u != 10) {
+                if (!storeUnknownField(c36392qa3, u)) {
+                    break;
+                }
+            } else {
+                int E = AbstractC19498dw8.E(c36392qa3, 10);
+                C12943Xqd[] c12943XqdArr = this.a;
+                if (c12943XqdArr == null) {
+                    length = 0;
+                } else {
+                    length = c12943XqdArr.length;
+                }
+                int i = E + length;
+                C12943Xqd[] c12943XqdArr2 = new C12943Xqd[i];
+                if (length != 0) {
+                    System.arraycopy(c12943XqdArr, 0, c12943XqdArr2, 0, length);
+                }
+                while (length < i - 1) {
+                    C12943Xqd c12943Xqd = new C12943Xqd();
+                    c12943XqdArr2[length] = c12943Xqd;
+                    c36392qa3.k(c12943Xqd);
+                    c36392qa3.u();
+                    length++;
+                }
+                C12943Xqd c12943Xqd2 = new C12943Xqd();
+                c12943XqdArr2[length] = c12943Xqd2;
+                c36392qa3.k(c12943Xqd2);
+                this.a = c12943XqdArr2;
+            }
+        }
+        return this;
+    }
+
+    @Override // defpackage.AbstractC32978o17, com.google.protobuf.nano.MessageNano
+    public final void writeTo(C39067sa3 c39067sa3) {
+        C12943Xqd[] c12943XqdArr = this.a;
+        if (c12943XqdArr != null && c12943XqdArr.length > 0) {
+            int i = 0;
+            while (true) {
+                C12943Xqd[] c12943XqdArr2 = this.a;
+                if (i >= c12943XqdArr2.length) {
+                    break;
+                }
+                C12943Xqd c12943Xqd = c12943XqdArr2[i];
+                if (c12943Xqd != null) {
+                    c39067sa3.K(1, c12943Xqd);
+                }
+                i++;
+            }
+        }
+        super.writeTo(c39067sa3);
+    }
+}

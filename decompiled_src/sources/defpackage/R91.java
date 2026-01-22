@@ -1,0 +1,14 @@
+package defpackage;
+
+import java.util.Collections;
+
+/* loaded from: classes.dex */
+public abstract class R91 {
+    public static final /* synthetic */ int a = 0;
+
+    static {
+        C37749rb1.Z.getClass();
+        Collections.singletonList("BlizzardCofConfigLoader");
+        C38012rn0 c38012rn0 = C38012rn0.a;
+    }
+}

@@ -1,0 +1,106 @@
+package defpackage;
+
+/* renamed from: Azg, reason: case insensitive filesystem */
+/* loaded from: classes3.dex */
+public enum EnumC0597Azg {
+    c(0, "LARGE_BUTTON_RECTANGLE_BLUE"),
+    t(1, "LARGE_BUTTON_RECTANGLE_GRAY"),
+    X(2, "LARGE_BUTTON_RECTANGLE_DARK_GRAY"),
+    Y(3, "LARGE_BUTTON_RECTANGLE_YELLOW"),
+    Z(4, "LARGE_BUTTON_RECTANGLE_BITMOJI_GREEN"),
+    e0(5, "SMALL_BUTTON_RECTANGLE_BLUE"),
+    f0(6, "SMALL_BUTTON_RECTANGLE_GRAY"),
+    /* JADX INFO: Fake field, exist only in values array */
+    EF7(7, "SMALL_BUTTON_RECTANGLE_TRANSLUCENT_GRAY"),
+    g0(8, "SMALL_BUTTON_RECTANGLE_WHITE"),
+    h0(9, "SMALL_BUTTON_RECTANGLE_TRANSPARENT"),
+    i0(10, "SMALL_BUTTON_RECTANGLE_BLACK"),
+    j0(11, "SMALL_BUTTON_RECTANGLE_YELLOW"),
+    k0(12, "SMALL_BUTTON_RECTANGLE_WHITE_TEXT_BLUE_BKGD"),
+    /* JADX INFO: Fake field, exist only in values array */
+    EF13(13, "SMALL_BUTTON_THINRECTANGLE_TRANSPARENT"),
+    l0(14, "SMALL_BUTTON_CIRCLE_BLUE"),
+    m0(15, "SMALL_BUTTON_CIRCLE_GRAY"),
+    n0(16, "SMALL_BUTTON_CIRCLE_GRAY20"),
+    o0(17, "SMALL_BUTTON_CIRCLE_PRIMARY"),
+    p0(18, "SMALL_BUTTON_CIRCLE_TRANSPARENT"),
+    q0(19, "TINY_BUTTON_RECTANGLE_GRAY"),
+    /* JADX INFO: Fake field, exist only in values array */
+    EF0(20, "TINY_BUTTON_RECTANGLE_BLACK"),
+    r0(21, "TINY_BUTTON_RECTANGLE_WHITE"),
+    /* JADX INFO: Fake field, exist only in values array */
+    EF0(22, "MEDIUM_BUTTON_RECTANGLE_BLUE"),
+    s0(23, "MEDIUM_BUTTON_RECTANGLE_GRAY"),
+    /* JADX INFO: Fake field, exist only in values array */
+    EF0(24, "MEDIUM_BUTTON_RECTANGLE_WHITE"),
+    /* JADX INFO: Fake field, exist only in values array */
+    EF1(25, "MEDIUM_BUTTON_RECTANGLE_TRANSPARENT"),
+    t0(26, "MEDIUM_BUTTON_RECTANGLE_YELLOW"),
+    /* JADX INFO: Fake field, exist only in values array */
+    EF1(27, "MEDIUM_BUTTON_RECTANGLE_BLACK"),
+    u0(28, "MEDIUM_BUTTON_RECTANGLE_SECONDARY"),
+    /* JADX INFO: Fake field, exist only in values array */
+    EF1(29, "MEDIUM_BUTTON_CIRCLE_WHITE"),
+    /* JADX INFO: Fake field, exist only in values array */
+    EF0(30, "SMALL_BUTTON_RECTANGLE_BLACK_TRANSPARENT"),
+    /* JADX INFO: Fake field, exist only in values array */
+    EF1(31, "MEDIUM_BUTTON_RECTANGLE_PRIMARY"),
+    /* JADX INFO: Fake field, exist only in values array */
+    EF0(32, "SMALL_BUTTON_CIRCLE_TRANSPARENT_GRAY"),
+    /* JADX INFO: Fake field, exist only in values array */
+    EF1(33, "SMALL_BUTTON_RECTANGLE_WHITE_TEXT_PURPLE_BKGD"),
+    /* JADX INFO: Fake field, exist only in values array */
+    EF0(34, "SMALL_BUTTON_RECTANGLE_WHITE_TEXT_GRAY_BKGD"),
+    /* JADX INFO: Fake field, exist only in values array */
+    EF1(35, "SMALL_BUTTON_RECTANGLE_SIG_BUTTON_SECONDARY"),
+    v0(36, "SMALL_BUTTON_RECTANGLE_SIG_BUTTON_SECONDARY_LIGHT"),
+    w0(37, "SMALL_BUTTON_RECTANGLE_SIG_BUTTON_SECONDARY_DARK"),
+    /* JADX INFO: Fake field, exist only in values array */
+    EF0(38, "MEDIUM_BUTTON_RECTANGLE_LIVE"),
+    x0(39, "TINY_BUTTON_THINRECTANGLE_TRANSPARENT"),
+    /* JADX INFO: Fake field, exist only in values array */
+    EF0(40, "MEDIUM_BUTTON_RECTANGLE_BLACK_TRANSPARENT"),
+    y0(41, "LARGE_BUTTON_RECTANGLE_WHITE"),
+    z0(42, "SMALL_BUTTON_CIRCLE_TRANSPARENT_RED"),
+    A0(43, "SMALL_BUTTON_CIRCLE_TRANSPARENT_LIGHT_GRAY"),
+    B0(44, "MEDIUM_BUTTON_RECTANGLE_WHITE_TEXT_BLUE_BKGD"),
+    C0(45, "LARGE_BUTTON_RECTANGLE_AI_CROP_TOOL"),
+    /* JADX INFO: Fake field, exist only in values array */
+    EF0(46, "MEDIUM_BUTTON_RECTANGLE_SIG_BUTTON_SECONDARY_DARK"),
+    D0(47, "LARGE_BUTTON_RECTANGLE_SIG_BUTTON_SECONDARY_LIGHT"),
+    /* JADX INFO: Fake field, exist only in values array */
+    EF0(48, "LARGE_BUTTON_RECTANGLE_BLUE_FLAT"),
+    E0(49, "SMALL_BUTTON_RECTANGLE_STREAK_RESTORE"),
+    /* JADX INFO: Fake field, exist only in values array */
+    EF0(50, "LARGE_BUTTON_RECTANGLE_GREEN"),
+    F0(51, "FORM_SELECTOR_BUTTON_SELECTED"),
+    G0(52, "FORM_SELECTOR_BUTTON_UNSELECTED"),
+    H0(53, "TINY_BUTTON_RECTANGLE_PURE_BLACK"),
+    /* JADX INFO: Fake field, exist only in values array */
+    EF0(54, "ACTION_BAR_CTA_BUTTON"),
+    I0(55, "MEDIUM_BUTTON_RECTANGLE_GRAY_BACKGROUND"),
+    J0(56, "SMALL_BUTTON_RECTANGLE_STORY_CAROUSEL_PURPLE_BKGD"),
+    K0(57, "SMALL_BUTTON_RECTANGLE_WHITE_TEXT_DARK_GRAY_BKGD"),
+    L0(58, "LARGE_BUTTON_RECTANGLE_BLACK"),
+    /* JADX INFO: Fake field, exist only in values array */
+    EF1(59, "SMALL_BUTTON_CIRCLE"),
+    M0(60, "LARGE_BUTTON_RECTANGLE_SIG_BUTTON_SECONDARY"),
+    /* JADX INFO: Fake field, exist only in values array */
+    EF1(61, "LARGE_BUTTON_RECTANGLE_BLUE_THEMED"),
+    N0(62, "SMALL_BUTTON_RECTANGLE_STORY_CAROUSEL_GRAY_BKGD"),
+    O0(63, "SMALL_BUTTON_RECTANGLE_STORY_CAROUSEL_DARK_GRAY_BKGD"),
+    P0(64, "SMALL_BUTTON_RECTANGLE_STORY_CAROUSEL_GRAY20_BKGD"),
+    Q0(65, "SMALL_BUTTON_RECTANGLE_FEED_YELLOW_V2"),
+    R0(66, "MEDIUM_BUTTON_RECTANGLE_FEED_SECONDARY"),
+    S0(67, "SMALL_BUTTON_RECTANGLE_FEED_STREAK_RESTORE"),
+    /* JADX INFO: Fake field, exist only in values array */
+    EF1073(68, "LARGE_BUTTON_RECTANGLE_RED");
+
+    public final int a;
+    public final int b;
+
+    EnumC0597Azg(int i, String str) {
+        this.a = r2;
+        this.b = i;
+    }
+}

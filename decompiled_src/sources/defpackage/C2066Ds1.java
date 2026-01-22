@@ -1,0 +1,37 @@
+package defpackage;
+
+import java.util.Set;
+
+/* renamed from: Ds1, reason: case insensitive filesystem */
+/* loaded from: classes8.dex */
+public class C2066Ds1 extends AbstractC24724hqj {
+    public String j;
+    public EnumC19880eDh k;
+    public Long l;
+    public EnumC2204Dyh m;
+    public EnumC1524Cs1 n;
+    public EnumC11343Us1 o;
+    public Long p;
+
+    public C2066Ds1() {
+        super("BLOOPS_STICKER_PERF_METRICS", EnumC1516Cre.BUSINESS, 1.0d, 1.0d, 1.0d);
+    }
+
+    @Override // defpackage.InterfaceC5193Jje
+    public final void c(AK3 ak3, Set set) {
+        byte[] bArr = new byte[2];
+        AbstractC20835ew8.y0(ak3, 2, bArr, this.m, set);
+        AbstractC20835ew8.y0(ak3, 3, bArr, this.n, set);
+        AbstractC20835ew8.y0(ak3, 4, bArr, this.o, set);
+        AbstractC20835ew8.z0(ak3, 5, bArr, this.l, set);
+        AbstractC20835ew8.y0(ak3, 6, bArr, this.k, set);
+        AbstractC20835ew8.B0(ak3, 7, bArr, this.j, set);
+        AbstractC20835ew8.z0(ak3, 8, bArr, this.p, set);
+        ak3.m(bArr);
+    }
+
+    @Override // defpackage.InterfaceC5193Jje
+    public final int d() {
+        return 2548;
+    }
+}

@@ -1,0 +1,281 @@
+package defpackage;
+
+import com.google.protobuf.nano.MessageNano;
+import com.snapchat.client.chrysalis.Chrysalis;
+import com.snapchat.client.messaging.Tweaks;
+
+/* loaded from: classes9.dex */
+public final class VTj extends AbstractC32978o17 {
+    public int a = 0;
+    public PS8 b = null;
+    public String c = "";
+    public String t = "";
+    public String X = "";
+    public C27724k5f Y = null;
+    public String Z = "";
+    public String e0 = "";
+    public String f0 = "";
+    public String g0 = "";
+    public String h0 = "";
+    public C46255xx2 i0 = null;
+    public C46255xx2 j0 = null;
+    public String k0 = "";
+    public String l0 = "";
+    public String m0 = "";
+    public boolean n0 = false;
+    public C27724k5f o0 = null;
+    public E5f p0 = null;
+    public C27724k5f q0 = null;
+
+    public VTj() {
+        this.unknownFieldData = null;
+        this.cachedSize = -1;
+    }
+
+    @Override // defpackage.AbstractC32978o17, com.google.protobuf.nano.MessageNano
+    public final int computeSerializedSize() {
+        int computeSerializedSize = super.computeSerializedSize();
+        PS8 ps8 = this.b;
+        if (ps8 != null) {
+            computeSerializedSize += C39067sa3.l(1, ps8);
+        }
+        if ((this.a & 1) != 0) {
+            computeSerializedSize += C39067sa3.q(2, this.c);
+        }
+        if ((this.a & 2) != 0) {
+            computeSerializedSize += C39067sa3.q(3, this.t);
+        }
+        if ((this.a & 4) != 0) {
+            computeSerializedSize += C39067sa3.q(4, this.X);
+        }
+        C27724k5f c27724k5f = this.Y;
+        if (c27724k5f != null) {
+            computeSerializedSize += C39067sa3.l(5, c27724k5f);
+        }
+        if ((this.a & 8) != 0) {
+            computeSerializedSize += C39067sa3.q(6, this.Z);
+        }
+        if ((this.a & 16) != 0) {
+            computeSerializedSize += C39067sa3.q(7, this.e0);
+        }
+        if ((this.a & 32) != 0) {
+            computeSerializedSize += C39067sa3.q(8, this.f0);
+        }
+        if ((this.a & 64) != 0) {
+            computeSerializedSize += C39067sa3.q(9, this.g0);
+        }
+        if ((this.a & 128) != 0) {
+            computeSerializedSize += C39067sa3.q(10, this.h0);
+        }
+        C46255xx2 c46255xx2 = this.i0;
+        if (c46255xx2 != null) {
+            computeSerializedSize += C39067sa3.l(11, c46255xx2);
+        }
+        C46255xx2 c46255xx22 = this.j0;
+        if (c46255xx22 != null) {
+            computeSerializedSize += C39067sa3.l(12, c46255xx22);
+        }
+        if ((this.a & 256) != 0) {
+            computeSerializedSize += C39067sa3.q(13, this.k0);
+        }
+        if ((this.a & Chrysalis.PIXEL_LAYOUT_ARGB) != 0) {
+            computeSerializedSize += C39067sa3.q(14, this.l0);
+        }
+        if ((this.a & 1024) != 0) {
+            computeSerializedSize += C39067sa3.q(15, this.m0);
+        }
+        if ((this.a & 2048) != 0) {
+            computeSerializedSize += C39067sa3.a(16);
+        }
+        C27724k5f c27724k5f2 = this.o0;
+        if (c27724k5f2 != null) {
+            computeSerializedSize += C39067sa3.l(17, c27724k5f2);
+        }
+        E5f e5f = this.p0;
+        if (e5f != null) {
+            computeSerializedSize += C39067sa3.l(18, e5f);
+        }
+        C27724k5f c27724k5f3 = this.q0;
+        if (c27724k5f3 != null) {
+            return C39067sa3.l(19, c27724k5f3) + computeSerializedSize;
+        }
+        return computeSerializedSize;
+    }
+
+    @Override // com.google.protobuf.nano.MessageNano
+    public final MessageNano mergeFrom(C36392qa3 c36392qa3) {
+        while (true) {
+            int u = c36392qa3.u();
+            switch (u) {
+                case 0:
+                    break;
+                case 10:
+                    if (this.b == null) {
+                        this.b = new PS8();
+                    }
+                    c36392qa3.k(this.b);
+                    break;
+                case 18:
+                    this.c = c36392qa3.t();
+                    this.a |= 1;
+                    break;
+                case 26:
+                    this.t = c36392qa3.t();
+                    this.a |= 2;
+                    break;
+                case 34:
+                    this.X = c36392qa3.t();
+                    this.a |= 4;
+                    break;
+                case 42:
+                    if (this.Y == null) {
+                        this.Y = new C27724k5f();
+                    }
+                    c36392qa3.k(this.Y);
+                    break;
+                case 50:
+                    this.Z = c36392qa3.t();
+                    this.a |= 8;
+                    break;
+                case 58:
+                    this.e0 = c36392qa3.t();
+                    this.a |= 16;
+                    break;
+                case 66:
+                    this.f0 = c36392qa3.t();
+                    this.a |= 32;
+                    break;
+                case 74:
+                    this.g0 = c36392qa3.t();
+                    this.a |= 64;
+                    break;
+                case 82:
+                    this.h0 = c36392qa3.t();
+                    this.a |= 128;
+                    break;
+                case 90:
+                    if (this.i0 == null) {
+                        this.i0 = new C46255xx2();
+                    }
+                    c36392qa3.k(this.i0);
+                    break;
+                case 98:
+                    if (this.j0 == null) {
+                        this.j0 = new C46255xx2();
+                    }
+                    c36392qa3.k(this.j0);
+                    break;
+                case 106:
+                    this.k0 = c36392qa3.t();
+                    this.a |= 256;
+                    break;
+                case Tweaks.FAIL_DECRYPT_FOR_DUPLEX_SNAPS_TEST_ONLY /* 114 */:
+                    this.l0 = c36392qa3.t();
+                    this.a |= Chrysalis.PIXEL_LAYOUT_ARGB;
+                    break;
+                case 122:
+                    this.m0 = c36392qa3.t();
+                    this.a |= 1024;
+                    break;
+                case 128:
+                    this.n0 = c36392qa3.f();
+                    this.a |= 2048;
+                    break;
+                case 138:
+                    if (this.o0 == null) {
+                        this.o0 = new C27724k5f();
+                    }
+                    c36392qa3.k(this.o0);
+                    break;
+                case Tweaks.AUTO_PAGINATE_QUERY_FEED_ENABLED /* 146 */:
+                    if (this.p0 == null) {
+                        this.p0 = new E5f();
+                    }
+                    c36392qa3.k(this.p0);
+                    break;
+                case Tweaks.ENABLE_LOGIN_PREFETCH /* 154 */:
+                    if (this.q0 == null) {
+                        this.q0 = new C27724k5f();
+                    }
+                    c36392qa3.k(this.q0);
+                    break;
+                default:
+                    if (!storeUnknownField(c36392qa3, u)) {
+                        break;
+                    } else {
+                        break;
+                    }
+            }
+        }
+        return this;
+    }
+
+    @Override // defpackage.AbstractC32978o17, com.google.protobuf.nano.MessageNano
+    public final void writeTo(C39067sa3 c39067sa3) {
+        PS8 ps8 = this.b;
+        if (ps8 != null) {
+            c39067sa3.K(1, ps8);
+        }
+        if ((this.a & 1) != 0) {
+            c39067sa3.R(2, this.c);
+        }
+        if ((this.a & 2) != 0) {
+            c39067sa3.R(3, this.t);
+        }
+        if ((this.a & 4) != 0) {
+            c39067sa3.R(4, this.X);
+        }
+        C27724k5f c27724k5f = this.Y;
+        if (c27724k5f != null) {
+            c39067sa3.K(5, c27724k5f);
+        }
+        if ((this.a & 8) != 0) {
+            c39067sa3.R(6, this.Z);
+        }
+        if ((this.a & 16) != 0) {
+            c39067sa3.R(7, this.e0);
+        }
+        if ((this.a & 32) != 0) {
+            c39067sa3.R(8, this.f0);
+        }
+        if ((this.a & 64) != 0) {
+            c39067sa3.R(9, this.g0);
+        }
+        if ((this.a & 128) != 0) {
+            c39067sa3.R(10, this.h0);
+        }
+        C46255xx2 c46255xx2 = this.i0;
+        if (c46255xx2 != null) {
+            c39067sa3.K(11, c46255xx2);
+        }
+        C46255xx2 c46255xx22 = this.j0;
+        if (c46255xx22 != null) {
+            c39067sa3.K(12, c46255xx22);
+        }
+        if ((this.a & 256) != 0) {
+            c39067sa3.R(13, this.k0);
+        }
+        if ((this.a & Chrysalis.PIXEL_LAYOUT_ARGB) != 0) {
+            c39067sa3.R(14, this.l0);
+        }
+        if ((this.a & 1024) != 0) {
+            c39067sa3.R(15, this.m0);
+        }
+        if ((this.a & 2048) != 0) {
+            c39067sa3.z(16, this.n0);
+        }
+        C27724k5f c27724k5f2 = this.o0;
+        if (c27724k5f2 != null) {
+            c39067sa3.K(17, c27724k5f2);
+        }
+        E5f e5f = this.p0;
+        if (e5f != null) {
+            c39067sa3.K(18, e5f);
+        }
+        C27724k5f c27724k5f3 = this.q0;
+        if (c27724k5f3 != null) {
+            c39067sa3.K(19, c27724k5f3);
+        }
+        super.writeTo(c39067sa3);
+    }
+}

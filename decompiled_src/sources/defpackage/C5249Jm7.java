@@ -1,0 +1,75 @@
+package defpackage;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+/* renamed from: Jm7, reason: case insensitive filesystem */
+/* loaded from: classes9.dex */
+public final class C5249Jm7 extends UVi {
+    public final InterfaceC33754obi a;
+
+    public C5249Jm7(AG8 ag8) {
+        this.a = AbstractC1490Cq9.c1(new YVi(ag8, new PWi(C33985om7.class)));
+    }
+
+    @Override // defpackage.UVi
+    /* renamed from: a, reason: merged with bridge method [inline-methods] */
+    public C4707Im7 read(DB9 db9) throws IOException {
+        if (db9.C() == 9) {
+            db9.y();
+            return null;
+        }
+        C4707Im7 c4707Im7 = new C4707Im7();
+        db9.b = true;
+        db9.b();
+        while (db9.i()) {
+            String w = db9.w();
+            w.getClass();
+            if (!w.equals("devices")) {
+                db9.K();
+            } else {
+                int C = db9.C();
+                if (C == 9) {
+                    db9.y();
+                } else if (C == 1) {
+                    ArrayList g = AbstractC28593kka.g(db9);
+                    UVi uVi = (UVi) this.a.get();
+                    while (db9.i()) {
+                        if (db9.C() == 9) {
+                            db9.y();
+                        } else {
+                            g.add(uVi.read(db9));
+                        }
+                    }
+                    db9.f();
+                    c4707Im7.a = g;
+                }
+            }
+        }
+        db9.g();
+        return c4707Im7;
+    }
+
+    @Override // defpackage.UVi
+    /* renamed from: b, reason: merged with bridge method [inline-methods] */
+    public void write(C14496aC9 c14496aC9, C4707Im7 c4707Im7) throws IOException {
+        if (c4707Im7 == null) {
+            c14496aC9.j();
+            return;
+        }
+        c14496aC9.Y = true;
+        c14496aC9.c();
+        if (c4707Im7.a != null) {
+            c14496aC9.h("devices");
+            UVi uVi = (UVi) this.a.get();
+            c14496aC9.b();
+            Iterator<C33985om7> it = c4707Im7.a.iterator();
+            while (it.hasNext()) {
+                uVi.write(c14496aC9, it.next());
+            }
+            c14496aC9.f();
+        }
+        c14496aC9.g();
+    }
+}

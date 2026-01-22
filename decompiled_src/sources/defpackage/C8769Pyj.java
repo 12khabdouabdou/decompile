@@ -1,0 +1,48 @@
+package defpackage;
+
+import com.amazon.identity.auth.device.datastore.DatabaseHelper;
+import com.google.gson.annotations.SerializedName;
+import com.snapchat.soju.android.SojuJsonAdapter;
+
+@InterfaceC12040Vz9(C36363qYg.class)
+@SojuJsonAdapter(C9313Qyj.class)
+/* renamed from: Pyj, reason: case insensitive filesystem */
+/* loaded from: classes9.dex */
+public class C8769Pyj extends AbstractC33688oYg {
+
+    @SerializedName(DatabaseHelper.authorizationToken_Type)
+    public String a;
+
+    @SerializedName("prompt")
+    public String b;
+
+    public final boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (obj != null && (obj instanceof C8769Pyj)) {
+            C8769Pyj c8769Pyj = (C8769Pyj) obj;
+            if (AbstractC39113sc5.h0(this.a, c8769Pyj.a) && AbstractC39113sc5.h0(this.b, c8769Pyj.b)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        int hashCode;
+        String str = this.a;
+        int i = 0;
+        if (str == null) {
+            hashCode = 0;
+        } else {
+            hashCode = str.hashCode();
+        }
+        int i2 = (527 + hashCode) * 31;
+        String str2 = this.b;
+        if (str2 != null) {
+            i = str2.hashCode();
+        }
+        return i2 + i;
+    }
+}

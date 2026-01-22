@@ -1,0 +1,49 @@
+package com.snap.camera.model;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import defpackage.AbstractC2032Dq9;
+import defpackage.AbstractC29703la3;
+import defpackage.C36796qsb;
+import defpackage.EnumC6482Ltb;
+import java.util.Set;
+
+/* loaded from: classes3.dex */
+public final class d extends MediaTypeConfig {
+    public static final Parcelable.Creator<d> CREATOR = new C36796qsb(6);
+    public final Set a;
+
+    public d(Set set) {
+        super(null);
+        this.a = set;
+    }
+
+    public final Set a() {
+        return this.a;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof d) && AbstractC2032Dq9.j(this.a, ((d) obj).a);
+    }
+
+    @Override // com.snap.camera.model.MediaTypeConfig
+    public final EnumC6482Ltb getMediaType() {
+        return null;
+    }
+
+    public final int hashCode() {
+        return this.a.hashCode();
+    }
+
+    public final String toString() {
+        return AbstractC29703la3.g(new StringBuilder("MixedContentStartUpConfiguration(configs="), this.a, ")");
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel parcel, int i) {
+        parcel.writeParcelableArray((Parcelable[]) this.a.toArray(new MediaTypeConfig[0]), 0);
+    }
+}

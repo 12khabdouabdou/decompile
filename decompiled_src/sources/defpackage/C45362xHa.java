@@ -1,0 +1,177 @@
+package defpackage;
+
+import com.google.protobuf.nano.MessageNano;
+
+/* renamed from: xHa, reason: case insensitive filesystem */
+/* loaded from: classes5.dex */
+public final class C45362xHa extends AbstractC32978o17 {
+    public int a = 0;
+    public int b = 0;
+    public byte[] c = AbstractC19498dw8.j;
+    public String t = "";
+    public int X = 0;
+    public MQ6 Y = null;
+    public int Z = 0;
+    public int e0 = 0;
+    public String f0 = "";
+    public String g0 = "";
+    public int h0 = 0;
+
+    public C45362xHa() {
+        this.unknownFieldData = null;
+        this.cachedSize = -1;
+    }
+
+    @Override // defpackage.AbstractC32978o17, com.google.protobuf.nano.MessageNano
+    public final int computeSerializedSize() {
+        int computeSerializedSize = super.computeSerializedSize();
+        if ((this.a & 1) != 0) {
+            computeSerializedSize += C39067sa3.s(1, this.b);
+        }
+        if ((this.a & 2) != 0) {
+            computeSerializedSize += C39067sa3.b(2, this.c);
+        }
+        if ((this.a & 4) != 0) {
+            computeSerializedSize += C39067sa3.q(3, this.t);
+        }
+        if ((this.a & 8) != 0) {
+            computeSerializedSize += C39067sa3.i(4, this.X);
+        }
+        MQ6 mq6 = this.Y;
+        if (mq6 != null) {
+            computeSerializedSize += C39067sa3.l(5, mq6);
+        }
+        if ((this.a & 16) != 0) {
+            computeSerializedSize += C39067sa3.i(6, this.Z);
+        }
+        if ((this.a & 32) != 0) {
+            computeSerializedSize += C39067sa3.i(7, this.e0);
+        }
+        if ((this.a & 64) != 0) {
+            computeSerializedSize += C39067sa3.q(8, this.f0);
+        }
+        if ((this.a & 128) != 0) {
+            computeSerializedSize += C39067sa3.q(9, this.g0);
+        }
+        if ((this.a & 256) != 0) {
+            return C39067sa3.i(10, this.h0) + computeSerializedSize;
+        }
+        return computeSerializedSize;
+    }
+
+    @Override // com.google.protobuf.nano.MessageNano
+    public final MessageNano mergeFrom(C36392qa3 c36392qa3) {
+        while (true) {
+            int u = c36392qa3.u();
+            switch (u) {
+                case 0:
+                    break;
+                case 8:
+                    this.b = c36392qa3.q();
+                    this.a |= 1;
+                    break;
+                case 18:
+                    this.c = c36392qa3.g();
+                    this.a |= 2;
+                    break;
+                case 26:
+                    this.t = c36392qa3.t();
+                    this.a |= 4;
+                    break;
+                case 32:
+                    int q = c36392qa3.q();
+                    if (q != 0 && q != 1 && q != 2) {
+                        break;
+                    } else {
+                        this.X = q;
+                        this.a |= 8;
+                        break;
+                    }
+                case 42:
+                    if (this.Y == null) {
+                        this.Y = new MQ6();
+                    }
+                    c36392qa3.k(this.Y);
+                    break;
+                case 48:
+                    int q2 = c36392qa3.q();
+                    if (q2 != 0 && q2 != 1 && q2 != 2 && q2 != 3) {
+                        break;
+                    } else {
+                        this.Z = q2;
+                        this.a |= 16;
+                        break;
+                    }
+                case 56:
+                    int q3 = c36392qa3.q();
+                    if (q3 != 0 && q3 != 1 && q3 != 2 && q3 != 3) {
+                        break;
+                    } else {
+                        this.e0 = q3;
+                        this.a |= 32;
+                        break;
+                    }
+                case 66:
+                    this.f0 = c36392qa3.t();
+                    this.a |= 64;
+                    break;
+                case 74:
+                    this.g0 = c36392qa3.t();
+                    this.a |= 128;
+                    break;
+                case 80:
+                    int q4 = c36392qa3.q();
+                    if (q4 != 0 && q4 != 1 && q4 != 2 && q4 != 3 && q4 != 4) {
+                        break;
+                    } else {
+                        this.h0 = q4;
+                        this.a |= 256;
+                        break;
+                    }
+                default:
+                    if (!storeUnknownField(c36392qa3, u)) {
+                        break;
+                    } else {
+                        break;
+                    }
+            }
+        }
+        return this;
+    }
+
+    @Override // defpackage.AbstractC32978o17, com.google.protobuf.nano.MessageNano
+    public final void writeTo(C39067sa3 c39067sa3) {
+        if ((this.a & 1) != 0) {
+            c39067sa3.T(1, this.b);
+        }
+        if ((this.a & 2) != 0) {
+            c39067sa3.A(2, this.c);
+        }
+        if ((this.a & 4) != 0) {
+            c39067sa3.R(3, this.t);
+        }
+        if ((this.a & 8) != 0) {
+            c39067sa3.I(4, this.X);
+        }
+        MQ6 mq6 = this.Y;
+        if (mq6 != null) {
+            c39067sa3.K(5, mq6);
+        }
+        if ((this.a & 16) != 0) {
+            c39067sa3.I(6, this.Z);
+        }
+        if ((this.a & 32) != 0) {
+            c39067sa3.I(7, this.e0);
+        }
+        if ((this.a & 64) != 0) {
+            c39067sa3.R(8, this.f0);
+        }
+        if ((this.a & 128) != 0) {
+            c39067sa3.R(9, this.g0);
+        }
+        if ((this.a & 256) != 0) {
+            c39067sa3.I(10, this.h0);
+        }
+        super.writeTo(c39067sa3);
+    }
+}

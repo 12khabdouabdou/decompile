@@ -1,0 +1,37 @@
+package defpackage;
+
+import com.snap.composer.utils.b;
+
+@InterfaceC2109Du3(propertyReplacements = "", schema = "'snapsProcessed':d,'snapsTotal':d,'snapsWithFaces':d,'finished':b,'onboarded':b@?", typeReferences = {})
+/* loaded from: classes3.dex */
+public final class L57 extends b {
+    private boolean _finished;
+    private Boolean _onboarded;
+    private double _snapsProcessed;
+    private double _snapsTotal;
+    private double _snapsWithFaces;
+
+    public L57(double d, double d2, double d3, boolean z) {
+        this._snapsProcessed = d;
+        this._snapsTotal = d2;
+        this._snapsWithFaces = d3;
+        this._finished = z;
+        this._onboarded = null;
+    }
+
+    public final boolean a() {
+        return this._finished;
+    }
+
+    public final void b(Boolean bool) {
+        this._onboarded = bool;
+    }
+
+    public L57(double d, double d2, double d3, boolean z, Boolean bool) {
+        this._snapsProcessed = d;
+        this._snapsTotal = d2;
+        this._snapsWithFaces = d3;
+        this._finished = z;
+        this._onboarded = bool;
+    }
+}

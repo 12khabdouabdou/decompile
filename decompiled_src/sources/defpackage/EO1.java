@@ -1,0 +1,53 @@
+package defpackage;
+
+import com.google.protobuf.nano.MessageNano;
+
+/* loaded from: classes8.dex */
+public final class EO1 extends AbstractC32978o17 {
+    public int a = 0;
+    public QN1 b = null;
+
+    public EO1() {
+        this.unknownFieldData = null;
+        this.cachedSize = -1;
+    }
+
+    @Override // defpackage.AbstractC32978o17, com.google.protobuf.nano.MessageNano
+    public final int computeSerializedSize() {
+        int computeSerializedSize = super.computeSerializedSize();
+        if (this.a == 7) {
+            return C39067sa3.l(7, this.b) + computeSerializedSize;
+        }
+        return computeSerializedSize;
+    }
+
+    @Override // com.google.protobuf.nano.MessageNano
+    public final MessageNano mergeFrom(C36392qa3 c36392qa3) {
+        while (true) {
+            int u = c36392qa3.u();
+            if (u == 0) {
+                break;
+            }
+            if (u != 58) {
+                if (!storeUnknownField(c36392qa3, u)) {
+                    break;
+                }
+            } else {
+                if (this.a != 7) {
+                    this.b = new QN1();
+                }
+                c36392qa3.k(this.b);
+                this.a = 7;
+            }
+        }
+        return this;
+    }
+
+    @Override // defpackage.AbstractC32978o17, com.google.protobuf.nano.MessageNano
+    public final void writeTo(C39067sa3 c39067sa3) {
+        if (this.a == 7) {
+            c39067sa3.K(7, this.b);
+        }
+        super.writeTo(c39067sa3);
+    }
+}

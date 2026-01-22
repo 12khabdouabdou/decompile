@@ -1,0 +1,27 @@
+package defpackage;
+
+import kotlin.jvm.functions.Function0;
+
+/* renamed from: cOh, reason: case insensitive filesystem */
+/* loaded from: classes6.dex */
+public final class C17427cOh extends AbstractC37275rE9 implements Function0 {
+    public final /* synthetic */ int a;
+    public final /* synthetic */ XI2 b;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public /* synthetic */ C17427cOh(XI2 xi2, int i) {
+        super(0);
+        this.a = i;
+        this.b = xi2;
+    }
+
+    @Override // kotlin.jvm.functions.Function0
+    public final Object invoke() {
+        switch (this.a) {
+            case 0:
+                return Boolean.valueOf(((InterfaceC19582e03) ((C36899qx4) this.b.l).get()).k(EnumC7653Nxb.j0, J03.a));
+            default:
+                return Boolean.valueOf(((InterfaceC19582e03) ((C36899qx4) this.b.l).get()).k(EnumC7653Nxb.i0, J03.a));
+        }
+    }
+}

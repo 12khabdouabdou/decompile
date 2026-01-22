@@ -1,0 +1,37 @@
+package defpackage;
+
+/* renamed from: tme, reason: case insensitive filesystem */
+/* loaded from: classes5.dex */
+public abstract /* synthetic */ class AbstractC40679tme {
+    public static final /* synthetic */ int[] a;
+
+    static {
+        int[] iArr = new int[EnumC39342sme.values().length];
+        try {
+            iArr[0] = 1;
+        } catch (NoSuchFieldError unused) {
+        }
+        try {
+            iArr[1] = 2;
+        } catch (NoSuchFieldError unused2) {
+        }
+        try {
+            iArr[2] = 3;
+        } catch (NoSuchFieldError unused3) {
+        }
+        int[] iArr2 = new int[EnumC38004rme.values().length];
+        try {
+            iArr2[0] = 1;
+        } catch (NoSuchFieldError unused4) {
+        }
+        try {
+            iArr2[1] = 2;
+        } catch (NoSuchFieldError unused5) {
+        }
+        try {
+            iArr2[2] = 3;
+        } catch (NoSuchFieldError unused6) {
+        }
+        a = iArr2;
+    }
+}

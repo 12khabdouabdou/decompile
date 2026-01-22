@@ -1,0 +1,59 @@
+package defpackage;
+
+import java.util.Map;
+
+/* loaded from: classes7.dex */
+public final class TQ4 implements IV0 {
+    public final C42871vQ4 X;
+    public final C42871vQ4 Y;
+    public final C42871vQ4 Z;
+    public final AG4 a;
+    public final Y05 b;
+    public final C42871vQ4 c;
+    public final C42871vQ4 e0;
+    public final C42871vQ4 f0;
+    public final C42871vQ4 g0;
+    public final C42871vQ4 h0;
+    public final C42871vQ4 i0;
+    public final C42871vQ4 j0;
+    public final C42871vQ4 k0;
+    public final C42871vQ4 l0;
+    public final C42871vQ4 m0;
+    public final C42871vQ4 n0;
+    public final C42871vQ4 t;
+
+    public TQ4(AG4 ag4, Y05 y05) {
+        this.a = ag4;
+        this.b = y05;
+        int i = 13;
+        this.c = new C42871vQ4(this, 1, i);
+        this.t = new C42871vQ4(this, 0, i);
+        this.X = new C42871vQ4(this, 2, i);
+        this.Y = new C42871vQ4(this, 4, i);
+        this.Z = new C42871vQ4(this, 3, i);
+        this.e0 = new C42871vQ4(this, 6, i);
+        this.f0 = new C42871vQ4(this, 5, i);
+        this.g0 = new C42871vQ4(this, 8, i);
+        this.h0 = new C42871vQ4(this, 7, i);
+        this.i0 = new C42871vQ4(this, 10, i);
+        this.j0 = new C42871vQ4(this, 9, i);
+        this.k0 = new C42871vQ4(this, 12, i);
+        this.l0 = new C42871vQ4(this, 11, i);
+        this.m0 = new C42871vQ4(this, 14, i);
+        this.n0 = new C42871vQ4(this, 13, i);
+    }
+
+    @Override // defpackage.IV0
+    public final Map x1() {
+        C23107ge2 b = AbstractC18396d79.b(8);
+        b.e("BILLBOARD_CAMPAIGN_FHP_ORG_IP_ATTR_FRIEND_ADD", this.t);
+        b.e("BILLBOARD_CAMPAIGN_FHP_AP_INVITER_PROFILE", this.X);
+        b.e("BILLBOARD_CAMPAIGN_FHP_AC_PENDING_FRIEND_REQUEST", this.Z);
+        b.e("EXAMPLE_CAMPAIGN_ID", this.f0);
+        b.e("BILLBOARD_CAMPAIGN_FHP_PHONE_VERIFICATION", this.h0);
+        b.e("BILLBOARD_CAMPAIGN_FHP_TENTATIVE_PHONE_VERIFICATION", this.j0);
+        b.e("BILLBOARD_CAMPAIGN_FHP_CHANGE_USERNAME", this.l0);
+        b.e("BILLBOARD_CAMPAIGN_FHP_PLUS_DYNAMIC", this.n0);
+        return b.c();
+    }
+}

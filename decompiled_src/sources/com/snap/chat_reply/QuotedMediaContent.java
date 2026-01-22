@@ -1,0 +1,18 @@
+package com.snap.chat_reply;
+
+import com.snap.composer.utils.b;
+import defpackage.InterfaceC2109Du3;
+
+@InterfaceC2109Du3(propertyReplacements = "", schema = "'conversationId':s,'messageId':s,'mediaType':r:'[0]'", typeReferences = {QuotedMessageMediaType.class})
+/* loaded from: classes3.dex */
+public final class QuotedMediaContent extends b {
+    private String _conversationId;
+    private QuotedMessageMediaType _mediaType;
+    private String _messageId;
+
+    public QuotedMediaContent(String str, String str2, QuotedMessageMediaType quotedMessageMediaType) {
+        this._conversationId = str;
+        this._messageId = str2;
+        this._mediaType = quotedMessageMediaType;
+    }
+}

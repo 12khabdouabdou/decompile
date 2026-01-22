@@ -1,0 +1,34 @@
+package defpackage;
+
+import io.reactivex.rxjava3.core.ObservableEmitter;
+import java.util.UUID;
+
+/* renamed from: Dde, reason: case insensitive filesystem */
+/* loaded from: classes4.dex */
+public final class C1765Dde implements GL1 {
+    public final ObservableEmitter a;
+
+    public C1765Dde(ObservableEmitter observableEmitter) {
+        this.a = observableEmitter;
+    }
+
+    @Override // defpackage.GL1
+    public final void a(UUID uuid, long j, long j2, long j3, long j4) {
+        float min;
+        if (j3 == 0) {
+            min = 0.0f;
+        } else {
+            min = Math.min(((float) j2) / ((float) j3), 1.0f);
+        }
+        this.a.onNext(Float.valueOf(min));
+    }
+
+    @Override // defpackage.GL1
+    public final void c(UUID uuid, Throwable th, AZe aZe) {
+        this.a.onComplete();
+    }
+
+    @Override // defpackage.GL1
+    public final void b(UUID uuid, long j, boolean z) {
+    }
+}

@@ -1,0 +1,140 @@
+package defpackage;
+
+import android.content.Context;
+import android.util.DisplayMetrics;
+import android.util.TypedValue;
+import android.view.View;
+import android.view.ViewGroup;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import com.snap.component.button.SnapButtonView;
+import com.snap.identity.loginsignup.ui.pages.splash.LoginLinkTextView;
+import com.snapchat.android.R;
+
+/* renamed from: Peh, reason: case insensitive filesystem */
+/* loaded from: classes4.dex */
+public final class C8349Peh extends ConstraintLayout {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public C8349Peh(Context context, int i) {
+        super(context);
+        switch (i) {
+            case 1:
+                super(context);
+                DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
+                setId(R.id.f104520_resource_name_obfuscated_res_0x7f0b0c68);
+                setBackgroundColor(C39004sX3.c(context, R.color.f20550_resource_name_obfuscated_res_0x7f06020b));
+                setFocusableInTouchMode(true);
+                setLayoutParams(new ViewGroup.LayoutParams(-1, -1));
+                AppCompatImageView appCompatImageView = new AppCompatImageView(context);
+                appCompatImageView.setId(R.id.f100500_resource_name_obfuscated_res_0x7f0b0992);
+                appCompatImageView.setImageDrawable(C39004sX3.e(context, R.drawable.f82090_resource_name_obfuscated_res_0x7f080a53));
+                int dimensionPixelSize = appCompatImageView.getResources().getDimensionPixelSize(R.dimen.f58200_resource_name_obfuscated_res_0x7f07111d);
+                LL3 ll3 = new LL3(dimensionPixelSize, dimensionPixelSize);
+                ll3.q = 0;
+                ll3.s = 0;
+                ll3.h = 0;
+                ll3.k = 0;
+                appCompatImageView.setLayoutParams(ll3);
+                addView(appCompatImageView);
+                int applyDimension = (int) TypedValue.applyDimension(1, 22.0f, displayMetrics);
+                View snapButtonView = new SnapButtonView(context);
+                snapButtonView.setId(R.id.bottom_button);
+                LL3 ll32 = new LL3(-1, -2);
+                ((ViewGroup.MarginLayoutParams) ll32).bottomMargin = (int) TypedValue.applyDimension(1, 50.0f, displayMetrics);
+                ((ViewGroup.MarginLayoutParams) ll32).leftMargin = applyDimension;
+                ((ViewGroup.MarginLayoutParams) ll32).rightMargin = applyDimension;
+                ll32.k = 0;
+                snapButtonView.setLayoutParams(ll32);
+                addView(snapButtonView);
+                int applyDimension2 = (int) TypedValue.applyDimension(1, 16.0f, displayMetrics);
+                View snapButtonView2 = new SnapButtonView(context);
+                snapButtonView2.setId(R.id.f123990_resource_name_obfuscated_res_0x7f0b1936);
+                snapButtonView2.setVisibility(8);
+                LL3 ll33 = new LL3(-1, -2);
+                ((ViewGroup.MarginLayoutParams) ll33).bottomMargin = applyDimension2;
+                ((ViewGroup.MarginLayoutParams) ll33).leftMargin = applyDimension;
+                ((ViewGroup.MarginLayoutParams) ll33).rightMargin = applyDimension;
+                ll33.j = R.id.bottom_button;
+                snapButtonView2.setLayoutParams(ll33);
+                addView(snapButtonView2);
+                SnapButtonView snapButtonView3 = new SnapButtonView(context);
+                snapButtonView3.setId(R.id.f100580_resource_name_obfuscated_res_0x7f0b099f);
+                snapButtonView3.setVisibility(8);
+                snapButtonView3.g(R.drawable.f84680_resource_name_obfuscated_res_0x7f080b9b);
+                LL3 ll34 = new LL3(-1, -2);
+                ((ViewGroup.MarginLayoutParams) ll34).bottomMargin = applyDimension2;
+                ((ViewGroup.MarginLayoutParams) ll34).leftMargin = applyDimension;
+                ((ViewGroup.MarginLayoutParams) ll34).rightMargin = applyDimension;
+                ll34.j = R.id.f123990_resource_name_obfuscated_res_0x7f0b1936;
+                snapButtonView3.setLayoutParams(ll34);
+                addView(snapButtonView3);
+                View snapButtonView4 = new SnapButtonView(context);
+                snapButtonView4.setId(R.id.f124050_resource_name_obfuscated_res_0x7f0b1940);
+                snapButtonView4.setVisibility(8);
+                LL3 ll35 = new LL3(-2, -2);
+                ll35.h = 0;
+                ll35.s = 0;
+                ((ViewGroup.MarginLayoutParams) ll35).topMargin = (int) TypedValue.applyDimension(1, 32.0f, displayMetrics);
+                ll35.setMarginEnd(applyDimension2);
+                snapButtonView4.setLayoutParams(ll35);
+                addView(snapButtonView4);
+                return;
+            default:
+                DisplayMetrics displayMetrics2 = getResources().getDisplayMetrics();
+                setId(R.id.f104520_resource_name_obfuscated_res_0x7f0b0c68);
+                setBackgroundColor(C39004sX3.c(context, R.color.f20550_resource_name_obfuscated_res_0x7f06020b));
+                setFocusableInTouchMode(true);
+                setLayoutParams(new ViewGroup.LayoutParams(-1, -1));
+                AppCompatImageView appCompatImageView2 = new AppCompatImageView(context);
+                appCompatImageView2.setId(R.id.f100500_resource_name_obfuscated_res_0x7f0b0992);
+                appCompatImageView2.setImageDrawable(C39004sX3.e(context, R.drawable.f82090_resource_name_obfuscated_res_0x7f080a53));
+                int dimensionPixelSize2 = appCompatImageView2.getResources().getDimensionPixelSize(R.dimen.f58200_resource_name_obfuscated_res_0x7f07111d);
+                LL3 ll36 = new LL3(dimensionPixelSize2, dimensionPixelSize2);
+                ll36.q = 0;
+                ll36.s = 0;
+                ll36.h = 0;
+                ll36.k = 0;
+                appCompatImageView2.setLayoutParams(ll36);
+                addView(appCompatImageView2);
+                int applyDimension3 = (int) TypedValue.applyDimension(1, 22.0f, displayMetrics2);
+                LoginLinkTextView loginLinkTextView = new LoginLinkTextView(context, null, 2, null);
+                loginLinkTextView.setId(R.id.login_text);
+                loginLinkTextView.setText(R.string.already_have_an_account);
+                D3j d3j = new D3j(26, loginLinkTextView);
+                int i2 = loginLinkTextView.q0;
+                AbstractC36805qsk.p(loginLinkTextView, i2, d3j);
+                loginLinkTextView.setLinkTextColor(i2);
+                loginLinkTextView.setTextAppearance(R.style.f152700_resource_name_obfuscated_res_0x7f140388);
+                loginLinkTextView.setGravity(17);
+                LL3 ll37 = new LL3(-1, -2);
+                ((ViewGroup.MarginLayoutParams) ll37).bottomMargin = (int) TypedValue.applyDimension(1, 52.0f, displayMetrics2);
+                ((ViewGroup.MarginLayoutParams) ll37).rightMargin = applyDimension3;
+                ((ViewGroup.MarginLayoutParams) ll37).leftMargin = applyDimension3;
+                ll37.k = 0;
+                loginLinkTextView.setLayoutParams(ll37);
+                addView(loginLinkTextView);
+                int applyDimension4 = (int) TypedValue.applyDimension(1, 16.0f, displayMetrics2);
+                View snapButtonView5 = new SnapButtonView(context);
+                snapButtonView5.setId(R.id.bottom_button);
+                LL3 ll38 = new LL3(-1, -2);
+                ((ViewGroup.MarginLayoutParams) ll38).bottomMargin = applyDimension4;
+                ((ViewGroup.MarginLayoutParams) ll38).leftMargin = applyDimension3;
+                ((ViewGroup.MarginLayoutParams) ll38).rightMargin = applyDimension3;
+                ll38.j = R.id.login_text;
+                snapButtonView5.setLayoutParams(ll38);
+                addView(snapButtonView5);
+                SnapButtonView snapButtonView6 = new SnapButtonView(context);
+                snapButtonView6.setId(R.id.f100580_resource_name_obfuscated_res_0x7f0b099f);
+                snapButtonView6.setVisibility(8);
+                snapButtonView6.g(R.drawable.f84680_resource_name_obfuscated_res_0x7f080b9b);
+                LL3 ll39 = new LL3(-1, -2);
+                ((ViewGroup.MarginLayoutParams) ll39).bottomMargin = applyDimension4;
+                ((ViewGroup.MarginLayoutParams) ll39).leftMargin = applyDimension3;
+                ((ViewGroup.MarginLayoutParams) ll39).rightMargin = applyDimension3;
+                ll39.j = R.id.bottom_button;
+                snapButtonView6.setLayoutParams(ll39);
+                addView(snapButtonView6);
+                return;
+        }
+    }
+}

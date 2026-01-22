@@ -1,0 +1,358 @@
+package defpackage;
+
+import com.google.protobuf.nano.MessageNano;
+
+/* loaded from: classes9.dex */
+public final class OWj extends AbstractC32978o17 {
+    public int[] Z;
+    public int[] e0;
+    public int a = 0;
+    public boolean b = false;
+    public long c = 0;
+    public boolean t = false;
+    public int X = 0;
+    public int Y = 0;
+
+    public OWj() {
+        int[] iArr = AbstractC19498dw8.c;
+        this.Z = iArr;
+        this.e0 = iArr;
+        this.unknownFieldData = null;
+        this.cachedSize = -1;
+    }
+
+    @Override // defpackage.AbstractC32978o17, com.google.protobuf.nano.MessageNano
+    public final int computeSerializedSize() {
+        int[] iArr;
+        int computeSerializedSize = super.computeSerializedSize();
+        if ((this.a & 1) != 0) {
+            computeSerializedSize += C39067sa3.a(1);
+        }
+        if ((this.a & 2) != 0) {
+            computeSerializedSize += C39067sa3.k(2, this.c);
+        }
+        if ((this.a & 4) != 0) {
+            computeSerializedSize += C39067sa3.a(3);
+        }
+        if ((this.a & 8) != 0) {
+            computeSerializedSize += C39067sa3.i(4, this.X);
+        }
+        if ((this.a & 16) != 0) {
+            computeSerializedSize += C39067sa3.i(5, this.Y);
+        }
+        int[] iArr2 = this.Z;
+        int i = 0;
+        if (iArr2 != null && iArr2.length > 0) {
+            int i2 = 0;
+            int i3 = 0;
+            while (true) {
+                iArr = this.Z;
+                if (i2 >= iArr.length) {
+                    break;
+                }
+                i3 += C39067sa3.j(iArr[i2]);
+                i2++;
+            }
+            computeSerializedSize = computeSerializedSize + i3 + iArr.length;
+        }
+        int[] iArr3 = this.e0;
+        if (iArr3 != null && iArr3.length > 0) {
+            int i4 = 0;
+            while (true) {
+                int[] iArr4 = this.e0;
+                if (i < iArr4.length) {
+                    i4 += C39067sa3.j(iArr4[i]);
+                    i++;
+                } else {
+                    return computeSerializedSize + i4 + iArr4.length;
+                }
+            }
+        } else {
+            return computeSerializedSize;
+        }
+    }
+
+    @Override // com.google.protobuf.nano.MessageNano
+    public final MessageNano mergeFrom(C36392qa3 c36392qa3) {
+        int length;
+        int length2;
+        int length3;
+        int length4;
+        while (true) {
+            int u = c36392qa3.u();
+            if (u != 0) {
+                if (u != 8) {
+                    if (u != 16) {
+                        if (u != 24) {
+                            if (u != 32) {
+                                if (u != 40) {
+                                    if (u != 48) {
+                                        if (u != 50) {
+                                            if (u != 56) {
+                                                if (u != 58) {
+                                                    if (!storeUnknownField(c36392qa3, u)) {
+                                                    }
+                                                } else {
+                                                    int e = c36392qa3.e(c36392qa3.q());
+                                                    int c = c36392qa3.c();
+                                                    int i = 0;
+                                                    while (c36392qa3.b() > 0) {
+                                                        switch (c36392qa3.q()) {
+                                                            case 0:
+                                                            case 1:
+                                                            case 2:
+                                                            case 3:
+                                                            case 4:
+                                                            case 5:
+                                                            case 6:
+                                                            case 7:
+                                                            case 8:
+                                                            case 9:
+                                                            case 10:
+                                                            case 11:
+                                                                i++;
+                                                                break;
+                                                        }
+                                                    }
+                                                    if (i != 0) {
+                                                        c36392qa3.w(c);
+                                                        int[] iArr = this.e0;
+                                                        if (iArr == null) {
+                                                            length = 0;
+                                                        } else {
+                                                            length = iArr.length;
+                                                        }
+                                                        int[] iArr2 = new int[i + length];
+                                                        if (length != 0) {
+                                                            System.arraycopy(iArr, 0, iArr2, 0, length);
+                                                        }
+                                                        while (c36392qa3.b() > 0) {
+                                                            int q = c36392qa3.q();
+                                                            switch (q) {
+                                                                case 0:
+                                                                case 1:
+                                                                case 2:
+                                                                case 3:
+                                                                case 4:
+                                                                case 5:
+                                                                case 6:
+                                                                case 7:
+                                                                case 8:
+                                                                case 9:
+                                                                case 10:
+                                                                case 11:
+                                                                    iArr2[length] = q;
+                                                                    length++;
+                                                                    break;
+                                                            }
+                                                        }
+                                                        this.e0 = iArr2;
+                                                    }
+                                                    c36392qa3.d(e);
+                                                }
+                                            } else {
+                                                int E = AbstractC19498dw8.E(c36392qa3, 56);
+                                                int[] iArr3 = new int[E];
+                                                int i2 = 0;
+                                                for (int i3 = 0; i3 < E; i3++) {
+                                                    if (i3 != 0) {
+                                                        c36392qa3.u();
+                                                    }
+                                                    int q2 = c36392qa3.q();
+                                                    switch (q2) {
+                                                        case 0:
+                                                        case 1:
+                                                        case 2:
+                                                        case 3:
+                                                        case 4:
+                                                        case 5:
+                                                        case 6:
+                                                        case 7:
+                                                        case 8:
+                                                        case 9:
+                                                        case 10:
+                                                        case 11:
+                                                            iArr3[i2] = q2;
+                                                            i2++;
+                                                            break;
+                                                    }
+                                                }
+                                                if (i2 != 0) {
+                                                    int[] iArr4 = this.e0;
+                                                    if (iArr4 == null) {
+                                                        length2 = 0;
+                                                    } else {
+                                                        length2 = iArr4.length;
+                                                    }
+                                                    if (length2 == 0 && i2 == E) {
+                                                        this.e0 = iArr3;
+                                                    } else {
+                                                        int[] iArr5 = new int[length2 + i2];
+                                                        if (length2 != 0) {
+                                                            System.arraycopy(iArr4, 0, iArr5, 0, length2);
+                                                        }
+                                                        System.arraycopy(iArr3, 0, iArr5, length2, i2);
+                                                        this.e0 = iArr5;
+                                                    }
+                                                }
+                                            }
+                                        } else {
+                                            int e2 = c36392qa3.e(c36392qa3.q());
+                                            int c2 = c36392qa3.c();
+                                            int i4 = 0;
+                                            while (c36392qa3.b() > 0) {
+                                                int q3 = c36392qa3.q();
+                                                if (q3 == 0 || q3 == 1 || q3 == 2) {
+                                                    i4++;
+                                                }
+                                            }
+                                            if (i4 != 0) {
+                                                c36392qa3.w(c2);
+                                                int[] iArr6 = this.Z;
+                                                if (iArr6 == null) {
+                                                    length3 = 0;
+                                                } else {
+                                                    length3 = iArr6.length;
+                                                }
+                                                int[] iArr7 = new int[i4 + length3];
+                                                if (length3 != 0) {
+                                                    System.arraycopy(iArr6, 0, iArr7, 0, length3);
+                                                }
+                                                while (c36392qa3.b() > 0) {
+                                                    int q4 = c36392qa3.q();
+                                                    if (q4 == 0 || q4 == 1 || q4 == 2) {
+                                                        iArr7[length3] = q4;
+                                                        length3++;
+                                                    }
+                                                }
+                                                this.Z = iArr7;
+                                            }
+                                            c36392qa3.d(e2);
+                                        }
+                                    } else {
+                                        int E2 = AbstractC19498dw8.E(c36392qa3, 48);
+                                        int[] iArr8 = new int[E2];
+                                        int i5 = 0;
+                                        for (int i6 = 0; i6 < E2; i6++) {
+                                            if (i6 != 0) {
+                                                c36392qa3.u();
+                                            }
+                                            int q5 = c36392qa3.q();
+                                            if (q5 == 0 || q5 == 1 || q5 == 2) {
+                                                iArr8[i5] = q5;
+                                                i5++;
+                                            }
+                                        }
+                                        if (i5 != 0) {
+                                            int[] iArr9 = this.Z;
+                                            if (iArr9 == null) {
+                                                length4 = 0;
+                                            } else {
+                                                length4 = iArr9.length;
+                                            }
+                                            if (length4 == 0 && i5 == E2) {
+                                                this.Z = iArr8;
+                                            } else {
+                                                int[] iArr10 = new int[length4 + i5];
+                                                if (length4 != 0) {
+                                                    System.arraycopy(iArr9, 0, iArr10, 0, length4);
+                                                }
+                                                System.arraycopy(iArr8, 0, iArr10, length4, i5);
+                                                this.Z = iArr10;
+                                            }
+                                        }
+                                    }
+                                } else {
+                                    int q6 = c36392qa3.q();
+                                    if (q6 == 0 || q6 == 1 || q6 == 2 || q6 == 3) {
+                                        this.Y = q6;
+                                        this.a |= 16;
+                                    }
+                                }
+                            } else {
+                                int q7 = c36392qa3.q();
+                                switch (q7) {
+                                    case 0:
+                                    case 1:
+                                    case 2:
+                                    case 3:
+                                    case 4:
+                                    case 5:
+                                    case 6:
+                                    case 7:
+                                    case 8:
+                                    case 9:
+                                    case 10:
+                                    case 11:
+                                    case 12:
+                                    case 13:
+                                    case 14:
+                                    case 15:
+                                    case 16:
+                                    case 17:
+                                        this.X = q7;
+                                        this.a |= 8;
+                                        break;
+                                }
+                            }
+                        } else {
+                            this.t = c36392qa3.f();
+                            this.a |= 4;
+                        }
+                    } else {
+                        this.c = c36392qa3.r();
+                        this.a |= 2;
+                    }
+                } else {
+                    this.b = c36392qa3.f();
+                    this.a |= 1;
+                }
+            }
+        }
+        return this;
+    }
+
+    @Override // defpackage.AbstractC32978o17, com.google.protobuf.nano.MessageNano
+    public final void writeTo(C39067sa3 c39067sa3) {
+        if ((this.a & 1) != 0) {
+            c39067sa3.z(1, this.b);
+        }
+        if ((this.a & 2) != 0) {
+            c39067sa3.J(2, this.c);
+        }
+        if ((this.a & 4) != 0) {
+            c39067sa3.z(3, this.t);
+        }
+        if ((this.a & 8) != 0) {
+            c39067sa3.I(4, this.X);
+        }
+        if ((this.a & 16) != 0) {
+            c39067sa3.I(5, this.Y);
+        }
+        int[] iArr = this.Z;
+        int i = 0;
+        if (iArr != null && iArr.length > 0) {
+            int i2 = 0;
+            while (true) {
+                int[] iArr2 = this.Z;
+                if (i2 >= iArr2.length) {
+                    break;
+                }
+                c39067sa3.I(6, iArr2[i2]);
+                i2++;
+            }
+        }
+        int[] iArr3 = this.e0;
+        if (iArr3 != null && iArr3.length > 0) {
+            while (true) {
+                int[] iArr4 = this.e0;
+                if (i >= iArr4.length) {
+                    break;
+                }
+                c39067sa3.I(7, iArr4[i]);
+                i++;
+            }
+        }
+        super.writeTo(c39067sa3);
+    }
+}

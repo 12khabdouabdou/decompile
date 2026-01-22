@@ -1,0 +1,34 @@
+package defpackage;
+
+import kotlin.jvm.functions.Function1;
+
+/* renamed from: Kc7, reason: case insensitive filesystem */
+/* loaded from: classes4.dex */
+public final class C5581Kc7 extends AbstractC37275rE9 implements Function1 {
+    public final /* synthetic */ long X;
+    public final /* synthetic */ long a;
+    public final /* synthetic */ int b;
+    public final /* synthetic */ int c;
+    public final /* synthetic */ long t;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public C5581Kc7(long j, C5052Jd c5052Jd, int i, int i2, long j2, long j3) {
+        super(1);
+        this.a = j;
+        this.b = i;
+        this.c = i2;
+        this.t = j2;
+        this.X = j3;
+    }
+
+    @Override // kotlin.jvm.functions.Function1
+    public final Object invoke(Object obj) {
+        InterfaceC45561xR interfaceC45561xR = (InterfaceC45561xR) obj;
+        interfaceC45561xR.b(0, Long.valueOf(this.a));
+        interfaceC45561xR.b(1, Long.valueOf(this.b));
+        interfaceC45561xR.b(2, Long.valueOf(this.c));
+        interfaceC45561xR.b(3, Long.valueOf(this.t));
+        interfaceC45561xR.b(4, Long.valueOf(this.X));
+        return C25099i7j.a;
+    }
+}

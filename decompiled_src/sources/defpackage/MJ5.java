@@ -1,0 +1,8 @@
+package defpackage;
+
+import java.util.LinkedHashSet;
+
+/* loaded from: classes5.dex */
+public final class MJ5 {
+    public final LinkedHashSet a = new LinkedHashSet();
+}

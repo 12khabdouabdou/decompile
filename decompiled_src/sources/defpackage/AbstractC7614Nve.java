@@ -1,0 +1,9 @@
+package defpackage;
+
+import com.snapchat.android.R;
+
+/* renamed from: Nve, reason: case insensitive filesystem */
+/* loaded from: classes2.dex */
+public abstract class AbstractC7614Nve {
+    public static final int[] a = {R.attr.f1760_resource_name_obfuscated_res_0x7f040032, R.attr.f2090_resource_name_obfuscated_res_0x7f040058, R.attr.f5610_resource_name_obfuscated_res_0x7f0401f0, R.attr.f5620_resource_name_obfuscated_res_0x7f0401f2, R.attr.f5630_resource_name_obfuscated_res_0x7f0401f3, R.attr.f9050_resource_name_obfuscated_res_0x7f0403e6, R.attr.f9350_resource_name_obfuscated_res_0x7f04040b, R.attr.f9360_resource_name_obfuscated_res_0x7f04040c, R.attr.f9490_resource_name_obfuscated_res_0x7f040419, R.attr.f9510_resource_name_obfuscated_res_0x7f04041b, R.attr.f9520_resource_name_obfuscated_res_0x7f04041c, R.attr.f9530_resource_name_obfuscated_res_0x7f04041d, R.attr.f10000_resource_name_obfuscated_res_0x7f040450, R.attr.f10010_resource_name_obfuscated_res_0x7f040451, R.attr.f10110_resource_name_obfuscated_res_0x7f040460, R.attr.f10120_resource_name_obfuscated_res_0x7f040461, R.attr.f10130_resource_name_obfuscated_res_0x7f040462, R.attr.f10140_resource_name_obfuscated_res_0x7f040463, R.attr.f10150_resource_name_obfuscated_res_0x7f040464, R.attr.f10160_resource_name_obfuscated_res_0x7f040466, R.attr.f10170_resource_name_obfuscated_res_0x7f040467, R.attr.f10180_resource_name_obfuscated_res_0x7f040468, R.attr.f10190_resource_name_obfuscated_res_0x7f040469, R.attr.f10200_resource_name_obfuscated_res_0x7f04046a, R.attr.f10210_resource_name_obfuscated_res_0x7f04046b, R.attr.f10220_resource_name_obfuscated_res_0x7f04046c, R.attr.f10230_resource_name_obfuscated_res_0x7f04046d, R.attr.f10240_resource_name_obfuscated_res_0x7f04046e, R.attr.f15860_resource_name_obfuscated_res_0x7f0406da, R.attr.f16340_resource_name_obfuscated_res_0x7f04070c};
+}

@@ -1,0 +1,163 @@
+package defpackage;
+
+import com.snap.composer.WebLauncher;
+import com.snap.composer.blizzard.Logging;
+import com.snap.composer.cof.ICOFStore;
+import com.snap.composer.people.ContactAddressBookEntryStoring;
+import com.snap.composer.people.ContactUserStoring;
+import com.snap.composer.people.FriendmojiProviding;
+import com.snap.composer.people.FriendscoreProviding;
+import com.snap.composer.people.IBlockedUserStore;
+import com.snap.composer.people.userinfo.UserInfoProviding;
+import com.snap.identity.composer.addfriends.lib.AddFriendsPageFragmentImpl;
+import com.snap.sharing.invite.InviteContactSectionLogger;
+import io.reactivex.rxjava3.core.Single;
+import io.reactivex.rxjava3.disposables.CompositeDisposable;
+
+/* renamed from: Fy, reason: case insensitive filesystem */
+/* loaded from: classes4.dex */
+public final class C3320Fy implements InterfaceC1052Bvb {
+    public final InterfaceC15222ake A;
+    public final C13435Yo4 B;
+    public final C13435Yo4 C;
+    public final C13435Yo4 D;
+    public final C13435Yo4 E;
+    public final C13435Yo4 F;
+    public final C13435Yo4 G;
+    public final C13435Yo4 H;
+    public final C13435Yo4 I;
+
+    /* renamed from: J, reason: collision with root package name */
+    public final C13435Yo4 f15702J;
+    public final C13435Yo4 K;
+    public final C13435Yo4 L;
+    public final C13435Yo4 M;
+    public final C13435Yo4 N;
+    public final C13435Yo4 O;
+    public final C13435Yo4 P;
+    public final C13435Yo4 Q;
+    public final C13435Yo4 R;
+    public final C13435Yo4 S;
+    public final C13435Yo4 a;
+    public final C13435Yo4 b;
+    public final C32671nn9 c;
+    public final C13435Yo4 d;
+    public final C13435Yo4 e;
+    public final C13435Yo4 f;
+    public final C13435Yo4 g;
+    public final C13435Yo4 h;
+    public final C32671nn9 i;
+    public final C13435Yo4 j;
+    public final C13435Yo4 k;
+    public final C13435Yo4 l;
+    public final C13435Yo4 m;
+    public final C13435Yo4 n;
+    public final C13435Yo4 o;
+    public final C13435Yo4 p;
+    public final C13435Yo4 q;
+    public final C13435Yo4 r;
+    public final C13435Yo4 s;
+    public final C13435Yo4 t;
+    public final C13435Yo4 u;
+    public final C13435Yo4 v;
+    public final C13435Yo4 w;
+    public final C13435Yo4 x;
+    public final C32671nn9 y;
+    public final C13435Yo4 z;
+
+    public C3320Fy(C13435Yo4 c13435Yo4, C13435Yo4 c13435Yo42, C32671nn9 c32671nn9, C13435Yo4 c13435Yo43, C13435Yo4 c13435Yo44, C13435Yo4 c13435Yo45, C13435Yo4 c13435Yo46, C13435Yo4 c13435Yo47, C32671nn9 c32671nn92, C13435Yo4 c13435Yo48, C13435Yo4 c13435Yo49, C13435Yo4 c13435Yo410, C13435Yo4 c13435Yo411, C13435Yo4 c13435Yo412, C13435Yo4 c13435Yo413, C13435Yo4 c13435Yo414, C13435Yo4 c13435Yo415, C13435Yo4 c13435Yo416, C13435Yo4 c13435Yo417, C13435Yo4 c13435Yo418, C13435Yo4 c13435Yo419, C13435Yo4 c13435Yo420, C13435Yo4 c13435Yo421, C13435Yo4 c13435Yo422, C32671nn9 c32671nn93, C13435Yo4 c13435Yo423, InterfaceC15222ake interfaceC15222ake, C13435Yo4 c13435Yo424, C13435Yo4 c13435Yo425, C13435Yo4 c13435Yo426, C13435Yo4 c13435Yo427, C13435Yo4 c13435Yo428, C13435Yo4 c13435Yo429, C13435Yo4 c13435Yo430, C13435Yo4 c13435Yo431, C13435Yo4 c13435Yo432, C13435Yo4 c13435Yo433, C13435Yo4 c13435Yo434, C13435Yo4 c13435Yo435, C13435Yo4 c13435Yo436, C13435Yo4 c13435Yo437, C13435Yo4 c13435Yo438, C13435Yo4 c13435Yo439, C13435Yo4 c13435Yo440, C13435Yo4 c13435Yo441) {
+        this.a = c13435Yo4;
+        this.b = c13435Yo42;
+        this.c = c32671nn9;
+        this.d = c13435Yo43;
+        this.e = c13435Yo44;
+        this.f = c13435Yo45;
+        this.g = c13435Yo46;
+        this.h = c13435Yo47;
+        this.i = c32671nn92;
+        this.j = c13435Yo48;
+        this.k = c13435Yo49;
+        this.l = c13435Yo410;
+        this.m = c13435Yo411;
+        this.n = c13435Yo412;
+        this.o = c13435Yo413;
+        this.p = c13435Yo414;
+        this.q = c13435Yo415;
+        this.r = c13435Yo416;
+        this.s = c13435Yo417;
+        this.t = c13435Yo418;
+        this.u = c13435Yo419;
+        this.v = c13435Yo420;
+        this.w = c13435Yo421;
+        this.x = c13435Yo422;
+        this.y = c32671nn93;
+        this.z = c13435Yo423;
+        this.A = interfaceC15222ake;
+        this.B = c13435Yo424;
+        this.C = c13435Yo425;
+        this.D = c13435Yo426;
+        this.E = c13435Yo427;
+        this.F = c13435Yo428;
+        this.G = c13435Yo429;
+        this.H = c13435Yo430;
+        this.I = c13435Yo431;
+        this.f15702J = c13435Yo432;
+        this.K = c13435Yo433;
+        this.L = c13435Yo434;
+        this.M = c13435Yo435;
+        this.N = c13435Yo436;
+        this.O = c13435Yo437;
+        this.P = c13435Yo438;
+        this.Q = c13435Yo439;
+        this.R = c13435Yo440;
+        this.S = c13435Yo441;
+    }
+
+    @Override // defpackage.InterfaceC1052Bvb
+    public final void a(Object obj) {
+        AddFriendsPageFragmentImpl addFriendsPageFragmentImpl = (AddFriendsPageFragmentImpl) obj;
+        addFriendsPageFragmentImpl.z0 = this.a;
+        addFriendsPageFragmentImpl.A0 = (QH) this.b.get();
+        addFriendsPageFragmentImpl.B0 = (AbstractC15274an0) this.c.a;
+        addFriendsPageFragmentImpl.C0 = (Logging) this.d.get();
+        addFriendsPageFragmentImpl.D0 = (IBlockedUserStore) this.e.get();
+        addFriendsPageFragmentImpl.E0 = (InterfaceC19582e03) this.f.get();
+        addFriendsPageFragmentImpl.F0 = (ICOFStore) this.g.get();
+        addFriendsPageFragmentImpl.G0 = (C39943tE1) this.h.get();
+        addFriendsPageFragmentImpl.H0 = (CompositeDisposable) this.i.a;
+        addFriendsPageFragmentImpl.I0 = (InterfaceC34553pC3) this.j.get();
+        addFriendsPageFragmentImpl.J0 = (ContactAddressBookEntryStoring) this.k.get();
+        addFriendsPageFragmentImpl.K0 = this.l;
+        addFriendsPageFragmentImpl.L0 = (InterfaceC33467oO3) this.m.get();
+        addFriendsPageFragmentImpl.M0 = (ContactUserStoring) this.n.get();
+        addFriendsPageFragmentImpl.N0 = (C42748vK7) this.o.get();
+        addFriendsPageFragmentImpl.O0 = (TR7) this.p.get();
+        addFriendsPageFragmentImpl.P0 = this.q;
+        addFriendsPageFragmentImpl.Q0 = (OT7) this.r.get();
+        addFriendsPageFragmentImpl.R0 = (Single) this.s.get();
+        addFriendsPageFragmentImpl.S0 = (FriendmojiProviding) this.t.get();
+        addFriendsPageFragmentImpl.T0 = (FriendscoreProviding) this.u.get();
+        addFriendsPageFragmentImpl.U0 = (C21101f89) this.v.get();
+        addFriendsPageFragmentImpl.V0 = (XI4) this.w.get();
+        addFriendsPageFragmentImpl.W0 = (InviteContactSectionLogger) this.x.get();
+        addFriendsPageFragmentImpl.X0 = (C17502cSa) this.y.a;
+        addFriendsPageFragmentImpl.Y0 = (C10770Tqc) this.z.get();
+        addFriendsPageFragmentImpl.Z0 = (C5900Krc) this.A.get();
+        addFriendsPageFragmentImpl.a1 = (C11333Urc) this.C.get();
+        addFriendsPageFragmentImpl.b1 = (C34188ovc) this.D.get();
+        addFriendsPageFragmentImpl.c1 = (InterfaceC45322xFc) this.E.get();
+        addFriendsPageFragmentImpl.d1 = (C24564hjd) this.F.get();
+        addFriendsPageFragmentImpl.e1 = this.G;
+        addFriendsPageFragmentImpl.f1 = (C45261xCe) this.H.get();
+        addFriendsPageFragmentImpl.g1 = (TCe) this.I.get();
+        addFriendsPageFragmentImpl.h1 = (InterfaceC32875nwf) this.f15702J.get();
+        addFriendsPageFragmentImpl.i1 = (InterfaceC13259Yfg) this.K.get();
+        addFriendsPageFragmentImpl.j1 = (A9i) this.M.get();
+        addFriendsPageFragmentImpl.k1 = (D9i) this.N.get();
+        addFriendsPageFragmentImpl.l1 = this.O;
+        addFriendsPageFragmentImpl.m1 = (UserInfoProviding) this.P.get();
+        addFriendsPageFragmentImpl.n1 = this.Q;
+        addFriendsPageFragmentImpl.o1 = (InterfaceC36376qZ8) this.R.get();
+        addFriendsPageFragmentImpl.p1 = (WebLauncher) this.S.get();
+    }
+}

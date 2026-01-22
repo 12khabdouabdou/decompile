@@ -1,0 +1,112 @@
+package defpackage;
+
+/* renamed from: iTb, reason: case insensitive filesystem */
+/* loaded from: classes7.dex */
+public abstract class AbstractC25554iTb {
+    public static final C23052gbd A;
+    public static final C23052gbd B;
+    public static final C23052gbd C;
+    public static final C23052gbd D;
+    public static final C23052gbd E;
+    public static final C23052gbd F;
+    public static final C23052gbd G;
+    public static final C23052gbd H;
+    public static final C23052gbd I;
+
+    /* renamed from: J, reason: collision with root package name */
+    public static final C23052gbd f15873J;
+    public static final C23052gbd K;
+    public static final C23052gbd L;
+    public static final C23052gbd M;
+    public static final C21715fbd N;
+    public static final C23052gbd O;
+    public static final C23052gbd P;
+    public static final C23052gbd Q;
+    public static final C23052gbd R;
+    public static final C23052gbd S;
+    public static final C23052gbd T;
+    public static final C23052gbd U;
+    public static final C23052gbd V;
+    public static final C23052gbd W;
+    public static final C23052gbd X;
+    public static final C23052gbd a;
+    public static final C23052gbd b;
+    public static final C23052gbd c;
+    public static final C23052gbd d;
+    public static final C23052gbd e;
+    public static final C23052gbd f;
+    public static final C23052gbd g;
+    public static final C23052gbd h;
+    public static final C23052gbd i;
+    public static final C23052gbd j;
+    public static final C23052gbd k;
+    public static final C23052gbd l;
+    public static final C23052gbd m;
+    public static final C23052gbd n;
+    public static final C23052gbd o;
+    public static final C23052gbd p;
+    public static final C23052gbd q;
+    public static final C23052gbd r;
+    public static final C23052gbd s;
+    public static final C23052gbd t;
+    public static final C23052gbd u;
+    public static final C23052gbd v;
+    public static final C23052gbd w;
+    public static final C23052gbd x;
+    public static final C23052gbd y;
+    public static final C23052gbd z;
+
+    static {
+        C20378ebd c20378ebd = C25724ibd.t;
+        a = new C23052gbd("AD_ID");
+        b = new C23052gbd("COMMERCE_DISPLAY_ID");
+        c = new C23052gbd("COMMERCE_PRODUCT_TYPE");
+        d = new C23052gbd("COMMERCE_PAGE_ID");
+        e = new C23052gbd("COMMERCE_ORIGIN_TYPE");
+        f = new C23052gbd("COMMERCE_SESSION_ID");
+        g = new C23052gbd("COMMERCE_SECTION_TYPE_SPECIFIC");
+        h = new C23052gbd("COMMERCE_PRODUCT_AREA");
+        i = new C23052gbd("CONTEXT_MEDIA_TYPE");
+        j = new C23052gbd("CONTEXT_SESSION_ID");
+        k = new C23052gbd("CONTEXT_SNAP_TYPE");
+        l = new C23052gbd("CURRENT_PAGE");
+        m = new C23052gbd("SOURCE_PAGE");
+        n = new C23052gbd("SCANNABLE_ID");
+        o = new C23052gbd("SCANNABLE_DATA");
+        p = new C23052gbd("LENS_CTA_LENS_ID");
+        q = new C23052gbd("LENS_SESSION_ID");
+        r = new C23052gbd("LENS_CAMERA_SOURCE_TYPE");
+        s = new C23052gbd("LENS_POSITION");
+        t = new C23052gbd("LENS_CAMERA_TYPE");
+        u = new C23052gbd("DISCOVER_EDITION_SESSION_ID");
+        v = new C23052gbd("DISCOVER_EDITION_ID");
+        w = new C23052gbd("DISCOVER_SNAP_ID");
+        x = new C23052gbd("DISCOVER_PUBLISHER_ID");
+        y = new C23052gbd("CREATOR_ID");
+        z = new C23052gbd("STORY_SNAP_ID");
+        A = new C23052gbd("IS_SPONSORED");
+        B = new C23052gbd("EXIT_EVENT");
+        C = new C23052gbd("EXTERNAL_SESSION_ID");
+        D = new C23052gbd("STORE_CATEGORY_ID");
+        E = new C23052gbd("STORE_CATEGORY_ROW_INDEX");
+        F = new C23052gbd("STORE_CATEGORY_TITLE");
+        G = new C23052gbd("STORE_TOTAL_CATEGORIES");
+        H = new C23052gbd("EVENT_ID");
+        I = new C23052gbd("PRODUCT_ID");
+        f15873J = new C23052gbd("SOURCE_ID");
+        K = new C23052gbd("SOURCE_SESSION_ID");
+        L = new C23052gbd("STORE_ID");
+        M = new C23052gbd("SOURCE_TYPE");
+        N = new C21715fbd("SHOWCASE", Boolean.FALSE);
+        O = new C23052gbd("BITMOJI_MERCH");
+        P = new C23052gbd("AD_CLIENT_ID");
+        Q = new C23052gbd("CHECKOUT_ID");
+        R = new C23052gbd("COMMERCE_ADS_ID");
+        S = new C23052gbd("COMMERCE_ADS_PRODUCT_SOURCE");
+        T = new C23052gbd("AVAILABLE_MODULES");
+        U = new C23052gbd("CART_ITEMS");
+        V = new C23052gbd("TOPIC");
+        W = new C23052gbd("SECTION_NAME");
+        X = new C23052gbd("SECTION_INDEX");
+    }
+}

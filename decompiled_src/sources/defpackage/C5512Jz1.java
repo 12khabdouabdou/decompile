@@ -1,0 +1,13 @@
+package defpackage;
+
+/* renamed from: Jz1, reason: case insensitive filesystem */
+/* loaded from: classes2.dex */
+public final class C5512Jz1 {
+    public final int a;
+    public final String b;
+
+    public C5512Jz1(int i, String str) {
+        this.a = i;
+        this.b = str;
+    }
+}

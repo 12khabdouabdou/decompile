@@ -1,0 +1,414 @@
+package defpackage;
+
+import com.snapchat.client.messaging.Tweaks;
+
+/* JADX WARN: Enum visitor error
+jadx.core.utils.exceptions.JadxRuntimeException: Init of enum field 'N0' uses external variables
+	at jadx.core.dex.visitors.EnumVisitor.createEnumFieldByConstructor(EnumVisitor.java:451)
+	at jadx.core.dex.visitors.EnumVisitor.processEnumFieldByField(EnumVisitor.java:372)
+	at jadx.core.dex.visitors.EnumVisitor.processEnumFieldByWrappedInsn(EnumVisitor.java:337)
+	at jadx.core.dex.visitors.EnumVisitor.extractEnumFieldsFromFilledArray(EnumVisitor.java:322)
+	at jadx.core.dex.visitors.EnumVisitor.extractEnumFieldsFromInsn(EnumVisitor.java:262)
+	at jadx.core.dex.visitors.EnumVisitor.convertToEnum(EnumVisitor.java:151)
+	at jadx.core.dex.visitors.EnumVisitor.visit(EnumVisitor.java:100)
+ */
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* loaded from: classes.dex */
+public final class T85 implements BI3 {
+    public static final T85 A1;
+    public static final T85 B1;
+    public static final T85 C1;
+    public static final T85 D1;
+    public static final T85 E1;
+    public static final T85 F1;
+    public static final T85 G1;
+    public static final T85 H1;
+    public static final T85 I1;
+    public static final T85 J1;
+    public static final T85 K1;
+    public static final T85 L1;
+    public static final T85 M1;
+    public static final T85 N0;
+    public static final T85 N1;
+    public static final T85 O0;
+    public static final T85 O1;
+    public static final T85 P0;
+    public static final T85 P1;
+    public static final T85 Q0;
+    public static final T85 Q1;
+    public static final T85 R0;
+    public static final T85 R1;
+    public static final T85 S0;
+    public static final T85 S1;
+    public static final T85 T0;
+    public static final T85 T1;
+    public static final T85 U0;
+    public static final T85 U1;
+    public static final T85 V0;
+    public static final T85 V1;
+    public static final T85 W0;
+    public static final T85 W1;
+    public static final T85 X0;
+    public static final T85 X1;
+    public static final T85 Y0;
+    public static final T85 Y1;
+    public static final T85 Z0;
+    public static final T85 Z1;
+    public static final T85 a1;
+    public static final T85 a2;
+    public static final T85 b1;
+    public static final T85 b2;
+    public static final T85 c1;
+    public static final T85 c2;
+    public static final T85 d1;
+    public static final T85 d2;
+    public static final T85 e1;
+    public static final T85 e2;
+    public static final T85 f1;
+    public static final T85 f2;
+    public static final T85 g1;
+    public static final T85 g2;
+    public static final T85 h1;
+    public static final T85 h2;
+    public static final T85 i1;
+    public static final T85 i2;
+    public static final T85 j1;
+    public static final T85 j2;
+    public static final T85 k1;
+    public static final T85 k2;
+    public static final T85 l1;
+    public static final T85 l2;
+    public static final T85 m1;
+    public static final T85 m2;
+    public static final T85 n1;
+    public static final T85 n2;
+    public static final T85 o1;
+    public static final T85 o2;
+    public static final T85 p1;
+    public static final /* synthetic */ T85[] p2;
+    public static final T85 q1;
+    public static final T85 r1;
+    public static final T85 s1;
+    public static final T85 t1;
+    public static final T85 u1;
+    public static final T85 v1;
+    public static final T85 w1;
+    public static final T85 x1;
+    public static final T85 y1;
+    public static final T85 z1;
+    public final AI3 a;
+    public static final T85 b = new T85("LAST_SYNC_TIMESTAMP_COF", 0, QR1.N(0));
+    public static final T85 c = new T85("LAST_SYNC_TIMESTAMP_LEGACY_DF", 1, QR1.N(0));
+    public static final T85 t = new T85("LAST_SYNC_TIMESTAMP_DF", 2, QR1.N(0));
+    public static final T85 X = new T85("LAST_SYNC_TIMESTAMP_SPOTLIGHT", 3, QR1.N(0));
+    public static final T85 Y = new T85("LAST_SYNC_TIMESTAMP_FIDELIUS", 4, QR1.N(0));
+    public static final T85 Z = new T85("LAST_SYNC_TIMESTAMP_FF", 5, QR1.N(0));
+    public static final T85 e0 = new T85("LAST_SYNC_TIMESTAMP_SNAPKIT", 6, QR1.N(0));
+    public static final T85 f0 = new T85("LAST_SYNC_TIMESTAMP_STORIES", 7, QR1.N(0));
+    public static final T85 g0 = new T85("LAST_SYNC_TIMESTAMP_FRIENDING", 8, QR1.N(0));
+    public static final T85 h0 = new T85("LAST_SYNC_TIMESTAMP_ADS", 9, QR1.N(0));
+    public static final T85 i0 = new T85("LAST_SYNC_TIMESTAMP_SUP", 10, QR1.N(0));
+    public static final T85 j0 = new T85("LAST_SYNC_TIMESTAMP_FRIENDS", 11, QR1.N(0));
+    public static final T85 k0 = new T85("LAST_SYNC_TIMESTAMP_FEATURE_BADGES", 12, QR1.N(0));
+    public static final T85 l0 = new T85("LAST_SYNC_TIMESTAMP_USER_SESSION_VALIDATION", 13, QR1.N(0));
+    public static final T85 m0 = new T85("LAST_SYNC_TIMESTAMP_SNAPTOKEN_PRIMING_SYNCER", 14, QR1.N(0));
+    public static final T85 n0 = new T85("LAST_SYNC_TIMESTAMP_GEOFILTERS", 15, QR1.N(0));
+    public static final T85 o0 = new T85("LAST_SYNC_TIMESTAMP_PLUS_SUBSCRIPTION", 16, QR1.N(0));
+    public static final T85 p0 = new T85("LAST_SYNC_TIMESTAMP_MAP_WIDGET", 17, QR1.N(0));
+    public static final T85 q0 = new T85("LAST_PRELOAD_TIMESTAMP_OPERA_WARMUP", 18, QR1.N(0));
+    public static final T85 r0 = new T85("LAST_PRELOAD_TIMESTAMP_SPOTLIGHT_WARMUP", 19, QR1.N(0));
+    public static final T85 s0 = new T85("LAST_PRELOAD_TIMESTAMP_CHAT_WARMUP", 20, QR1.N(0));
+    public static final T85 t0 = new T85("LAST_PRELOAD_TIMESTAMP_DISCOVER_INFLATION", 21, QR1.N(0));
+    public static final T85 u0 = new T85("LAST_SYNC_TIMESTAMP_TRACE_TOKEN", 22, QR1.N(0));
+    public static final T85 v0 = new T85("LAST_SYNC_TIMESTAMP_LOCATION_SHARING_REMINDER", 23, QR1.N(0));
+    public static final T85 w0 = new T85("LAST_SYNC_TIMESTAMP_NETWORK_WARMUP", 24, QR1.N(0));
+    public static final T85 x0 = new T85("LAST_SYNC_TIMESTAMP_CUSTOM_SOUND", 25, QR1.N(0));
+    public static final T85 y0 = new T85("LAST_SYNC_TIMESTAMP_FEATURED_STORIES", 26, QR1.N(0));
+    public static final T85 z0 = new T85("LAST_SYNC_TIMESTAMP_SPECTACLES_DEPTH_MAPS", 27, QR1.N(0));
+    public static final T85 A0 = new T85("LAST_SYNC_TIMESTAMP_LENS_CAROUSEL", 28, QR1.N(0));
+    public static final T85 B0 = new T85("LAST_SYNC_TIMESTAMP_LENS_EXPLORER", 29, QR1.N(0));
+    public static final T85 C0 = new T85("LAST_SYNC_TIMESTAMP_FRIEND_LOCATION", 30, QR1.N(0));
+    public static final T85 D0 = new T85("LAST_SYNC_TIMESTAMP_VALIS_SHARING", 31, QR1.N(0));
+    public static final T85 E0 = new T85("LAST_SYNC_TIMESTAMP_NON_FRIEND_STORIES_BADGE_METADATA", 32, QR1.N(0));
+    public static final T85 F0 = new T85("LAST_SYNC_TIMESTAMP_DUPLEX_TRIGGERED_SYNC", 33, QR1.N(0));
+    public static final T85 G0 = new T85("LAST_PRELOAD_TIMESTAMP_WEBVIEW_USER_AGENT", 34, QR1.N(0));
+    public static final T85 H0 = new T85("LAST_SYNC_TIMESTAMP_FF_SMART_CTA", 35, QR1.N(0));
+    public static final T85 I0 = new T85("LAST_SYNC_TIMESTAMP_MIXED_CAROUSEL", 36, QR1.N(0));
+    public static final T85 J0 = new T85("LAST_SYNC_TIMESTAMP_ML_ON_DEVICE_MODELS", 37, QR1.N(0));
+    public static final T85 K0 = new T85("LAST_SYNC_TIMESTAMP_CHAT_TAB_STORIES_BADGE_METADATA", 38, QR1.N(0));
+    public static final T85 L0 = new T85("LAST_SYNC_TIMESTAMP_BITMOJI_BUILDER_LENS", 39, QR1.N(0));
+    public static final T85 M0 = new T85("LAST_SYNC_TIMESTAMP_CONTENT_CACHE_SYNC", 40, QR1.N(0));
+
+    static {
+        AI3 R = QR1.R("us-east1-aws.api.snapchat.com:443");
+        R.t = "deltaforce_endpoint";
+        N0 = new T85("DELTA_FORCE_ENDPOINT_URL", 41, R);
+        AI3 N = QR1.N(20000L);
+        N.t = "deltaforce_grpc_timeout";
+        O0 = new T85("DELTA_FORCE_GRPC_TIMEOUT", 42, N);
+        AI3 R2 = QR1.R("");
+        R2.t = "deltaforce_route_tag";
+        P0 = new T85("DELTA_FORCE_ROUTE_TAG", 43, R2);
+        AI3 R3 = QR1.R("");
+        R3.t = "sparta_route_tag";
+        Q0 = new T85("SPARTA_ROUTE_TAG", 44, R3);
+        AI3 I = QR1.I(false);
+        I.t = "sparta_sync_core_data";
+        R0 = new T85("SPARTA_SYNC_CORE_DATA_ENABLED", 45, I);
+        AI3 I2 = QR1.I(false);
+        I2.t = "sparta_sync_user_score";
+        S0 = new T85("SPARTA_SYNC_USER_SCORE_ENABLED", 46, I2);
+        AI3 I3 = QR1.I(false);
+        I3.t = "sparta_sync_sup";
+        T0 = new T85("SPARTA_SYNC_SUP_ENABLED", 47, I3);
+        U0 = new T85("SPARTA_SYNC_NOTIFICATION_DATA_ENABLED", 48, QR1.I(true));
+        AI3 I4 = QR1.I(false);
+        I4.t = "sparta_sync_growth";
+        V0 = new T85("SPARTA_SYNC_GROWTH_QR_ENABLED", 49, I4);
+        AI3 I5 = QR1.I(false);
+        I5.t = "sparta_sync_scan_permission";
+        W0 = new T85("SPARTA_SYNC_SCAN_PERMISSION_ENABLED", 50, I5);
+        AI3 I6 = QR1.I(true);
+        I6.t = "sparta_sync_billboard_strings";
+        X0 = new T85("SPARTA_SYNC_BILLBOARD_STRINGS_ENABLED", 51, I6);
+        AI3 I7 = QR1.I(true);
+        I7.t = "sparta_sync_atlas_timezone_enabled";
+        Y0 = new T85("SPARTA_SYNC_ATLAS_TIMEZONE_ENABLED", 52, I7);
+        AI3 ai3 = new AI3(C48301zU5.H, C30476m95.class);
+        ai3.t = "FF_SMART_CTA_SYNCER_POLICY";
+        Z0 = new T85("FF_SMART_CTA_SYNCER_POLICY", 53, ai3);
+        AI3 N2 = QR1.N(0L);
+        N2.t = "Spotlight_Syncer_In_Parallel_With_Discover_Syncer";
+        a1 = new T85("SPOTLIGHT_SYNCER_IN_PARALLEL_WITH_DISCOVER_SYNCER", 54, N2);
+        AI3 I8 = QR1.I(false);
+        I8.t = "USE_CRITICAL_SYNC_GROUP_PROTO";
+        b1 = new T85("USE_CRITICAL_SYNC_GROUP_PROTO", 55, I8);
+        AI3 I9 = QR1.I(false);
+        I9.t = "USE_STARTUP_SYNC_GROUP_PROTO_V3";
+        c1 = new T85("USE_STARTUP_SYNC_GROUP_PROTO_V3", 56, I9);
+        AI3 I10 = QR1.I(false);
+        I10.t = "USE_STARTUP_PER_PAGE_SYNC_GROUP_PROTO_V3";
+        d1 = new T85("USE_STARTUP_PER_PAGE_SYNC_GROUP_PROTO_V3", 57, I10);
+        AI3 I11 = QR1.I(false);
+        I11.t = "USE_BG_SYNC_GROUP_PROTO";
+        e1 = new T85("USE_BG_SYNC_GROUP_PROTO", 58, I11);
+        AI3 I12 = QR1.I(false);
+        I12.t = "USE_NAV_SYNC_GROUP_PROTO";
+        f1 = new T85("USE_NAV_SYNC_GROUP_PROTO", 59, I12);
+        AI3 I13 = QR1.I(false);
+        I13.t = "USE_CAMERA_PAGE_SYNCERS_KEY";
+        g1 = new T85("USE_CAMERA_PAGE_SYNCERS_KEY", 60, I13);
+        Z85 z85 = C48301zU5.R;
+        AI3 ai32 = new AI3(z85, Z85.class);
+        ai32.t = "CAMERA_SYNCER_GROUPS";
+        h1 = new T85("CAMERA_SYNCER_GROUPS", 61, ai32);
+        AI3 I14 = QR1.I(false);
+        I14.t = "USE_FRIENDS_FEED_PAGE_SYNCERS_KEY_V3";
+        i1 = new T85("USE_FRIENDS_FEED_PAGE_SYNCERS_KEY_V3", 62, I14);
+        AI3 I15 = QR1.I(false);
+        I15.t = "USE_FRIENDS_FEED_PAGE_SYNCERS_KEY_V4";
+        j1 = new T85("USE_FRIENDS_FEED_PAGE_SYNCERS_KEY_V4", 63, I15);
+        Z85 z852 = KX7.a;
+        AI3 ai33 = new AI3(z852, Z85.class);
+        ai33.t = "FRIENDS_FEED_SYNCER_GROUPS_SNAP_NOTIFICATION";
+        k1 = new T85("FRIENDS_FEED_SYNCER_GROUPS_MESSAGING", 64, ai33);
+        AI3 ai34 = new AI3(z852, Z85.class);
+        ai34.t = "FRIENDS_FEED_SYNCER_GROUPS_STORY_NOTIFICATION";
+        l1 = new T85("FRIENDS_FEED_SYNCER_GROUPS_STORIES", 65, ai34);
+        AI3 ai35 = new AI3(z852, Z85.class);
+        ai35.t = "FRIENDS_FEED_SYNCER_GROUPS_V3";
+        m1 = new T85("FRIENDS_FEED_SYNCER_GROUPS_V3", 66, ai35);
+        AI3 ai36 = new AI3(z852, Z85.class);
+        ai36.t = "FRIENDS_FEED_SYNCER_GROUPS";
+        n1 = new T85("FF_STARTUP_SYNCERS_CONFIG", 67, ai36);
+        AI3 I16 = QR1.I(false);
+        I16.t = "USE_DISCOVER_FEED_PAGE_SYNCERS_KEY_V2";
+        o1 = new T85("USE_DISCOVER_FEED_PAGE_SYNCERS_KEY_V2", 68, I16);
+        AI3 ai37 = new AI3(AbstractC39246si6.a, Z85.class);
+        ai37.t = "DISCOVER_FEED_SYNCER_GROUPS_V2";
+        p1 = new T85("DISCOVER_FEED_SYNCER_GROUPS_V2", 69, ai37);
+        AI3 I17 = QR1.I(false);
+        I17.t = "USE_SPOTLIGHT_PAGE_SYNCERS_KEY_V2";
+        q1 = new T85("USE_SPOTLIGHT_PAGE_SYNCERS_KEY_V2", 70, I17);
+        AI3 ai38 = new AI3(z85, Z85.class);
+        ai38.t = "SPOTLIGHT_SYNCER_GROUPS_V2";
+        r1 = new T85("SPOTLIGHT_SYNCER_GROUPS_V2", 71, ai38);
+        AI3 I18 = QR1.I(false);
+        I18.t = "USE_CHAT_PAGE_SYNCERS_KEY_V3";
+        s1 = new T85("USE_CHAT_PAGE_SYNCERS_KEY_V3", 72, I18);
+        AI3 ai39 = new AI3(UO2.a, Z85.class);
+        ai39.t = "CHAT_SYNCER_GROUPS_V3";
+        t1 = new T85("CHAT_SYNCER_GROUPS_V3", 73, ai39);
+        AI3 K = QR1.K(EnumC8723Pwf.t);
+        K.t = "PLATFORM_SYNC_LIFECYCLE";
+        u1 = new T85("PLATFORM_SYNC_LIFECYCLE", 74, K);
+        AI3 I19 = QR1.I(false);
+        I19.t = "USE_SYNCER_IDLE_SCHEDULER";
+        v1 = new T85("USE_SYNCER_IDLE_SCHEDULER", 75, I19);
+        AI3 I20 = QR1.I(false);
+        I20.t = "USE_SYNCER_DB_SCHEDULER";
+        w1 = new T85("USE_SYNCER_DB_SCHEDULER", 76, I20);
+        AI3 I21 = QR1.I(false);
+        I21.t = "ENABLE_SYNCER_THROTTLE_CONFIG";
+        x1 = new T85("ENABLE_SYNCER_THROTTLE_CONFIG", 77, I21);
+        AI3 I22 = QR1.I(false);
+        I22.t = "ENABLE_COLD_STARTUP_SYNCER_THROTTLE";
+        y1 = new T85("ENABLE_COLD_STARTUP_SYNCER_THROTTLE", 78, I22);
+        AI3 I23 = QR1.I(false);
+        I23.t = "ENABLE_SYNCER_TIMEOUT";
+        z1 = new T85("ENABLE_SYNCER_TIMEOUT", 79, I23);
+        AI3 N3 = QR1.N(30L);
+        N3.t = "SYNCER_TIMEOUT_SEC";
+        A1 = new T85("SYNCER_TIMEOUT_SEC", 80, N3);
+        AI3 N4 = QR1.N(300L);
+        N4.t = "BG_SYNCER_TIMEOUT_SEC";
+        B1 = new T85("BG_SYNCER_TIMEOUT_SEC", 81, N4);
+        AI3 I24 = QR1.I(false);
+        I24.t = "SCHEDULE_SYNCERS_ON_CRITICAL_WORK_COORDINATOR";
+        C1 = new T85("SCHEDULE_SYNCERS_ON_CRITICAL_WORK_COORDINATOR", 82, I24);
+        AI3 R4 = QR1.R("");
+        R4.t = "SYNCERS_TO_SKIP_ON_CRITICAL_WORK_COORDINATOR";
+        D1 = new T85("SYNCERS_TO_SKIP_ON_CRITICAL_WORK_COORDINATOR", 83, R4);
+        AI3 ai310 = new AI3(C48301zU5.o, C30476m95.class);
+        ai310.t = "ADS_SYNCER_POLICY";
+        E1 = new T85("ADS_SYNCER_POLICY", 84, ai310);
+        AI3 ai311 = new AI3(C48301zU5.g, C30476m95.class);
+        ai311.t = "CIRCUMSTANCE_ENGINE_SYNCER_POLICY";
+        F1 = new T85("CIRCUMSTANCE_ENGINE_SYNCER_POLICY", 85, ai311);
+        AI3 ai312 = new AI3(C48301zU5.h, C30476m95.class);
+        ai312.t = "DISCOVER_FEED_SYNCER_POLICY";
+        G1 = new T85("DISCOVER_FEED_SYNCER_POLICY", 86, ai312);
+        AI3 ai313 = new AI3(C48301zU5.f, C30476m95.class);
+        ai313.t = "FIDELIUS_SYNCER_POLICY";
+        H1 = new T85("FIDELIUS_SYNCER_POLICY", 87, ai313);
+        AI3 ai314 = new AI3(C48301zU5.m, C30476m95.class);
+        ai314.t = "FRIENDING_SYNCER_POLICY";
+        I1 = new T85("FRIENDING_SYNCER_POLICY", 88, ai314);
+        AI3 ai315 = new AI3(C48301zU5.e, C30476m95.class);
+        ai315.t = "FRIENDS_FEED_SYNCER_POLICY";
+        J1 = new T85("FRIENDS_FEED_SYNCER_POLICY", 89, ai315);
+        AI3 ai316 = new AI3(C48301zU5.d, C30476m95.class);
+        ai316.t = "FRIENDS_SYNCER_POLICY";
+        K1 = new T85("FRIENDS_SYNCER_POLICY", 90, ai316);
+        AI3 ai317 = new AI3(C48301zU5.k, C30476m95.class);
+        ai317.t = "MIXED_CAROUSEL_SYNCER_POLICY";
+        L1 = new T85("MIXED_CAROUSEL_SYNCER_POLICY", 91, ai317);
+        AI3 ai318 = new AI3(C48301zU5.l, C30476m95.class);
+        ai318.t = "SNAPKIT_APP_CONNECTIONS_SYNCER_POLICY";
+        M1 = new T85("SNAPKIT_APP_CONNECTIONS_SYNCER_POLICY", 92, ai318);
+        AI3 ai319 = new AI3(C48301zU5.n, C30476m95.class);
+        ai319.t = "SPARTA_SYNCER_POLICY";
+        N1 = new T85("SPARTA_SYNCER_POLICY", 93, ai319);
+        AI3 ai320 = new AI3(C48301zU5.r, C30476m95.class);
+        ai320.t = "SPOTLIGHT_TAB_SYNCER_POLICY";
+        O1 = new T85("SPOTLIGHT_TAB_SYNCER_POLICY", 94, ai320);
+        AI3 ai321 = new AI3(C48301zU5.i, C30476m95.class);
+        ai321.t = "STORIES_SYNCER_POLICY";
+        P1 = new T85("STORIES_SYNCER_POLICY", 95, ai321);
+        AI3 ai322 = new AI3(C48301zU5.j, C30476m95.class);
+        ai322.t = "CONTENT_CACHE_SYNCER_POLICY";
+        Q1 = new T85("CONTENT_CACHE_SYNCER_POLICY", 96, ai322);
+        AI3 ai323 = new AI3(C48301zU5.q, C30476m95.class);
+        ai323.t = "USER_SESSION_VALIDATION_SYNCER_POLICY";
+        R1 = new T85("USER_SESSION_VALIDATION_SYNCER_POLICY", 97, ai323);
+        AI3 ai324 = new AI3(C48301zU5.p, C30476m95.class);
+        ai324.t = "SNAPTOKEN_PRIMING_SYNCER_POLICY";
+        S1 = new T85("SNAPTOKEN_PRIMING_SYNCER_POLICY", 98, ai324);
+        AI3 ai325 = new AI3(C48301zU5.t, C30476m95.class);
+        ai325.t = "OPERA_WARMUP_PRELOAD_POLICY";
+        T1 = new T85("OPERA_WARMUP_PRELOAD_POLICY", 99, ai325);
+        AI3 ai326 = new AI3(C48301zU5.u, C30476m95.class);
+        ai326.t = "SPOTLIGHT_WARMUP_PRELOAD_POLICY";
+        U1 = new T85("SPOTLIGHT_WARMUP_PRELOAD_POLICY", 100, ai326);
+        AI3 ai327 = new AI3(C48301zU5.v, C30476m95.class);
+        ai327.t = "PLUS_SUBSCRIPTION_SYNCER_POLICY";
+        V1 = new T85("PLUS_SUBSCRIPTION_SYNCER_POLICY", 101, ai327);
+        AI3 I25 = QR1.I(true);
+        I25.t = "ANDROID_FEATURE_CONFIG_NEW_CONFLICT_RESOLUTION";
+        W1 = new T85("ANDROID_FEATURE_CONFIG_NEW_CONFLICT_RESOLUTION", 102, I25);
+        AI3 ai328 = new AI3(C48301zU5.w, C30476m95.class);
+        ai328.t = "CHAT_WARMUP_PRELOADER_POLICY";
+        X1 = new T85("CHAT_WARMUP_PRELOADER_POLICY", 103, ai328);
+        AI3 ai329 = new AI3(C48301zU5.x, C30476m95.class);
+        ai329.t = "DISCOVER_INFLATION_PRELOADER_POLICY";
+        Y1 = new T85("DISCOVER_INFLATION_PRELOADER_POLICY", 104, ai329);
+        AI3 ai330 = new AI3(C48301zU5.y, C30476m95.class);
+        ai330.t = "MAP_WIDGET_UI_REFRESH_POLICY";
+        Z1 = new T85("MAP_WIDGET_UI_REFRESH_POLICY", 105, ai330);
+        AI3 ai331 = new AI3(C48301zU5.z, C30476m95.class);
+        ai331.t = "TRACE_TOKEN_SYNCER_POLICY";
+        a2 = new T85("TRACE_TOKEN_SYNCER_POLICY", 106, ai331);
+        AI3 ai332 = new AI3(C48301zU5.A, C30476m95.class);
+        ai332.t = "NETWORK_CONNECTION_WARMUP_POLICY";
+        b2 = new T85("NETWORK_WARMUP_SYNCER_POLICY", 107, ai332);
+        AI3 ai333 = new AI3(C48301zU5.B, C30476m95.class);
+        ai333.t = "LOCATION_SHARING_REMINDER_POLICY";
+        c2 = new T85("LOCATION_SHARING_REMINDER_POLICY", 108, ai333);
+        AI3 ai334 = new AI3(C48301zU5.D, C30476m95.class);
+        ai334.t = "MEMORIES_FEATURED_STORIES_POLICY";
+        d2 = new T85("MEMORIES_FEATURED_STORIES_POLICY", Tweaks.MAX_HOURS_AFTER_STREAK_EXPIRE_TO_ENABLE_RESTORE, ai334);
+        AI3 ai335 = new AI3(C48301zU5.C, C30476m95.class);
+        ai335.t = "SPECTACLES_DEPTH_MAPS_POLICY";
+        e2 = new T85("SPECTACLES_DEPTH_MAPS_POLICY", Tweaks.ENABLE_STREAK_EDUCATION, ai335);
+        AI3 ai336 = new AI3(C48301zU5.E, C30476m95.class);
+        ai336.t = "LENS_CAROUSEL_POLICY";
+        f2 = new T85("LENS_CAROUSEL_POLICY", 111, ai336);
+        AI3 ai337 = new AI3(C48301zU5.F, C30476m95.class);
+        ai337.t = "BITMOJI_LENS_DATA_SYNC_POLICY";
+        g2 = new T85("BITMOJI_LENS_DATA_SYNCER_POLICY", 112, ai337);
+        AI3 ai338 = new AI3(C48301zU5.I, C30476m95.class);
+        ai338.t = "FRIEND_LOCATION_STARTUP_POLICY";
+        h2 = new T85("FRIEND_LOCATION_STARTUP_SYNCER_POLICY", Tweaks.DELTA_SYNC_SQLITE_SHARED_STORAGE_CACHE_SIZE, ai338);
+        AI3 ai339 = new AI3(C48301zU5.f15976J, C30476m95.class);
+        ai339.t = "VALIS_SHARING_STARTUP_POLICY";
+        i2 = new T85("VALIS_SHARING_STARTUP_SYNCER_POLICY", Tweaks.FAIL_DECRYPT_FOR_DUPLEX_SNAPS_TEST_ONLY, ai339);
+        AI3 ai340 = new AI3(C48301zU5.K, C30476m95.class);
+        ai340.t = "NON_FRIEND_STORIES_BADGE_METADATA_POLICY";
+        j2 = new T85("NON_FRIEND_STORIES_BADGE_METADATA_SYNCER_POLICY", 115, ai340);
+        AI3 ai341 = new AI3(C48301zU5.L, C30476m95.class);
+        ai341.t = "FRIEND_STORIES_BADGE_METADATA_POLICY";
+        k2 = new T85("FRIEND_STORIES_BADGE_METADATA_SYNCER_POLICY", 116, ai341);
+        AI3 ai342 = new AI3(C48301zU5.N, C30476m95.class);
+        ai342.t = "DUPLEX_TRIGGERED_SYNC_POLICY";
+        l2 = new T85("DUPLEX_TRIGGERED_SYNCER_POLICY", 117, ai342);
+        AI3 ai343 = new AI3(C48301zU5.M, C30476m95.class);
+        ai343.t = "WEBVIEW_PRELOADER_POLICY";
+        m2 = new T85("WEBVIEW_PRELOADER_POLICY", 118, ai343);
+        AI3 ai344 = new AI3(C48301zU5.G, C30476m95.class);
+        ai344.t = "ML_ON_DEVICE_SYNCER_POLICY";
+        T85 t85 = new T85("ML_ON_DEVICE_POLICY", 119, ai344);
+        n2 = t85;
+        AI3 I26 = QR1.I(false);
+        I26.t = "ENABLE_ANDROID_DELTAFORCE_DUPLEX_HANDLER";
+        T85 t852 = new T85("ENABLE_ANDROID_DELTAFORCE_DUPLEX_HANDLER", 120, I26);
+        o2 = t852;
+        p2 = new T85[]{b, c, t, X, Y, Z, e0, f0, g0, h0, i0, j0, k0, l0, m0, n0, o0, p0, q0, r0, s0, t0, u0, v0, w0, x0, y0, z0, A0, B0, C0, D0, E0, F0, G0, H0, I0, J0, K0, L0, M0, N0, O0, P0, Q0, R0, S0, T0, U0, V0, W0, X0, Y0, Z0, a1, b1, c1, d1, e1, f1, g1, h1, i1, j1, k1, l1, m1, n1, o1, p1, q1, r1, s1, t1, u1, v1, w1, x1, y1, z1, A1, B1, C1, D1, E1, F1, G1, H1, I1, J1, K1, L1, M1, N1, O1, P1, Q1, R1, S1, T1, U1, V1, W1, X1, Y1, Z1, a2, b2, c2, d2, e2, f2, g2, h2, i2, j2, k2, l2, m2, t85, t852};
+    }
+
+    public T85(String str, int i, AI3 ai3) {
+        this.a = ai3;
+    }
+
+    public static T85 valueOf(String str) {
+        return (T85) Enum.valueOf(T85.class, str);
+    }
+
+    public static T85[] values() {
+        return (T85[]) p2.clone();
+    }
+
+    @Override // defpackage.BI3
+    public final EnumC48048zI3 e() {
+        return EnumC48048zI3.v1;
+    }
+
+    @Override // defpackage.BI3
+    public final /* bridge */ /* synthetic */ String getName() {
+        return name();
+    }
+
+    @Override // defpackage.BI3
+    public final AI3 j() {
+        return this.a;
+    }
+}

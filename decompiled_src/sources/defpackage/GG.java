@@ -1,0 +1,38 @@
+package defpackage;
+
+/* loaded from: classes8.dex */
+public enum GG implements InterfaceC22815gQ6 {
+    MEMORIES_DREAMS_TAB(0),
+    SETTINGS(1),
+    DREAMS_EVENT_FEATURE_APP(2),
+    CAMEOS_UNKNOWN(3),
+    DEEP_LINK(4),
+    CAMEOS_CATEGORY_SEARCH(5),
+    CAMEOS_CATEGORY_RECENT(6),
+    CAMEOS_CHAT_CELL_THUMBNAIL(7),
+    CAMEOS_PROFILE(8),
+    CAMEOS_STICKERS_HOME_TAB(9),
+    CAMEOS_STICKERS_CATEGORY_BLOOPS(10),
+    CAMEOS_DISCOVER_PUBLISHER_PAGE(11),
+    CAMEOS_LENSES(12),
+    CAMEOS_CATEGORY_BLOOPS_FRIEND_FEED(13),
+    CAMEOS_SETTINGS(14),
+    CAMEOS_DISCOVER(15),
+    CAMEOS_FRIEND_PROFILE_MADE_FOR_US(16),
+    CAMEOS_SPOTLIGHT(17),
+    CAMEOS_CATEGORY_BLOOPS(18),
+    MY_SELFIE_PROFILE(19),
+    MEMORIES_AI_SNAPS_TAB_LENS_TILE(20),
+    MEMORIES_AI_SNAPS_TAB_CAMEOS_MIGRATION_NOTIFICATION(21);
+
+    public final int a;
+
+    GG(int i) {
+        this.a = i;
+    }
+
+    @Override // defpackage.InterfaceC22815gQ6
+    public final int a() {
+        return this.a;
+    }
+}

@@ -1,0 +1,229 @@
+package defpackage;
+
+import com.snapchat.client.chrysalis.Chrysalis;
+import io.requery.android.database.sqlite.SQLiteDatabase;
+
+/* renamed from: xld, reason: case insensitive filesystem */
+/* loaded from: classes4.dex */
+public final class C46002xld {
+    public final String a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final String f;
+    public final String g;
+    public final boolean h;
+    public final String i;
+    public final String j;
+    public final String k;
+    public final boolean l;
+    public final S0f m;
+    public final int n;
+    public final int o;
+    public final boolean p;
+
+    public C46002xld(String str, String str2, String str3, String str4, String str5, String str6, String str7, boolean z, String str8, String str9, String str10, boolean z2, S0f s0f, int i, int i2, boolean z3) {
+        this.a = str;
+        this.b = str2;
+        this.c = str3;
+        this.d = str4;
+        this.e = str5;
+        this.f = str6;
+        this.g = str7;
+        this.h = z;
+        this.i = str8;
+        this.j = str9;
+        this.k = str10;
+        this.l = z2;
+        this.m = s0f;
+        this.n = i;
+        this.o = i2;
+        this.p = z3;
+    }
+
+    public static C46002xld a(C46002xld c46002xld, String str, String str2, String str3, String str4, String str5, String str6, String str7, boolean z, String str8, String str9, String str10, boolean z2, S0f s0f, int i, int i2, boolean z3, int i3) {
+        String str11;
+        String str12;
+        String str13;
+        String str14;
+        String str15;
+        String str16;
+        String str17;
+        boolean z4;
+        String str18;
+        String str19;
+        String str20;
+        boolean z5;
+        S0f s0f2;
+        int i4;
+        int i5;
+        boolean z6;
+        if ((i3 & 1) != 0) {
+            str11 = c46002xld.a;
+        } else {
+            str11 = str;
+        }
+        if ((i3 & 2) != 0) {
+            str12 = c46002xld.b;
+        } else {
+            str12 = str2;
+        }
+        if ((i3 & 4) != 0) {
+            str13 = c46002xld.c;
+        } else {
+            str13 = str3;
+        }
+        if ((i3 & 8) != 0) {
+            str14 = c46002xld.d;
+        } else {
+            str14 = str4;
+        }
+        if ((i3 & 16) != 0) {
+            str15 = c46002xld.e;
+        } else {
+            str15 = str5;
+        }
+        if ((i3 & 32) != 0) {
+            str16 = c46002xld.f;
+        } else {
+            str16 = str6;
+        }
+        if ((i3 & 64) != 0) {
+            str17 = c46002xld.g;
+        } else {
+            str17 = str7;
+        }
+        if ((i3 & 128) != 0) {
+            z4 = c46002xld.h;
+        } else {
+            z4 = z;
+        }
+        if ((i3 & 256) != 0) {
+            str18 = c46002xld.i;
+        } else {
+            str18 = str8;
+        }
+        if ((i3 & Chrysalis.PIXEL_LAYOUT_ARGB) != 0) {
+            str19 = c46002xld.j;
+        } else {
+            str19 = str9;
+        }
+        if ((i3 & 1024) != 0) {
+            str20 = c46002xld.k;
+        } else {
+            str20 = str10;
+        }
+        if ((i3 & 2048) != 0) {
+            z5 = c46002xld.l;
+        } else {
+            z5 = z2;
+        }
+        if ((i3 & 4096) != 0) {
+            s0f2 = c46002xld.m;
+        } else {
+            s0f2 = s0f;
+        }
+        if ((i3 & 8192) != 0) {
+            i4 = c46002xld.n;
+        } else {
+            i4 = i;
+        }
+        String str21 = str11;
+        if ((i3 & 16384) != 0) {
+            i5 = c46002xld.o;
+        } else {
+            i5 = i2;
+        }
+        if ((i3 & SQLiteDatabase.OPEN_NOMUTEX) != 0) {
+            z6 = c46002xld.p;
+        } else {
+            z6 = z3;
+        }
+        c46002xld.getClass();
+        return new C46002xld(str21, str12, str13, str14, str15, str16, str17, z4, str18, str19, str20, z5, s0f2, i4, i5, z6);
+    }
+
+    public final boolean equals(Object obj) {
+        if (this != obj) {
+            if (obj instanceof C46002xld) {
+                C46002xld c46002xld = (C46002xld) obj;
+                if (!AbstractC2032Dq9.j(this.a, c46002xld.a) || !AbstractC2032Dq9.j(this.b, c46002xld.b) || !AbstractC2032Dq9.j(this.c, c46002xld.c) || !AbstractC2032Dq9.j(this.d, c46002xld.d) || !AbstractC2032Dq9.j(this.e, c46002xld.e) || !AbstractC2032Dq9.j(this.f, c46002xld.f) || !AbstractC2032Dq9.j(this.g, c46002xld.g) || this.h != c46002xld.h || !AbstractC2032Dq9.j(this.i, c46002xld.i) || !AbstractC2032Dq9.j(this.j, c46002xld.j) || !AbstractC2032Dq9.j(this.k, c46002xld.k) || this.l != c46002xld.l || !AbstractC2032Dq9.j(this.m, c46002xld.m) || this.n != c46002xld.n || this.o != c46002xld.o || this.p != c46002xld.p) {
+                    return false;
+                }
+                return true;
+            }
+            return false;
+        }
+        return true;
+    }
+
+    public final int hashCode() {
+        int i;
+        int i2;
+        int c = AbstractC31823n9f.c(AbstractC31823n9f.c(AbstractC31823n9f.c(AbstractC31823n9f.c(AbstractC31823n9f.c(AbstractC31823n9f.c(this.a.hashCode() * 31, 31, this.b), 31, this.c), 31, this.d), 31, this.e), 31, this.f), 31, this.g);
+        int i3 = 1237;
+        if (this.h) {
+            i = 1231;
+        } else {
+            i = 1237;
+        }
+        int c2 = AbstractC31823n9f.c(AbstractC31823n9f.c(AbstractC31823n9f.c((c + i) * 31, 31, this.i), 31, this.j), 31, this.k);
+        if (this.l) {
+            i2 = 1231;
+        } else {
+            i2 = 1237;
+        }
+        int a = (AbstractC21001f3j.a(this.n, (this.m.hashCode() + ((c2 + i2) * 31)) * 31, 31) + this.o) * 31;
+        if (this.p) {
+            i3 = 1231;
+        }
+        return a + i3;
+    }
+
+    public final String toString() {
+        String str;
+        StringBuilder sb = new StringBuilder("PhoneVerificationBusinessState(initialPhoneNumber=");
+        sb.append(this.a);
+        sb.append(", initialCountryCode=");
+        sb.append(this.b);
+        sb.append(", inputPhoneNumber=");
+        sb.append(this.c);
+        sb.append(", inputCountryCode=");
+        sb.append(this.d);
+        sb.append(", requestedPhoneNumber=");
+        sb.append(this.e);
+        sb.append(", requestedCountryCode=");
+        sb.append(this.f);
+        sb.append(", verifyCode=");
+        sb.append(this.g);
+        sb.append(", pendingRequest=");
+        sb.append(this.h);
+        sb.append(", requestCodeSuccessMessage=");
+        sb.append(this.i);
+        sb.append(", requestCodeErrorMessage=");
+        sb.append(this.j);
+        sb.append(", verifyCodeErrorMessage=");
+        sb.append(this.k);
+        sb.append(", allowNewPhoneEnrollment=");
+        sb.append(this.l);
+        sb.append(", resendTimerState=");
+        sb.append(this.m);
+        sb.append(", phoneSubmitAction=");
+        int i = this.n;
+        if (i != 1) {
+            if (i != 2) {
+                str = "null";
+            } else {
+                str = "VERIFY";
+            }
+        } else {
+            str = "REQUEST_CODE";
+        }
+        sb.append(str);
+        sb.append(", phoneDeliveryMethod=");
+        sb.append(this.o);
+        sb.append(", isManualRetry=");
+        return AbstractC30172lva.A(")", sb, this.p);
+    }
+}

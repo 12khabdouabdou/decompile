@@ -1,0 +1,40 @@
+package defpackage;
+
+/* renamed from: oGh, reason: case insensitive filesystem */
+/* loaded from: classes3.dex */
+public final class C33313oGh extends CGh {
+    public final String a;
+    public final long b;
+
+    public C33313oGh(String str, long j) {
+        this.a = str;
+        this.b = j;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof C33313oGh)) {
+            return false;
+        }
+        C33313oGh c33313oGh = (C33313oGh) obj;
+        if (AbstractC2032Dq9.j(this.a, c33313oGh.a) && this.b == c33313oGh.b) {
+            return true;
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        int hashCode = this.a.hashCode() * 31;
+        long j = this.b;
+        return hashCode + ((int) (j ^ (j >>> 32)));
+    }
+
+    public final String toString() {
+        StringBuilder sb = new StringBuilder("StoreProductTileRowVisibleUserEvent(categoryId=");
+        sb.append(this.a);
+        sb.append(", tileRow=");
+        return AbstractC30628mG8.p(sb, this.b, ")");
+    }
+}

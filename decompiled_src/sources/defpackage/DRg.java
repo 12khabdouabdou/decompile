@@ -1,0 +1,10 @@
+package defpackage;
+
+/* loaded from: classes5.dex */
+public final class DRg {
+    public final InterfaceC7706Oa1 a;
+
+    public DRg(InterfaceC7706Oa1 interfaceC7706Oa1) {
+        this.a = interfaceC7706Oa1;
+    }
+}

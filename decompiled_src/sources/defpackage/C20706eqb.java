@@ -1,0 +1,6 @@
+package defpackage;
+
+/* renamed from: eqb, reason: case insensitive filesystem */
+/* loaded from: classes5.dex */
+public final class C20706eqb {
+}

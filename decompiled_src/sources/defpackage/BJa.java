@@ -1,0 +1,150 @@
+package defpackage;
+
+import com.snap.identity.loginsignup.ui.LoginSignupActivity;
+import io.reactivex.rxjava3.disposables.CompositeDisposable;
+
+/* loaded from: classes.dex */
+public final class BJa implements InterfaceC1052Bvb {
+    public final InterfaceC15222ake A;
+    public final C24252hV4 B;
+    public final InterfaceC15222ake C;
+    public final C24252hV4 D;
+    public final InterfaceC15222ake E;
+    public final C24252hV4 F;
+    public final C24252hV4 G;
+    public final InterfaceC15222ake H;
+    public final C24252hV4 I;
+
+    /* renamed from: J, reason: collision with root package name */
+    public final C24252hV4 f15672J;
+    public final C24252hV4 K;
+    public final InterfaceC15222ake L;
+    public final C24252hV4 M;
+    public final C24252hV4 N;
+    public final InterfaceC15222ake O;
+    public final C24252hV4 P;
+    public final InterfaceC15222ake Q;
+    public final C24252hV4 R;
+    public final C24252hV4 S;
+    public final InterfaceC15222ake a;
+    public final C24252hV4 b;
+    public final C24252hV4 c;
+    public final C24252hV4 d;
+    public final C24252hV4 e;
+    public final C24252hV4 f;
+    public final C24252hV4 g;
+    public final C24252hV4 h;
+    public final C24252hV4 i;
+    public final C24252hV4 j;
+    public final C24252hV4 k;
+    public final InterfaceC15222ake l;
+    public final C24252hV4 m;
+    public final C24252hV4 n;
+    public final InterfaceC15222ake o;
+    public final InterfaceC15222ake p;
+    public final InterfaceC15222ake q;
+    public final C24252hV4 r;
+    public final C24252hV4 s;
+    public final InterfaceC15222ake t;
+    public final C24252hV4 u;
+    public final C32671nn9 v;
+    public final InterfaceC15222ake w;
+    public final InterfaceC15222ake x;
+    public final C24252hV4 y;
+    public final C24252hV4 z;
+
+    public BJa(InterfaceC15222ake interfaceC15222ake, C24252hV4 c24252hV4, C24252hV4 c24252hV42, C24252hV4 c24252hV43, C24252hV4 c24252hV44, C24252hV4 c24252hV45, C24252hV4 c24252hV46, C24252hV4 c24252hV47, C24252hV4 c24252hV48, C24252hV4 c24252hV49, C24252hV4 c24252hV410, C24252hV4 c24252hV411, InterfaceC15222ake interfaceC15222ake2, C24252hV4 c24252hV412, C24252hV4 c24252hV413, InterfaceC15222ake interfaceC15222ake3, InterfaceC15222ake interfaceC15222ake4, InterfaceC15222ake interfaceC15222ake5, C24252hV4 c24252hV414, C24252hV4 c24252hV415, InterfaceC15222ake interfaceC15222ake6, C24252hV4 c24252hV416, C32671nn9 c32671nn9, InterfaceC15222ake interfaceC15222ake7, InterfaceC15222ake interfaceC15222ake8, C24252hV4 c24252hV417, C24252hV4 c24252hV418, InterfaceC15222ake interfaceC15222ake9, C24252hV4 c24252hV419, InterfaceC15222ake interfaceC15222ake10, C24252hV4 c24252hV420, InterfaceC15222ake interfaceC15222ake11, C24252hV4 c24252hV421, C24252hV4 c24252hV422, InterfaceC15222ake interfaceC15222ake12, C24252hV4 c24252hV423, C24252hV4 c24252hV424, C24252hV4 c24252hV425, InterfaceC15222ake interfaceC15222ake13, C24252hV4 c24252hV426, C24252hV4 c24252hV427, InterfaceC15222ake interfaceC15222ake14, C24252hV4 c24252hV428, InterfaceC15222ake interfaceC15222ake15, C24252hV4 c24252hV429, C24252hV4 c24252hV430) {
+        this.a = interfaceC15222ake;
+        this.b = c24252hV4;
+        this.c = c24252hV42;
+        this.d = c24252hV43;
+        this.e = c24252hV44;
+        this.f = c24252hV45;
+        this.g = c24252hV46;
+        this.h = c24252hV47;
+        this.i = c24252hV49;
+        this.j = c24252hV410;
+        this.k = c24252hV411;
+        this.l = interfaceC15222ake2;
+        this.m = c24252hV412;
+        this.n = c24252hV413;
+        this.o = interfaceC15222ake3;
+        this.p = interfaceC15222ake4;
+        this.q = interfaceC15222ake5;
+        this.r = c24252hV414;
+        this.s = c24252hV415;
+        this.t = interfaceC15222ake6;
+        this.u = c24252hV416;
+        this.v = c32671nn9;
+        this.w = interfaceC15222ake7;
+        this.x = interfaceC15222ake8;
+        this.y = c24252hV417;
+        this.z = c24252hV418;
+        this.A = interfaceC15222ake9;
+        this.B = c24252hV419;
+        this.C = interfaceC15222ake10;
+        this.D = c24252hV420;
+        this.E = interfaceC15222ake11;
+        this.F = c24252hV421;
+        this.G = c24252hV422;
+        this.H = interfaceC15222ake12;
+        this.I = c24252hV423;
+        this.f15672J = c24252hV424;
+        this.K = c24252hV425;
+        this.L = interfaceC15222ake13;
+        this.M = c24252hV426;
+        this.N = c24252hV427;
+        this.O = interfaceC15222ake14;
+        this.P = c24252hV428;
+        this.Q = interfaceC15222ake15;
+        this.R = c24252hV429;
+        this.S = c24252hV430;
+    }
+
+    @Override // defpackage.InterfaceC1052Bvb
+    public final void a(Object obj) {
+        LoginSignupActivity loginSignupActivity = (LoginSignupActivity) obj;
+        loginSignupActivity.t0 = C11871Vr6.a(this.a);
+        loginSignupActivity.u0 = C11871Vr6.a(this.b);
+        loginSignupActivity.v0 = this.c;
+        loginSignupActivity.w0 = (InterfaceC7706Oa1) this.d.get();
+        loginSignupActivity.x0 = this.e;
+        loginSignupActivity.y0 = (C30251lz1) this.f.get();
+        loginSignupActivity.z0 = this.g;
+        loginSignupActivity.A0 = this.i;
+        loginSignupActivity.B0 = (InterfaceC34553pC3) this.j.get();
+        loginSignupActivity.C0 = (O74) this.k.get();
+        loginSignupActivity.D0 = (InterfaceC10512Te5) this.l.get();
+        loginSignupActivity.E0 = (C32513ng5) this.m.get();
+        loginSignupActivity.F0 = (C6396Lp6) this.n.get();
+        loginSignupActivity.G0 = (CompositeDisposable) this.o.get();
+        loginSignupActivity.H0 = this.p;
+        loginSignupActivity.I0 = this.q;
+        loginSignupActivity.J0 = this.r;
+        loginSignupActivity.K0 = (InterfaceC11202Ul7) this.s.get();
+        loginSignupActivity.L0 = this.t;
+        loginSignupActivity.M0 = this.u;
+        loginSignupActivity.N0 = (InterfaceC8509Pm9) this.w.get();
+        loginSignupActivity.O0 = C11871Vr6.a(this.x);
+        loginSignupActivity.P0 = C11871Vr6.a(this.y);
+        loginSignupActivity.Q0 = (YBa) this.z.get();
+        loginSignupActivity.R0 = C11871Vr6.a(this.A);
+        loginSignupActivity.S0 = C11871Vr6.a(this.B);
+        loginSignupActivity.T0 = C11871Vr6.a(this.C);
+        loginSignupActivity.U0 = this.D;
+        loginSignupActivity.V0 = C11871Vr6.a(this.E);
+        loginSignupActivity.W0 = (C21393fM5) this.F.get();
+        loginSignupActivity.X0 = C11871Vr6.a(this.G);
+        loginSignupActivity.Y0 = this.H;
+        loginSignupActivity.Z0 = this.I;
+        loginSignupActivity.a1 = this.f15672J;
+        loginSignupActivity.b1 = this.K;
+        loginSignupActivity.c1 = C11871Vr6.a(this.L);
+        loginSignupActivity.d1 = C11871Vr6.a(this.M);
+        loginSignupActivity.e1 = (InterfaceC32875nwf) this.N.get();
+        loginSignupActivity.f1 = C11871Vr6.a(this.O);
+        loginSignupActivity.g1 = C11871Vr6.a(this.Q);
+        C11871Vr6.a(this.R);
+        loginSignupActivity.h1 = C11871Vr6.a(this.S);
+    }
+}
