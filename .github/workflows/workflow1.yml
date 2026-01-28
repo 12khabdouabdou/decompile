@@ -18,7 +18,7 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v4
       with:
-        fetch-depth: 0
+        fetch-depth: 0 # Needed for proper git history
 
     - name: Setup Java
       uses: actions/setup-java@v4
@@ -28,25 +28,34 @@ jobs:
 
     - name: Download Tools & APK
       run: |
-        # FIXED: Download Apktool v2.10.0 from GitHub (not Bitbucket)
+        # 1. Download Apktool v2.10.0 (Official GitHub)
+        echo "Downloading Apktool..."
         wget https://github.com/iBotPeaches/Apktool/releases/download/v2.10.0/apktool_2.10.0.jar -O apktool.jar -q
         
-        echo "Downloading APK..."
-        wget "${{ inputs.apk_url }}" -O snapchat.apk -q
-        
+        # 2. Download User APK with "Fake Browser" headers
+        # This fixes Exit Code 8 by pretending to be a Windows PC
+        echo "Downloading Target APK..."
+        wget -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" \
+             -v \
+             "${{ inputs.apk_url }}" \
+             -O snapchat.apk
+
+        # 3. Validation
         filesize=$(stat -c%s "snapchat.apk")
-        echo "File size: $filesize"
-        if [ "$filesize" -lt 1000000 ]; then
-          echo "Error: Downloaded file is too small."
+        echo "File size: $filesize bytes"
+        
+        # If file is < 10KB, it's likely an error page, not an APK
+        if [ "$filesize" -lt 10000 ]; then
+          echo "Error: File is too small ($filesize bytes). The download link might be broken or protected."
           exit 1
         fi
 
-    - name: Decompile (With Resources)
+    - name: Decompile (Generate Source)
       run: |
-        # REMOVED -r flag so you can edit AndroidManifest.xml
-        # -f : Force overwrite
+        # Decompile with high memory for large apps
+        # -f : Force delete destination if it exists
         # -o src : Output to 'src' folder
-        # We increase memory to 6GB for large apps like Snapchat
+        # (Removed -r so you CAN edit the AndroidManifest.xml later)
         java -Xmx6144M -jar apktool.jar d -f snapchat.apk -o src
 
     - name: Push to GitHub
@@ -54,11 +63,12 @@ jobs:
         git config --global user.name "GitHub Action"
         git config --global user.email "action@github.com"
         
-        # Add files
-        # Note: Large apps have thousands of files, this might take a moment
+        # Add the decompiled source files
         git add src/
         
-        git commit -m "Auto-decompiled Snapchat (Resources Included)" || echo "No changes to commit"
+        # Commit
+        git commit -m "Auto-decompiled APK (Ready for Edit)" || echo "No changes to commit"
         
+        # Pull latest changes to prevent conflicts, then force push
         git pull --rebase origin main
         git push -f origin main
