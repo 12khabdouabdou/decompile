@@ -1,0 +1,58 @@
+{
+  "api_video/tags?source_type=2": { "fileName": "YXBpX3ZpZGVvL3RhZ3M_c291cmNlX3R5cGU9Mg==.json", "createdTime": 1761559217468, "expireDuration": 14400000, "version": 1 },
+  "api_video/tags?source_type=3": { "fileName": "YXBpX3ZpZGVvL3RhZ3M_c291cmNlX3R5cGU9Mw==.json", "createdTime": 1761559192641, "expireDuration": 14400000, "version": 1 },
+  "api_video/random?size=3": { "fileName": "YXBpX3ZpZGVvL3JhbmRvbT9zaXplPTM=.json", "createdTime": 1761559192658, "expireDuration": 14400000, "version": 1 },
+  "api_collection/list?page=1&page_size=3&tab=home": {
+    "fileName": "YXBpX2NvbGxlY3Rpb24vbGlzdD9wYWdlPTEmcGFnZV9zaXplPTMmdGFiPWhvbWU=.json",
+    "createdTime": 1761559192674,
+    "expireDuration": 14400000,
+    "version": 1
+  },
+  "api_collection/list?page=2&page_size=3&tab=home": {
+    "fileName": "YXBpX2NvbGxlY3Rpb24vbGlzdD9wYWdlPTImcGFnZV9zaXplPTMmdGFiPWhvbWU=.json",
+    "createdTime": 1761559205196,
+    "expireDuration": 14400000,
+    "version": 1
+  },
+  "api_collection/list?page=1&page_size=3&tab=series": {
+    "fileName": "YXBpX2NvbGxlY3Rpb24vbGlzdD9wYWdlPTEmcGFnZV9zaXplPTMmdGFiPXNlcmllcw==.json",
+    "createdTime": 1761559208955,
+    "expireDuration": 14400000,
+    "version": 1
+  },
+  "api_video/random?size=3&source_type=3": { "fileName": "YXBpX3ZpZGVvL3JhbmRvbT9zaXplPTMmc291cmNlX3R5cGU9Mw==.json", "createdTime": 1761559209679, "expireDuration": 14400000, "version": 1 },
+  "api_collection/list?page=2&page_size=3&tab=series": {
+    "fileName": "YXBpX2NvbGxlY3Rpb24vbGlzdD9wYWdlPTImcGFnZV9zaXplPTMmdGFiPXNlcmllcw==.json",
+    "createdTime": 1761559213184,
+    "expireDuration": 14400000,
+    "version": 1
+  },
+  "api_video/random?size=3&source_type=2": { "fileName": "YXBpX3ZpZGVvL3JhbmRvbT9zaXplPTMmc291cmNlX3R5cGU9Mg==.json", "createdTime": 1761559217413, "expireDuration": 14400000, "version": 1 },
+  "api_collection/list?page=1&page_size=3&tab=movie": {
+    "fileName": "YXBpX2NvbGxlY3Rpb24vbGlzdD9wYWdlPTEmcGFnZV9zaXplPTMmdGFiPW1vdmll.json",
+    "createdTime": 1761559217474,
+    "expireDuration": 14400000,
+    "version": 1
+  },
+  "api_collection/list?page=2&page_size=3&tab=movie": {
+    "fileName": "YXBpX2NvbGxlY3Rpb24vbGlzdD9wYWdlPTImcGFnZV9zaXplPTMmdGFiPW1vdmll.json",
+    "createdTime": 1761559219854,
+    "expireDuration": 14400000,
+    "version": 1
+  },
+  "api_video/random?certificate=G%2CTV-Y%2CTV-Y7%2CTV-G%2CTY-Y&size=3": {
+    "fileName": "YXBpX3ZpZGVvL3JhbmRvbT9jZXJ0aWZpY2F0ZT1HJTJDVFYtWSUyQ1RWLVk3JTJDVFYtRyUyQ1RZLVkmc2l6ZT0z.json",
+    "createdTime": 1761559228411,
+    "expireDuration": 14400000,
+    "version": 1
+  },
+  "api_collection/list?page=1&page_size=3&tab=kids": {
+    "fileName": "YXBpX2NvbGxlY3Rpb24vbGlzdD9wYWdlPTEmcGFnZV9zaXplPTMmdGFiPWtpZHM=.json",
+    "createdTime": 1761559228732,
+    "expireDuration": 14400000,
+    "version": 1
+  },
+  "default_live_category_list": { "fileName": "ZGVmYXVsdF9saXZlX2NhdGVnb3J5X2xpc3Q=.json", "createdTime": 1761559230809, "expireDuration": 14400000, "version": 1 },
+  "default_live_channel_list": { "fileName": "ZGVmYXVsdF9saXZlX2NoYW5uZWxfbGlzdA==.json", "createdTime": 1761559232749, "expireDuration": 14400000, "version": 1 },
+  "api_live/channels/hot?page_size=30": { "fileName": "YXBpX2xpdmUvY2hhbm5lbHMvaG90P3BhZ2Vfc2l6ZT0zMA==.json", "createdTime": 1761559233420, "expireDuration": 14400000, "version": 1 }
+}

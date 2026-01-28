@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.video_cloud.library_view.refresh.layout.SmartRefreshLayout android:id="@id/refresh_layout" android:background="@color/bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="160.0dip"
+<com.video_cloud.view.refresh.layout.SmartRefreshLayout android:id="@id/refresh_layout" android:background="@color/bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="160.0dip"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <androidx.core.widget.NestedScrollView android:id="@id/nsv_recommend" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
         <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
@@ -7,4 +7,4 @@
             <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_recommend" android:focusable="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
-</com.video_cloud.library_view.refresh.layout.SmartRefreshLayout>
+</com.video_cloud.view.refresh.layout.SmartRefreshLayout>

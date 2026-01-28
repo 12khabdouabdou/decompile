@@ -216,7 +216,7 @@
 
     iget-object v4, p0, Landroidx/constraintlayout/core/e;->l:Landroidx/constraintlayout/core/b;
 
-    invoke-virtual {v3, v4}, Landroidx/constraintlayout/core/SolverVariable;->l(Landroidx/constraintlayout/core/b;)V
+    invoke-virtual {v3, v4}, Landroidx/constraintlayout/core/SolverVariable;->k(Landroidx/constraintlayout/core/b;)V
 
     :cond_0
     add-int/lit8 v2, v2, 0x1
@@ -668,7 +668,7 @@
 
     iget-object p2, p0, Landroidx/constraintlayout/core/e;->l:Landroidx/constraintlayout/core/b;
 
-    invoke-virtual {p1, p2}, Landroidx/constraintlayout/core/SolverVariable;->l(Landroidx/constraintlayout/core/b;)V
+    invoke-virtual {p1, p2}, Landroidx/constraintlayout/core/SolverVariable;->k(Landroidx/constraintlayout/core/b;)V
 
     :cond_4
     return v2
@@ -810,7 +810,7 @@
 
     iget-object p1, p0, Landroidx/constraintlayout/core/e;->l:Landroidx/constraintlayout/core/b;
 
-    invoke-virtual {p2, p1}, Landroidx/constraintlayout/core/SolverVariable;->e(Landroidx/constraintlayout/core/b;)V
+    invoke-virtual {p2, p1}, Landroidx/constraintlayout/core/SolverVariable;->c(Landroidx/constraintlayout/core/b;)V
 
     iget p1, p2, Landroidx/constraintlayout/core/SolverVariable;->B:I
 

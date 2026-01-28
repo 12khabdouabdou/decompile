@@ -78,7 +78,7 @@
 
     sput-object v0, Landroidx/constraintlayout/core/widgets/ConstraintWidget$DimensionBehaviour;->s:Landroidx/constraintlayout/core/widgets/ConstraintWidget$DimensionBehaviour;
 
-    invoke-static {}, Landroidx/constraintlayout/core/widgets/ConstraintWidget$DimensionBehaviour;->e()[Landroidx/constraintlayout/core/widgets/ConstraintWidget$DimensionBehaviour;
+    invoke-static {}, Landroidx/constraintlayout/core/widgets/ConstraintWidget$DimensionBehaviour;->c()[Landroidx/constraintlayout/core/widgets/ConstraintWidget$DimensionBehaviour;
 
     move-result-object v0
 
@@ -95,7 +95,7 @@
     return-void
 .end method
 
-.method public static synthetic e()[Landroidx/constraintlayout/core/widgets/ConstraintWidget$DimensionBehaviour;
+.method public static synthetic c()[Landroidx/constraintlayout/core/widgets/ConstraintWidget$DimensionBehaviour;
     .locals 3
 
     .line 1

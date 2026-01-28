@@ -2,6 +2,7 @@
 <com.video_cloud.view.VideoGestureFrameLayout android:id="@id/base_layout" android:background="#ff000000" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <FrameLayout android:id="@id/video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:default_artwork="@mipmap/ic_launcher" app:keep_content_on_player_reset="true" />
+    <VideoView android:id="@id/ad_player_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     <ImageView android:id="@id/cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
     <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content">
         <pl.droidsonroids.gif.GifImageView android:id="@id/loading_image" android:layout_width="200.0dip" android:layout_height="200.0dip" android:src="@mipmap/loading" />

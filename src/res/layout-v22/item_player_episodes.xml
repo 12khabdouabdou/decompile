@@ -3,6 +3,6 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView android:textSize="30.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:layout_gravity="center" android:id="@id/tv_video_order" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginHorizontal="20.0dip" />
     <TextView android:textSize="30.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:layout_gravity="center" android:id="@id/tv_video_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
-    <pl.droidsonroids.gif.GifImageView android:layout_gravity="center" android:id="@id/iv_playing" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/playing" android:layout_marginStart="10.0dip" />
+    <com.video_cloud.view.PlayingView android:layout_gravity="center" android:id="@id/iv_playing" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginStart="10.0dip" />
     <ProgressBar android:layout_gravity="center" android:id="@id/pb_video_progress" android:layout_width="180.0dip" android:layout_height="4.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginHorizontal="20.0dip" style="@style/CustomProgressBar" />
 </LinearLayout>

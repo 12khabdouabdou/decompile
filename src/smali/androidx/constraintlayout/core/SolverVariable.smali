@@ -115,7 +115,7 @@
     return-void
 .end method
 
-.method public static k()V
+.method public static j()V
     .locals 1
 
     .line 1
@@ -130,19 +130,7 @@
 
 
 # virtual methods
-.method public bridge synthetic compareTo(Ljava/lang/Object;)I
-    .locals 0
-
-    check-cast p1, Landroidx/constraintlayout/core/SolverVariable;
-
-    invoke-virtual {p0, p1}, Landroidx/constraintlayout/core/SolverVariable;->j(Landroidx/constraintlayout/core/SolverVariable;)I
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final e(Landroidx/constraintlayout/core/b;)V
+.method public final c(Landroidx/constraintlayout/core/b;)V
     .locals 3
 
     .line 1
@@ -199,7 +187,19 @@
     return-void
 .end method
 
-.method public j(Landroidx/constraintlayout/core/SolverVariable;)I
+.method public bridge synthetic compareTo(Ljava/lang/Object;)I
+    .locals 0
+
+    check-cast p1, Landroidx/constraintlayout/core/SolverVariable;
+
+    invoke-virtual {p0, p1}, Landroidx/constraintlayout/core/SolverVariable;->i(Landroidx/constraintlayout/core/SolverVariable;)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public i(Landroidx/constraintlayout/core/SolverVariable;)I
     .locals 1
 
     .line 1
@@ -212,7 +212,7 @@
     return v0
 .end method
 
-.method public final l(Landroidx/constraintlayout/core/b;)V
+.method public final k(Landroidx/constraintlayout/core/b;)V
     .locals 4
 
     .line 1
@@ -264,7 +264,7 @@
     return-void
 .end method
 
-.method public m()V
+.method public l()V
     .locals 6
 
     .line 1

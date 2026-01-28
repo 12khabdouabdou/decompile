@@ -11,7 +11,7 @@
                 </FrameLayout>
             </LinearLayout>
             <TextView android:textSize="30.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/similar" android:layout_marginStart="78.0dip" />
-            <com.video_cloud.library_view.tvrecyclerview.TvRecyclerView android:orientation="horizontal" android:id="@id/rv_movie_similar" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingVertical="10.0dip" app:tv_isMenu="true" app:tv_layoutManager="V7LinearLayoutManager" />
+            <com.video_cloud.view.tvrecyclerview.TvRecyclerView android:orientation="horizontal" android:id="@id/rv_movie_similar" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingVertical="10.0dip" app:tv_isMenu="true" app:tv_layoutManager="V7LinearLayoutManager" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
     <LinearLayout android:id="@id/ll_series" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginEnd="78.0dip">
@@ -24,11 +24,11 @@
                     </FrameLayout>
                     <include android:orientation="vertical" android:id="@id/series_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginStart="78.0dip" layout="@layout/view_detail_info" />
                     <TextView android:textSize="30.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/similar" android:layout_marginStart="78.0dip" />
-                    <com.video_cloud.library_view.tvrecyclerview.TvRecyclerView android:orientation="horizontal" android:id="@id/rv_series_similar" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingVertical="10.0dip" app:tv_isMenu="true" app:tv_layoutManager="V7LinearLayoutManager" />
+                    <com.video_cloud.view.tvrecyclerview.TvRecyclerView android:orientation="horizontal" android:id="@id/rv_series_similar" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingVertical="10.0dip" app:tv_isMenu="true" app:tv_layoutManager="V7LinearLayoutManager" />
                 </LinearLayout>
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
-        <com.video_cloud.library_view.tvrecyclerview.TvRecyclerView android:orientation="vertical" android:id="@id/rv_episodes" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:paddingVertical="10.0dip" app:tv_isMenu="true" app:tv_layoutManager="V7LinearLayoutManager" />
+        <com.video_cloud.view.tvrecyclerview.TvRecyclerView android:orientation="vertical" android:id="@id/rv_episodes" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:paddingVertical="10.0dip" app:tv_isMenu="true" app:tv_layoutManager="V7LinearLayoutManager" />
     </LinearLayout>
     <eightbitlab.com.blurview.BlurView android:id="@id/v_shadow_video" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:blurOverlayColor="@color/colorOverlayBlack" />
 </FrameLayout>

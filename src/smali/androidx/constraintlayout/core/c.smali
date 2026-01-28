@@ -21,7 +21,7 @@
 
 .field public static v:Z = true
 
-.field public static w:Z = false
+.field public static w:Z
 
 .field public static x:J
 
@@ -546,7 +546,7 @@
 
     if-eqz v2, :cond_0
 
-    invoke-virtual {v2}, Landroidx/constraintlayout/core/SolverVariable;->m()V
+    invoke-virtual {v2}, Landroidx/constraintlayout/core/SolverVariable;->l()V
 
     :cond_0
     add-int/lit8 v1, v1, 0x1
@@ -668,7 +668,7 @@
     goto :goto_1
 
     :cond_0
-    invoke-virtual {v0}, Landroidx/constraintlayout/core/SolverVariable;->m()V
+    invoke-virtual {v0}, Landroidx/constraintlayout/core/SolverVariable;->l()V
 
     goto :goto_0
 
@@ -1757,7 +1757,7 @@
     :cond_3
     if-eq p1, v1, :cond_4
 
-    invoke-virtual {v0}, Landroidx/constraintlayout/core/SolverVariable;->m()V
+    invoke-virtual {v0}, Landroidx/constraintlayout/core/SolverVariable;->l()V
 
     :cond_4
     iget p1, p0, Landroidx/constraintlayout/core/c;->c:I
@@ -1855,7 +1855,7 @@
     sput-wide v3, Landroidx/constraintlayout/core/c;->x:J
 
     :goto_0
-    invoke-static {}, Landroidx/constraintlayout/core/SolverVariable;->k()V
+    invoke-static {}, Landroidx/constraintlayout/core/SolverVariable;->j()V
 
     return-object v0
 .end method

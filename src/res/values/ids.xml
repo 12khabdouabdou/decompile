@@ -52,6 +52,7 @@
     <item type="id" name="action_text" />
     <item type="id" name="actions" />
     <item type="id" name="activity_chooser_view_content" />
+    <item type="id" name="ad_player_view" />
     <item type="id" name="alertTitle" />
     <item type="id" name="androidx_window_activity_scope" />
     <item type="id" name="app_bar" />
@@ -59,15 +60,17 @@
     <item type="id" name="arrow_about" />
     <item type="id" name="arrow_audio_language" />
     <item type="id" name="arrow_clean_history" />
+    <item type="id" name="arrow_clear_cache" />
     <item type="id" name="arrow_episodes" />
     <item type="id" name="arrow_language" />
+    <item type="id" name="arrow_parental_lock" />
     <item type="id" name="arrow_refresh" />
     <item type="id" name="arrow_screen_ratio" />
     <item type="id" name="arrow_subtitle" />
     <item type="id" name="arrow_subtitle_bg" />
     <item type="id" name="arrow_subtitle_language" />
     <item type="id" name="arrow_subtitle_size" />
-    <item type="id" name="audio_track" />
+    <item type="id" name="bandwidth_text" />
     <item type="id" name="base_layout" />
     <item type="id" name="bg" />
     <item type="id" name="bitrateEstimate" />
@@ -85,7 +88,18 @@
     <item type="id" name="bt_sdk_upload" />
     <item type="id" name="bt_sdk_view" />
     <item type="id" name="bt_show_live_bitrate" />
+    <item type="id" name="btn_0" />
+    <item type="id" name="btn_1" />
+    <item type="id" name="btn_2" />
+    <item type="id" name="btn_3" />
+    <item type="id" name="btn_4" />
+    <item type="id" name="btn_5" />
+    <item type="id" name="btn_6" />
+    <item type="id" name="btn_7" />
+    <item type="id" name="btn_8" />
+    <item type="id" name="btn_9" />
     <item type="id" name="btn_add" />
+    <item type="id" name="btn_add_iptv" />
     <item type="id" name="btn_airplay" />
     <item type="id" name="btn_cancel" />
     <item type="id" name="btn_clear_history" />
@@ -93,16 +107,27 @@
     <item type="id" name="btn_connect" />
     <item type="id" name="btn_delete" />
     <item type="id" name="btn_full_screen" />
+    <item type="id" name="btn_got_it" />
+    <item type="id" name="btn_import_code" />
+    <item type="id" name="btn_import_local" />
+    <item type="id" name="btn_import_network" />
     <item type="id" name="btn_input" />
     <item type="id" name="btn_locked" />
+    <item type="id" name="btn_pay" />
     <item type="id" name="btn_play" />
     <item type="id" name="btn_recharge" />
+    <item type="id" name="btn_retry" />
     <item type="id" name="btn_search" />
     <item type="id" name="btn_space" />
     <item type="id" name="btn_submit" />
+    <item type="id" name="buffer_desc_text" />
+    <item type="id" name="buffer_duration" />
+    <item type="id" name="buffer_position" />
+    <item type="id" name="buffer_size_text" />
     <item type="id" name="buttonPanel" />
     <item type="id" name="bytesTransferred" />
     <item type="id" name="cancel_button" />
+    <item type="id" name="cb_file_select" />
     <item type="id" name="center_line" />
     <item type="id" name="center_text" />
     <item type="id" name="channel_4k" />
@@ -128,6 +153,9 @@
     <item type="id" name="coordinator" />
     <item type="id" name="cover" />
     <item type="id" name="cpb_download_progress" />
+    <item type="id" name="current_channel_text" />
+    <item type="id" name="current_position" />
+    <item type="id" name="current_time_text" />
     <item type="id" name="customPanel" />
     <item type="id" name="custom_controller" />
     <item type="id" name="custom_pad_controller" />
@@ -141,31 +169,33 @@
     <item type="id" name="design_menu_item_action_area_stub" />
     <item type="id" name="design_menu_item_text" />
     <item type="id" name="design_navigation_view" />
+    <item type="id" name="device_id_text" />
     <item type="id" name="dialog_button" />
+    <item type="id" name="divider" />
     <item type="id" name="download_all" />
+    <item type="id" name="download_bitrate_text" />
     <item type="id" name="download_selected" />
     <item type="id" name="duration" />
     <item type="id" name="edit_query" />
     <item type="id" name="edit_text_id" />
     <item type="id" name="elapsedMs" />
     <item type="id" name="empty_view" />
+    <item type="id" name="epg_view" />
     <item type="id" name="episodes_recycler_view" />
     <item type="id" name="episodes_title" />
     <item type="id" name="error_layout" />
-    <item type="id" name="et_1" />
-    <item type="id" name="et_2" />
-    <item type="id" name="et_3" />
-    <item type="id" name="et_4" />
-    <item type="id" name="et_5" />
-    <item type="id" name="et_6" />
     <item type="id" name="et_account" />
     <item type="id" name="et_code" />
     <item type="id" name="et_connect_server" />
     <item type="id" name="et_feedback" />
+    <item type="id" name="et_input" />
     <item type="id" name="et_link_1" />
     <item type="id" name="et_link_2" />
+    <item type="id" name="et_name" />
     <item type="id" name="et_password" />
     <item type="id" name="et_search" />
+    <item type="id" name="et_server_url" />
+    <item type="id" name="event_list_view" />
     <item type="id" name="exo_ad_overlay" />
     <item type="id" name="exo_artwork" />
     <item type="id" name="exo_audio_track" />
@@ -227,13 +257,14 @@
     <item type="id" name="fl_live_logo" />
     <item type="id" name="fl_loading" />
     <item type="id" name="fl_player" />
-    <item type="id" name="fl_subscribe_qr" />
+    <item type="id" name="fl_switch_bitrate" />
     <item type="id" name="fl_thumbnail" />
     <item type="id" name="fr_item_similar" />
     <item type="id" name="fragment_container_view_tag" />
     <item type="id" name="frame_input" />
     <item type="id" name="frame_left" />
     <item type="id" name="frame_locked" />
+    <item type="id" name="frame_qr" />
     <item type="id" name="frame_right" />
     <item type="id" name="fullscreen_header" />
     <item type="id" name="ghost_view" />
@@ -248,6 +279,7 @@
     <item type="id" name="header_for_you" />
     <item type="id" name="header_title" />
     <item type="id" name="hide_ime_id" />
+    <item type="id" name="history_bitrate" />
     <item type="id" name="history_title" />
     <item type="id" name="home" />
     <item type="id" name="hsv_search" />
@@ -255,6 +287,7 @@
     <item type="id" name="ib_plus" />
     <item type="id" name="icon" />
     <item type="id" name="icon_group" />
+    <item type="id" name="icon_smb" />
     <item type="id" name="ijk_artwork" />
     <item type="id" name="ijk_content_frame" />
     <item type="id" name="image" />
@@ -263,8 +296,13 @@
     <item type="id" name="info_des" />
     <item type="id" name="info_director" />
     <item type="id" name="info_stars" />
+    <item type="id" name="input_domain" />
     <item type="id" name="input_grid" />
+    <item type="id" name="input_name" />
+    <item type="id" name="input_password" />
     <item type="id" name="input_preview" />
+    <item type="id" name="input_server" />
+    <item type="id" name="input_username" />
     <item type="id" name="is_pooling_container_tag" />
     <item type="id" name="item_epg_des" />
     <item type="id" name="item_epg_title" />
@@ -276,6 +314,7 @@
     <item type="id" name="item_view_epg_tag" />
     <item type="id" name="iv_about_logo" />
     <item type="id" name="iv_add" />
+    <item type="id" name="iv_add_iptv" />
     <item type="id" name="iv_add_new" />
     <item type="id" name="iv_ai_logo" />
     <item type="id" name="iv_airplay" />
@@ -286,15 +325,21 @@
     <item type="id" name="iv_bg" />
     <item type="id" name="iv_category" />
     <item type="id" name="iv_center" />
+    <item type="id" name="iv_channel" />
     <item type="id" name="iv_channel_icon" />
     <item type="id" name="iv_check" />
+    <item type="id" name="iv_clear_cache" />
     <item type="id" name="iv_close" />
     <item type="id" name="iv_cloud" />
     <item type="id" name="iv_cloud_icon" />
     <item type="id" name="iv_cloud_no_content" />
+    <item type="id" name="iv_coin" />
     <item type="id" name="iv_controller_menu" />
+    <item type="id" name="iv_dash_bg" />
     <item type="id" name="iv_dash_dot_1" />
     <item type="id" name="iv_dash_dot_2" />
+    <item type="id" name="iv_del" />
+    <item type="id" name="iv_delete" />
     <item type="id" name="iv_delete_1" />
     <item type="id" name="iv_delete_2" />
     <item type="id" name="iv_down" />
@@ -305,6 +350,7 @@
     <item type="id" name="iv_edit_icon" />
     <item type="id" name="iv_email" />
     <item type="id" name="iv_empty" />
+    <item type="id" name="iv_empty_iptv" />
     <item type="id" name="iv_empty_message" />
     <item type="id" name="iv_epg_icon" />
     <item type="id" name="iv_episode_close" />
@@ -312,6 +358,7 @@
     <item type="id" name="iv_feedback" />
     <item type="id" name="iv_feedback_1" />
     <item type="id" name="iv_feedback_2" />
+    <item type="id" name="iv_file_icon" />
     <item type="id" name="iv_hardware_acceleration" />
     <item type="id" name="iv_hd" />
     <item type="id" name="iv_header" />
@@ -319,20 +366,24 @@
     <item type="id" name="iv_help_2" />
     <item type="id" name="iv_history" />
     <item type="id" name="iv_home" />
+    <item type="id" name="iv_import_local" />
+    <item type="id" name="iv_import_network" />
     <item type="id" name="iv_item_dashboard_icon" />
     <item type="id" name="iv_item_episodes" />
+    <item type="id" name="iv_item_renewal_icon" />
     <item type="id" name="iv_item_similar" />
-    <item type="id" name="iv_key_left" />
-    <item type="id" name="iv_key_right" />
     <item type="id" name="iv_kid_topic" />
     <item type="id" name="iv_language" />
     <item type="id" name="iv_launcher" />
+    <item type="id" name="iv_left_arrow" />
     <item type="id" name="iv_like" />
     <item type="id" name="iv_live_bg" />
     <item type="id" name="iv_live_channel" />
     <item type="id" name="iv_live_coming" />
     <item type="id" name="iv_live_group_icon" />
     <item type="id" name="iv_live_menu" />
+    <item type="id" name="iv_loading" />
+    <item type="id" name="iv_local_no" />
     <item type="id" name="iv_lock" />
     <item type="id" name="iv_logo" />
     <item type="id" name="iv_main_logo" />
@@ -341,11 +392,13 @@
     <item type="id" name="iv_network" />
     <item type="id" name="iv_next" />
     <item type="id" name="iv_order" />
+    <item type="id" name="iv_parental_lock" />
     <item type="id" name="iv_pic" />
     <item type="id" name="iv_pip" />
     <item type="id" name="iv_play" />
     <item type="id" name="iv_play_now" />
     <item type="id" name="iv_playing" />
+    <item type="id" name="iv_points" />
     <item type="id" name="iv_previous" />
     <item type="id" name="iv_qr_code" />
     <item type="id" name="iv_qr_refresh" />
@@ -353,7 +406,10 @@
     <item type="id" name="iv_qr_whatsapp" />
     <item type="id" name="iv_qrcode" />
     <item type="id" name="iv_ratio" />
+    <item type="id" name="iv_refresh_channel" />
+    <item type="id" name="iv_refresh_iptv" />
     <item type="id" name="iv_region" />
+    <item type="id" name="iv_right_arrow" />
     <item type="id" name="iv_scan" />
     <item type="id" name="iv_scan_qr_register" />
     <item type="id" name="iv_search" />
@@ -379,9 +435,7 @@
     <item type="id" name="iv_speed_close" />
     <item type="id" name="iv_splash" />
     <item type="id" name="iv_star" />
-    <item type="id" name="iv_subscribe_qr" />
     <item type="id" name="iv_subscription" />
-    <item type="id" name="iv_subscription_header" />
     <item type="id" name="iv_subtitle" />
     <item type="id" name="iv_subtitle_bg" />
     <item type="id" name="iv_subtitle_language" />
@@ -396,37 +450,62 @@
     <item type="id" name="iv_user_header" />
     <item type="id" name="iv_video" />
     <item type="id" name="iv_vip" />
+    <item type="id" name="iv_vip_icon" />
+    <item type="id" name="iv_visibility_toggle" />
     <item type="id" name="iv_year" />
     <item type="id" name="layout_about" />
+    <item type="id" name="layout_add_iptv" />
     <item type="id" name="layout_app_version" />
     <item type="id" name="layout_audio_language" />
+    <item type="id" name="layout_bottom" />
+    <item type="id" name="layout_center_line" />
     <item type="id" name="layout_channels" />
     <item type="id" name="layout_clean_history" />
+    <item type="id" name="layout_clear_cache" />
     <item type="id" name="layout_content" />
     <item type="id" name="layout_control" />
     <item type="id" name="layout_delete" />
     <item type="id" name="layout_download_progress" />
     <item type="id" name="layout_edit" />
+    <item type="id" name="layout_email" />
     <item type="id" name="layout_email_login" />
-    <item type="id" name="layout_expire_date" />
+    <item type="id" name="layout_empty_iptv" />
+    <item type="id" name="layout_epg" />
+    <item type="id" name="layout_forget_pwd" />
     <item type="id" name="layout_hd" />
     <item type="id" name="layout_info" />
     <item type="id" name="layout_information" />
+    <item type="id" name="layout_iptv_internet" />
+    <item type="id" name="layout_iptv_list" />
     <item type="id" name="layout_language" />
     <item type="id" name="layout_live_top" />
+    <item type="id" name="layout_loading" />
     <item type="id" name="layout_login_input" />
     <item type="id" name="layout_no_login" />
+    <item type="id" name="layout_options" />
+    <item type="id" name="layout_parental_lock" />
+    <item type="id" name="layout_pay_error" />
+    <item type="id" name="layout_pay_failed" />
+    <item type="id" name="layout_pay_info" />
+    <item type="id" name="layout_pay_locked" />
+    <item type="id" name="layout_pay_pwd" />
+    <item type="id" name="layout_pay_pwd_error" />
+    <item type="id" name="layout_pay_success" />
+    <item type="id" name="layout_pwd_first" />
+    <item type="id" name="layout_pwd_re_confirm" />
     <item type="id" name="layout_refresh" />
     <item type="id" name="layout_register" />
     <item type="id" name="layout_register_right" />
+    <item type="id" name="layout_root" />
     <item type="id" name="layout_scan" />
     <item type="id" name="layout_scan_login" />
     <item type="id" name="layout_screen_ratio" />
     <item type="id" name="layout_search" />
+    <item type="id" name="layout_server" />
+    <item type="id" name="layout_setup" />
     <item type="id" name="layout_space" />
     <item type="id" name="layout_sqlite_version" />
     <item type="id" name="layout_subscribe" />
-    <item type="id" name="layout_subscribe_info" />
     <item type="id" name="layout_subscription_info" />
     <item type="id" name="layout_subtitle_bg" />
     <item type="id" name="layout_subtitle_enable" />
@@ -435,16 +514,16 @@
     <item type="id" name="layout_update" />
     <item type="id" name="layout_user_head" />
     <item type="id" name="layout_user_info" />
+    <item type="id" name="layout_verify" />
     <item type="id" name="layout_videos" />
+    <item type="id" name="layout_wallet" />
     <item type="id" name="line1" />
     <item type="id" name="line3" />
     <item type="id" name="line_1" />
     <item type="id" name="line_2" />
     <item type="id" name="line_3" />
     <item type="id" name="line_bottom" />
-    <item type="id" name="line_divider" />
     <item type="id" name="line_effective" />
-    <item type="id" name="line_effective_subscribe" />
     <item type="id" name="line_live_channel" />
     <item type="id" name="line_live_menu" />
     <item type="id" name="line_user_info" />
@@ -452,6 +531,7 @@
     <item type="id" name="list_item" />
     <item type="id" name="list_left" />
     <item type="id" name="live_bitrate" />
+    <item type="id" name="live_bitrate_downloading" />
     <item type="id" name="live_channel_epg" />
     <item type="id" name="live_channel_image" />
     <item type="id" name="live_channel_image_shimmer" />
@@ -470,12 +550,15 @@
     <item type="id" name="ll_add_cloud" />
     <item type="id" name="ll_add_internet" />
     <item type="id" name="ll_audio" />
-    <item type="id" name="ll_audioTrack" />
     <item type="id" name="ll_audio_language" />
     <item type="id" name="ll_bitrate" />
     <item type="id" name="ll_box" />
+    <item type="id" name="ll_buffering_duration" />
+    <item type="id" name="ll_buffering_position" />
     <item type="id" name="ll_bytesTransferred" />
     <item type="id" name="ll_category" />
+    <item type="id" name="ll_channel_list" />
+    <item type="id" name="ll_clear_cache" />
     <item type="id" name="ll_cloud" />
     <item type="id" name="ll_cloud_share" />
     <item type="id" name="ll_confirm" />
@@ -489,6 +572,7 @@
     <item type="id" name="ll_dialog_progress" />
     <item type="id" name="ll_director" />
     <item type="id" name="ll_download" />
+    <item type="id" name="ll_downloading" />
     <item type="id" name="ll_drop_box" />
     <item type="id" name="ll_elapsedMs" />
     <item type="id" name="ll_empty" />
@@ -502,6 +586,7 @@
     <item type="id" name="ll_header" />
     <item type="id" name="ll_help" />
     <item type="id" name="ll_history" />
+    <item type="id" name="ll_history_bitrate" />
     <item type="id" name="ll_home" />
     <item type="id" name="ll_info" />
     <item type="id" name="ll_info_skeleton" />
@@ -520,14 +605,17 @@
     <item type="id" name="ll_no_content" />
     <item type="id" name="ll_one_drive" />
     <item type="id" name="ll_order" />
+    <item type="id" name="ll_parental_lock" />
     <item type="id" name="ll_play_button" />
     <item type="id" name="ll_play_episode" />
     <item type="id" name="ll_play_next" />
     <item type="id" name="ll_play_quality" />
     <item type="id" name="ll_play_speed" />
     <item type="id" name="ll_play_subtitle" />
+    <item type="id" name="ll_position" />
     <item type="id" name="ll_quality" />
     <item type="id" name="ll_ratio" />
+    <item type="id" name="ll_refresh_channel" />
     <item type="id" name="ll_region" />
     <item type="id" name="ll_remain_time" />
     <item type="id" name="ll_right" />
@@ -542,11 +630,10 @@
     <item type="id" name="ll_sort" />
     <item type="id" name="ll_star" />
     <item type="id" name="ll_stars" />
-    <item type="id" name="ll_subscribe" />
     <item type="id" name="ll_subscription" />
     <item type="id" name="ll_subtitle" />
-    <item type="id" name="ll_subtitleTrack" />
     <item type="id" name="ll_subtitle_bottom" />
+    <item type="id" name="ll_subtitle_delay" />
     <item type="id" name="ll_subtitle_language" />
     <item type="id" name="ll_subtitles" />
     <item type="id" name="ll_suggestion" />
@@ -635,6 +722,7 @@
     <item type="id" name="navigation_menu_subheader_label" />
     <item type="id" name="nested_scroll_view" />
     <item type="id" name="next" />
+    <item type="id" name="next_bitrate" />
     <item type="id" name="no_content" />
     <item type="id" name="notification_background" />
     <item type="id" name="notification_main_column" />
@@ -642,6 +730,7 @@
     <item type="id" name="nsv_history" />
     <item type="id" name="nsv_kids" />
     <item type="id" name="nsv_recommend" />
+    <item type="id" name="number_input_view" />
     <item type="id" name="on" />
     <item type="id" name="open_search_bar_placeholder_text_view" />
     <item type="id" name="open_search_bar_text_view" />
@@ -671,6 +760,7 @@
     <item type="id" name="play_audio" />
     <item type="id" name="play_center_btn" />
     <item type="id" name="play_control" />
+    <item type="id" name="play_duration_text" />
     <item type="id" name="play_feedback" />
     <item type="id" name="play_next" />
     <item type="id" name="play_quality" />
@@ -683,9 +773,12 @@
     <item type="id" name="play_title" />
     <item type="id" name="play_video_ratio" />
     <item type="id" name="player_view" />
+    <item type="id" name="playing_bitrate_text" />
+    <item type="id" name="playing_view" />
     <item type="id" name="pooling_container_listener_holder_tag" />
     <item type="id" name="pre" />
     <item type="id" name="pre_account" />
+    <item type="id" name="pre_activation_date" />
     <item type="id" name="pre_android_id" />
     <item type="id" name="pre_app_version" />
     <item type="id" name="pre_app_version_2" />
@@ -693,6 +786,7 @@
     <item type="id" name="pre_creators" />
     <item type="id" name="pre_date" />
     <item type="id" name="pre_ethernet" />
+    <item type="id" name="pre_expiry_date" />
     <item type="id" name="pre_imei" />
     <item type="id" name="pre_ip" />
     <item type="id" name="pre_last_update" />
@@ -726,25 +820,32 @@
     <item type="id" name="rl_info" />
     <item type="id" name="row_index_key" />
     <item type="id" name="rv" />
+    <item type="id" name="rv_adult" />
     <item type="id" name="rv_before" />
     <item type="id" name="rv_cast_and_crew" />
     <item type="id" name="rv_category" />
+    <item type="id" name="rv_channels" />
     <item type="id" name="rv_cloud" />
     <item type="id" name="rv_dashboard" />
     <item type="id" name="rv_epg" />
     <item type="id" name="rv_epg_content" />
+    <item type="id" name="rv_epg_item" />
     <item type="id" name="rv_epg_title" />
     <item type="id" name="rv_episode" />
     <item type="id" name="rv_episode_index" />
     <item type="id" name="rv_episodes" />
     <item type="id" name="rv_episodes_title" />
+    <item type="id" name="rv_favorite" />
     <item type="id" name="rv_feedback_toolbar" />
+    <item type="id" name="rv_first_collection" />
     <item type="id" name="rv_internet" />
+    <item type="id" name="rv_iptv_list" />
     <item type="id" name="rv_kid_hot" />
     <item type="id" name="rv_kid_topic" />
     <item type="id" name="rv_kids" />
     <item type="id" name="rv_live" />
     <item type="id" name="rv_live_category" />
+    <item type="id" name="rv_live_channels" />
     <item type="id" name="rv_live_epg" />
     <item type="id" name="rv_live_list" />
     <item type="id" name="rv_local_log" />
@@ -752,7 +853,9 @@
     <item type="id" name="rv_movie_similar" />
     <item type="id" name="rv_my_list" />
     <item type="id" name="rv_network" />
+    <item type="id" name="rv_pay" />
     <item type="id" name="rv_popup" />
+    <item type="id" name="rv_price" />
     <item type="id" name="rv_quality" />
     <item type="id" name="rv_recent" />
     <item type="id" name="rv_recommend" />
@@ -765,14 +868,16 @@
     <item type="id" name="rv_select_season" />
     <item type="id" name="rv_select_tag" />
     <item type="id" name="rv_series_similar" />
+    <item type="id" name="rv_server_list" />
     <item type="id" name="rv_session_list" />
     <item type="id" name="rv_settings" />
     <item type="id" name="rv_similar" />
+    <item type="id" name="rv_smb_list" />
     <item type="id" name="rv_speed" />
-    <item type="id" name="rv_subscribe" />
     <item type="id" name="rv_suggestion" />
     <item type="id" name="rv_tag_videos" />
     <item type="id" name="rv_tags" />
+    <item type="id" name="rv_time_line" />
     <item type="id" name="rv_today" />
     <item type="id" name="rv_top_channel" />
     <item type="id" name="rv_trending_now" />
@@ -815,6 +920,7 @@
     <item type="id" name="setting_update" />
     <item type="id" name="shimmer_view_container" />
     <item type="id" name="shortcut" />
+    <item type="id" name="slice_count" />
     <item type="id" name="snackbar_action" />
     <item type="id" name="snackbar_text" />
     <item type="id" name="spacer" />
@@ -825,6 +931,8 @@
     <item type="id" name="srl_classics_progress" />
     <item type="id" name="srl_classics_title" />
     <item type="id" name="srl_tag" />
+    <item type="id" name="stall_count_text" />
+    <item type="id" name="stall_duration_text" />
     <item type="id" name="subTitleBottom" />
     <item type="id" name="subTitleBottomTwo" />
     <item type="id" name="subTitleTop" />
@@ -832,7 +940,6 @@
     <item type="id" name="submenuarrow" />
     <item type="id" name="submit_area" />
     <item type="id" name="subtitle_progress" />
-    <item type="id" name="subtitle_track" />
     <item type="id" name="subtitle_view" />
     <item type="id" name="subtitle_view_ver" />
     <item type="id" name="suggestion_title" />
@@ -866,10 +973,14 @@
     <item type="id" name="textinput_suffix_text" />
     <item type="id" name="time" />
     <item type="id" name="timeBar" />
+    <item type="id" name="time_indicator" />
     <item type="id" name="tip" />
     <item type="id" name="title" />
     <item type="id" name="titleDividerNoCustom" />
     <item type="id" name="title_template" />
+    <item type="id" name="title_text" />
+    <item type="id" name="toast_root" />
+    <item type="id" name="toast_text" />
     <item type="id" name="toolbar" />
     <item type="id" name="topPanel" />
     <item type="id" name="total_duration" />
@@ -889,18 +1000,25 @@
     <item type="id" name="tv_account" />
     <item type="id" name="tv_add" />
     <item type="id" name="tv_add_internet" />
+    <item type="id" name="tv_add_iptv" />
+    <item type="id" name="tv_add_new" />
+    <item type="id" name="tv_add_smb" />
     <item type="id" name="tv_all_channel" />
     <item type="id" name="tv_android_id" />
     <item type="id" name="tv_app" />
     <item type="id" name="tv_app_version" />
     <item type="id" name="tv_app_version_2" />
+    <item type="id" name="tv_appear_moment" />
+    <item type="id" name="tv_asterisk" />
     <item type="id" name="tv_audio" />
     <item type="id" name="tv_audio_language" />
     <item type="id" name="tv_back" />
+    <item type="id" name="tv_balance" />
     <item type="id" name="tv_box" />
     <item type="id" name="tv_brand" />
     <item type="id" name="tv_buffer_bytes" />
     <item type="id" name="tv_button" />
+    <item type="id" name="tv_cache_size" />
     <item type="id" name="tv_cancel" />
     <item type="id" name="tv_cast_and_crew" />
     <item type="id" name="tv_category" />
@@ -909,14 +1027,24 @@
     <item type="id" name="tv_certification" />
     <item type="id" name="tv_channel" />
     <item type="id" name="tv_channel_icon" />
+    <item type="id" name="tv_channels" />
+    <item type="id" name="tv_clean_history_prefix" />
     <item type="id" name="tv_cloud" />
     <item type="id" name="tv_cloud_name" />
     <item type="id" name="tv_cloud_share" />
     <item type="id" name="tv_cloud_update_at" />
+    <item type="id" name="tv_coin" />
+    <item type="id" name="tv_coming_soon_box" />
+    <item type="id" name="tv_coming_soon_drop_box" />
+    <item type="id" name="tv_coming_soon_google_drive" />
+    <item type="id" name="tv_coming_soon_mega" />
+    <item type="id" name="tv_coming_soon_one_drive" />
     <item type="id" name="tv_confirm" />
+    <item type="id" name="tv_confirm_pay" />
     <item type="id" name="tv_connect" />
     <item type="id" name="tv_content" />
     <item type="id" name="tv_controller_all" />
+    <item type="id" name="tv_controller_channel_id" />
     <item type="id" name="tv_controller_channel_name" />
     <item type="id" name="tv_controller_time" />
     <item type="id" name="tv_controller_week" />
@@ -934,9 +1062,16 @@
     <item type="id" name="tv_duration" />
     <item type="id" name="tv_edit" />
     <item type="id" name="tv_effective" />
-    <item type="id" name="tv_effective_subscribe" />
     <item type="id" name="tv_email" />
+    <item type="id" name="tv_email_error" />
+    <item type="id" name="tv_email_finish" />
+    <item type="id" name="tv_email_hint" />
     <item type="id" name="tv_email_login_title" />
+    <item type="id" name="tv_email_title" />
+    <item type="id" name="tv_empty_iptv" />
+    <item type="id" name="tv_epg" />
+    <item type="id" name="tv_epg_time" />
+    <item type="id" name="tv_epg_title" />
     <item type="id" name="tv_episode" />
     <item type="id" name="tv_episode_title" />
     <item type="id" name="tv_episodes" />
@@ -948,10 +1083,15 @@
     <item type="id" name="tv_error_msg" />
     <item type="id" name="tv_ethernet" />
     <item type="id" name="tv_expire_date" />
-    <item type="id" name="tv_expire_date_subscribe" />
-    <item type="id" name="tv_expire_date_title" />
+    <item type="id" name="tv_expire_date_prefix" />
+    <item type="id" name="tv_failed_account" />
+    <item type="id" name="tv_failed_current" />
+    <item type="id" name="tv_failed_item" />
+    <item type="id" name="tv_failed_total_amount" />
+    <item type="id" name="tv_favorite" />
     <item type="id" name="tv_feedback" />
     <item type="id" name="tv_feedback_tip" />
+    <item type="id" name="tv_file_name" />
     <item type="id" name="tv_forget_pwd" />
     <item type="id" name="tv_genre" />
     <item type="id" name="tv_get_start" />
@@ -975,17 +1115,23 @@
     <item type="id" name="tv_home" />
     <item type="id" name="tv_id" />
     <item type="id" name="tv_imie" />
+    <item type="id" name="tv_import_local" />
+    <item type="id" name="tv_import_network" />
     <item type="id" name="tv_index" />
     <item type="id" name="tv_info" />
     <item type="id" name="tv_ip" />
     <item type="id" name="tv_item_dashboard_count" />
     <item type="id" name="tv_item_dashboard_title" />
     <item type="id" name="tv_item_dashboard_update" />
+    <item type="id" name="tv_item_renewal_price" />
+    <item type="id" name="tv_item_renewal_title" />
+    <item type="id" name="tv_item_server" />
     <item type="id" name="tv_item_session_connect" />
     <item type="id" name="tv_item_session_speed" />
     <item type="id" name="tv_item_session_status" />
     <item type="id" name="tv_item_similar_title" />
     <item type="id" name="tv_item_text" />
+    <item type="id" name="tv_item_time" />
     <item type="id" name="tv_job" />
     <item type="id" name="tv_key" />
     <item type="id" name="tv_know_for" />
@@ -999,12 +1145,17 @@
     <item type="id" name="tv_last_update" />
     <item type="id" name="tv_list_title" />
     <item type="id" name="tv_live_channel" />
+    <item type="id" name="tv_live_channel_number" />
     <item type="id" name="tv_live_count" />
     <item type="id" name="tv_live_feedback_tip" />
     <item type="id" name="tv_live_menu" />
+    <item type="id" name="tv_loading" />
     <item type="id" name="tv_local_share" />
     <item type="id" name="tv_lock_bottom" />
     <item type="id" name="tv_lock_top" />
+    <item type="id" name="tv_locked_hint_1" />
+    <item type="id" name="tv_locked_hint_2" />
+    <item type="id" name="tv_locked_hint_3" />
     <item type="id" name="tv_log" />
     <item type="id" name="tv_login" />
     <item type="id" name="tv_login_error" />
@@ -1022,29 +1173,63 @@
     <item type="id" name="tv_no_account" />
     <item type="id" name="tv_no_tip" />
     <item type="id" name="tv_number" />
+    <item type="id" name="tv_on_now" />
     <item type="id" name="tv_one_drive" />
+    <item type="id" name="tv_or" />
     <item type="id" name="tv_order" />
     <item type="id" name="tv_page_title" />
+    <item type="id" name="tv_parental_lock" />
+    <item type="id" name="tv_password_error" />
+    <item type="id" name="tv_pay_error_code" />
+    <item type="id" name="tv_pay_error_hint" />
+    <item type="id" name="tv_pay_error_tip" />
+    <item type="id" name="tv_pay_info" />
+    <item type="id" name="tv_pay_success_tip_1" />
+    <item type="id" name="tv_pay_wallet" />
+    <item type="id" name="tv_payment_failed_hint" />
+    <item type="id" name="tv_payment_successful_hint" />
     <item type="id" name="tv_plan" />
+    <item type="id" name="tv_points" />
     <item type="id" name="tv_popup_title" />
+    <item type="id" name="tv_pre_account" />
+    <item type="id" name="tv_pre_current" />
+    <item type="id" name="tv_pre_item" />
+    <item type="id" name="tv_pre_order_number" />
+    <item type="id" name="tv_pre_total_amount" />
+    <item type="id" name="tv_process_files" />
     <item type="id" name="tv_progress" />
+    <item type="id" name="tv_pwd_1" />
+    <item type="id" name="tv_pwd_2" />
+    <item type="id" name="tv_pwd_3" />
+    <item type="id" name="tv_pwd_4" />
+    <item type="id" name="tv_pwd_5" />
+    <item type="id" name="tv_pwd_6" />
     <item type="id" name="tv_quality" />
     <item type="id" name="tv_rating" />
     <item type="id" name="tv_ratio" />
+    <item type="id" name="tv_re_confirm_password" />
+    <item type="id" name="tv_re_confirm_password_error" />
+    <item type="id" name="tv_re_confirm_password_hint" />
     <item type="id" name="tv_recently" />
     <item type="id" name="tv_recharge" />
     <item type="id" name="tv_recommendations" />
     <item type="id" name="tv_recv_bytes" />
+    <item type="id" name="tv_refresh_channel" />
+    <item type="id" name="tv_refresh_prefix" />
     <item type="id" name="tv_region" />
     <item type="id" name="tv_register" />
     <item type="id" name="tv_register_hint" />
     <item type="id" name="tv_release_year" />
     <item type="id" name="tv_remain_days" />
-    <item type="id" name="tv_remain_days_subscribe" />
     <item type="id" name="tv_remain_time" />
     <item type="id" name="tv_renewal_after" />
+    <item type="id" name="tv_renewal_name" />
     <item type="id" name="tv_renewal_pre" />
+    <item type="id" name="tv_renewal_price" />
     <item type="id" name="tv_resend" />
+    <item type="id" name="tv_reset" />
+    <item type="id" name="tv_reset_error" />
+    <item type="id" name="tv_reset_password_error" />
     <item type="id" name="tv_scan" />
     <item type="id" name="tv_scan_qr" />
     <item type="id" name="tv_scan_qr_code" />
@@ -1052,6 +1237,7 @@
     <item type="id" name="tv_scan_qr_tip" />
     <item type="id" name="tv_sched_ms" />
     <item type="id" name="tv_screen_ratio" />
+    <item type="id" name="tv_screen_ratio_prefix" />
     <item type="id" name="tv_sdk" />
     <item type="id" name="tv_search" />
     <item type="id" name="tv_search_empty_content" />
@@ -1060,9 +1246,12 @@
     <item type="id" name="tv_send_bytes" />
     <item type="id" name="tv_series_count" />
     <item type="id" name="tv_series_desc" />
+    <item type="id" name="tv_server" />
     <item type="id" name="tv_server_duation" />
     <item type="id" name="tv_server_name" />
     <item type="id" name="tv_session_title" />
+    <item type="id" name="tv_set_payment_password" />
+    <item type="id" name="tv_set_payment_password_hint" />
     <item type="id" name="tv_setting" />
     <item type="id" name="tv_settings" />
     <item type="id" name="tv_settings_title" />
@@ -1078,6 +1267,10 @@
     <item type="id" name="tv_similar" />
     <item type="id" name="tv_slogan" />
     <item type="id" name="tv_small" />
+    <item type="id" name="tv_smb_address" />
+    <item type="id" name="tv_smb_file_size" />
+    <item type="id" name="tv_smb_name" />
+    <item type="id" name="tv_smb_updated" />
     <item type="id" name="tv_sort" />
     <item type="id" name="tv_space" />
     <item type="id" name="tv_speed" />
@@ -1086,28 +1279,44 @@
     <item type="id" name="tv_star_title" />
     <item type="id" name="tv_stars" />
     <item type="id" name="tv_subscribe" />
-    <item type="id" name="tv_subscribe_tip" />
     <item type="id" name="tv_subscription" />
-    <item type="id" name="tv_subscription_title" />
     <item type="id" name="tv_subtitle" />
     <item type="id" name="tv_subtitle_bg" />
+    <item type="id" name="tv_subtitle_delay_tip" />
     <item type="id" name="tv_subtitle_enable" />
     <item type="id" name="tv_subtitle_language" />
     <item type="id" name="tv_subtitle_loading" />
+    <item type="id" name="tv_subtitle_prefix" />
     <item type="id" name="tv_subtitle_size" />
     <item type="id" name="tv_subtitles" />
     <item type="id" name="tv_success" />
-    <item type="id" name="tv_switch_channel" />
+    <item type="id" name="tv_success_account" />
+    <item type="id" name="tv_success_activation_date" />
+    <item type="id" name="tv_success_expiry_date" />
+    <item type="id" name="tv_success_item" />
+    <item type="id" name="tv_success_order_number" />
+    <item type="id" name="tv_success_payment_time" />
+    <item type="id" name="tv_success_total_amount" />
+    <item type="id" name="tv_supports_iptv" />
+    <item type="id" name="tv_sync_progress" />
     <item type="id" name="tv_tag" />
     <item type="id" name="tv_tag_title" />
     <item type="id" name="tv_tg" />
+    <item type="id" name="tv_time" />
+    <item type="id" name="tv_time_line_label" />
     <item type="id" name="tv_tip" />
     <item type="id" name="tv_tip_1" />
     <item type="id" name="tv_tip_2" />
     <item type="id" name="tv_tip_3" />
+    <item type="id" name="tv_tip_reset" />
     <item type="id" name="tv_title" />
     <item type="id" name="tv_title_before" />
+    <item type="id" name="tv_title_hint" />
+    <item type="id" name="tv_title_hint_reset" />
+    <item type="id" name="tv_title_hint_verify" />
+    <item type="id" name="tv_title_reset" />
     <item type="id" name="tv_title_today" />
+    <item type="id" name="tv_title_verify" />
     <item type="id" name="tv_toolbar_title" />
     <item type="id" name="tv_top_channels" />
     <item type="id" name="tv_total" />
@@ -1116,6 +1325,7 @@
     <item type="id" name="tv_triangle" />
     <item type="id" name="tv_trouble_logining" />
     <item type="id" name="tv_update" />
+    <item type="id" name="tv_update_time" />
     <item type="id" name="tv_update_title" />
     <item type="id" name="tv_update_top" />
     <item type="id" name="tv_upload_log" />
@@ -1124,6 +1334,7 @@
     <item type="id" name="tv_user_name" />
     <item type="id" name="tv_username" />
     <item type="id" name="tv_value" />
+    <item type="id" name="tv_verify_error" />
     <item type="id" name="tv_version" />
     <item type="id" name="tv_video_new_episode" />
     <item type="id" name="tv_video_order" />
@@ -1131,13 +1342,15 @@
     <item type="id" name="tv_video_ratio" />
     <item type="id" name="tv_video_title" />
     <item type="id" name="tv_vip" />
+    <item type="id" name="tv_wallet_tip" />
     <item type="id" name="tv_whatsapp" />
     <item type="id" name="tv_wifi" />
     <item type="id" name="tv_year" />
     <item type="id" name="tv_your_friends" />
     <item type="id" name="up" />
-    <item type="id" name="update_icon" />
     <item type="id" name="update_online_data" />
+    <item type="id" name="upload_log" />
+    <item type="id" name="v_code" />
     <item type="id" name="v_dialog_line" />
     <item type="id" name="v_qr_code_shadow" />
     <item type="id" name="v_shadow" />
@@ -1157,12 +1370,23 @@
     <item type="id" name="view_3" />
     <item type="id" name="view_4" />
     <item type="id" name="view_5" />
-    <item type="id" name="view_bg" />
     <item type="id" name="view_content" />
+    <item type="id" name="view_dashed_line" />
+    <item type="id" name="view_divider" />
+    <item type="id" name="view_forget_pwd" />
+    <item type="id" name="view_header" />
     <item type="id" name="view_large" />
+    <item type="id" name="view_line" />
     <item type="id" name="view_login" />
     <item type="id" name="view_medium" />
+    <item type="id" name="view_number_input" />
     <item type="id" name="view_offset_helper" />
+    <item type="id" name="view_password" />
+    <item type="id" name="view_password_first" />
+    <item type="id" name="view_password_reset" />
+    <item type="id" name="view_password_second" />
+    <item type="id" name="view_password_verify" />
+    <item type="id" name="view_pay_password" />
     <item type="id" name="view_sign_code" />
     <item type="id" name="view_sign_in" />
     <item type="id" name="view_small" />
@@ -1172,9 +1396,7 @@
     <item type="id" name="view_tree_saved_state_registry_owner" />
     <item type="id" name="view_tree_view_model_store_owner" />
     <item type="id" name="visible_removing_fragment_view_tag" />
-    <item type="id" name="vp_channel" />
     <item type="id" name="vp_dashboard" />
-    <item type="id" name="vp_search_result" />
     <item type="id" name="web_view" />
     <item type="id" name="with_icon" />
     <item type="id" name="zxing_back_button" />

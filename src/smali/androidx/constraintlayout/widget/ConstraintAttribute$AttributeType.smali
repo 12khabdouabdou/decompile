@@ -126,7 +126,7 @@
 
     sput-object v0, Landroidx/constraintlayout/widget/ConstraintAttribute$AttributeType;->w:Landroidx/constraintlayout/widget/ConstraintAttribute$AttributeType;
 
-    invoke-static {}, Landroidx/constraintlayout/widget/ConstraintAttribute$AttributeType;->e()[Landroidx/constraintlayout/widget/ConstraintAttribute$AttributeType;
+    invoke-static {}, Landroidx/constraintlayout/widget/ConstraintAttribute$AttributeType;->c()[Landroidx/constraintlayout/widget/ConstraintAttribute$AttributeType;
 
     move-result-object v0
 
@@ -143,7 +143,7 @@
     return-void
 .end method
 
-.method public static synthetic e()[Landroidx/constraintlayout/widget/ConstraintAttribute$AttributeType;
+.method public static synthetic c()[Landroidx/constraintlayout/widget/ConstraintAttribute$AttributeType;
     .locals 3
 
     .line 1

@@ -109,7 +109,6 @@
     <color name="dim_foreground_material_light">#ff323232</color>
     <color name="error_color_material_dark">#ffff7043</color>
     <color name="error_color_material_light">#ffff5722</color>
-    <color name="exit_start">#ffffba00</color>
     <color name="exo_black_opacity_60">#98000000</color>
     <color name="exo_black_opacity_70">#b3000000</color>
     <color name="exo_bottom_bar_background">#b0000000</color>
@@ -118,11 +117,11 @@
     <color name="exo_white">#ffffffff</color>
     <color name="exo_white_opacity_70">#b3ffffff</color>
     <color name="fastlane_background">#ff0096a6</color>
+    <color name="fea800">#fffea800</color>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
-    <color name="ic_launcher_background">#ff0f0f0f</color>
     <color name="input_button_text">#ffffffff</color>
     <color name="kid_top">#ff161330</color>
     <color name="kids_select">#ff10d423</color>
@@ -446,7 +445,8 @@
     <color name="m3_sys_color_tertiary_fixed">@color/m3_ref_palette_tertiary90</color>
     <color name="m3_sys_color_tertiary_fixed_dim">@color/m3_ref_palette_tertiary80</color>
     <color name="main_color">#ffea2625</color>
-    <color name="main_tag_text">#ff666666</color>
+    <color name="main_tag_text">#ff999999</color>
+    <color name="main_text">#ffffffff</color>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.video_cloud.ui.live.epg.RecyclerWithPositionView android:orientation="horizontal" android:id="@id/rv_epg_item" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fadeScrollbars="false" app:tv_isMenu="true" app:tv_layoutManager="V7LinearLayoutManager"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

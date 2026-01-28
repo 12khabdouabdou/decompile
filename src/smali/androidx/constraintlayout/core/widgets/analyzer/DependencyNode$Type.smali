@@ -126,7 +126,7 @@
 
     sput-object v0, Landroidx/constraintlayout/core/widgets/analyzer/DependencyNode$Type;->w:Landroidx/constraintlayout/core/widgets/analyzer/DependencyNode$Type;
 
-    invoke-static {}, Landroidx/constraintlayout/core/widgets/analyzer/DependencyNode$Type;->e()[Landroidx/constraintlayout/core/widgets/analyzer/DependencyNode$Type;
+    invoke-static {}, Landroidx/constraintlayout/core/widgets/analyzer/DependencyNode$Type;->c()[Landroidx/constraintlayout/core/widgets/analyzer/DependencyNode$Type;
 
     move-result-object v0
 
@@ -143,7 +143,7 @@
     return-void
 .end method
 
-.method public static synthetic e()[Landroidx/constraintlayout/core/widgets/analyzer/DependencyNode$Type;
+.method public static synthetic c()[Landroidx/constraintlayout/core/widgets/analyzer/DependencyNode$Type;
     .locals 3
 
     .line 1

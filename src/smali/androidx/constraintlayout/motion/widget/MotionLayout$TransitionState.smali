@@ -78,7 +78,7 @@
 
     sput-object v0, Landroidx/constraintlayout/motion/widget/MotionLayout$TransitionState;->s:Landroidx/constraintlayout/motion/widget/MotionLayout$TransitionState;
 
-    invoke-static {}, Landroidx/constraintlayout/motion/widget/MotionLayout$TransitionState;->e()[Landroidx/constraintlayout/motion/widget/MotionLayout$TransitionState;
+    invoke-static {}, Landroidx/constraintlayout/motion/widget/MotionLayout$TransitionState;->c()[Landroidx/constraintlayout/motion/widget/MotionLayout$TransitionState;
 
     move-result-object v0
 
@@ -95,7 +95,7 @@
     return-void
 .end method
 
-.method public static synthetic e()[Landroidx/constraintlayout/motion/widget/MotionLayout$TransitionState;
+.method public static synthetic c()[Landroidx/constraintlayout/motion/widget/MotionLayout$TransitionState;
     .locals 3
 
     .line 1

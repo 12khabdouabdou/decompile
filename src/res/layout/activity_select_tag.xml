@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.video_cloud.library_view.tvrecyclerview.TvRecyclerView android:orientation="vertical" android:id="@id/rv_select_tag" android:padding="20.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:tv_isMenu="false" app:tv_layoutManager="V7LinearLayoutManager" />
+    <com.video_cloud.view.tvrecyclerview.TvRecyclerView android:orientation="vertical" android:id="@id/rv_select_tag" android:padding="20.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:tv_isMenu="false" app:tv_layoutManager="V7LinearLayoutManager" />
     <ImageView android:layout_gravity="end" android:id="@id/iv_close" android:padding="20.0dip" android:visibility="gone" android:layout_width="98.0dip" android:layout_height="98.0dip" android:layout_margin="30.0dip" android:src="@mipmap/icon_close" />
 </FrameLayout>

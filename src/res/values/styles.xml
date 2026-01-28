@@ -3147,6 +3147,7 @@
     <style name="CustomUpdateAppProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
         <item name="android:textViewStyle">@style/CustomTextViewStyle</item>
         <item name="android:maxHeight">20.0dip</item>
+        <item name="android:progressDrawable">@drawable/progress_round_horizontal</item>
         <item name="android:minHeight">20.0dip</item>
         <item name="android:progressTint">@color/main_color</item>
         <item name="android:progressBackgroundTint">#ffd9d9d9</item>
@@ -3380,7 +3381,7 @@
         <item name="android:windowFullscreen">false</item>
         <item name="android:windowDrawsSystemBarBackgrounds">false</item>
     </style>
-    <style name="LaunchTheme2" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="LaunchTheme2" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
         <item name="android:windowBackground">@color/bg_color</item>
         <item name="android:textViewStyle">@style/CustomTextViewStyle</item>
         <item name="android:windowFullscreen">false</item>

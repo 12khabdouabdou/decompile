@@ -1,0 +1,56 @@
+{
+  "netfly": {
+    "mainPage": "com.video_cloud.ui.dashboard.DashboardActivity",
+    "loginPage": "com.video_cloud.ui.login.NFLoginActivity",
+    "homeMenu": [
+      "menu_search",
+      "menu_home",
+      "menu_favorite",
+      "menu_history",
+      "menu_help"
+    ],
+    "vodMenu": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "verifyPrePlay": true,
+    "forceLogin": false,
+    "parentalControl": true,
+    "supportLanguages": [
+      "en",
+      "es",
+      "pt",
+      "fr",
+      "ar"
+    ]
+  },
+  "rogue": {
+    "mainPage": "com.video_cloud.ui.main.HomeActivity",
+    "loginPage": "com.video_cloud.ui.login.RogueLoginActivity",
+    "homeMenu": [
+      "menu_user",
+      "menu_search",
+      "menu_home",
+      "menu_cloud",
+      "menu_subscription",
+      "menu_favorite",
+      "menu_history",
+      "menu_setting",
+      "menu_help"
+    ],
+    "vodMenu": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "verifyPrePlay": true,
+    "forceLogin": true,
+    "parentalControl": true,
+    "supportLanguages": [
+      "en"
+    ]
+  }
+}

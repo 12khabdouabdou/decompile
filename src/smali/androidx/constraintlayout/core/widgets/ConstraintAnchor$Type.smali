@@ -138,7 +138,7 @@
 
     sput-object v0, Landroidx/constraintlayout/core/widgets/ConstraintAnchor$Type;->x:Landroidx/constraintlayout/core/widgets/ConstraintAnchor$Type;
 
-    invoke-static {}, Landroidx/constraintlayout/core/widgets/ConstraintAnchor$Type;->e()[Landroidx/constraintlayout/core/widgets/ConstraintAnchor$Type;
+    invoke-static {}, Landroidx/constraintlayout/core/widgets/ConstraintAnchor$Type;->c()[Landroidx/constraintlayout/core/widgets/ConstraintAnchor$Type;
 
     move-result-object v0
 
@@ -155,7 +155,7 @@
     return-void
 .end method
 
-.method public static synthetic e()[Landroidx/constraintlayout/core/widgets/ConstraintAnchor$Type;
+.method public static synthetic c()[Landroidx/constraintlayout/core/widgets/ConstraintAnchor$Type;
     .locals 3
 
     .line 1

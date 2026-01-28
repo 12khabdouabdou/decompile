@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:layout_gravity="center_horizontal" android:id="@id/view_bg" android:layout_width="729.0dip" android:layout_height="472.0dip" android:layout_marginTop="175.0dip" android:translationY="-40.0dip" />
     <View android:layout_gravity="center_horizontal" android:background="@drawable/shape_radius_dialog_white_32" android:layout_width="729.0dip" android:layout_height="472.0dip" android:layout_marginTop="135.0dip" />
-    <ImageView android:layout_gravity="center_horizontal" android:layout_width="233.0dip" android:layout_height="233.0dip" android:src="@mipmap/exit_face" />
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="233.0dip" android:layout_height="233.0dip" android:src="@mipmap/exit_logo" />
     <TextView android:textSize="40.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="256.0dip" android:text="@string/wait_do_not_go" />
     <TextView android:textSize="32.0sp" android:textColor="@color/black_6" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_dialog_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="306.0dip" />
     <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="110.0dip">
-        <RelativeLayout android:id="@id/rl_cancel" android:background="@drawable/selector_dialog" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="300.0dip" android:layout_height="100.0dip" android:layout_marginEnd="15.0dip">
-            <TextView android:textSize="32.0sp" android:textColor="@color/black" android:id="@id/tv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
-        </RelativeLayout>
-        <RelativeLayout android:id="@id/rl_confirm" android:background="@drawable/selector_dialog" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="300.0dip" android:layout_height="100.0dip" android:layout_marginStart="15.0dip">
-            <TextView android:textSize="32.0sp" android:textColor="@color/black" android:id="@id/tv_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
-        </RelativeLayout>
+        <TextView android:textSize="32.0sp" android:textColor="@color/text_selector_white_black" android:gravity="center" android:id="@id/tv_cancel" android:background="@drawable/selector_dialog" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="300.0dip" android:layout_height="100.0dip" android:layout_marginEnd="15.0dip" />
+        <TextView android:textSize="32.0sp" android:textColor="@color/text_selector_white_black" android:gravity="center" android:id="@id/tv_confirm" android:background="@drawable/selector_dialog" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="300.0dip" android:layout_height="100.0dip" android:layout_marginStart="15.0dip" />
     </LinearLayout>
 </FrameLayout>

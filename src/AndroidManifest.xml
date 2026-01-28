@@ -33,10 +33,10 @@
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
     <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
     <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
     <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
-    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
     <uses-permission android:name="com.android.providers.tv.permission.READ_EPG_DATA"/>
     <permission android:name="xyz.netfly.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
     <uses-permission android:name="xyz.netfly.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
@@ -47,7 +47,7 @@
     <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
     <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
     <uses-feature android:name="android.hardware.wifi" android:required="false"/>
-    <application android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:banner="@mipmap/ic_banner" android:extractNativeLibs="true" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.video_cloud.MyApplication" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:usesCleartextTraffic="true">
+    <application android:appComponentFactory="com.SecShell.SecShell.AP" android:banner="@mipmap/ic_banner" android:extractNativeLibs="true" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.SecShell.SecShell.AW" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:usesCleartextTraffic="true">
         <meta-data android:name="google_analytics_default_allow_analytics_storage" android:value="true"/>
         <meta-data android:name="google_analytics_default_allow_ad_storage" android:value="true"/>
         <meta-data android:name="google_analytics_default_allow_ad_user_data" android:value="true"/>
@@ -63,62 +63,69 @@
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="true" android:launchMode="singleTop" android:name="com.video_cloud.ui.main.HomeActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
-        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="true" android:launchMode="singleTop" android:name="com.video_cloud.ui.dashboard.DashboardActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
-        <activity android:exported="false" android:name="com.video_cloud.ui.video_list.SelectTagActivity" android:theme="@style/DialogTransparent" android:windowSoftInputMode="adjustResize|stateHidden"/>
-        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.video_cloud.ui.video_info.VideoInfoActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
-        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.video_cloud.ui.log.LogActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
-        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.video_cloud.ui.main.cloud.AddShareActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
-        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.video_cloud.ui.main.cloud.MyCloudActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
-        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.video_cloud.ui.video_list.VideoListActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
-        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="standard" android:name="com.video_cloud.ui.player.PlayerActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
-        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="standard" android:name="com.video_cloud.ui.live.tablet.LivePlayActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
-        <activity android:name="com.video_cloud.ui.live.tablet.SelectChannelActivity" android:theme="@style/DialogTransparent" android:windowSoftInputMode="adjustResize|stateHidden"/>
-        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="standard" android:name="com.video_cloud.ui.live.tv.LiveActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
-        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="singleTask" android:name="com.video_cloud.ui.live.tablet.ChannelListActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
-        <activity android:name="com.video_cloud.ui.log.LocalLogActivity" android:theme="@style/DialogTransparent" android:windowSoftInputMode="adjustResize|stateHidden"/>
-        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="true" android:name="com.video_cloud.ui.login.LoginActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2" android:windowSoftInputMode="adjustResize"/>
-        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="true" android:launchMode="singleInstance" android:name="com.video_cloud.ui.login.NFLoginActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2" android:windowSoftInputMode="adjustResize"/>
-        <activity android:name="com.video_cloud.ui.main.SetDefaultLanguageActivity" android:theme="@style/DialogTransparent" android:windowSoftInputMode="adjustResize|stateHidden"/>
         <service android:exported="false" android:name="com.video_cloud.utils.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="true" android:launchMode="singleTop" android:name="com.video_cloud.ui.main.HomeActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="true" android:launchMode="singleTop" android:name="com.video_cloud.ui.dashboard.DashboardActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
+        <activity android:exported="false" android:name="com.video_cloud.ui.video_library.SelectTagActivity" android:theme="@style/DialogTransparent" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.video_cloud.ui.video_info.VideoInfoActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.video_cloud.ui.log.LogActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.video_cloud.ui.main.cloud.AddShareActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.video_cloud.ui.main.cloud.MyCloudActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.video_cloud.ui.video_library.VideoLibraryActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="standard" android:name="com.video_cloud.ui.player.PlayerActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="standard" android:name="com.video_cloud.ui.live.tablet.LivePlayActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
+        <activity android:name="com.video_cloud.ui.live.tablet.SelectChannelActivity" android:theme="@style/DialogTransparent" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="standard" android:name="com.video_cloud.ui.live.tv.LiveActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="standard" android:name="com.video_cloud.ui.iptv.IptvActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="standard" android:name="com.video_cloud.ui.server.SmbActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="standard" android:name="com.video_cloud.ui.server.SmbAddActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="standard" android:name="com.video_cloud.ui.server.SmbFilesActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="standard" android:name="com.video_cloud.ui.server.ShowcaseListActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="singleTask" android:name="com.video_cloud.ui.live.tablet.ChannelListActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2"/>
+        <activity android:name="com.video_cloud.ui.log.LocalLogActivity" android:theme="@style/DialogTransparent" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="true" android:name="com.video_cloud.ui.login.LoginActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.video_cloud.ui.login.NFLoginActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.video_cloud.ui.login.RogueLoginActivity" android:screenOrientation="landscape" android:theme="@style/LaunchTheme2" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.video_cloud.ui.main.SetDefaultLanguageActivity" android:theme="@style/DialogTransparent" android:windowSoftInputMode="adjustResize|stateHidden"/>
         <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="true" android:launchMode="singleTask" android:name="com.video_cloud.MainActivity" android:screenOrientation="portrait" android:supportsPictureInPicture="true" android:theme="@style/LaunchTheme" android:windowSoftInputMode="adjustResize">
             <meta-data android:name="io.flutter.embedding.android.NormalTheme" android:resource="@style/LaunchTheme"/>
         </activity>
         <meta-data android:name="flutterEmbedding" android:value="2"/>
         <meta-data android:name="com.video_cloud.glide.UnsafeOkHttpGlideModule" android:value="AppGlideModule"/>
-        <provider android:authorities="xyz.netfly.autosize-init-provider" android:exported="false" android:multiprocess="true" android:name="com.video_cloud.library_view.autosize.InitProvider"/>
+        <provider android:authorities="xyz.netfly.autosize-init-provider" android:exported="false" android:multiprocess="true" android:name="com.video_cloud.view.autosize.InitProvider"/>
         <provider android:authorities="xyz.netfly.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
         </provider>
         <service android:foregroundServiceType="dataSync" android:name="com.video_cloud.download.service.DownloadService"/>
-        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.video_cloud.mobile.VideoDetailActivity" android:screenOrientation="portrait" android:supportsPictureInPicture="true" android:theme="@style/LaunchTheme2"/>
-        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.video_cloud.mobile.view.MobileLogActivity" android:screenOrientation="portrait" android:supportsPictureInPicture="true" android:theme="@style/LaunchTheme2"/>
-        <activity android:launchMode="singleTask" android:name="com.video_cloud.mobile.AudioAndSubtitleActivity" android:screenOrientation="landscape" android:theme="@style/NoActionBarThemeTrans"/>
-        <activity android:launchMode="singleTask" android:name="com.video_cloud.mobile.EpisodesActivity" android:screenOrientation="landscape" android:theme="@style/DialogTransparent" android:windowSoftInputMode="adjustResize|stateHidden"/>
-        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="singleTask" android:name="com.video_cloud.mobile.AirplayGuideActivity" android:screenOrientation="portrait" android:theme="@style/LaunchTheme2"/>
-        <activity android:launchMode="singleTask" android:name="com.video_cloud.mobile.FeedbackPopActivity" android:screenOrientation="portrait" android:theme="@style/DialogTransparent" android:windowSoftInputMode="adjustResize|stateHidden"/>
-        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="singleTask" android:name="com.video_cloud.mobile.CastAndCrewDetailActivity" android:screenOrientation="portrait" android:theme="@style/LaunchTheme2"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.video_cloud.mobile.VideoDetailActivity" android:supportsPictureInPicture="true" android:theme="@style/LaunchTheme2"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.video_cloud.mobile.view.MobileLogActivity" android:supportsPictureInPicture="true" android:theme="@style/LaunchTheme2"/>
+        <activity android:launchMode="singleTask" android:name="com.video_cloud.mobile.AudioAndSubtitleActivity" android:theme="@style/NoActionBarThemeTrans"/>
+        <activity android:launchMode="singleTask" android:name="com.video_cloud.mobile.EpisodesActivity" android:theme="@style/DialogTransparent" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="singleTask" android:name="com.video_cloud.mobile.AirplayGuideActivity" android:theme="@style/LaunchTheme2"/>
+        <activity android:launchMode="singleTask" android:name="com.video_cloud.mobile.FeedbackPopActivity" android:theme="@style/DialogTransparent" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="singleTask" android:name="com.video_cloud.mobile.CastAndCrewDetailActivity" android:theme="@style/LaunchTheme2"/>
+        <activity android:name="com.video_cloud.ui.wallet.WalletActivity" android:theme="@style/DialogTransparent" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.video_cloud.ui.main.settings.ParentalLockActivity" android:theme="@style/DialogTransparent" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.video_cloud.ui.live.tv.analytics.StatsActivity" android:screenOrientation="landscape" android:theme="@style/DialogTransparent"/>
+        <provider android:authorities="xyz.netfly.flutter.share_provider" android:exported="false" android:grantUriPermissions="true" android:name="dev.fluttercommunity.plus.share.ShareFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/flutter_share_file_paths"/>
+        </provider>
+        <receiver android:exported="false" android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent">
+            <intent-filter>
+                <action android:name="EXTRA_CHOSEN_COMPONENT"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="io.flutter.plugins.urllauncher.WebViewActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <provider android:authorities="xyz.netfly.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
         <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
-        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-        </service>
         <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
@@ -130,27 +137,23 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
-        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
-        <provider android:authorities="xyz.netfly.flutter.share_provider" android:exported="false" android:grantUriPermissions="true" android:name="dev.fluttercommunity.plus.share.ShareFileProvider">
-            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/flutter_share_file_paths"/>
-        </provider>
-        <receiver android:exported="false" android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent">
-            <intent-filter>
-                <action android:name="EXTRA_CHOSEN_COMPONENT"/>
-            </intent-filter>
-        </receiver>
-        <activity android:exported="false" android:name="io.flutter.plugins.urllauncher.WebViewActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
         <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
         <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
         <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
         <provider android:authorities="xyz.netfly.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
         <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
         <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
-        <provider android:authorities="xyz.netfly.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
-            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
-            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
-            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
-        </provider>
         <uses-library android:name="android.ext.adservices" android:required="false"/>
         <uses-library android:name="androidx.window.extensions" android:required="false"/>
         <uses-library android:name="androidx.window.sidecar" android:required="false"/>
@@ -175,5 +178,6 @@
         <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
         <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
         <activity android:clearTaskOnLaunch="true" android:name="com.journeyapps.barcodescanner.CaptureActivity" android:screenOrientation="sensorLandscape" android:stateNotNeeded="true" android:theme="@style/zxing_CaptureTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:authorities="xyz.netfly.CP" android:exported="false" android:initOrder="2147483647" android:name="com.SecShell.SecShell.CP"/>
     </application>
 </manifest>

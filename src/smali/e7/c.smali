@@ -1,3 +1,0 @@
-.class public abstract synthetic Le7/c;
-.super Ljava/lang/Object;
-.source "SourceFile"

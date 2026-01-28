@@ -5,7 +5,7 @@
     <androidx.core.widget.NestedScrollView android:id="@id/nested_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
             <include android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="78.0dip" android:layout_marginRight="78.0dip" layout="@layout/header_kids" />
-            <com.video_cloud.library_view.tvrecyclerview.TvRecyclerView android:orientation="horizontal" android:id="@id/rv_kid_topic" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tv_isMenu="true" app:tv_layoutManager="V7LinearLayoutManager" />
+            <com.video_cloud.view.tvrecyclerview.TvRecyclerView android:orientation="horizontal" android:id="@id/rv_kid_topic" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tv_isMenu="true" app:tv_layoutManager="V7LinearLayoutManager" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </FrameLayout>

@@ -2,15 +2,31 @@
 <com.video_cloud.view.VideoGestureFrameLayout android:id="@id/base_layout" android:background="#ff000000" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <tv.danmaku.ijk.media.player.ui.IjkVideoView android:layout_gravity="center" android:id="@id/video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:default_artwork="@color/black_1" app:keep_content_on_player_reset="true" />
-    <LinearLayout android:orientation="vertical" android:id="@id/ll_debug" android:background="#80000000" android:paddingLeft="30.0dip" android:paddingTop="15.0dip" android:paddingRight="30.0dip" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="900.0dip" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_debug" android:background="#80000000" android:paddingLeft="30.0dip" android:paddingTop="15.0dip" android:paddingRight="30.0dip" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="1000.0dip" android:layout_height="wrap_content">
         <TextView android:textSize="54.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/live_bitrate" android:paddingTop="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-        <LinearLayout android:id="@id/ll_audioTrack" android:layout_width="fill_parent" android:layout_height="wrap_content">
-            <TextView android:textSize="54.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:paddingTop="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="AudioTrack:" android:layout_weight="1.0" />
-            <TextView android:textSize="54.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/audio_track" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:id="@id/ll_downloading" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="54.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:paddingTop="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="DownloadingBitrate:" android:layout_weight="1.0" />
+            <TextView android:textSize="54.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/live_bitrate_downloading" android:paddingTop="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
         </LinearLayout>
-        <LinearLayout android:id="@id/ll_subtitleTrack" android:layout_width="fill_parent" android:layout_height="wrap_content">
-            <TextView android:textSize="54.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:paddingTop="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="SubtitleTrack:" android:layout_weight="1.0" />
-            <TextView android:textSize="54.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/subtitle_track" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:id="@id/ll_position" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="54.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:paddingTop="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="CurrentPosition:" android:layout_weight="1.0" />
+            <TextView android:textSize="54.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/current_position" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/ll_buffering_position" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="54.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:paddingTop="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="BufferPosition:" android:layout_weight="1.0" />
+            <TextView android:textSize="54.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/buffer_position" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/ll_buffering_duration" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="54.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:paddingTop="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="BufferDuration:" android:layout_weight="1.0" />
+            <TextView android:textSize="54.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/buffer_duration" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="54.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:paddingTop="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="SliceCount:" android:layout_weight="1.0" />
+            <TextView android:textSize="54.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/slice_count" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="54.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:paddingTop="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="NextBitrate:" android:layout_weight="1.0" />
+            <TextView android:textSize="54.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/next_bitrate" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
         </LinearLayout>
         <LinearLayout android:id="@id/ll_bitrate" android:layout_width="fill_parent" android:layout_height="wrap_content">
             <TextView android:textSize="54.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:paddingTop="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="bitrateEstimate:" android:layout_weight="1.0" />
@@ -24,11 +40,16 @@
             <TextView android:textSize="54.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:paddingTop="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="bytesTransferred:" android:layout_weight="1.0" />
             <TextView android:textSize="54.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/bytesTransferred" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
         </LinearLayout>
+        <LinearLayout android:id="@id/ll_history_bitrate" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="54.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:paddingTop="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="historyBitrate:" android:layout_weight="1.0" />
+            <TextView android:textSize="54.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/history_bitrate" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
     </LinearLayout>
     <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/live_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
         <pl.droidsonroids.gif.GifImageView android:id="@id/live_loading_image" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@mipmap/loading" />
         <TextView android:textSize="28.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/live_loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" />
     </LinearLayout>
+    <include android:layout_gravity="bottom" android:id="@id/fl_switch_bitrate" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="140.0dip" layout="@layout/layout_live_switch_bitrate" />
     <com.video_cloud.ui.live.tv.CustomLiveControl android:id="@id/custom_controller" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     <com.video_cloud.ui.live.tablet.CustomLivePadControl android:id="@id/custom_pad_controller" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/error_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">

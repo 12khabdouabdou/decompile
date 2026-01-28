@@ -130,7 +130,7 @@
 
     if-eqz p3, :cond_1
 
-    invoke-virtual {p2, p0}, Landroidx/constraintlayout/core/SolverVariable;->l(Landroidx/constraintlayout/core/b;)V
+    invoke-virtual {p2, p0}, Landroidx/constraintlayout/core/SolverVariable;->k(Landroidx/constraintlayout/core/b;)V
 
     :cond_1
     sget-boolean p2, Landroidx/constraintlayout/core/c;->u:Z
@@ -180,7 +180,7 @@
 
     iget-object p2, p2, Landroidx/constraintlayout/core/b;->a:Landroidx/constraintlayout/core/SolverVariable;
 
-    invoke-virtual {p2, p0}, Landroidx/constraintlayout/core/SolverVariable;->l(Landroidx/constraintlayout/core/b;)V
+    invoke-virtual {p2, p0}, Landroidx/constraintlayout/core/SolverVariable;->k(Landroidx/constraintlayout/core/b;)V
 
     :cond_0
     sget-boolean p2, Landroidx/constraintlayout/core/c;->u:Z
@@ -244,7 +244,7 @@
 
     if-eqz p3, :cond_1
 
-    invoke-virtual {p2, p0}, Landroidx/constraintlayout/core/SolverVariable;->l(Landroidx/constraintlayout/core/b;)V
+    invoke-virtual {p2, p0}, Landroidx/constraintlayout/core/SolverVariable;->k(Landroidx/constraintlayout/core/b;)V
 
     :cond_1
     iget-object v1, p0, Landroidx/constraintlayout/core/b;->e:Landroidx/constraintlayout/core/b$a;

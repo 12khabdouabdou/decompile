@@ -90,7 +90,7 @@
 
     sput-object v0, Landroidx/constraintlayout/core/SolverVariable$Type;->t:Landroidx/constraintlayout/core/SolverVariable$Type;
 
-    invoke-static {}, Landroidx/constraintlayout/core/SolverVariable$Type;->e()[Landroidx/constraintlayout/core/SolverVariable$Type;
+    invoke-static {}, Landroidx/constraintlayout/core/SolverVariable$Type;->c()[Landroidx/constraintlayout/core/SolverVariable$Type;
 
     move-result-object v0
 
@@ -107,7 +107,7 @@
     return-void
 .end method
 
-.method public static synthetic e()[Landroidx/constraintlayout/core/SolverVariable$Type;
+.method public static synthetic c()[Landroidx/constraintlayout/core/SolverVariable$Type;
     .locals 3
 
     .line 1

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="LaunchTheme2" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="LaunchTheme2" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
         <item name="android:windowBackground">@color/bg_color</item>
         <item name="android:textViewStyle">@style/CustomTextViewStyle</item>
         <item name="android:windowFullscreen">false</item>
