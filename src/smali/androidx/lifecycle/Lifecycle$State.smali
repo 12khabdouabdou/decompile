@@ -21,158 +21,158 @@
     }
 .end annotation
 
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\t\u0008\u0086\u0001\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001B\t\u0008\u0002\u00a2\u0006\u0004\u0008\u0005\u0010\u0006J\u000e\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u0002\u001a\u00020\u0000j\u0002\u0008\u0007j\u0002\u0008\u0008j\u0002\u0008\tj\u0002\u0008\nj\u0002\u0008\u000b\u00a8\u0006\u000c"
+    }
+    d2 = {
+        "Landroidx/lifecycle/Lifecycle$State;",
+        "",
+        "state",
+        "",
+        "j",
+        "<init>",
+        "(Ljava/lang/String;I)V",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "lifecycle-common"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+.end annotation
+
 
 # static fields
-.field public static final enum X:Landroidx/lifecycle/Lifecycle$State;
+.field public static final enum p:Landroidx/lifecycle/Lifecycle$State;
 
-.field public static final synthetic Y:[Landroidx/lifecycle/Lifecycle$State;
+.field public static final enum q:Landroidx/lifecycle/Lifecycle$State;
 
-.field public static final enum a:Landroidx/lifecycle/Lifecycle$State;
+.field public static final enum r:Landroidx/lifecycle/Lifecycle$State;
 
-.field public static final enum b:Landroidx/lifecycle/Lifecycle$State;
-
-.field public static final enum c:Landroidx/lifecycle/Lifecycle$State;
+.field public static final enum s:Landroidx/lifecycle/Lifecycle$State;
 
 .field public static final enum t:Landroidx/lifecycle/Lifecycle$State;
+
+.field public static final synthetic u:[Landroidx/lifecycle/Lifecycle$State;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 11
+    .locals 3
 
-    .line 1
-    const/4 v0, 0x4
+    new-instance v0, Landroidx/lifecycle/Lifecycle$State;
 
-    .line 2
-    const/4 v1, 0x3
+    const-string v1, "DESTROYED"
 
-    .line 3
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2}, Landroidx/lifecycle/Lifecycle$State;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Landroidx/lifecycle/Lifecycle$State;->p:Landroidx/lifecycle/Lifecycle$State;
+
+    new-instance v0, Landroidx/lifecycle/Lifecycle$State;
+
+    const-string v1, "INITIALIZED"
+
+    const/4 v2, 0x1
+
+    invoke-direct {v0, v1, v2}, Landroidx/lifecycle/Lifecycle$State;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Landroidx/lifecycle/Lifecycle$State;->q:Landroidx/lifecycle/Lifecycle$State;
+
+    new-instance v0, Landroidx/lifecycle/Lifecycle$State;
+
+    const-string v1, "CREATED"
+
     const/4 v2, 0x2
 
-    .line 4
-    const/4 v3, 0x1
+    invoke-direct {v0, v1, v2}, Landroidx/lifecycle/Lifecycle$State;-><init>(Ljava/lang/String;I)V
 
-    .line 5
-    const/4 v4, 0x0
+    sput-object v0, Landroidx/lifecycle/Lifecycle$State;->r:Landroidx/lifecycle/Lifecycle$State;
 
-    .line 6
-    new-instance v5, Landroidx/lifecycle/Lifecycle$State;
+    new-instance v0, Landroidx/lifecycle/Lifecycle$State;
 
-    .line 7
-    .line 8
-    const-string v6, "DESTROYED"
+    const-string v1, "STARTED"
 
-    .line 9
-    .line 10
-    invoke-direct {v5, v6, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const/4 v2, 0x3
 
-    .line 11
-    .line 12
-    .line 13
-    sput-object v5, Landroidx/lifecycle/Lifecycle$State;->a:Landroidx/lifecycle/Lifecycle$State;
+    invoke-direct {v0, v1, v2}, Landroidx/lifecycle/Lifecycle$State;-><init>(Ljava/lang/String;I)V
 
-    .line 14
-    .line 15
-    new-instance v6, Landroidx/lifecycle/Lifecycle$State;
+    sput-object v0, Landroidx/lifecycle/Lifecycle$State;->s:Landroidx/lifecycle/Lifecycle$State;
 
-    .line 16
-    .line 17
-    const-string v7, "INITIALIZED"
+    new-instance v0, Landroidx/lifecycle/Lifecycle$State;
 
-    .line 18
-    .line 19
-    invoke-direct {v6, v7, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v1, "RESUMED"
 
-    .line 20
-    .line 21
-    .line 22
-    sput-object v6, Landroidx/lifecycle/Lifecycle$State;->b:Landroidx/lifecycle/Lifecycle$State;
+    const/4 v2, 0x4
 
-    .line 23
-    .line 24
-    new-instance v7, Landroidx/lifecycle/Lifecycle$State;
+    invoke-direct {v0, v1, v2}, Landroidx/lifecycle/Lifecycle$State;-><init>(Ljava/lang/String;I)V
 
-    .line 25
-    .line 26
-    const-string v8, "CREATED"
+    sput-object v0, Landroidx/lifecycle/Lifecycle$State;->t:Landroidx/lifecycle/Lifecycle$State;
 
-    .line 27
-    .line 28
-    invoke-direct {v7, v8, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-static {}, Landroidx/lifecycle/Lifecycle$State;->e()[Landroidx/lifecycle/Lifecycle$State;
 
-    .line 29
-    .line 30
-    .line 31
-    sput-object v7, Landroidx/lifecycle/Lifecycle$State;->c:Landroidx/lifecycle/Lifecycle$State;
+    move-result-object v0
 
-    .line 32
-    .line 33
-    new-instance v8, Landroidx/lifecycle/Lifecycle$State;
+    sput-object v0, Landroidx/lifecycle/Lifecycle$State;->u:[Landroidx/lifecycle/Lifecycle$State;
 
-    .line 34
-    .line 35
-    const-string v9, "STARTED"
-
-    .line 36
-    .line 37
-    invoke-direct {v8, v9, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 38
-    .line 39
-    .line 40
-    sput-object v8, Landroidx/lifecycle/Lifecycle$State;->t:Landroidx/lifecycle/Lifecycle$State;
-
-    .line 41
-    .line 42
-    new-instance v9, Landroidx/lifecycle/Lifecycle$State;
-
-    .line 43
-    .line 44
-    const-string v10, "RESUMED"
-
-    .line 45
-    .line 46
-    invoke-direct {v9, v10, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 47
-    .line 48
-    .line 49
-    sput-object v9, Landroidx/lifecycle/Lifecycle$State;->X:Landroidx/lifecycle/Lifecycle$State;
-
-    .line 50
-    .line 51
-    const/4 v10, 0x5
-
-    .line 52
-    new-array v10, v10, [Landroidx/lifecycle/Lifecycle$State;
-
-    .line 53
-    .line 54
-    aput-object v5, v10, v4
-
-    .line 55
-    .line 56
-    aput-object v6, v10, v3
-
-    .line 57
-    .line 58
-    aput-object v7, v10, v2
-
-    .line 59
-    .line 60
-    aput-object v8, v10, v1
-
-    .line 61
-    .line 62
-    aput-object v9, v10, v0
-
-    .line 63
-    .line 64
-    sput-object v10, Landroidx/lifecycle/Lifecycle$State;->Y:[Landroidx/lifecycle/Lifecycle$State;
-
-    .line 65
-    .line 66
     return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;I)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    return-void
+.end method
+
+.method public static final synthetic e()[Landroidx/lifecycle/Lifecycle$State;
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x5
+
+    new-array v0, v0, [Landroidx/lifecycle/Lifecycle$State;
+
+    const/4 v1, 0x0
+
+    sget-object v2, Landroidx/lifecycle/Lifecycle$State;->p:Landroidx/lifecycle/Lifecycle$State;
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    sget-object v2, Landroidx/lifecycle/Lifecycle$State;->q:Landroidx/lifecycle/Lifecycle$State;
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
+
+    sget-object v2, Landroidx/lifecycle/Lifecycle$State;->r:Landroidx/lifecycle/Lifecycle$State;
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x3
+
+    sget-object v2, Landroidx/lifecycle/Lifecycle$State;->s:Landroidx/lifecycle/Lifecycle$State;
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x4
+
+    sget-object v2, Landroidx/lifecycle/Lifecycle$State;->t:Landroidx/lifecycle/Lifecycle$State;
+
+    aput-object v2, v0, v1
+
+    return-object v0
 .end method
 
 .method public static valueOf(Ljava/lang/String;)Landroidx/lifecycle/Lifecycle$State;
@@ -192,7 +192,7 @@
 .method public static values()[Landroidx/lifecycle/Lifecycle$State;
     .locals 1
 
-    sget-object v0, Landroidx/lifecycle/Lifecycle$State;->Y:[Landroidx/lifecycle/Lifecycle$State;
+    sget-object v0, Landroidx/lifecycle/Lifecycle$State;->u:[Landroidx/lifecycle/Lifecycle$State;
 
     invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
 
@@ -205,31 +205,27 @@
 
 
 # virtual methods
-.method public final a(Landroidx/lifecycle/Lifecycle$State;)Z
-    .locals 0
+.method public final j(Landroidx/lifecycle/Lifecycle$State;)Z
+    .locals 1
 
     .line 1
+    const-string v0, "state"
+
+    invoke-static {p1, v0}, Ljg/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
     invoke-virtual {p0, p1}, Ljava/lang/Enum;->compareTo(Ljava/lang/Enum;)I
 
-    .line 2
-    .line 3
-    .line 4
     move-result p1
 
-    .line 5
     if-ltz p1, :cond_0
 
-    .line 6
-    .line 7
     const/4 p1, 0x1
 
-    .line 8
-    return p1
+    goto :goto_0
 
-    .line 9
     :cond_0
     const/4 p1, 0x0
 
-    .line 10
+    :goto_0
     return p1
 .end method

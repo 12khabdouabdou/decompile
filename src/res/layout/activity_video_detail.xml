@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/scroll_movie" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="78.0dip" android:layout_marginRight="78.0dip">
+                <include android:orientation="vertical" android:id="@id/movie_info" android:layout_width="750.0dip" android:layout_height="wrap_content" android:layout_marginTop="64.0dip" android:layout_marginEnd="78.0dip" layout="@layout/view_detail_info" />
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:layout_gravity="center_horizontal" android:background="@drawable/shape_radius_detail_image_bg" android:layout_width="fill_parent" android:layout_height="551.0dip" android:layout_marginLeft="50.0dip" android:layout_marginTop="100.0dip" android:layout_marginRight="50.0dip" />
+                    <com.video_cloud.view.CustomImageView android:layout_gravity="center_horizontal" android:id="@id/iv_movie_banner" android:layout_width="fill_parent" android:layout_height="579.0dip" android:layout_marginTop="122.0dip" />
+                </FrameLayout>
+            </LinearLayout>
+            <TextView android:textSize="30.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/similar" android:layout_marginStart="78.0dip" />
+            <com.video_cloud.library_view.tvrecyclerview.TvRecyclerView android:orientation="horizontal" android:id="@id/rv_movie_similar" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:tv_isMenu="true" app:tv_layoutManager="V7LinearLayoutManager" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:id="@id/ll_series" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginEnd="78.0dip">
+        <androidx.core.widget.NestedScrollView android:id="@id/scroll_series" android:layout_width="680.0dip" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="600.0dip" android:layout_height="wrap_content" android:layout_marginEnd="78.0dip">
+                    <FrameLayout android:layout_width="396.0dip" android:layout_height="230.0dip" android:layout_marginTop="60.0dip" android:layout_marginStart="78.0dip">
+                        <View android:background="@drawable/shape_radius_detail_image_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+                        <com.video_cloud.view.CustomImageView android:layout_gravity="center_horizontal" android:id="@id/iv_series_banner" android:layout_width="396.0dip" android:layout_height="220.0dip" android:layout_marginTop="10.0dip" />
+                    </FrameLayout>
+                    <include android:orientation="vertical" android:id="@id/series_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginStart="78.0dip" layout="@layout/view_detail_info" />
+                    <TextView android:textSize="30.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/similar" android:layout_marginStart="78.0dip" />
+                    <com.video_cloud.library_view.tvrecyclerview.TvRecyclerView android:orientation="horizontal" android:id="@id/rv_series_similar" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:tv_isMenu="true" app:tv_layoutManager="V7LinearLayoutManager" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <com.video_cloud.library_view.tvrecyclerview.TvRecyclerView android:orientation="vertical" android:id="@id/rv_episodes" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" app:tv_isMenu="true" app:tv_layoutManager="V7LinearLayoutManager" />
+    </LinearLayout>
+    <eightbitlab.com.blurview.BlurView android:id="@id/v_shadow_video" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:blurOverlayColor="@color/colorOverlayBlack" />
+</FrameLayout>

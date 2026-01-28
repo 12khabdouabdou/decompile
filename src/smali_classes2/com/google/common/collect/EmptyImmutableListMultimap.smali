@@ -1,0 +1,87 @@
+.class Lcom/google/common/collect/EmptyImmutableListMultimap;
+.super Lcom/google/common/collect/ImmutableListMultimap;
+.source "SourceFile"
+
+
+# annotations
+.annotation build Lcom/google/common/annotations/GwtCompatible;
+    serializable = true
+.end annotation
+
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/common/collect/ImmutableListMultimap<",
+        "Ljava/lang/Object;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final serialVersionUID:J
+
+.field public static final v:Lcom/google/common/collect/EmptyImmutableListMultimap;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lcom/google/common/collect/EmptyImmutableListMultimap;
+
+    invoke-direct {v0}, Lcom/google/common/collect/EmptyImmutableListMultimap;-><init>()V
+
+    sput-object v0, Lcom/google/common/collect/EmptyImmutableListMultimap;->v:Lcom/google/common/collect/EmptyImmutableListMultimap;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 2
+
+    invoke-static {}, Lcom/google/common/collect/ImmutableMap;->j()Lcom/google/common/collect/ImmutableMap;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-direct {p0, v0, v1}, Lcom/google/common/collect/ImmutableListMultimap;-><init>(Lcom/google/common/collect/ImmutableMap;I)V
+
+    return-void
+.end method
+
+.method private readResolve()Ljava/lang/Object;
+    .locals 1
+
+    sget-object v0, Lcom/google/common/collect/EmptyImmutableListMultimap;->v:Lcom/google/common/collect/EmptyImmutableListMultimap;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public bridge synthetic b()Ljava/util/Map;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/common/collect/EmptyImmutableListMultimap;->l()Lcom/google/common/collect/ImmutableMap;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public l()Lcom/google/common/collect/ImmutableMap;
+    .locals 1
+
+    .line 1
+    invoke-super {p0}, Lcom/google/common/collect/ImmutableMultimap;->l()Lcom/google/common/collect/ImmutableMap;
+
+    move-result-object v0
+
+    return-object v0
+.end method

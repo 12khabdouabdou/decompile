@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+        <LinearLayout android:gravity="center" android:id="@id/season_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="#ffffffff" android:id="@id/season_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Season 1" />
+            <ImageView android:id="@id/iv_down" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="2.0dip" android:src="@mipmap/icon_down" android:layout_marginStart="5.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="13.0sp" android:textColor="#ff444444" android:id="@id/episodes_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Episodes 13" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/episodes_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

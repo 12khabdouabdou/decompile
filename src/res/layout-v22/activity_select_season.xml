@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:background="@drawable/shape_season" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="480.0dip" android:layout_height="wrap_content" android:layout_margin="78.0dip" android:paddingVertical="20.0dip">
+        <TextView android:textSize="34.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/seasons" android:layout_marginStart="20.0dip" />
+        <View android:background="@color/black_14" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="20.0sp" />
+        <com.video_cloud.library_view.tvrecyclerview.TvRecyclerView android:orientation="vertical" android:id="@id/rv_select_season" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tv_isMenu="false" app:tv_layoutManager="V7LinearLayoutManager" />
+    </LinearLayout>
+</FrameLayout>

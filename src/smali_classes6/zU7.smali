@@ -1,3 +1,0 @@
-.class public final LzU7;
-.super Ljava/lang/Object;
-.source "SourceFile"

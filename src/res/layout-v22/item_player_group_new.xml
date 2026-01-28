@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/selector_group_new" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="500.0dip" android:layout_height="100.0dip" android:paddingHorizontal="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/live_group_image" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:scaleType="centerCrop" android:layout_marginHorizontal="30.0dip" />
+    <TextView android:textSize="32.0sp" android:textColor="#ffffffff" android:id="@id/live_group_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+    <TextView android:textSize="34.0sp" android:textColor="#ffffffff" android:id="@id/live_group_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="30.0dip" />
+</LinearLayout>

@@ -3,27 +3,62 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lv3j;
-.implements LPC0;
+.implements Landroidx/core/view/z0;
+.implements Lv0/o;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/appcompat/widget/AppCompatTextView$a;,
+        Landroidx/appcompat/widget/AppCompatTextView$d;,
+        Landroidx/appcompat/widget/AppCompatTextView$c;,
+        Landroidx/appcompat/widget/AppCompatTextView$b;
+    }
+.end annotation
 
 
 # instance fields
-.field private final a:LwY;
+.field private mPrecomputedTextFuture:Ljava/util/concurrent/Future;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
-.field private final b:LqZ;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/Future<",
+            "Lp0/m;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field private final c:LnZ;
+.field private mSuperCaller:Landroidx/appcompat/widget/AppCompatTextView$a;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
-.field public t:Ljava/util/concurrent/Future;
+.field public final p:Lm/d;
+
+.field public final q:Lm/s;
+
+.field public final r:Lm/r;
+
+.field public s:Lm/i;
+
+.field public t:Z
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-
-    const/4 v0, 0x0
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
+    const/4 v0, 0x0
+
     invoke-direct {p0, p1, v0}, Landroidx/appcompat/widget/AppCompatTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -31,10 +66,18 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-
-    const v0, 0x1010084
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 2
+    const v0, 0x1010084
+
     invoke-direct {p0, p1, p2, v0}, Landroidx/appcompat/widget/AppCompatTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -42,777 +85,787 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 3
-    invoke-static {p1}, Landroidx/appcompat/widget/TintContextWrapper;->a(Landroid/content/Context;)V
+    invoke-static {p1}, Lm/n0;->b(Landroid/content/Context;)Landroid/content/Context;
+
+    move-result-object p1
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/TextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 4
-    new-instance p1, LwY;
+    const/4 p1, 0x0
 
-    invoke-direct {p1, p0}, LwY;-><init>(Landroid/view/View;)V
+    iput-boolean p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->t:Z
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->a:LwY;
+    const/4 p1, 0x0
 
-    .line 5
-    invoke-virtual {p1, p2, p3}, LwY;->d(Landroid/util/AttributeSet;I)V
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->mSuperCaller:Landroidx/appcompat/widget/AppCompatTextView$a;
 
-    .line 6
-    new-instance p1, LqZ;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
-    invoke-direct {p1, p0}, LqZ;-><init>(Landroid/widget/TextView;)V
+    move-result-object p1
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:LqZ;
+    invoke-static {p0, p1}, Lm/m0;->a(Landroid/view/View;Landroid/content/Context;)V
 
-    .line 7
-    invoke-virtual {p1, p2, p3}, LqZ;->k(Landroid/util/AttributeSet;I)V
+    new-instance p1, Lm/d;
 
-    .line 8
-    invoke-virtual {p1}, LqZ;->b()V
+    invoke-direct {p1, p0}, Lm/d;-><init>(Landroid/view/View;)V
 
-    .line 9
-    new-instance p1, LnZ;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->p:Lm/d;
 
-    .line 10
-    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
+    invoke-virtual {p1, p2, p3}, Lm/d;->loadFromAttributes(Landroid/util/AttributeSet;I)V
 
-    .line 11
-    iput-object p0, p1, LnZ;->a:Landroid/widget/TextView;
+    new-instance p1, Lm/s;
 
-    .line 12
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->c:LnZ;
+    invoke-direct {p1, p0}, Lm/s;-><init>(Landroid/widget/TextView;)V
+
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
+
+    invoke-virtual {p1, p2, p3}, Lm/s;->loadFromAttributes(Landroid/util/AttributeSet;I)V
+
+    invoke-virtual {p1}, Lm/s;->b()V
+
+    new-instance p1, Lm/r;
+
+    invoke-direct {p1, p0}, Lm/r;-><init>(Landroid/widget/TextView;)V
+
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->r:Lm/r;
+
+    invoke-direct {p0}, Landroidx/appcompat/widget/AppCompatTextView;->getEmojiTextViewHelper()Lm/i;
+
+    move-result-object p1
+
+    invoke-virtual {p1, p2, p3}, Lm/i;->loadFromAttributes(Landroid/util/AttributeSet;I)V
+
+    return-void
+.end method
+
+.method public static synthetic c(Landroidx/appcompat/widget/AppCompatTextView;)I
+    .locals 0
+
+    .line 1
+    invoke-super {p0}, Landroid/widget/TextView;->getAutoSizeMaxTextSize()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic f(Landroidx/appcompat/widget/AppCompatTextView;I)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Landroid/widget/TextView;->setFirstBaselineToTopHeight(I)V
+
+    return-void
+.end method
+
+.method public static synthetic g(Landroidx/appcompat/widget/AppCompatTextView;)I
+    .locals 0
+
+    .line 1
+    invoke-super {p0}, Landroid/widget/TextView;->getAutoSizeMinTextSize()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method private getEmojiTextViewHelper()Lm/i;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->s:Lm/i;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Lm/i;
+
+    invoke-direct {v0, p0}, Lm/i;-><init>(Landroid/widget/TextView;)V
+
+    iput-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->s:Lm/i;
+
+    :cond_0
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->s:Lm/i;
+
+    return-object v0
+.end method
+
+.method public static synthetic h(Landroidx/appcompat/widget/AppCompatTextView;I)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Landroid/widget/TextView;->setLastBaselineToBottomHeight(I)V
+
+    return-void
+.end method
+
+.method public static synthetic i(Landroidx/appcompat/widget/AppCompatTextView;IF)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1, p2}, Landroid/widget/TextView;->setLineHeight(IF)V
+
+    return-void
+.end method
+
+.method public static synthetic j(Landroidx/appcompat/widget/AppCompatTextView;)I
+    .locals 0
+
+    .line 1
+    invoke-super {p0}, Landroid/widget/TextView;->getAutoSizeStepGranularity()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic k(Landroidx/appcompat/widget/AppCompatTextView;)[I
+    .locals 0
+
+    .line 1
+    invoke-super {p0}, Landroid/widget/TextView;->getAutoSizeTextAvailableSizes()[I
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic l(Landroidx/appcompat/widget/AppCompatTextView;)I
+    .locals 0
+
+    .line 1
+    invoke-super {p0}, Landroid/widget/TextView;->getAutoSizeTextType()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic m(Landroidx/appcompat/widget/AppCompatTextView;)Landroid/view/textclassifier/TextClassifier;
+    .locals 0
+
+    .line 1
+    invoke-super {p0}, Landroid/widget/TextView;->getTextClassifier()Landroid/view/textclassifier/TextClassifier;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic n(Landroidx/appcompat/widget/AppCompatTextView;IIII)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/TextView;->setAutoSizeTextTypeUniformWithConfiguration(IIII)V
+
+    return-void
+.end method
+
+.method public static synthetic o(Landroidx/appcompat/widget/AppCompatTextView;[II)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1, p2}, Landroid/widget/TextView;->setAutoSizeTextTypeUniformWithPresetSizes([II)V
+
+    return-void
+.end method
+
+.method public static synthetic p(Landroidx/appcompat/widget/AppCompatTextView;I)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Landroid/widget/TextView;->setAutoSizeTextTypeWithDefaults(I)V
+
+    return-void
+.end method
+
+.method public static synthetic q(Landroidx/appcompat/widget/AppCompatTextView;Landroid/view/textclassifier/TextClassifier;)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Landroid/widget/TextView;->setTextClassifier(Landroid/view/textclassifier/TextClassifier;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public b(Ljava/lang/Object;)V
-    .locals 0
-
-    .line 1
-    check-cast p1, Ljava/lang/CharSequence;
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, p1}, Landroidx/appcompat/widget/AppCompatTextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
 .method public drawableStateChanged()V
     .locals 1
 
-    .line 1
     invoke-super {p0}, Landroid/widget/TextView;->drawableStateChanged()V
 
-    .line 2
-    .line 3
-    .line 4
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->a:LwY;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->p:Lm/d;
 
-    .line 5
-    .line 6
     if-eqz v0, :cond_0
 
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LwY;->a()V
+    invoke-virtual {v0}, Lm/d;->b()V
 
-    .line 9
-    .line 10
-    .line 11
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:LqZ;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
-    .line 12
-    .line 13
     if-eqz v0, :cond_1
 
-    .line 14
-    .line 15
-    invoke-virtual {v0}, LqZ;->b()V
+    invoke-virtual {v0}, Lm/s;->b()V
 
-    .line 16
-    .line 17
-    .line 18
     :cond_1
     return-void
 .end method
 
 .method public getAutoSizeMaxTextSize()I
     .locals 1
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->r:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
 
-    .line 1
-    sget-boolean v0, LPC0;->h:Z
+    sget-boolean v0, Lm/a1;->c:Z
 
-    .line 2
-    .line 3
     if-eqz v0, :cond_0
 
-    .line 4
-    .line 5
-    invoke-super {p0}, Landroid/widget/TextView;->getAutoSizeMaxTextSize()I
+    invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatTextView;->getSuperCaller()Landroidx/appcompat/widget/AppCompatTextView$a;
 
-    .line 6
-    .line 7
-    .line 8
+    move-result-object v0
+
+    invoke-interface {v0}, Landroidx/appcompat/widget/AppCompatTextView$a;->d()I
+
     move-result v0
 
-    .line 9
     return v0
 
-    .line 10
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:LqZ;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
-    .line 11
-    .line 12
     if-eqz v0, :cond_1
 
-    .line 13
-    .line 14
-    invoke-virtual {v0}, LqZ;->e()I
+    invoke-virtual {v0}, Lm/s;->e()I
 
-    .line 15
-    .line 16
-    .line 17
     move-result v0
 
-    .line 18
     return v0
 
-    .line 19
     :cond_1
     const/4 v0, -0x1
 
-    .line 20
     return v0
 .end method
 
 .method public getAutoSizeMinTextSize()I
     .locals 1
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->r:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
 
-    .line 1
-    sget-boolean v0, LPC0;->h:Z
+    sget-boolean v0, Lm/a1;->c:Z
 
-    .line 2
-    .line 3
     if-eqz v0, :cond_0
 
-    .line 4
-    .line 5
-    invoke-super {p0}, Landroid/widget/TextView;->getAutoSizeMinTextSize()I
+    invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatTextView;->getSuperCaller()Landroidx/appcompat/widget/AppCompatTextView$a;
 
-    .line 6
-    .line 7
-    .line 8
+    move-result-object v0
+
+    invoke-interface {v0}, Landroidx/appcompat/widget/AppCompatTextView$a;->h()I
+
     move-result v0
 
-    .line 9
     return v0
 
-    .line 10
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:LqZ;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
-    .line 11
-    .line 12
     if-eqz v0, :cond_1
 
-    .line 13
-    .line 14
-    invoke-virtual {v0}, LqZ;->f()I
+    invoke-virtual {v0}, Lm/s;->f()I
 
-    .line 15
-    .line 16
-    .line 17
     move-result v0
 
-    .line 18
     return v0
 
-    .line 19
     :cond_1
     const/4 v0, -0x1
 
-    .line 20
     return v0
 .end method
 
 .method public getAutoSizeStepGranularity()I
     .locals 1
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->r:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
 
-    .line 1
-    sget-boolean v0, LPC0;->h:Z
+    sget-boolean v0, Lm/a1;->c:Z
 
-    .line 2
-    .line 3
     if-eqz v0, :cond_0
 
-    .line 4
-    .line 5
-    invoke-super {p0}, Landroid/widget/TextView;->getAutoSizeStepGranularity()I
+    invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatTextView;->getSuperCaller()Landroidx/appcompat/widget/AppCompatTextView$a;
 
-    .line 6
-    .line 7
-    .line 8
+    move-result-object v0
+
+    invoke-interface {v0}, Landroidx/appcompat/widget/AppCompatTextView$a;->j()I
+
     move-result v0
 
-    .line 9
     return v0
 
-    .line 10
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:LqZ;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
-    .line 11
-    .line 12
     if-eqz v0, :cond_1
 
-    .line 13
-    .line 14
-    invoke-virtual {v0}, LqZ;->g()I
+    invoke-virtual {v0}, Lm/s;->g()I
 
-    .line 15
-    .line 16
-    .line 17
     move-result v0
 
-    .line 18
     return v0
 
-    .line 19
     :cond_1
     const/4 v0, -0x1
 
-    .line 20
     return v0
 .end method
 
 .method public getAutoSizeTextAvailableSizes()[I
     .locals 1
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->r:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
 
-    .line 1
-    sget-boolean v0, LPC0;->h:Z
+    sget-boolean v0, Lm/a1;->c:Z
 
-    .line 2
-    .line 3
     if-eqz v0, :cond_0
 
-    .line 4
-    .line 5
-    invoke-super {p0}, Landroid/widget/TextView;->getAutoSizeTextAvailableSizes()[I
+    invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatTextView;->getSuperCaller()Landroidx/appcompat/widget/AppCompatTextView$a;
 
-    .line 6
-    .line 7
-    .line 8
     move-result-object v0
 
-    .line 9
+    invoke-interface {v0}, Landroidx/appcompat/widget/AppCompatTextView$a;->b()[I
+
+    move-result-object v0
+
     return-object v0
 
-    .line 10
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:LqZ;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
-    .line 11
-    .line 12
     if-eqz v0, :cond_1
 
-    .line 13
-    .line 14
-    invoke-virtual {v0}, LqZ;->h()[I
+    invoke-virtual {v0}, Lm/s;->h()[I
 
-    .line 15
-    .line 16
-    .line 17
     move-result-object v0
 
-    .line 18
     return-object v0
 
-    .line 19
     :cond_1
     const/4 v0, 0x0
 
-    .line 20
     new-array v0, v0, [I
 
-    .line 21
-    .line 22
     return-object v0
 .end method
 
 .method public getAutoSizeTextType()I
     .locals 3
+    .annotation build Landroid/annotation/SuppressLint;
+        value = {
+            "WrongConstant"
+        }
+    .end annotation
 
-    .line 1
-    sget-boolean v0, LPC0;->h:Z
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->r:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
 
-    .line 2
-    .line 3
+    sget-boolean v0, Lm/a1;->c:Z
+
     const/4 v1, 0x0
 
-    .line 4
     if-eqz v0, :cond_1
 
-    .line 5
-    .line 6
-    invoke-super {p0}, Landroid/widget/TextView;->getAutoSizeTextType()I
+    invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatTextView;->getSuperCaller()Landroidx/appcompat/widget/AppCompatTextView$a;
 
-    .line 7
-    .line 8
-    .line 9
+    move-result-object v0
+
+    invoke-interface {v0}, Landroidx/appcompat/widget/AppCompatTextView$a;->g()I
+
     move-result v0
 
-    .line 10
     const/4 v2, 0x1
 
-    .line 11
     if-ne v0, v2, :cond_0
 
-    .line 12
-    .line 13
-    return v2
+    const/4 v1, 0x1
 
-    .line 14
     :cond_0
     return v1
 
-    .line 15
     :cond_1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:LqZ;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
-    .line 16
-    .line 17
     if-eqz v0, :cond_2
 
-    .line 18
-    .line 19
-    invoke-virtual {v0}, LqZ;->i()I
+    invoke-virtual {v0}, Lm/s;->i()I
 
-    .line 20
-    .line 21
-    .line 22
     move-result v0
 
-    .line 23
     return v0
 
-    .line 24
     :cond_2
     return v1
 .end method
 
+.method public getCustomSelectionActionModeCallback()Landroid/view/ActionMode$Callback;
+    .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    invoke-super {p0}, Landroid/widget/TextView;->getCustomSelectionActionModeCallback()Landroid/view/ActionMode$Callback;
+
+    move-result-object v0
+
+    invoke-static {v0}, Landroidx/core/widget/TextViewCompat;->unwrapCustomSelectionActionModeCallback(Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode$Callback;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
 .method public getFirstBaselineToTopHeight()I
-    .locals 2
+    .locals 1
 
-    .line 1
-    invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
+    invoke-static {p0}, Landroidx/core/widget/TextViewCompat;->a(Landroid/widget/TextView;)I
 
-    .line 2
-    .line 3
-    .line 4
     move-result v0
 
-    .line 5
-    invoke-virtual {p0}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v1
-
-    .line 9
-    invoke-virtual {v1}, Landroid/graphics/Paint;->getFontMetricsInt()Landroid/graphics/Paint$FontMetricsInt;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object v1
-
-    .line 13
-    iget v1, v1, Landroid/graphics/Paint$FontMetricsInt;->top:I
-
-    .line 14
-    .line 15
-    sub-int/2addr v0, v1
-
-    .line 16
     return v0
 .end method
 
 .method public getLastBaselineToBottomHeight()I
-    .locals 2
+    .locals 1
 
-    .line 1
-    invoke-virtual {p0}, Landroid/view/View;->getPaddingBottom()I
+    invoke-static {p0}, Landroidx/core/widget/TextViewCompat;->b(Landroid/widget/TextView;)I
 
-    .line 2
-    .line 3
-    .line 4
     move-result v0
 
-    .line 5
-    invoke-virtual {p0}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v1
-
-    .line 9
-    invoke-virtual {v1}, Landroid/graphics/Paint;->getFontMetricsInt()Landroid/graphics/Paint$FontMetricsInt;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object v1
-
-    .line 13
-    iget v1, v1, Landroid/graphics/Paint$FontMetricsInt;->bottom:I
-
-    .line 14
-    .line 15
-    add-int/2addr v0, v1
-
-    .line 16
     return v0
+.end method
+
+.method public getSuperCaller()Landroidx/appcompat/widget/AppCompatTextView$a;
+    .locals 2
+    .annotation build Landroidx/annotation/RequiresApi;
+        api = 0x1a
+    .end annotation
+
+    .annotation build Landroidx/annotation/UiThread;
+    .end annotation
+
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->mSuperCaller:Landroidx/appcompat/widget/AppCompatTextView$a;
+
+    if-nez v0, :cond_2
+
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x22
+
+    if-lt v0, v1, :cond_0
+
+    new-instance v0, Landroidx/appcompat/widget/AppCompatTextView$d;
+
+    invoke-direct {v0, p0}, Landroidx/appcompat/widget/AppCompatTextView$d;-><init>(Landroidx/appcompat/widget/AppCompatTextView;)V
+
+    :goto_0
+    iput-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->mSuperCaller:Landroidx/appcompat/widget/AppCompatTextView$a;
+
+    goto :goto_1
+
+    :cond_0
+    const/16 v1, 0x1c
+
+    if-lt v0, v1, :cond_1
+
+    new-instance v0, Landroidx/appcompat/widget/AppCompatTextView$c;
+
+    invoke-direct {v0, p0}, Landroidx/appcompat/widget/AppCompatTextView$c;-><init>(Landroidx/appcompat/widget/AppCompatTextView;)V
+
+    goto :goto_0
+
+    :cond_1
+    const/16 v1, 0x1a
+
+    if-lt v0, v1, :cond_2
+
+    new-instance v0, Landroidx/appcompat/widget/AppCompatTextView$b;
+
+    invoke-direct {v0, p0}, Landroidx/appcompat/widget/AppCompatTextView$b;-><init>(Landroidx/appcompat/widget/AppCompatTextView;)V
+
+    goto :goto_0
+
+    :cond_2
+    :goto_1
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->mSuperCaller:Landroidx/appcompat/widget/AppCompatTextView$a;
+
+    return-object v0
 .end method
 
 .method public getSupportBackgroundTintList()Landroid/content/res/ColorStateList;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->a:LwY;
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->r:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
 
-    .line 2
-    .line 3
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->p:Lm/d;
+
     if-eqz v0, :cond_0
 
-    .line 4
-    .line 5
-    invoke-virtual {v0}, LwY;->b()Landroid/content/res/ColorStateList;
+    invoke-virtual {v0}, Lm/d;->c()Landroid/content/res/ColorStateList;
 
-    .line 6
-    .line 7
-    .line 8
     move-result-object v0
 
-    .line 9
-    return-object v0
+    goto :goto_0
 
-    .line 10
     :cond_0
     const/4 v0, 0x0
 
-    .line 11
+    :goto_0
     return-object v0
 .end method
 
 .method public getSupportBackgroundTintMode()Landroid/graphics/PorterDuff$Mode;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->a:LwY;
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->r:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
 
-    .line 2
-    .line 3
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->p:Lm/d;
+
     if-eqz v0, :cond_0
 
-    .line 4
-    .line 5
-    invoke-virtual {v0}, LwY;->c()Landroid/graphics/PorterDuff$Mode;
+    invoke-virtual {v0}, Lm/d;->d()Landroid/graphics/PorterDuff$Mode;
 
-    .line 6
-    .line 7
-    .line 8
     move-result-object v0
 
-    .line 9
-    return-object v0
+    goto :goto_0
 
-    .line 10
     :cond_0
     const/4 v0, 0x0
 
-    .line 11
+    :goto_0
     return-object v0
 .end method
 
 .method public getSupportCompoundDrawablesTintList()Landroid/content/res/ColorStateList;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:LqZ;
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->r:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
 
-    .line 2
-    .line 3
-    iget-object v0, v0, LqZ;->h:LAa0;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
-    .line 4
-    .line 5
-    if-eqz v0, :cond_0
+    invoke-virtual {v0}, Lm/s;->getCompoundDrawableTintList()Landroid/content/res/ColorStateList;
 
-    .line 6
-    .line 7
-    iget-object v0, v0, LAa0;->t:Ljava/lang/Object;
+    move-result-object v0
 
-    .line 8
-    .line 9
-    check-cast v0, Landroid/content/res/ColorStateList;
-
-    .line 10
-    .line 11
-    return-object v0
-
-    .line 12
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 13
     return-object v0
 .end method
 
 .method public getSupportCompoundDrawablesTintMode()Landroid/graphics/PorterDuff$Mode;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:LqZ;
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->r:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
 
-    .line 2
-    .line 3
-    iget-object v0, v0, LqZ;->h:LAa0;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
-    .line 4
-    .line 5
-    if-eqz v0, :cond_0
+    invoke-virtual {v0}, Lm/s;->getCompoundDrawableTintMode()Landroid/graphics/PorterDuff$Mode;
 
-    .line 6
-    .line 7
-    iget-object v0, v0, LAa0;->X:Ljava/lang/Object;
+    move-result-object v0
 
-    .line 8
-    .line 9
-    check-cast v0, Landroid/graphics/PorterDuff$Mode;
-
-    .line 10
-    .line 11
-    return-object v0
-
-    .line 12
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 13
     return-object v0
 .end method
 
 .method public getText()Ljava/lang/CharSequence;
     .locals 1
 
-    .line 1
-    invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatTextView;->u()V
+    invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatTextView;->r()V
 
-    .line 2
-    .line 3
-    .line 4
     invoke-super {p0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
-    .line 5
-    .line 6
-    .line 7
     move-result-object v0
 
-    .line 8
     return-object v0
 .end method
 
 .method public getTextClassifier()Landroid/view/textclassifier/TextClassifier;
     .locals 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
-    .line 1
+    .annotation build Landroidx/annotation/RequiresApi;
+        api = 0x1a
+    .end annotation
+
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    .line 2
-    .line 3
     const/16 v1, 0x1c
 
-    .line 4
-    .line 5
-    if-ge v0, v1, :cond_3
+    if-ge v0, v1, :cond_1
 
-    .line 6
-    .line 7
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->c:LnZ;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->r:Lm/r;
 
-    .line 8
-    .line 9
     if-nez v0, :cond_0
 
-    .line 10
-    .line 11
     goto :goto_0
 
-    .line 12
     :cond_0
-    iget-object v1, v0, LnZ;->b:Landroid/view/textclassifier/TextClassifier;
+    invoke-virtual {v0}, Lm/r;->a()Landroid/view/textclassifier/TextClassifier;
 
-    .line 13
-    .line 14
-    if-nez v1, :cond_2
-
-    .line 15
-    .line 16
-    iget-object v0, v0, LnZ;->a:Landroid/widget/TextView;
-
-    .line 17
-    .line 18
-    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    .line 19
-    .line 20
-    .line 21
     move-result-object v0
 
-    .line 22
-    invoke-static {}, LZ4;->l()Ljava/lang/Class;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object v1
-
-    .line 26
-    invoke-static {v0, v1}, La5;->j(Landroid/content/Context;Ljava/lang/Class;)Ljava/lang/Object;
-
-    .line 27
-    .line 28
-    .line 29
-    move-result-object v0
-
-    .line 30
-    invoke-static {v0}, LmZ;->n(Ljava/lang/Object;)Landroid/view/textclassifier/TextClassificationManager;
-
-    .line 31
-    .line 32
-    .line 33
-    move-result-object v0
-
-    .line 34
-    if-eqz v0, :cond_1
-
-    .line 35
-    .line 36
-    invoke-static {v0}, LmZ;->o(Landroid/view/textclassifier/TextClassificationManager;)Landroid/view/textclassifier/TextClassifier;
-
-    .line 37
-    .line 38
-    .line 39
-    move-result-object v0
-
-    .line 40
     return-object v0
 
-    .line 41
     :cond_1
-    sget-object v0, Landroid/view/textclassifier/TextClassifier;->NO_OP:Landroid/view/textclassifier/TextClassifier;
-
-    .line 42
-    .line 43
-    return-object v0
-
-    .line 44
-    :cond_2
-    return-object v1
-
-    .line 45
-    :cond_3
     :goto_0
-    invoke-super {p0}, Landroid/widget/TextView;->getTextClassifier()Landroid/view/textclassifier/TextClassifier;
+    invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatTextView;->getSuperCaller()Landroidx/appcompat/widget/AppCompatTextView$a;
 
-    .line 46
-    .line 47
-    .line 48
     move-result-object v0
 
-    .line 49
+    invoke-interface {v0}, Landroidx/appcompat/widget/AppCompatTextView$a;->c()Landroid/view/textclassifier/TextClassifier;
+
+    move-result-object v0
+
     return-object v0
 .end method
 
-.method public getTextMetricsParamsCompat()LOZd;
+.method public getTextMetricsParamsCompat()Lp0/m$b;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
-    invoke-static {p0}, LMC8;->A0(Landroidx/appcompat/widget/AppCompatTextView;)LOZd;
+    invoke-static {p0}, Landroidx/core/widget/TextViewCompat;->e(Landroid/widget/TextView;)Lp0/m$b;
 
-    .line 2
-    .line 3
-    .line 4
     move-result-object v0
 
-    .line 5
     return-object v0
 .end method
 
 .method public onCreateInputConnection(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;
-    .locals 1
+    .locals 2
 
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/TextView;->onCreateInputConnection(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;
 
-    .line 2
-    .line 3
-    .line 4
     move-result-object v0
 
-    .line 5
-    invoke-static {v0, p1, p0}, LeSk;->g(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;Landroid/widget/TextView;)V
+    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
-    .line 6
-    .line 7
-    .line 8
-    return-object v0
+    invoke-virtual {v1, p0, v0, p1}, Lm/s;->populateSurroundingTextIfNeeded(Landroid/widget/TextView;Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;)V
+
+    invoke-static {v0, p1, p0}, Lm/j;->a(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;Landroid/view/View;)Landroid/view/inputmethod/InputConnection;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public onDetachedFromWindow()V
+    .locals 2
+
+    invoke-super {p0}, Landroid/widget/TextView;->onDetachedFromWindow()V
+
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1e
+
+    if-lt v0, v1, :cond_0
+
+    const/16 v1, 0x21
+
+    if-ge v0, v1, :cond_0
+
+    invoke-virtual {p0}, Landroid/view/View;->onCheckIsTextEditor()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    const-string v1, "input_method"
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/inputmethod/InputMethodManager;
+
+    invoke-virtual {v0, p0}, Landroid/view/inputmethod/InputMethodManager;->isActive(Landroid/view/View;)Z
+
+    :cond_0
+    return-void
 .end method
 
 .method public onLayout(ZIIII)V
-    .locals 0
+    .locals 6
 
-    .line 1
     invoke-super/range {p0 .. p5}, Landroid/widget/TextView;->onLayout(ZIIII)V
 
-    .line 2
-    .line 3
-    .line 4
-    move-object p1, p0
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
-    .line 5
-    iget-object p2, p1, Landroidx/appcompat/widget/AppCompatTextView;->b:LqZ;
+    if-eqz v0, :cond_0
 
-    .line 6
-    .line 7
-    if-eqz p2, :cond_0
+    move v1, p1
 
-    .line 8
-    .line 9
-    sget-boolean p3, LPC0;->h:Z
+    move v2, p2
 
-    .line 10
-    .line 11
-    if-nez p3, :cond_0
+    move v3, p3
 
-    .line 12
-    .line 13
-    invoke-virtual {p2}, LqZ;->c()V
+    move v4, p4
 
-    .line 14
-    .line 15
-    .line 16
+    move v5, p5
+
+    invoke-virtual/range {v0 .. v5}, Lm/s;->l(ZIIII)V
+
     :cond_0
     return-void
 .end method
@@ -820,294 +873,291 @@
 .method public onMeasure(II)V
     .locals 0
 
-    .line 1
-    invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatTextView;->u()V
+    invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatTextView;->r()V
 
-    .line 2
-    .line 3
-    .line 4
     invoke-super {p0, p1, p2}, Landroid/widget/TextView;->onMeasure(II)V
 
-    .line 5
-    .line 6
-    .line 7
     return-void
 .end method
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/TextView;->onTextChanged(Ljava/lang/CharSequence;III)V
 
-    .line 2
-    .line 3
-    .line 4
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:LqZ;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
-    .line 5
-    .line 6
     if-eqz p1, :cond_0
 
-    .line 7
-    .line 8
-    sget-boolean p2, LPC0;->h:Z
+    sget-boolean p2, Lm/a1;->c:Z
 
-    .line 9
-    .line 10
     if-nez p2, :cond_0
 
-    .line 11
-    .line 12
-    invoke-virtual {p1}, LqZ;->j()Z
+    invoke-virtual {p1}, Lm/s;->j()Z
 
-    .line 13
-    .line 14
-    .line 15
     move-result p1
 
-    .line 16
     if-eqz p1, :cond_0
 
-    .line 17
-    .line 18
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:LqZ;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
-    .line 19
-    .line 20
-    invoke-virtual {p1}, LqZ;->c()V
+    invoke-virtual {p1}, Lm/s;->c()V
 
-    .line 21
-    .line 22
-    .line 23
     :cond_0
+    return-void
+.end method
+
+.method public final r()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->mPrecomputedTextFuture:Ljava/util/concurrent/Future;
+
+    if-eqz v0, :cond_0
+
+    const/4 v1, 0x0
+
+    :try_start_0
+    iput-object v1, p0, Landroidx/appcompat/widget/AppCompatTextView;->mPrecomputedTextFuture:Ljava/util/concurrent/Future;
+
+    invoke-interface {v0}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lp0/m;
+
+    invoke-static {p0, v0}, Landroidx/core/widget/TextViewCompat;->j(Landroid/widget/TextView;Lp0/m;)V
+    :try_end_0
+    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/util/concurrent/ExecutionException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    :cond_0
+    return-void
+.end method
+
+.method public setAllCaps(Z)V
+    .locals 1
+
+    invoke-super {p0, p1}, Landroid/widget/TextView;->setAllCaps(Z)V
+
+    invoke-direct {p0}, Landroidx/appcompat/widget/AppCompatTextView;->getEmojiTextViewHelper()Lm/i;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lm/i;->c(Z)V
+
     return-void
 .end method
 
 .method public setAutoSizeTextTypeUniformWithConfiguration(IIII)V
     .locals 1
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->r:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
         }
     .end annotation
 
-    .line 1
-    sget-boolean v0, LPC0;->h:Z
+    sget-boolean v0, Lm/a1;->c:Z
 
-    .line 2
-    .line 3
     if-eqz v0, :cond_0
 
-    .line 4
-    .line 5
-    invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/TextView;->setAutoSizeTextTypeUniformWithConfiguration(IIII)V
+    invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatTextView;->getSuperCaller()Landroidx/appcompat/widget/AppCompatTextView$a;
 
-    .line 6
-    .line 7
-    .line 8
-    return-void
+    move-result-object v0
 
-    .line 9
+    invoke-interface {v0, p1, p2, p3, p4}, Landroidx/appcompat/widget/AppCompatTextView$a;->f(IIII)V
+
+    goto :goto_0
+
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:LqZ;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
-    .line 10
-    .line 11
     if-eqz v0, :cond_1
 
-    .line 12
-    .line 13
-    invoke-virtual {v0, p1, p2, p3, p4}, LqZ;->n(IIII)V
+    invoke-virtual {v0, p1, p2, p3, p4}, Lm/s;->p(IIII)V
 
-    .line 14
-    .line 15
-    .line 16
     :cond_1
+    :goto_0
     return-void
 .end method
 
 .method public setAutoSizeTextTypeUniformWithPresetSizes([II)V
     .locals 1
+    .param p1    # [I
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->r:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
         }
     .end annotation
 
-    .line 1
-    sget-boolean v0, LPC0;->h:Z
+    sget-boolean v0, Lm/a1;->c:Z
 
-    .line 2
-    .line 3
     if-eqz v0, :cond_0
 
-    .line 4
-    .line 5
-    invoke-super {p0, p1, p2}, Landroid/widget/TextView;->setAutoSizeTextTypeUniformWithPresetSizes([II)V
+    invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatTextView;->getSuperCaller()Landroidx/appcompat/widget/AppCompatTextView$a;
 
-    .line 6
-    .line 7
-    .line 8
-    return-void
+    move-result-object v0
 
-    .line 9
+    invoke-interface {v0, p1, p2}, Landroidx/appcompat/widget/AppCompatTextView$a;->a([II)V
+
+    goto :goto_0
+
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:LqZ;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
-    .line 10
-    .line 11
     if-eqz v0, :cond_1
 
-    .line 12
-    .line 13
-    invoke-virtual {v0, p1, p2}, LqZ;->o([II)V
+    invoke-virtual {v0, p1, p2}, Lm/s;->q([II)V
 
-    .line 14
-    .line 15
-    .line 16
     :cond_1
+    :goto_0
     return-void
 .end method
 
 .method public setAutoSizeTextTypeWithDefaults(I)V
     .locals 1
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->r:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
 
-    .line 1
-    sget-boolean v0, LPC0;->h:Z
+    sget-boolean v0, Lm/a1;->c:Z
 
-    .line 2
-    .line 3
     if-eqz v0, :cond_0
 
-    .line 4
-    .line 5
-    invoke-super {p0, p1}, Landroid/widget/TextView;->setAutoSizeTextTypeWithDefaults(I)V
+    invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatTextView;->getSuperCaller()Landroidx/appcompat/widget/AppCompatTextView$a;
 
-    .line 6
-    .line 7
-    .line 8
-    return-void
+    move-result-object v0
 
-    .line 9
+    invoke-interface {v0, p1}, Landroidx/appcompat/widget/AppCompatTextView$a;->k(I)V
+
+    goto :goto_0
+
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:LqZ;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
-    .line 10
-    .line 11
     if-eqz v0, :cond_1
 
-    .line 12
-    .line 13
-    invoke-virtual {v0, p1}, LqZ;->p(I)V
+    invoke-virtual {v0, p1}, Lm/s;->r(I)V
 
-    .line 14
-    .line 15
-    .line 16
     :cond_1
+    :goto_0
     return-void
 .end method
 
 .method public setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
-    .locals 0
+    .locals 1
+    .param p1    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/TextView;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 2
-    .line 3
-    .line 4
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->a:LwY;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->p:Lm/d;
 
-    .line 5
-    .line 6
-    if-eqz p1, :cond_0
+    if-eqz v0, :cond_0
 
-    .line 7
-    .line 8
-    invoke-virtual {p1}, LwY;->e()V
+    invoke-virtual {v0, p1}, Lm/d;->e(Landroid/graphics/drawable/Drawable;)V
 
-    .line 9
-    .line 10
-    .line 11
     :cond_0
     return-void
 .end method
 
 .method public setBackgroundResource(I)V
     .locals 1
+    .param p1    # I
+        .annotation build Landroidx/annotation/DrawableRes;
+        .end annotation
+    .end param
 
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/TextView;->setBackgroundResource(I)V
 
-    .line 2
-    .line 3
-    .line 4
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->a:LwY;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->p:Lm/d;
 
-    .line 5
-    .line 6
     if-eqz v0, :cond_0
 
-    .line 7
-    .line 8
-    invoke-virtual {v0, p1}, LwY;->f(I)V
+    invoke-virtual {v0, p1}, Lm/d;->f(I)V
 
-    .line 9
-    .line 10
-    .line 11
     :cond_0
     return-void
 .end method
 
 .method public setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
     .locals 0
+    .param p1    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p4    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
-    .line 1
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/TextView;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
-    .line 2
-    .line 3
-    .line 4
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:LqZ;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
-    .line 5
-    .line 6
     if-eqz p1, :cond_0
 
-    .line 7
-    .line 8
-    invoke-virtual {p1}, LqZ;->b()V
+    invoke-virtual {p1}, Lm/s;->m()V
 
-    .line 9
-    .line 10
-    .line 11
     :cond_0
     return-void
 .end method
 
 .method public setCompoundDrawablesRelative(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
     .locals 0
+    .param p1    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p4    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
-    .line 1
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/TextView;->setCompoundDrawablesRelative(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
-    .line 2
-    .line 3
-    .line 4
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:LqZ;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
-    .line 5
-    .line 6
     if-eqz p1, :cond_0
 
-    .line 7
-    .line 8
-    invoke-virtual {p1}, LqZ;->b()V
+    invoke-virtual {p1}, Lm/s;->m()V
 
-    .line 9
-    .line 10
-    .line 11
     :cond_0
     return-void
 .end method
@@ -1115,7 +1165,7 @@
 .method public setCompoundDrawablesRelativeWithIntrinsicBounds(IIII)V
     .locals 2
 
-    .line 4
+    .line 1
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -1124,8 +1174,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 5
-    invoke-static {v0, p1}, LYY;->c(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {v0, p1}, Lg/a;->getDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 
@@ -1137,8 +1186,7 @@
     :goto_0
     if-eqz p2, :cond_1
 
-    .line 6
-    invoke-static {v0, p2}, LYY;->c(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {v0, p2}, Lg/a;->getDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p2
 
@@ -1150,8 +1198,7 @@
     :goto_1
     if-eqz p3, :cond_2
 
-    .line 7
-    invoke-static {v0, p3}, LYY;->c(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {v0, p3}, Lg/a;->getDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p3
 
@@ -1163,22 +1210,18 @@
     :goto_2
     if-eqz p4, :cond_3
 
-    .line 8
-    invoke-static {v0, p4}, LYY;->c(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {v0, p4}, Lg/a;->getDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
-    .line 9
     :cond_3
     invoke-virtual {p0, p1, p2, p3, v1}, Landroidx/appcompat/widget/AppCompatTextView;->setCompoundDrawablesRelativeWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
-    .line 10
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:LqZ;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
     if-eqz p1, :cond_4
 
-    .line 11
-    invoke-virtual {p1}, LqZ;->b()V
+    invoke-virtual {p1}, Lm/s;->m()V
 
     :cond_4
     return-void
@@ -1186,17 +1229,31 @@
 
 .method public setCompoundDrawablesRelativeWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
     .locals 0
-
-    .line 1
-    invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/TextView;->setCompoundDrawablesRelativeWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
+    .param p1    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p4    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:LqZ;
+    invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/TextView;->setCompoundDrawablesRelativeWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
+
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
     if-eqz p1, :cond_0
 
-    .line 3
-    invoke-virtual {p1}, LqZ;->b()V
+    invoke-virtual {p1}, Lm/s;->m()V
 
     :cond_0
     return-void
@@ -1205,7 +1262,7 @@
 .method public setCompoundDrawablesWithIntrinsicBounds(IIII)V
     .locals 2
 
-    .line 4
+    .line 1
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -1214,8 +1271,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 5
-    invoke-static {v0, p1}, LYY;->c(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {v0, p1}, Lg/a;->getDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 
@@ -1227,8 +1283,7 @@
     :goto_0
     if-eqz p2, :cond_1
 
-    .line 6
-    invoke-static {v0, p2}, LYY;->c(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {v0, p2}, Lg/a;->getDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p2
 
@@ -1240,8 +1295,7 @@
     :goto_1
     if-eqz p3, :cond_2
 
-    .line 7
-    invoke-static {v0, p3}, LYY;->c(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {v0, p3}, Lg/a;->getDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p3
 
@@ -1253,22 +1307,18 @@
     :goto_2
     if-eqz p4, :cond_3
 
-    .line 8
-    invoke-static {v0, p4}, LYY;->c(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {v0, p4}, Lg/a;->getDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
-    .line 9
     :cond_3
     invoke-virtual {p0, p1, p2, p3, v1}, Landroidx/appcompat/widget/AppCompatTextView;->setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
-    .line 10
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:LqZ;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
     if-eqz p1, :cond_4
 
-    .line 11
-    invoke-virtual {p1}, LqZ;->b()V
+    invoke-virtual {p1}, Lm/s;->m()V
 
     :cond_4
     return-void
@@ -1276,17 +1326,31 @@
 
 .method public setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
     .locals 0
-
-    .line 1
-    invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
+    .param p1    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p4    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:LqZ;
+    invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
+
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
     if-eqz p1, :cond_0
 
-    .line 3
-    invoke-virtual {p1}, LqZ;->b()V
+    invoke-virtual {p1}, Lm/s;->m()V
 
     :cond_0
     return-void
@@ -1294,906 +1358,436 @@
 
 .method public setCustomSelectionActionModeCallback(Landroid/view/ActionMode$Callback;)V
     .locals 0
+    .param p1    # Landroid/view/ActionMode$Callback;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
-    .line 1
-    invoke-static {p1, p0}, LMC8;->m2(Landroid/view/ActionMode$Callback;Landroid/widget/TextView;)Landroid/view/ActionMode$Callback;
+    invoke-static {p0, p1}, Landroidx/core/widget/TextViewCompat;->wrapCustomSelectionActionModeCallback(Landroid/widget/TextView;Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode$Callback;
 
-    .line 2
-    .line 3
-    .line 4
     move-result-object p1
 
-    .line 5
     invoke-super {p0, p1}, Landroid/widget/TextView;->setCustomSelectionActionModeCallback(Landroid/view/ActionMode$Callback;)V
 
-    .line 6
-    .line 7
-    .line 8
+    return-void
+.end method
+
+.method public setEmojiCompatEnabled(Z)V
+    .locals 1
+
+    invoke-direct {p0}, Landroidx/appcompat/widget/AppCompatTextView;->getEmojiTextViewHelper()Lm/i;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lm/i;->d(Z)V
+
+    return-void
+.end method
+
+.method public setFilters([Landroid/text/InputFilter;)V
+    .locals 1
+    .param p1    # [Landroid/text/InputFilter;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    invoke-direct {p0}, Landroidx/appcompat/widget/AppCompatTextView;->getEmojiTextViewHelper()Lm/i;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lm/i;->a([Landroid/text/InputFilter;)[Landroid/text/InputFilter;
+
+    move-result-object p1
+
+    invoke-super {p0, p1}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
+
     return-void
 .end method
 
 .method public setFirstBaselineToTopHeight(I)V
     .locals 2
+    .param p1    # I
+        .annotation build Landroidx/annotation/IntRange;
+            from = 0x0L
+        .end annotation
 
-    .line 1
+        .annotation build Landroidx/annotation/Px;
+        .end annotation
+    .end param
+
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    .line 2
-    .line 3
     const/16 v1, 0x1c
 
-    .line 4
-    .line 5
     if-lt v0, v1, :cond_0
 
-    .line 6
-    .line 7
-    invoke-super {p0, p1}, Landroid/widget/TextView;->setFirstBaselineToTopHeight(I)V
+    invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatTextView;->getSuperCaller()Landroidx/appcompat/widget/AppCompatTextView$a;
 
-    .line 8
-    .line 9
-    .line 10
-    return-void
+    move-result-object v0
 
-    .line 11
+    invoke-interface {v0, p1}, Landroidx/appcompat/widget/AppCompatTextView$a;->i(I)V
+
+    goto :goto_0
+
     :cond_0
-    invoke-static {p0, p1}, LMC8;->N1(Landroid/widget/TextView;I)V
+    invoke-static {p0, p1}, Landroidx/core/widget/TextViewCompat;->f(Landroid/widget/TextView;I)V
 
-    .line 12
-    .line 13
-    .line 14
+    :goto_0
     return-void
 .end method
 
 .method public setLastBaselineToBottomHeight(I)V
     .locals 2
+    .param p1    # I
+        .annotation build Landroidx/annotation/IntRange;
+            from = 0x0L
+        .end annotation
 
-    .line 1
+        .annotation build Landroidx/annotation/Px;
+        .end annotation
+    .end param
+
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    .line 2
-    .line 3
     const/16 v1, 0x1c
 
-    .line 4
-    .line 5
     if-lt v0, v1, :cond_0
 
-    .line 6
-    .line 7
-    invoke-super {p0, p1}, Landroid/widget/TextView;->setLastBaselineToBottomHeight(I)V
+    invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatTextView;->getSuperCaller()Landroidx/appcompat/widget/AppCompatTextView$a;
 
-    .line 8
-    .line 9
-    .line 10
-    return-void
+    move-result-object v0
 
-    .line 11
+    invoke-interface {v0, p1}, Landroidx/appcompat/widget/AppCompatTextView$a;->e(I)V
+
+    goto :goto_0
+
     :cond_0
-    invoke-static {p0, p1}, LMC8;->P1(Landroid/widget/TextView;I)V
+    invoke-static {p0, p1}, Landroidx/core/widget/TextViewCompat;->g(Landroid/widget/TextView;I)V
 
-    .line 12
-    .line 13
-    .line 14
+    :goto_0
     return-void
 .end method
 
 .method public setLineHeight(I)V
-    .locals 2
+    .locals 0
+    .param p1    # I
+        .annotation build Landroidx/annotation/IntRange;
+            from = 0x0L
+        .end annotation
+
+        .annotation build Landroidx/annotation/Px;
+        .end annotation
+    .end param
 
     .line 1
-    invoke-static {p1}, LrZ3;->n(I)V
+    invoke-static {p0, p1}, Landroidx/core/widget/TextViewCompat;->h(Landroid/widget/TextView;I)V
 
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object v0
-
-    .line 8
-    const/4 v1, 0x0
-
-    .line 9
-    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->getFontMetricsInt(Landroid/graphics/Paint$FontMetricsInt;)I
-
-    .line 10
-    .line 11
-    .line 12
-    move-result v0
-
-    .line 13
-    if-eq p1, v0, :cond_0
-
-    .line 14
-    .line 15
-    sub-int/2addr p1, v0
-
-    .line 16
-    int-to-float p1, p1
-
-    .line 17
-    const/high16 v0, 0x3f800000    # 1.0f
-
-    .line 18
-    .line 19
-    invoke-virtual {p0, p1, v0}, Landroid/widget/TextView;->setLineSpacing(FF)V
-
-    .line 20
-    .line 21
-    .line 22
-    :cond_0
     return-void
 .end method
 
-.method public setPrecomputedText(LQZd;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, LMC8;->R1(Landroidx/appcompat/widget/AppCompatTextView;LQZd;)V
+.method public setLineHeight(IF)V
+    .locals 2
+    .param p2    # F
+        .annotation build Landroidx/annotation/FloatRange;
+            from = 0.0
+        .end annotation
+    .end param
 
     .line 2
-    .line 3
-    .line 4
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x22
+
+    if-lt v0, v1, :cond_0
+
+    invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatTextView;->getSuperCaller()Landroidx/appcompat/widget/AppCompatTextView$a;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1, p2}, Landroidx/appcompat/widget/AppCompatTextView$a;->l(IF)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-static {p0, p1, p2}, Landroidx/core/widget/TextViewCompat;->i(Landroid/widget/TextView;IF)V
+
+    :goto_0
+    return-void
+.end method
+
+.method public setPrecomputedText(Lp0/m;)V
+    .locals 0
+    .param p1    # Lp0/m;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-static {p0, p1}, Landroidx/core/widget/TextViewCompat;->j(Landroid/widget/TextView;Lp0/m;)V
+
     return-void
 .end method
 
 .method public setSupportBackgroundTintList(Landroid/content/res/ColorStateList;)V
     .locals 1
+    .param p1    # Landroid/content/res/ColorStateList;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->r:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
 
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->a:LwY;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->p:Lm/d;
 
-    .line 2
-    .line 3
     if-eqz v0, :cond_0
 
-    .line 4
-    .line 5
-    invoke-virtual {v0, p1}, LwY;->h(Landroid/content/res/ColorStateList;)V
+    invoke-virtual {v0, p1}, Lm/d;->h(Landroid/content/res/ColorStateList;)V
 
-    .line 6
-    .line 7
-    .line 8
     :cond_0
     return-void
 .end method
 
 .method public setSupportBackgroundTintMode(Landroid/graphics/PorterDuff$Mode;)V
     .locals 1
+    .param p1    # Landroid/graphics/PorterDuff$Mode;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->r:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
 
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->a:LwY;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->p:Lm/d;
 
-    .line 2
-    .line 3
     if-eqz v0, :cond_0
 
-    .line 4
-    .line 5
-    invoke-virtual {v0, p1}, LwY;->i(Landroid/graphics/PorterDuff$Mode;)V
+    invoke-virtual {v0, p1}, Lm/d;->i(Landroid/graphics/PorterDuff$Mode;)V
 
-    .line 6
-    .line 7
-    .line 8
     :cond_0
     return-void
 .end method
 
 .method public setSupportCompoundDrawablesTintList(Landroid/content/res/ColorStateList;)V
-    .locals 3
+    .locals 1
+    .param p1    # Landroid/content/res/ColorStateList;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->r:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
 
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:LqZ;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
-    .line 2
-    .line 3
-    iget-object v1, v0, LqZ;->h:LAa0;
+    invoke-virtual {v0, p1}, Lm/s;->setCompoundDrawableTintList(Landroid/content/res/ColorStateList;)V
 
-    .line 4
-    .line 5
-    if-nez v1, :cond_0
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
-    .line 6
-    .line 7
-    new-instance v1, LAa0;
+    invoke-virtual {p1}, Lm/s;->b()V
 
-    .line 8
-    .line 9
-    const/16 v2, 0x1a
-
-    .line 10
-    .line 11
-    invoke-direct {v1, v2}, LAa0;-><init>(I)V
-
-    .line 12
-    .line 13
-    .line 14
-    iput-object v1, v0, LqZ;->h:LAa0;
-
-    .line 15
-    .line 16
-    :cond_0
-    iget-object v1, v0, LqZ;->h:LAa0;
-
-    .line 17
-    .line 18
-    iput-object p1, v1, LAa0;->t:Ljava/lang/Object;
-
-    .line 19
-    .line 20
-    if-eqz p1, :cond_1
-
-    .line 21
-    .line 22
-    const/4 p1, 0x1
-
-    .line 23
-    goto :goto_0
-
-    .line 24
-    :cond_1
-    const/4 p1, 0x0
-
-    .line 25
-    :goto_0
-    iput-boolean p1, v1, LAa0;->c:Z
-
-    .line 26
-    .line 27
-    iput-object v1, v0, LqZ;->b:LAa0;
-
-    .line 28
-    .line 29
-    iput-object v1, v0, LqZ;->c:LAa0;
-
-    .line 30
-    .line 31
-    iput-object v1, v0, LqZ;->d:LAa0;
-
-    .line 32
-    .line 33
-    iput-object v1, v0, LqZ;->e:LAa0;
-
-    .line 34
-    .line 35
-    iput-object v1, v0, LqZ;->f:LAa0;
-
-    .line 36
-    .line 37
-    iput-object v1, v0, LqZ;->g:LAa0;
-
-    .line 38
-    .line 39
-    invoke-virtual {v0}, LqZ;->b()V
-
-    .line 40
-    .line 41
-    .line 42
     return-void
 .end method
 
 .method public setSupportCompoundDrawablesTintMode(Landroid/graphics/PorterDuff$Mode;)V
-    .locals 3
+    .locals 1
+    .param p1    # Landroid/graphics/PorterDuff$Mode;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->r:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
 
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:LqZ;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
-    .line 2
-    .line 3
-    iget-object v1, v0, LqZ;->h:LAa0;
+    invoke-virtual {v0, p1}, Lm/s;->setCompoundDrawableTintMode(Landroid/graphics/PorterDuff$Mode;)V
 
-    .line 4
-    .line 5
-    if-nez v1, :cond_0
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
-    .line 6
-    .line 7
-    new-instance v1, LAa0;
+    invoke-virtual {p1}, Lm/s;->b()V
 
-    .line 8
-    .line 9
-    const/16 v2, 0x1a
-
-    .line 10
-    .line 11
-    invoke-direct {v1, v2}, LAa0;-><init>(I)V
-
-    .line 12
-    .line 13
-    .line 14
-    iput-object v1, v0, LqZ;->h:LAa0;
-
-    .line 15
-    .line 16
-    :cond_0
-    iget-object v1, v0, LqZ;->h:LAa0;
-
-    .line 17
-    .line 18
-    iput-object p1, v1, LAa0;->X:Ljava/lang/Object;
-
-    .line 19
-    .line 20
-    if-eqz p1, :cond_1
-
-    .line 21
-    .line 22
-    const/4 p1, 0x1
-
-    .line 23
-    goto :goto_0
-
-    .line 24
-    :cond_1
-    const/4 p1, 0x0
-
-    .line 25
-    :goto_0
-    iput-boolean p1, v1, LAa0;->b:Z
-
-    .line 26
-    .line 27
-    iput-object v1, v0, LqZ;->b:LAa0;
-
-    .line 28
-    .line 29
-    iput-object v1, v0, LqZ;->c:LAa0;
-
-    .line 30
-    .line 31
-    iput-object v1, v0, LqZ;->d:LAa0;
-
-    .line 32
-    .line 33
-    iput-object v1, v0, LqZ;->e:LAa0;
-
-    .line 34
-    .line 35
-    iput-object v1, v0, LqZ;->f:LAa0;
-
-    .line 36
-    .line 37
-    iput-object v1, v0, LqZ;->g:LAa0;
-
-    .line 38
-    .line 39
-    invoke-virtual {v0}, LqZ;->b()V
-
-    .line 40
-    .line 41
-    .line 42
     return-void
 .end method
 
 .method public setTextAppearance(Landroid/content/Context;I)V
     .locals 1
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context;I)V
 
-    .line 2
-    .line 3
-    .line 4
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:LqZ;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
-    .line 5
-    .line 6
     if-eqz v0, :cond_0
 
-    .line 7
-    .line 8
-    invoke-virtual {v0, p1, p2}, LqZ;->l(Landroid/content/Context;I)V
+    invoke-virtual {v0, p1, p2}, Lm/s;->n(Landroid/content/Context;I)V
 
-    .line 9
-    .line 10
-    .line 11
     :cond_0
     return-void
 .end method
 
 .method public setTextClassifier(Landroid/view/textclassifier/TextClassifier;)V
     .locals 2
+    .param p1    # Landroid/view/textclassifier/TextClassifier;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/RequiresApi;
+        api = 0x1a
+    .end annotation
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    .line 2
-    .line 3
     const/16 v1, 0x1c
 
-    .line 4
-    .line 5
     if-ge v0, v1, :cond_1
 
-    .line 6
-    .line 7
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->c:LnZ;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->r:Lm/r;
 
-    .line 8
-    .line 9
     if-nez v0, :cond_0
 
-    .line 10
-    .line 11
     goto :goto_0
 
-    .line 12
     :cond_0
-    iput-object p1, v0, LnZ;->b:Landroid/view/textclassifier/TextClassifier;
+    invoke-virtual {v0, p1}, Lm/r;->setTextClassifier(Landroid/view/textclassifier/TextClassifier;)V
 
-    .line 13
-    .line 14
     return-void
 
-    .line 15
     :cond_1
     :goto_0
-    invoke-super {p0, p1}, Landroid/widget/TextView;->setTextClassifier(Landroid/view/textclassifier/TextClassifier;)V
+    invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatTextView;->getSuperCaller()Landroidx/appcompat/widget/AppCompatTextView$a;
 
-    .line 16
-    .line 17
-    .line 18
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Landroidx/appcompat/widget/AppCompatTextView$a;->setTextClassifier(Landroid/view/textclassifier/TextClassifier;)V
+
     return-void
 .end method
 
 .method public setTextFuture(Ljava/util/concurrent/Future;)V
     .locals 0
+    .param p1    # Ljava/util/concurrent/Future;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/concurrent/Future<",
-            "LQZd;",
+            "Lp0/m;",
             ">;)V"
         }
     .end annotation
 
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->t:Ljava/util/concurrent/Future;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->mPrecomputedTextFuture:Ljava/util/concurrent/Future;
 
-    .line 2
-    .line 3
     if-eqz p1, :cond_0
 
-    .line 4
-    .line 5
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
-    .line 6
-    .line 7
-    .line 8
     :cond_0
     return-void
 .end method
 
-.method public setTextMetricsParamsCompat(LOZd;)V
-    .locals 5
+.method public setTextMetricsParamsCompat(Lp0/m$b;)V
+    .locals 0
+    .param p1    # Lp0/m$b;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
-    invoke-virtual {p1}, LOZd;->d()Landroid/text/TextDirectionHeuristic;
+    invoke-static {p0, p1}, Landroidx/core/widget/TextViewCompat;->l(Landroid/widget/TextView;Lp0/m$b;)V
 
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    sget-object v1, Landroid/text/TextDirectionHeuristics;->FIRSTSTRONG_RTL:Landroid/text/TextDirectionHeuristic;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x1
-
-    .line 8
-    if-ne v0, v1, :cond_0
-
-    .line 9
-    .line 10
-    goto :goto_0
-
-    .line 11
-    :cond_0
-    sget-object v3, Landroid/text/TextDirectionHeuristics;->FIRSTSTRONG_LTR:Landroid/text/TextDirectionHeuristic;
-
-    .line 12
-    .line 13
-    if-ne v0, v3, :cond_1
-
-    .line 14
-    .line 15
-    goto :goto_0
-
-    .line 16
-    :cond_1
-    sget-object v4, Landroid/text/TextDirectionHeuristics;->ANYRTL_LTR:Landroid/text/TextDirectionHeuristic;
-
-    .line 17
-    .line 18
-    if-ne v0, v4, :cond_2
-
-    .line 19
-    .line 20
-    const/4 v2, 0x2
-
-    .line 21
-    goto :goto_0
-
-    .line 22
-    :cond_2
-    sget-object v4, Landroid/text/TextDirectionHeuristics;->LTR:Landroid/text/TextDirectionHeuristic;
-
-    .line 23
-    .line 24
-    if-ne v0, v4, :cond_3
-
-    .line 25
-    .line 26
-    const/4 v2, 0x3
-
-    .line 27
-    goto :goto_0
-
-    .line 28
-    :cond_3
-    sget-object v4, Landroid/text/TextDirectionHeuristics;->RTL:Landroid/text/TextDirectionHeuristic;
-
-    .line 29
-    .line 30
-    if-ne v0, v4, :cond_4
-
-    .line 31
-    .line 32
-    const/4 v2, 0x4
-
-    .line 33
-    goto :goto_0
-
-    .line 34
-    :cond_4
-    sget-object v4, Landroid/text/TextDirectionHeuristics;->LOCALE:Landroid/text/TextDirectionHeuristic;
-
-    .line 35
-    .line 36
-    if-ne v0, v4, :cond_5
-
-    .line 37
-    .line 38
-    const/4 v2, 0x5
-
-    .line 39
-    goto :goto_0
-
-    .line 40
-    :cond_5
-    if-ne v0, v3, :cond_6
-
-    .line 41
-    .line 42
-    const/4 v2, 0x6
-
-    .line 43
-    goto :goto_0
-
-    .line 44
-    :cond_6
-    if-ne v0, v1, :cond_7
-
-    .line 45
-    .line 46
-    const/4 v2, 0x7
-
-    .line 47
-    :cond_7
-    :goto_0
-    invoke-virtual {p0, v2}, Landroid/view/View;->setTextDirection(I)V
-
-    .line 48
-    .line 49
-    .line 50
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    .line 51
-    .line 52
-    const/16 v1, 0x17
-
-    .line 53
-    .line 54
-    if-ge v0, v1, :cond_9
-
-    .line 55
-    .line 56
-    invoke-virtual {p1}, LOZd;->e()Landroid/text/TextPaint;
-
-    .line 57
-    .line 58
-    .line 59
-    move-result-object v0
-
-    .line 60
-    invoke-virtual {v0}, Landroid/graphics/Paint;->getTextScaleX()F
-
-    .line 61
-    .line 62
-    .line 63
-    move-result v0
-
-    .line 64
-    invoke-virtual {p0}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
-
-    .line 65
-    .line 66
-    .line 67
-    move-result-object v1
-
-    .line 68
-    invoke-virtual {p1}, LOZd;->e()Landroid/text/TextPaint;
-
-    .line 69
-    .line 70
-    .line 71
-    move-result-object p1
-
-    .line 72
-    invoke-virtual {v1, p1}, Landroid/text/TextPaint;->set(Landroid/text/TextPaint;)V
-
-    .line 73
-    .line 74
-    .line 75
-    invoke-virtual {p0}, Landroid/widget/TextView;->getTextScaleX()F
-
-    .line 76
-    .line 77
-    .line 78
-    move-result p1
-
-    .line 79
-    cmpl-float p1, v0, p1
-
-    .line 80
-    .line 81
-    if-nez p1, :cond_8
-
-    .line 82
-    .line 83
-    const/high16 p1, 0x40000000    # 2.0f
-
-    .line 84
-    .line 85
-    div-float p1, v0, p1
-
-    .line 86
-    .line 87
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    .line 88
-    .line 89
-    add-float/2addr p1, v1
-
-    .line 90
-    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setTextScaleX(F)V
-
-    .line 91
-    .line 92
-    .line 93
-    :cond_8
-    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setTextScaleX(F)V
-
-    .line 94
-    .line 95
-    .line 96
-    return-void
-
-    .line 97
-    :cond_9
-    invoke-virtual {p0}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
-
-    .line 98
-    .line 99
-    .line 100
-    move-result-object v0
-
-    .line 101
-    invoke-virtual {p1}, LOZd;->e()Landroid/text/TextPaint;
-
-    .line 102
-    .line 103
-    .line 104
-    move-result-object v1
-
-    .line 105
-    invoke-virtual {v0, v1}, Landroid/text/TextPaint;->set(Landroid/text/TextPaint;)V
-
-    .line 106
-    .line 107
-    .line 108
-    invoke-virtual {p1}, LOZd;->b()I
-
-    .line 109
-    .line 110
-    .line 111
-    move-result v0
-
-    .line 112
-    invoke-static {p0, v0}, LoSi;->e(Landroid/widget/TextView;I)V
-
-    .line 113
-    .line 114
-    .line 115
-    invoke-virtual {p1}, LOZd;->c()I
-
-    .line 116
-    .line 117
-    .line 118
-    move-result p1
-
-    .line 119
-    invoke-static {p0, p1}, LoSi;->h(Landroid/widget/TextView;I)V
-
-    .line 120
-    .line 121
-    .line 122
     return-void
 .end method
 
 .method public setTextSize(IF)V
     .locals 1
 
-    .line 1
-    sget-boolean v0, LPC0;->h:Z
+    sget-boolean v0, Lm/a1;->c:Z
 
-    .line 2
-    .line 3
     if-eqz v0, :cond_0
 
-    .line 4
-    .line 5
     invoke-super {p0, p1, p2}, Landroid/widget/TextView;->setTextSize(IF)V
 
-    .line 6
-    .line 7
-    .line 8
-    return-void
+    goto :goto_0
 
-    .line 9
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:LqZ;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->q:Lm/s;
 
-    .line 10
-    .line 11
     if-eqz v0, :cond_1
 
-    .line 12
-    .line 13
-    invoke-virtual {v0, p1, p2}, LqZ;->q(IF)V
+    invoke-virtual {v0, p1, p2}, Lm/s;->u(IF)V
 
-    .line 14
-    .line 15
-    .line 16
     :cond_1
+    :goto_0
     return-void
 .end method
 
 .method public setTypeface(Landroid/graphics/Typeface;I)V
     .locals 2
+    .param p1    # Landroid/graphics/Typeface;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
-    .line 1
-    if-eqz p1, :cond_1
+    iget-boolean v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->t:Z
 
-    .line 2
-    .line 3
-    if-lez p2, :cond_1
-
-    .line 4
-    .line 5
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v0
-
-    .line 9
-    sget-object v1, Lwmj;->a:LlFg;
-
-    .line 10
-    .line 11
     if-eqz v0, :cond_0
 
-    .line 12
-    .line 13
-    invoke-static {p1, p2}, Landroid/graphics/Typeface;->create(Landroid/graphics/Typeface;I)Landroid/graphics/Typeface;
+    return-void
 
-    .line 14
-    .line 15
-    .line 16
+    :cond_0
+    if-eqz p1, :cond_1
+
+    if-lez p2, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
     move-result-object v0
 
-    .line 17
+    invoke-static {v0, p1, p2}, Lj0/f;->create(Landroid/content/Context;Landroid/graphics/Typeface;I)Landroid/graphics/Typeface;
+
+    move-result-object v0
+
     goto :goto_0
 
-    .line 18
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
-
-    .line 19
-    .line 20
-    const-string p2, "Context cannot be null"
-
-    .line 21
-    .line 22
-    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    .line 23
-    .line 24
-    .line 25
-    throw p1
-
-    .line 26
     :cond_1
     const/4 v0, 0x0
 
-    .line 27
     :goto_0
+    const/4 v1, 0x1
+
+    iput-boolean v1, p0, Landroidx/appcompat/widget/AppCompatTextView;->t:Z
+
     if-eqz v0, :cond_2
 
-    .line 28
-    .line 29
     move-object p1, v0
 
-    .line 30
     :cond_2
-    invoke-super {p0, p1, p2}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;I)V
+    const/4 v0, 0x0
 
-    .line 31
-    .line 32
-    .line 33
-    return-void
-.end method
-
-.method public final u()V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->t:Ljava/util/concurrent/Future;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    const/4 v1, 0x0
-
-    .line 6
     :try_start_0
-    iput-object v1, p0, Landroidx/appcompat/widget/AppCompatTextView;->t:Ljava/util/concurrent/Future;
-
-    .line 7
-    .line 8
-    invoke-interface {v0}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object v0
-
-    .line 12
-    check-cast v0, LQZd;
-
-    .line 13
-    .line 14
-    invoke-static {p0, v0}, LMC8;->R1(Landroidx/appcompat/widget/AppCompatTextView;LQZd;)V
+    invoke-super {p0, p1, p2}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;I)V
     :try_end_0
-    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/util/concurrent/ExecutionException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 15
-    .line 16
-    .line 17
-    :catch_0
-    :cond_0
+    iput-boolean v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->t:Z
+
     return-void
+
+    :catchall_0
+    move-exception p1
+
+    iput-boolean v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->t:Z
+
+    throw p1
 .end method

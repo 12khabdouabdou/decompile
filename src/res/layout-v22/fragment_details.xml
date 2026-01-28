@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="#ff222222" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="end" android:id="@id/iv_close" android:layout_width="68.0dip" android:layout_height="68.0dip" android:src="@mipmap/icon_close" />
+            <TextView android:textSize="48.0sp" android:textColor="@color/white" android:id="@id/tv_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/info" />
+            <View android:background="@color/black_6" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginVertical="10.0dip" />
+            <TextView android:textSize="32.0sp" android:textColor="@color/black_9" android:id="@id/tv_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_director" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <TextView android:textSize="48.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/tv_director_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <View android:background="@color/black_6" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginVertical="10.0dip" />
+                <TextView android:textSize="32.0sp" android:textColor="@color/black_9" android:id="@id/tv_director_content" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_star" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <TextView android:textSize="48.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/tv_star_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <View android:background="@color/black_6" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginVertical="10.0dip" />
+                <TextView android:textSize="32.0sp" android:textColor="@color/black_9" android:id="@id/tv_star_content" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

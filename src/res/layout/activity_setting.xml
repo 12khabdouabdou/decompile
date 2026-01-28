@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/setting_language" android:background="@drawable/selector_setting" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="220.0dip" android:layout_height="220.0dip">
+            <ImageView android:id="@id/iv_setting_language" android:layout_width="68.0dip" android:layout_height="68.0dip" />
+            <TextView android:textSize="28.0dip" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/language" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/setting_feedback" android:background="@drawable/selector_setting" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="220.0dip" android:layout_height="220.0dip" android:layout_marginStart="30.0dip">
+            <ImageView android:id="@id/iv_setting_feedback" android:layout_width="68.0dip" android:layout_height="68.0dip" />
+            <TextView android:textSize="28.0dip" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/feedback" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/setting_update" android:background="@drawable/selector_setting" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="220.0dip" android:layout_height="220.0dip" android:layout_marginStart="30.0dip">
+            <ImageView android:id="@id/iv_setting_update" android:layout_width="68.0dip" android:layout_height="68.0dip" />
+            <TextView android:textSize="28.0dip" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/updates" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/setting_about" android:background="@drawable/selector_setting" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="220.0dip" android:layout_height="220.0dip" android:layout_marginStart="30.0dip">
+            <ImageView android:id="@id/iv_setting_about" android:layout_width="68.0dip" android:layout_height="68.0dip" />
+            <TextView android:textSize="28.0dip" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/about" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

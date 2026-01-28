@@ -4,27 +4,18 @@
 
 
 # instance fields
-.field public final a:Z
+.field public final p:Ljava/util/Calendar;
+
+.field public final q:Z
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    .line 1
-    invoke-direct {p0, p1, v0}, Lcom/google/android/material/datepicker/MaterialCalendarGridView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-
-    return-void
-.end method
-
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
+    .line 1
     const/4 v0, 0x0
 
-    .line 2
     invoke-direct {p0, p1, p2, v0}, Lcom/google/android/material/datepicker/MaterialCalendarGridView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -33,512 +24,385 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
 
-    .line 3
+    .line 2
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/GridView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    const/4 p1, 0x0
+    invoke-static {}, Lcom/google/android/material/datepicker/x;->o()Ljava/util/Calendar;
 
-    .line 4
-    invoke-static {p1}, LVPj;->c(Ljava/util/Calendar;)Ljava/util/Calendar;
+    move-result-object p1
 
-    .line 5
+    iput-object p1, p0, Lcom/google/android/material/datepicker/MaterialCalendarGridView;->p:Ljava/util/Calendar;
+
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
-    const p2, 0x101020d
-
-    .line 6
-    invoke-static {p1, p2}, Lisb;->g1(Landroid/content/Context;I)Z
+    invoke-static {p1}, Lcom/google/android/material/datepicker/MaterialDatePicker;->T1(Landroid/content/Context;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    const p1, 0x7f0b0484
+    sget p1, Lp7/g;->cancel_button:I
 
-    .line 7
     invoke-virtual {p0, p1}, Landroid/view/View;->setNextFocusLeftId(I)V
 
-    const p1, 0x7f0b06d8
+    sget p1, Lp7/g;->confirm_button:I
 
-    .line 8
     invoke-virtual {p0, p1}, Landroid/view/View;->setNextFocusRightId(I)V
 
-    .line 9
     :cond_0
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
-    const p2, 0x7f04045e
-
-    .line 10
-    invoke-static {p1, p2}, Lisb;->g1(Landroid/content/Context;I)Z
+    invoke-static {p1}, Lcom/google/android/material/datepicker/MaterialDatePicker;->V1(Landroid/content/Context;)Z
 
     move-result p1
 
-    .line 11
-    iput-boolean p1, p0, Lcom/google/android/material/datepicker/MaterialCalendarGridView;->a:Z
+    iput-boolean p1, p0, Lcom/google/android/material/datepicker/MaterialCalendarGridView;->q:Z
 
-    .line 12
-    new-instance p1, Ldsb;
+    new-instance p1, Lcom/google/android/material/datepicker/MaterialCalendarGridView$a;
 
-    const/4 p2, 0x1
+    invoke-direct {p1, p0}, Lcom/google/android/material/datepicker/MaterialCalendarGridView$a;-><init>(Lcom/google/android/material/datepicker/MaterialCalendarGridView;)V
 
-    .line 13
-    invoke-direct {p1, p2}, Ldsb;-><init>(I)V
-
-    .line 14
-    invoke-static {p0, p1}, Lb8k;->n(Landroid/view/View;LU4;)V
+    invoke-static {p0, p1}, Landroidx/core/view/ViewCompat;->setAccessibilityDelegate(Landroid/view/View;Landroidx/core/view/a;)V
 
     return-void
+.end method
+
+.method private static skipMonth(Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;)Z
+    .locals 4
+    .param p0    # Ljava/lang/Long;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p1    # Ljava/lang/Long;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Long;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/Long;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+
+    const/4 v0, 0x1
+
+    if-eqz p0, :cond_2
+
+    if-eqz p1, :cond_2
+
+    if-eqz p2, :cond_2
+
+    if-nez p3, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p2}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v1
+
+    invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide p1
+
+    cmp-long v3, v1, p1
+
+    if-gtz v3, :cond_2
+
+    invoke-virtual {p3}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide p1
+
+    invoke-virtual {p0}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v1
+
+    cmp-long p0, p1, v1
+
+    if-gez p0, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    :cond_2
+    :goto_0
+    return v0
 .end method
 
 
 # virtual methods
-.method public final a()Lggc;
+.method public final a(ILandroid/graphics/Rect;)V
+    .locals 1
+
+    .line 1
+    const/16 v0, 0x21
+
+    if-ne p1, v0, :cond_0
+
+    invoke-virtual {p0}, Lcom/google/android/material/datepicker/MaterialCalendarGridView;->b()Lcom/google/android/material/datepicker/m;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/google/android/material/datepicker/m;->i()I
+
+    move-result p1
+
+    :goto_0
+    invoke-virtual {p0, p1}, Lcom/google/android/material/datepicker/MaterialCalendarGridView;->setSelection(I)V
+
+    goto :goto_1
+
+    :cond_0
+    const/16 v0, 0x82
+
+    if-ne p1, v0, :cond_1
+
+    invoke-virtual {p0}, Lcom/google/android/material/datepicker/MaterialCalendarGridView;->b()Lcom/google/android/material/datepicker/m;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/google/android/material/datepicker/m;->b()I
+
+    move-result p1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v0, 0x1
+
+    invoke-super {p0, v0, p1, p2}, Landroid/widget/GridView;->onFocusChanged(ZILandroid/graphics/Rect;)V
+
+    :goto_1
+    return-void
+.end method
+
+.method public b()Lcom/google/android/material/datepicker/m;
     .locals 1
 
     .line 1
     invoke-super {p0}, Landroid/widget/GridView;->getAdapter()Landroid/widget/ListAdapter;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/android/material/datepicker/m;
+
+    return-object v0
+.end method
+
+.method public bridge synthetic getAdapter()Landroid/widget/Adapter;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/material/datepicker/MaterialCalendarGridView;->b()Lcom/google/android/material/datepicker/m;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic getAdapter()Landroid/widget/ListAdapter;
+    .locals 1
 
     .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    check-cast v0, Lggc;
-
-    .line 6
-    .line 7
-    return-object v0
-.end method
-
-.method public final getAdapter()Landroid/widget/Adapter;
-    .locals 1
-
-    .line 1
-    invoke-super {p0}, Landroid/widget/GridView;->getAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Lcom/google/android/material/datepicker/MaterialCalendarGridView;->b()Lcom/google/android/material/datepicker/m;
 
     move-result-object v0
-
-    check-cast v0, Lggc;
 
     return-object v0
 .end method
 
-.method public final getAdapter()Landroid/widget/ListAdapter;
+.method public onAttachedToWindow()V
     .locals 1
 
-    .line 2
-    invoke-super {p0}, Landroid/widget/GridView;->getAdapter()Landroid/widget/ListAdapter;
-
-    move-result-object v0
-
-    check-cast v0, Lggc;
-
-    return-object v0
-.end method
-
-.method public final onAttachedToWindow()V
-    .locals 1
-
-    .line 1
     invoke-super {p0}, Landroid/widget/GridView;->onAttachedToWindow()V
 
-    .line 2
-    .line 3
-    .line 4
-    invoke-super {p0}, Landroid/widget/GridView;->getAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Lcom/google/android/material/datepicker/MaterialCalendarGridView;->b()Lcom/google/android/material/datepicker/m;
 
-    .line 5
-    .line 6
-    .line 7
     move-result-object v0
 
-    .line 8
-    check-cast v0, Lggc;
-
-    .line 9
-    .line 10
     invoke-virtual {v0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
 
-    .line 11
-    .line 12
-    .line 13
     return-void
 .end method
 
 .method public final onDraw(Landroid/graphics/Canvas;)V
-    .locals 1
+    .locals 3
 
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/GridView;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 2
-    .line 3
-    .line 4
-    invoke-super {p0}, Landroid/widget/GridView;->getAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Lcom/google/android/material/datepicker/MaterialCalendarGridView;->b()Lcom/google/android/material/datepicker/m;
 
-    .line 5
-    .line 6
-    .line 7
     move-result-object p1
 
-    .line 8
-    check-cast p1, Lggc;
-
-    .line 9
-    .line 10
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 11
-    .line 12
-    .line 13
-    iget-object v0, p1, Lggc;->a:Lfgc;
+    invoke-virtual {p1}, Lcom/google/android/material/datepicker/m;->b()I
 
-    .line 14
-    .line 15
-    invoke-virtual {v0}, Lfgc;->d()I
-
-    .line 16
-    .line 17
-    .line 18
     move-result v0
 
-    .line 19
-    invoke-virtual {p1, v0}, Lggc;->a(I)Ljava/lang/Long;
+    invoke-virtual {p0}, Landroid/widget/AdapterView;->getFirstVisiblePosition()I
 
-    .line 20
-    .line 21
-    .line 22
-    invoke-virtual {p1}, Lggc;->b()I
+    move-result v1
 
-    .line 23
-    .line 24
-    .line 25
+    invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
+
     move-result v0
 
-    .line 26
-    invoke-virtual {p1, v0}, Lggc;->a(I)Ljava/lang/Long;
+    invoke-virtual {p1}, Lcom/google/android/material/datepicker/m;->i()I
 
-    .line 27
-    .line 28
-    .line 29
+    move-result v1
+
+    invoke-virtual {p0}, Landroid/widget/AdapterView;->getLastVisiblePosition()I
+
+    move-result v2
+
+    invoke-static {v1, v2}, Ljava/lang/Math;->min(II)I
+
+    move-result v1
+
+    invoke-virtual {p1, v0}, Lcom/google/android/material/datepicker/m;->getItem(I)Ljava/lang/Long;
+
+    invoke-virtual {p1, v1}, Lcom/google/android/material/datepicker/m;->getItem(I)Ljava/lang/Long;
+
     const/4 p1, 0x0
 
-    .line 30
     throw p1
 .end method
 
-.method public final onFocusChanged(ZILandroid/graphics/Rect;)V
+.method public onFocusChanged(ZILandroid/graphics/Rect;)V
     .locals 0
 
-    .line 1
-    if-eqz p1, :cond_2
+    if-eqz p1, :cond_0
 
-    .line 2
-    .line 3
-    const/16 p1, 0x21
+    invoke-virtual {p0, p2, p3}, Lcom/google/android/material/datepicker/MaterialCalendarGridView;->a(ILandroid/graphics/Rect;)V
 
-    .line 4
-    .line 5
-    if-ne p2, p1, :cond_0
+    goto :goto_0
 
-    .line 6
-    .line 7
-    invoke-super {p0}, Landroid/widget/GridView;->getAdapter()Landroid/widget/ListAdapter;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object p1
-
-    .line 11
-    check-cast p1, Lggc;
-
-    .line 12
-    .line 13
-    invoke-virtual {p1}, Lggc;->b()I
-
-    .line 14
-    .line 15
-    .line 16
-    move-result p1
-
-    .line 17
-    invoke-virtual {p0, p1}, Lcom/google/android/material/datepicker/MaterialCalendarGridView;->setSelection(I)V
-
-    .line 18
-    .line 19
-    .line 20
-    return-void
-
-    .line 21
     :cond_0
-    const/16 p1, 0x82
-
-    .line 22
-    .line 23
-    if-ne p2, p1, :cond_1
-
-    .line 24
-    .line 25
-    invoke-super {p0}, Landroid/widget/GridView;->getAdapter()Landroid/widget/ListAdapter;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object p1
-
-    .line 29
-    check-cast p1, Lggc;
-
-    .line 30
-    .line 31
-    iget-object p1, p1, Lggc;->a:Lfgc;
-
-    .line 32
-    .line 33
-    invoke-virtual {p1}, Lfgc;->d()I
-
-    .line 34
-    .line 35
-    .line 36
-    move-result p1
-
-    .line 37
-    invoke-virtual {p0, p1}, Lcom/google/android/material/datepicker/MaterialCalendarGridView;->setSelection(I)V
-
-    .line 38
-    .line 39
-    .line 40
-    return-void
-
-    .line 41
-    :cond_1
-    const/4 p1, 0x1
-
-    .line 42
-    invoke-super {p0, p1, p2, p3}, Landroid/widget/GridView;->onFocusChanged(ZILandroid/graphics/Rect;)V
-
-    .line 43
-    .line 44
-    .line 45
-    return-void
-
-    .line 46
-    :cond_2
     const/4 p1, 0x0
 
-    .line 47
     invoke-super {p0, p1, p2, p3}, Landroid/widget/GridView;->onFocusChanged(ZILandroid/graphics/Rect;)V
 
-    .line 48
-    .line 49
-    .line 50
+    :goto_0
     return-void
 .end method
 
-.method public final onKeyDown(ILandroid/view/KeyEvent;)Z
+.method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 3
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroid/widget/GridView;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
-    .line 2
-    .line 3
-    .line 4
     move-result p2
 
-    .line 5
     const/4 v0, 0x0
 
-    .line 6
     if-nez p2, :cond_0
 
-    .line 7
-    .line 8
     return v0
 
-    .line 9
     :cond_0
     invoke-virtual {p0}, Landroid/widget/AdapterView;->getSelectedItemPosition()I
 
-    .line 10
-    .line 11
-    .line 12
     move-result p2
 
-    .line 13
     const/4 v1, -0x1
 
-    .line 14
     const/4 v2, 0x1
 
-    .line 15
     if-eq p2, v1, :cond_3
 
-    .line 16
-    .line 17
-    invoke-virtual {p0}, Landroid/widget/AdapterView;->getSelectedItemPosition()I
+    invoke-virtual {p0}, Lcom/google/android/material/datepicker/MaterialCalendarGridView;->b()Lcom/google/android/material/datepicker/m;
 
-    .line 18
-    .line 19
-    .line 20
-    move-result p2
-
-    .line 21
-    invoke-super {p0}, Landroid/widget/GridView;->getAdapter()Landroid/widget/ListAdapter;
-
-    .line 22
-    .line 23
-    .line 24
     move-result-object v1
 
-    .line 25
-    check-cast v1, Lggc;
+    invoke-virtual {v1}, Lcom/google/android/material/datepicker/m;->b()I
 
-    .line 26
-    .line 27
-    iget-object v1, v1, Lggc;->a:Lfgc;
-
-    .line 28
-    .line 29
-    invoke-virtual {v1}, Lfgc;->d()I
-
-    .line 30
-    .line 31
-    .line 32
     move-result v1
 
-    .line 33
     if-lt p2, v1, :cond_1
 
-    .line 34
-    .line 35
+    invoke-virtual {p0}, Lcom/google/android/material/datepicker/MaterialCalendarGridView;->b()Lcom/google/android/material/datepicker/m;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/google/android/material/datepicker/m;->i()I
+
+    move-result v1
+
+    if-gt p2, v1, :cond_1
+
     goto :goto_0
 
-    .line 36
     :cond_1
     const/16 p2, 0x13
 
-    .line 37
-    .line 38
     if-ne p2, p1, :cond_2
 
-    .line 39
-    .line 40
-    invoke-super {p0}, Landroid/widget/GridView;->getAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Lcom/google/android/material/datepicker/MaterialCalendarGridView;->b()Lcom/google/android/material/datepicker/m;
 
-    .line 41
-    .line 42
-    .line 43
     move-result-object p1
 
-    .line 44
-    check-cast p1, Lggc;
+    invoke-virtual {p1}, Lcom/google/android/material/datepicker/m;->b()I
 
-    .line 45
-    .line 46
-    iget-object p1, p1, Lggc;->a:Lfgc;
-
-    .line 47
-    .line 48
-    invoke-virtual {p1}, Lfgc;->d()I
-
-    .line 49
-    .line 50
-    .line 51
     move-result p1
 
-    .line 52
     invoke-virtual {p0, p1}, Lcom/google/android/material/datepicker/MaterialCalendarGridView;->setSelection(I)V
 
-    .line 53
-    .line 54
-    .line 55
     return v2
 
-    .line 56
     :cond_2
     return v0
 
-    .line 57
     :cond_3
     :goto_0
     return v2
 .end method
 
-.method public final onMeasure(II)V
+.method public onMeasure(II)V
     .locals 1
 
-    .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/datepicker/MaterialCalendarGridView;->a:Z
+    iget-boolean v0, p0, Lcom/google/android/material/datepicker/MaterialCalendarGridView;->q:Z
 
-    .line 2
-    .line 3
     if-eqz v0, :cond_0
 
-    .line 4
-    .line 5
     const p2, 0xffffff
 
-    .line 6
-    .line 7
-    .line 8
     const/high16 v0, -0x80000000
 
-    .line 9
-    .line 10
     invoke-static {p2, v0}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
-    .line 11
-    .line 12
-    .line 13
     move-result p2
 
-    .line 14
     invoke-super {p0, p1, p2}, Landroid/widget/GridView;->onMeasure(II)V
 
-    .line 15
-    .line 16
-    .line 17
     invoke-virtual {p0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
-    .line 18
-    .line 19
-    .line 20
     move-result-object p1
 
-    .line 21
     invoke-virtual {p0}, Landroid/view/View;->getMeasuredHeight()I
 
-    .line 22
-    .line 23
-    .line 24
     move-result p2
 
-    .line 25
     iput p2, p1, Landroid/view/ViewGroup$LayoutParams;->height:I
 
-    .line 26
-    .line 27
-    return-void
+    goto :goto_0
 
-    .line 28
     :cond_0
     invoke-super {p0, p1, p2}, Landroid/widget/GridView;->onMeasure(II)V
 
-    .line 29
-    .line 30
-    .line 31
+    :goto_0
     return-void
 .end method
 
-.method public final bridge synthetic setAdapter(Landroid/widget/Adapter;)V
+.method public bridge synthetic setAdapter(Landroid/widget/Adapter;)V
     .locals 0
 
     .line 1
@@ -550,52 +414,47 @@
 .end method
 
 .method public final setAdapter(Landroid/widget/ListAdapter;)V
-    .locals 4
+    .locals 3
 
     .line 2
-    instance-of v0, p1, Lggc;
+    instance-of v0, p1, Lcom/google/android/material/datepicker/m;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-super {p0, p1}, Landroid/widget/GridView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     return-void
 
-    .line 4
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-class v0, Lcom/google/android/material/datepicker/MaterialCalendarGridView;
+    const/4 v0, 0x2
 
-    .line 5
-    invoke-virtual {v0}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/Object;
 
-    move-result-object v0
+    const-class v1, Lcom/google/android/material/datepicker/MaterialCalendarGridView;
 
-    const-class v1, Lggc;
-
-    .line 6
     invoke-virtual {v1}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
 
     move-result-object v1
 
-    const/4 v2, 0x2
+    const/4 v2, 0x0
 
-    new-array v2, v2, [Ljava/lang/Object;
+    aput-object v1, v0, v2
 
-    const/4 v3, 0x0
+    const-class v1, Lcom/google/android/material/datepicker/m;
 
-    aput-object v0, v2, v3
+    invoke-virtual {v1}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
 
-    const/4 v0, 0x1
+    move-result-object v1
 
-    aput-object v1, v2, v0
+    const/4 v2, 0x1
 
-    .line 7
-    const-string v0, "%1$s must have its Adapter set to a %2$s"
+    aput-object v1, v0, v2
 
-    invoke-static {v0, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    const-string v1, "%1$s must have its Adapter set to a %2$s"
+
+    invoke-static {v1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -604,75 +463,29 @@
     throw p1
 .end method
 
-.method public final setSelection(I)V
+.method public setSelection(I)V
     .locals 1
 
-    .line 1
-    invoke-super {p0}, Landroid/widget/GridView;->getAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Lcom/google/android/material/datepicker/MaterialCalendarGridView;->b()Lcom/google/android/material/datepicker/m;
 
-    .line 2
-    .line 3
-    .line 4
     move-result-object v0
 
-    .line 5
-    check-cast v0, Lggc;
+    invoke-virtual {v0}, Lcom/google/android/material/datepicker/m;->b()I
 
-    .line 6
-    .line 7
-    iget-object v0, v0, Lggc;->a:Lfgc;
-
-    .line 8
-    .line 9
-    invoke-virtual {v0}, Lfgc;->d()I
-
-    .line 10
-    .line 11
-    .line 12
     move-result v0
 
-    .line 13
     if-ge p1, v0, :cond_0
 
-    .line 14
-    .line 15
-    invoke-super {p0}, Landroid/widget/GridView;->getAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Lcom/google/android/material/datepicker/MaterialCalendarGridView;->b()Lcom/google/android/material/datepicker/m;
 
-    .line 16
-    .line 17
-    .line 18
     move-result-object p1
 
-    .line 19
-    check-cast p1, Lggc;
+    invoke-virtual {p1}, Lcom/google/android/material/datepicker/m;->b()I
 
-    .line 20
-    .line 21
-    iget-object p1, p1, Lggc;->a:Lfgc;
-
-    .line 22
-    .line 23
-    invoke-virtual {p1}, Lfgc;->d()I
-
-    .line 24
-    .line 25
-    .line 26
     move-result p1
 
-    .line 27
-    invoke-super {p0, p1}, Landroid/widget/GridView;->setSelection(I)V
-
-    .line 28
-    .line 29
-    .line 30
-    return-void
-
-    .line 31
     :cond_0
     invoke-super {p0, p1}, Landroid/widget/GridView;->setSelection(I)V
 
-    .line 32
-    .line 33
-    .line 34
     return-void
 .end method

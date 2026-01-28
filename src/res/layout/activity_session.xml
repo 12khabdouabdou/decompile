@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#80000000" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginStart="20.0dip">
+            <TextView android:textSize="28.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Send bytes： " android:textIsSelectable="true" />
+            <TextView android:textSize="28.0dip" android:textColor="#ffffffff" android:id="@id/tv_send_bytes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textIsSelectable="true" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginStart="20.0dip">
+            <TextView android:textSize="28.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Receive bytes： " android:textIsSelectable="true" />
+            <TextView android:textSize="28.0dip" android:textColor="#ffffffff" android:id="@id/tv_recv_bytes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textIsSelectable="true" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginStart="20.0dip">
+            <TextView android:textSize="28.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Buffer bytes： " android:textIsSelectable="true" />
+            <TextView android:textSize="28.0dip" android:textColor="#ffffffff" android:id="@id/tv_buffer_bytes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textIsSelectable="true" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginStart="20.0dip">
+            <TextView android:textSize="28.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Request scheduling time： " android:textIsSelectable="true" />
+            <TextView android:textSize="28.0dip" android:textColor="#ffffffff" android:id="@id/tv_sched_ms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textIsSelectable="true" />
+        </LinearLayout>
+        <TextView android:textSize="28.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/tv_list_title" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:textIsSelectable="true" />
+        <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="outsideInset" android:id="@id/rv_session_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="end" android:id="@id/iv_close" android:padding="20.0dip" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@mipmap/icon_close" />
+</FrameLayout>

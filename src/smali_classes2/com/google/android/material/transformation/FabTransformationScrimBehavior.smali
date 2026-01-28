@@ -9,236 +9,183 @@
 
 
 # instance fields
-.field public final c:LWgc;
+.field public final q:Lq7/i;
 
-.field public final d:LWgc;
+.field public final r:Lq7/i;
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 3
+    .locals 5
 
     .line 1
     invoke-direct {p0}, Lcom/google/android/material/transformation/ExpandableTransformationBehavior;-><init>()V
 
-    .line 2
-    new-instance v0, LWgc;
+    new-instance v0, Lq7/i;
 
     const-wide/16 v1, 0x4b
 
-    invoke-direct {v0, v1, v2}, LWgc;-><init>(J)V
+    const-wide/16 v3, 0x96
 
-    iput-object v0, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior;->c:LWgc;
+    invoke-direct {v0, v1, v2, v3, v4}, Lq7/i;-><init>(JJ)V
 
-    .line 3
-    new-instance v0, LWgc;
+    iput-object v0, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior;->q:Lq7/i;
+
+    new-instance v0, Lq7/i;
 
     const-wide/16 v1, 0x0
 
-    invoke-direct {v0, v1, v2}, LWgc;-><init>(J)V
+    invoke-direct {v0, v1, v2, v3, v4}, Lq7/i;-><init>(JJ)V
 
-    iput-object v0, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior;->d:LWgc;
+    iput-object v0, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior;->r:Lq7/i;
 
     return-void
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-    .locals 2
+    .locals 4
 
-    .line 4
+    .line 2
     invoke-direct {p0, p1, p2}, Lcom/google/android/material/transformation/ExpandableTransformationBehavior;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 5
-    new-instance p1, LWgc;
+    new-instance p1, Lq7/i;
 
     const-wide/16 v0, 0x4b
 
-    invoke-direct {p1, v0, v1}, LWgc;-><init>(J)V
+    const-wide/16 v2, 0x96
 
-    iput-object p1, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior;->c:LWgc;
+    invoke-direct {p1, v0, v1, v2, v3}, Lq7/i;-><init>(JJ)V
 
-    .line 6
-    new-instance p1, LWgc;
+    iput-object p1, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior;->q:Lq7/i;
+
+    new-instance p1, Lq7/i;
 
     const-wide/16 v0, 0x0
 
-    invoke-direct {p1, v0, v1}, LWgc;-><init>(J)V
+    invoke-direct {p1, v0, v1, v2, v3}, Lq7/i;-><init>(JJ)V
 
-    iput-object p1, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior;->d:LWgc;
+    iput-object p1, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior;->r:Lq7/i;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Landroid/view/View;Landroid/view/View;)Z
+.method public H(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 0
 
     .line 1
-    instance-of p1, p2, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
+    invoke-super {p0, p1, p2, p3}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$c;->H(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
 
-    .line 2
-    .line 3
-    return p1
-.end method
-
-.method public final s(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
-    .locals 0
-
-    .line 1
-    const/4 p1, 0x0
+    move-result p1
 
     return p1
 .end method
 
-.method public final u(Landroid/view/View;Landroid/view/View;ZZ)Landroid/animation/AnimatorSet;
-    .locals 4
+.method public M(Landroid/view/View;Landroid/view/View;ZZ)Landroid/animation/AnimatorSet;
+    .locals 6
 
     .line 1
-    const/4 p1, 0x0
+    new-instance p1, Ljava/util/ArrayList;
 
-    .line 2
-    const/4 v0, 0x1
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3
-    new-instance v1, Ljava/util/ArrayList;
+    new-instance v5, Ljava/util/ArrayList;
 
-    .line 4
-    .line 5
-    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
-    .line 6
-    .line 7
-    .line 8
-    new-instance v2, Ljava/util/ArrayList;
+    move-object v0, p0
 
-    .line 9
-    .line 10
-    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+    move-object v1, p2
 
-    .line 11
-    .line 12
-    .line 13
-    if-eqz p3, :cond_0
+    move v2, p3
 
-    .line 14
-    .line 15
-    iget-object v2, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior;->c:LWgc;
+    move v3, p4
 
-    .line 16
-    .line 17
+    move-object v4, p1
+
+    invoke-virtual/range {v0 .. v5}, Lcom/google/android/material/transformation/FabTransformationScrimBehavior;->N(Landroid/view/View;ZZLjava/util/List;Ljava/util/List;)V
+
+    new-instance p4, Landroid/animation/AnimatorSet;
+
+    invoke-direct {p4}, Landroid/animation/AnimatorSet;-><init>()V
+
+    invoke-static {p4, p1}, Lq7/b;->a(Landroid/animation/AnimatorSet;Ljava/util/List;)V
+
+    new-instance p1, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;
+
+    invoke-direct {p1, p0, p3, p2}, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;-><init>(Lcom/google/android/material/transformation/FabTransformationScrimBehavior;ZLandroid/view/View;)V
+
+    invoke-virtual {p4, p1}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
+
+    return-object p4
+.end method
+
+.method public final N(Landroid/view/View;ZZLjava/util/List;Ljava/util/List;)V
+    .locals 3
+
+    .line 1
+    if-eqz p2, :cond_0
+
+    iget-object p5, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior;->q:Lq7/i;
+
     goto :goto_0
 
-    .line 18
     :cond_0
-    iget-object v2, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior;->d:LWgc;
+    iget-object p5, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior;->r:Lq7/i;
 
-    .line 19
-    .line 20
     :goto_0
-    const/4 v3, 0x0
+    const/4 v0, 0x0
 
-    .line 21
-    if-eqz p3, :cond_2
+    const/4 v1, 0x1
 
-    .line 22
-    .line 23
-    if-nez p4, :cond_1
+    const/4 v2, 0x0
 
-    .line 24
-    .line 25
-    invoke-virtual {p2, v3}, Landroid/view/View;->setAlpha(F)V
+    if-eqz p2, :cond_2
 
-    .line 26
-    .line 27
-    .line 28
+    if-nez p3, :cond_1
+
+    invoke-virtual {p1, v2}, Landroid/view/View;->setAlpha(F)V
+
     :cond_1
-    sget-object p4, Landroid/view/View;->ALPHA:Landroid/util/Property;
+    sget-object p2, Landroid/view/View;->ALPHA:Landroid/util/Property;
 
-    .line 29
-    .line 30
-    new-array v0, v0, [F
+    new-array p3, v1, [F
 
-    .line 31
-    .line 32
-    const/high16 v3, 0x3f800000    # 1.0f
+    const/high16 v1, 0x3f800000    # 1.0f
 
-    .line 33
-    .line 34
-    aput v3, v0, p1
+    aput v1, p3, v0
 
-    .line 35
-    .line 36
-    invoke-static {p2, p4, v0}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
+    invoke-static {p1, p2, p3}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
 
-    .line 37
-    .line 38
-    .line 39
     move-result-object p1
 
-    .line 40
     goto :goto_1
 
-    .line 41
     :cond_2
-    sget-object p4, Landroid/view/View;->ALPHA:Landroid/util/Property;
+    sget-object p2, Landroid/view/View;->ALPHA:Landroid/util/Property;
 
-    .line 42
-    .line 43
-    new-array v0, v0, [F
+    new-array p3, v1, [F
 
-    .line 44
-    .line 45
-    aput v3, v0, p1
+    aput v2, p3, v0
 
-    .line 46
-    .line 47
-    invoke-static {p2, p4, v0}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
+    invoke-static {p1, p2, p3}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
 
-    .line 48
-    .line 49
-    .line 50
     move-result-object p1
 
-    .line 51
     :goto_1
-    invoke-virtual {v2, p1}, LWgc;->a(Landroid/animation/ObjectAnimator;)V
+    invoke-virtual {p5, p1}, Lq7/i;->a(Landroid/animation/Animator;)V
 
-    .line 52
-    .line 53
-    .line 54
-    invoke-virtual {v1, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-interface {p4, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 55
-    .line 56
-    .line 57
-    new-instance p1, Landroid/animation/AnimatorSet;
+    return-void
+.end method
 
-    .line 58
-    .line 59
-    invoke-direct {p1}, Landroid/animation/AnimatorSet;-><init>()V
+.method public i(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
+    .locals 0
 
-    .line 60
-    .line 61
-    .line 62
-    invoke-static {p1, v1}, LHRk;->h(Landroid/animation/AnimatorSet;Ljava/util/ArrayList;)V
+    .line 1
+    instance-of p1, p3, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
 
-    .line 63
-    .line 64
-    .line 65
-    new-instance p4, Lu97;
-
-    .line 66
-    .line 67
-    invoke-direct {p4, p2, p3}, Lu97;-><init>(Landroid/view/View;Z)V
-
-    .line 68
-    .line 69
-    .line 70
-    invoke-virtual {p1, p4}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
-
-    .line 71
-    .line 72
-    .line 73
-    return-object p1
+    return p1
 .end method

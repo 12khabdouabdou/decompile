@@ -1,0 +1,42 @@
+.class public final synthetic Lce/e;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic p:Lcom/video_cloud/ui/player/PlayerActivity;
+
+.field public final synthetic q:I
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/video_cloud/ui/player/PlayerActivity;I)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lce/e;->p:Lcom/video_cloud/ui/player/PlayerActivity;
+
+    iput p2, p0, Lce/e;->q:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lce/e;->p:Lcom/video_cloud/ui/player/PlayerActivity;
+
+    iget v1, p0, Lce/e;->q:I
+
+    invoke-static {v0, v1}, Lcom/video_cloud/ui/player/PlayerActivity;->C1(Lcom/video_cloud/ui/player/PlayerActivity;I)V
+
+    return-void
+.end method

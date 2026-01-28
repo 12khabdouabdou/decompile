@@ -1,0 +1,75 @@
+.class public final Lkf/h0$d;
+.super Lio/grpc/k0$j;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lkf/h0;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "d"
+.end annotation
+
+
+# instance fields
+.field public final a:Lio/grpc/k0$f;
+
+
+# direct methods
+.method public constructor <init>(Lio/grpc/k0$f;)V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Lio/grpc/k0$j;-><init>()V
+
+    const-string v0, "result"
+
+    invoke-static {p1, v0}, Lcom/google/common/base/l;->p(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lio/grpc/k0$f;
+
+    iput-object p1, p0, Lkf/h0$d;->a:Lio/grpc/k0$f;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Lio/grpc/k0$g;)Lio/grpc/k0$f;
+    .locals 0
+
+    .line 1
+    iget-object p1, p0, Lkf/h0$d;->a:Lio/grpc/k0$f;
+
+    return-object p1
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    const-class v0, Lkf/h0$d;
+
+    invoke-static {v0}, Lcom/google/common/base/g;->b(Ljava/lang/Class;)Lcom/google/common/base/g$b;
+
+    move-result-object v0
+
+    const-string v1, "result"
+
+    iget-object v2, p0, Lkf/h0$d;->a:Lio/grpc/k0$f;
+
+    invoke-virtual {v0, v1, v2}, Lcom/google/common/base/g$b;->d(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/common/base/g$b;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/google/common/base/g$b;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

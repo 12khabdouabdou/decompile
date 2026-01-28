@@ -1,0 +1,409 @@
+{
+  "audio_language": {
+    "DEU": "Deutsch",
+    "HRV": "Hrvatski",
+    "DEU-AT": "Deutsch (Österreich)",
+    "ITA": "Italiano",
+    "POR-BR": "Português (Brasil)",
+    "SPA-MX": "Español (México)",
+    "ARA": "العربية",
+    "CHS": "中文 (简体)",
+    "CHT": "中文 (繁体)",
+    "CSY": "Čeština",
+    "ENG": "English",
+    "BGR": "Български",
+    "HUN": "Magyar",
+    "SPA": "Español",
+    "SPA-LA": "Español (Latinoamérica)",
+    "FRA-FR": "Français (France)",
+    "SPA-ES": "Español (España)",
+    "FRA-CA": "Français (Canada)",
+    "ENG-AU": "English (Australia)",
+    "CMN": "普通话",
+    "ENU": "English (United States)",
+    "FIN": "Suomi",
+    "NLD": "Nederlands",
+    "THA": "ภาษาไทย",
+    "POL": "Polski",
+    "PTG": "Português (Portugal)",
+    "VAL": "Català (Espanya)",
+    "TUR": "Türkçe",
+    "FRE-CA": "Français (Canada)",
+    "ESP": "Español",
+    "FRE": "Français",
+    "JPN": "日本語",
+    "ROM": "Română",
+    "RUS": "Русский",
+    "KOR": "한국어",
+    "POR": "Português",
+    "POR-PT": "Português (Portugal)",
+    "ENG-GB": "English (United Kingdom)",
+    "SKY": "Slovenčina",
+    "SVE": "Svenska",
+    "DEU-DE": "Deutsch (Deutschland)",
+    "DAN": "Dansk",
+    "ELL": "Ελληνικά",
+    "FRA": "Français",
+    "NOR": "Norsk",
+    "BRA": "Português (Brasil)"
+  },
+  "categories_config": {
+    "year": [
+      {
+        "value": "All Year",
+        "min": "0000",
+        "max": "9999"
+      },
+      {
+        "value": "2020-2025",
+        "min": "2020",
+        "max": "2025"
+      },
+      {
+        "value": "2010-2019",
+        "min": "2010",
+        "max": "2020"
+      },
+      {
+        "value": "2000-2009",
+        "min": "2000",
+        "max": "2010"
+      },
+      {
+        "value": "1990s",
+        "min": "1990",
+        "max": "2000"
+      },
+      {
+        "value": "1980s",
+        "min": "1980",
+        "max": "1990"
+      },
+      {
+        "value": "1970s",
+        "min": "1970",
+        "max": "1980"
+      },
+      {
+        "value": "Earlier",
+        "min": "0000",
+        "max": "1970"
+      }
+    ],
+    "network": [
+      {
+        "value": "All Network",
+        "id": -1,
+        "logo": "turbo://default.0vcmc02vl8agx9z8jqsx/36d0394f2132c6723100533e618e35972e88"
+      },
+      {
+        "value": "Netflix",
+        "id": 213,
+        "logo": "turbo://default.0vcmc02vl8agx9z8jqsx/835369bba7f6166c3100533e618e3597317f"
+      },
+      {
+        "value": "Prime Video",
+        "id": 1024,
+        "logo": "turbo://default.0vcmc02vl8agx9z8jqsx/eb7196d69daad5553100533e618e359881b2"
+      },
+      {
+        "value": "Disney+",
+        "id": 2739,
+        "logo": "turbo://default.0vcmc02vl8agx9z8jqsx/d9576457fd4907b63100533e618e35972fca"
+      },
+      {
+        "value": "Apple TV+",
+        "id": 2552,
+        "logo": "turbo://default.0vcmc02vl8agx9z8jqsx/ab75e6ca18c5ddad3100533e618e35972ef9"
+      },
+      {
+        "value": "Hulu",
+        "id": 453,
+        "logo": "turbo://default.0vcmc02vl8agx9z8jqsx/d5543a1f34c8e6213100533e618e35973097"
+      },
+      {
+        "value": "Crunchyroll",
+        "id": 117,
+        "logo": "turbo://default.0vcmc02vl8agx9z8jqsx/adedfe0092f3ea2a3100533e618e35972f5c"
+      },
+      {
+        "value": "HBOMAX",
+        "id": 49,
+        "logo": "turbo://default.0vcmc02vl8agx9z8jqsx/821368fa616e84f53100533e618e35973028"
+      },
+      {
+        "value": "Other",
+        "id": 0,
+        "logo": "turbo://default.0vcmc02vl8agx9z8jqsx/5dda3fe0f22d23a83100533e618e359731e3"
+      }
+    ],
+    "region": [
+      {
+        "label": "All Region",
+        "value": "all"
+      },
+      {
+        "label": "US",
+        "value": "United States"
+      },
+      {
+        "label": "UK",
+        "value": "United Kingdom"
+      },
+      {
+        "label": "Canada",
+        "value": "Canada"
+      },
+      {
+        "label": "Australia",
+        "value": "Australia"
+      },
+      {
+        "label": "South Korea",
+        "value": "South Korea"
+      },
+      {
+        "label": "India",
+        "value": "India"
+      },
+      {
+        "label": "China",
+        "value": "China"
+      },
+      {
+        "label": "Japan",
+        "value": "Japan"
+      },
+      {
+        "label": "Turkey",
+        "value": "Turkey"
+      },
+      {
+        "label": "Mexico",
+        "value": "Mexico"
+      },
+      {
+        "label": "France",
+        "value": "France"
+      },
+      {
+        "label": "Brazil",
+        "value": "Brazil"
+      },
+      {
+        "label": "Spain",
+        "value": "Spain"
+      },
+      {
+        "label": "Others",
+        "value": "Others"
+      }
+    ],
+    "order": [
+      {
+        "label": "Release Date",
+        "value": "release_date"
+      },
+      {
+        "label": "Newly Added",
+        "value": "updated_at"
+      },
+      {
+        "label": "Top Rated",
+        "value": "vote_average"
+      }
+    ]
+  },
+  "language_config": {
+    "ar": {
+      "default": 0,
+      "full_name": "بالعربية",
+      "short_name": "ar"
+    },
+    "en-US": {
+      "default": 1,
+      "full_name": "English",
+      "short_name": "EN"
+    },
+    "es-ES": {
+      "default": 0,
+      "full_name": "Español",
+      "short_name": "ES"
+    },
+    "fr-FR": {
+      "default": 0,
+      "full_name": "Français",
+      "short_name": "FR"
+    },
+    "pt-BR": {
+      "default": 0,
+      "full_name": "Português",
+      "short_name": "PT"
+    }
+  },
+  "share_url_config": {
+    "telegram_zoku_url": "https://t.me/+ZgT1wJxY2BY3M2Fh",
+    "discord_zoku_url": "https://chat.whatsapp.com/LbUgx0mOLlZBDatL5HNmJU",
+    "telegram_url": "https://t.me/+kw3xLYSGFsY0YTM1",
+    "telegram_url_new": "https://t.me/+ynMAJ5Ow9LBhY2Jl",
+    "discord_url": "https://discord.gg/3k7q5J6v",
+    "twitter_url": "https://twitter.com/VideoCloudApp",
+    "help_url": "http://help.netflyapp.com"
+  },
+  "subtitle_audio": {
+    "SWE": "SV",
+    "CMN": "ZH",
+    "ENU": "EN",
+    "ENG": "EN",
+    "GER": "DE",
+    "RUS": "RU",
+    "ARA": "AR",
+    "NLD": "NL",
+    "JPN": "JA",
+    "POL": "PL",
+    "NOR": "NO",
+    "ESP": "ES",
+    "CHS": "ZH",
+    "DAN": "DA",
+    "HRV": "HR",
+    "HUN": "HU",
+    "PTG": "PT",
+    "TUR": "TR",
+    "VAL": "CA",
+    "CSY": "CS",
+    "FIN": "FI",
+    "KOR": "KO",
+    "POR": "PT",
+    "ROM": "RO",
+    "SVE": "SV",
+    "THA": "TH",
+    "BGR": "BG",
+    "ELL": "EL",
+    "ITA": "IT",
+    "BRA": "PT",
+    "SKY": "SK",
+    "SPA": "ES",
+    "CHT": "ZH",
+    "FRA": "FR"
+  },
+  "subtitle_language": {
+    "da": "Dansk",
+    "hi": "हिन्दी",
+    "id": "Bahasa Indonesia",
+    "it": "Italiano",
+    "no": "Norsk",
+    "th": "ไทย",
+    "dut": "Nederlands",
+    "jan": "日本語",
+    "pt-BR": "Português (Brasil)",
+    "uk": "Українська",
+    "ara": "العربية",
+    "arz": "العربية",
+    "hr": "Hrvatski",
+    "urk": "Українська",
+    "vi": "Tiếng Việt",
+    "gl": "Galego",
+    "bgr": "Български",
+    "en": "English",
+    "fi": "Suomi",
+    "swe": "Svenska",
+    "tr": "Türkçe",
+    "zh-HK": "繁體中文 (香港)",
+    "cmn_Hant": "繁体中文",
+    "ger": "Deutsch",
+    "sv": "Svenska",
+    "zh-CN": "简体中文",
+    "eu": "Euskara",
+    "arl": "العربية",
+    "eng": "English",
+    "fin": "Suomi",
+    "fr-CA": "Français (Canada)",
+    "por": "Português",
+    "slk": "Slovenčina",
+    "nno": "Norsk (nynorsk)",
+    "es": "Español",
+    "et": "Eesti",
+    "lt": "Lietuvių",
+    "cze": "Čeština (Česko)",
+    "ind": "Bahasa Indonesia",
+    "gre": "Ελληνικά (Νέα)",
+    "bg": "Български",
+    "es-419": "Español (Latinoamérica)",
+    "kor": "한국어",
+    "lv": "Latviešu",
+    "nl": "Nederlands",
+    "ru": "Русский",
+    "ces": "Česká",
+    "fr": "Français",
+    "fre": "Français",
+    "jp": "日本語",
+    "te": "తెలుగు",
+    "glr": "Galego",
+    "arb": "العربية",
+    "cmn_Hans": "简体中文",
+    "dan": "Dansk",
+    "ell": "Ελληνικά",
+    "yue_Hant": "繁體中文 (粵語)",
+    "ar": "العربية",
+    "de": "Deutsch",
+    "ita": "Italiano",
+    "pt": "Português",
+    "zh-TW": "繁體中文（台湾）",
+    "fra": "Français",
+    "he": "עברית",
+    "ja": "日本語",
+    "pl": "Polski",
+    "ro": "Română",
+    "msa": "Bahasa Melayu",
+    "es_ES": "Español (España)",
+    "ko": "한국어",
+    "sl": "Slovenščina",
+    "may": "Bahasa Melayu",
+    "spa": "Español",
+    "ta": "தமிழ்",
+    "arw": "العربية",
+    "deu": "Deutsch",
+    "fr-FR": "Français (France)",
+    "nor": "Norsk",
+    "pt-PT": "Português (Portugal)",
+    "sk": "Slovenčina",
+    "zh-Hans": "简体中文",
+    "zho": "中文",
+    "glg": "Galego",
+    "zh-Hant": "繁體中文",
+    "el-mod": "Ελληνικά (Σύγχρονα)",
+    "ca": "Català",
+    "el": "Ελληνικά",
+    "ms": "Bahasa Melayu",
+    "ron": "Română",
+    "tur": "Türkçe",
+    "zh": "简体中文",
+    "ary": "العربية",
+    "arq": "العربية",
+    "cs": "Česká",
+    "hu": "Magyar",
+    "pol": "Polski",
+    "nb": "Norsk (bokmål)"
+  },
+  "config_turbo": {
+    "1001": "turbo://default.0vcmc02vl8agx9z8jqsx/b9a1f696c843ac4860005b533e6b0a880e9f",
+    "1002": "turbo://default.0vcmc02vl8agx9z8jqsx/9eee5f558fa66f7360005b533e6b0a880e9f",
+    "1003": "turbo://default.0vcmc02vl8agx9z8jqsx/42f5bd5f6450598860005b533e6b0a880e9f",
+    "1004": "turbo://default.0vcmc02vl8agx9z8jqsx/b5647aadea8acbfe60005b533e6b0a880e9f",
+    "1005": "turbo://default.0vcmc02vl8agx9z8jqsx/789b6fae86dfdb0660005b533e6b0a880e9f",
+    "1006": "turbo://default.0vcmc02vl8agx9z8jqsx/3532e19aa939e52660005b533e6b0a880e9f",
+    "9998": "turbo://default.0vcmc02vl8agx9z8jqsx/1c61175f2d476dda60005b533e6b0a880e9f",
+    "9999": "turbo://default.0vcmc02vl8agx9z8jqsx/c50d71d7a2b1be2760005b533e6b0a880e9f",
+    "diff_fr": "turbo://default.0vcmc02vl8agx9z8jqsx/0285963dc6a6de1c60005b533e6b0a880e9f",
+    "diff": "turbo://default.0vcmc02vl8agx9z8jqsx/90630de1fc20d88a60005b533e6b0a880e9f",
+    "diff_ar": "turbo://default.0vcmc02vl8agx9z8jqsx/4098d778b02c7ed860005b533e6b0a880e9f",
+    "diff_en": "turbo://default.0vcmc02vl8agx9z8jqsx/705d103c04ff376e60005b533e6b0a880e9f",
+    "diff_es": "turbo://default.0vcmc02vl8agx9z8jqsx/b36851ece8defb6a60005b533e6b0a880e9f",
+    "diff_pt": "turbo://default.0vcmc02vl8agx9z8jqsx/8f059023a6e2822560005b533e6b0a880e9f",
+    "mobile": "turbo://default.0vcmc02vl8agx9z8jqsx/d95759c5d30108e660005b533e6b0a880e9f",
+    "netfly": "turbo://default.0vcmc02vl8agx9z8jqsx/69de8948f653b1c060005b533e6b0a880e9f",
+    "tv": "turbo://default.0vcmc02vl8agx9z8jqsx/7e5b5eaa816345ef60005b533e6b0a880e9f",
+    "wookong": "turbo://default.0vcmc02vl8agx9z8jqsx/a09b78c46f4190ef60005b533e6b0a880e9f",
+    "zoko": "turbo://default.0vcmc02vl8agx9z8jqsx/6c8d3becf15da5e560005b533e6b0a880e9f"
+  }
+}

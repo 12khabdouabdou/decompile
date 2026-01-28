@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <eightbitlab.com.blurview.BlurTarget android:id="@id/target" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/layout_videos" layout="@layout/layout_videos" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="72.0dip" android:layout_marginStart="58.0dip">
+            <ImageView android:id="@id/iv_back" android:padding="10.0dip" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="68.0dip" android:src="@mipmap/icon_back" android:layout_marginEnd="10.0dip" />
+            <TextView android:textSize="36.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" />
+        </LinearLayout>
+    </eightbitlab.com.blurview.BlurTarget>
+    <eightbitlab.com.blurview.BlurView android:id="@id/v_shadow_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:blurOverlayColor="@color/colorOverlayBlack" />
+</androidx.constraintlayout.widget.ConstraintLayout>

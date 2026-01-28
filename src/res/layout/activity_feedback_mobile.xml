@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rv_feedback_toolbar" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <ImageView android:id="@id/iv_back" android:layout_width="17.0dip" android:layout_height="25.0dip" android:src="@mipmap/icon_back" android:layout_centerVertical="true" android:layout_marginStart="25.0dip" />
+        <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:background="#ff3c3c3c" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <EditText android:textSize="16.0sp" android:textColor="#ffffffff" android:textColorHint="#ff999999" android:gravity="start" android:id="@id/et_feedback" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_margin="15.0dip" android:backgroundTint="#00000000" />
+    <LinearLayout android:id="@id/ll_feedback_images" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip">
+        <FrameLayout android:id="@id/fl_feedback_1" android:background="@drawable/shape_radius_guide" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginEnd="15.0dip">
+            <ImageView android:id="@id/iv_feedback_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <ImageView android:layout_gravity="end" android:id="@id/iv_delete_1" android:background="@drawable/shape_radius_feedback_delete" android:padding="6.0dip" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@mipmap/icon_delete" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/fl_feedback_2" android:background="@drawable/shape_radius_guide" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginEnd="15.0dip">
+            <ImageView android:id="@id/iv_feedback_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <ImageView android:layout_gravity="end" android:id="@id/iv_delete_2" android:background="@drawable/shape_radius_feedback_delete" android:padding="6.0dip" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@mipmap/icon_delete" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/fl_feedback_add" android:background="@drawable/shape_radius_guide" android:layout_width="80.0dip" android:layout_height="80.0dip">
+            <ImageView android:layout_gravity="center" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@mipmap/feedback_add" />
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView android:background="#ff3c3c3c" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:textColor="#ff999999" android:id="@id/tv_feedback_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" />
+    <Button android:textColor="#ff999999" android:layout_gravity="center" android:id="@id/btn_submit" android:background="@drawable/shape_radius_gray_button" android:layout_width="150.0dip" android:layout_height="45.0dip" android:layout_marginTop="70.0dip" android:textAllCaps="false" />
+</LinearLayout>

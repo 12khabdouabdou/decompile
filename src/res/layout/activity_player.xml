@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.video_cloud.view.VideoGestureFrameLayout android:id="@id/base_layout" android:background="#ff000000" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:default_artwork="@mipmap/ic_launcher" app:keep_content_on_player_reset="true" />
+    <ImageView android:id="@id/cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <pl.droidsonroids.gif.GifImageView android:id="@id/loading_image" android:layout_width="200.0dip" android:layout_height="200.0dip" android:src="@mipmap/loading" />
+        <TextView android:textSize="28.0dip" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+    </LinearLayout>
+    <tv.danmaku.ijk.media.player.ui.subtitleconverter.SubtitleView android:layout_gravity="bottom" android:id="@id/subtitle_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="60.0dip" />
+    <TextView android:textSize="32.0dip" android:textColor="#ffffffff" android:layout_gravity="bottom|center" android:id="@id/tv_subtitle_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="200.0dip" android:text="@string/subtitle_loading" />
+    <com.video_cloud.ui.player.view.CustomSeekView android:id="@id/controller" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="center" android:id="@id/play_center_btn" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="108.0dip" android:layout_height="108.0dip" android:src="@mipmap/play" />
+    <include android:layout_gravity="bottom" android:id="@id/fl_back" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="140.0dip" layout="@layout/layout_player_back" />
+</com.video_cloud.view.VideoGestureFrameLayout>

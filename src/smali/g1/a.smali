@@ -1,0 +1,33 @@
+.class public abstract Lg1/a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final alpha:I = 0x7f040032
+
+.field public static final drawerLayoutStyle:I = 0x7f0401c7
+
+.field public static final elevation:I = 0x7f0401d0
+
+.field public static final font:I = 0x7f040248
+
+.field public static final fontProviderAuthority:I = 0x7f04024a
+
+.field public static final fontProviderCerts:I = 0x7f04024b
+
+.field public static final fontProviderFetchStrategy:I = 0x7f04024c
+
+.field public static final fontProviderFetchTimeout:I = 0x7f04024d
+
+.field public static final fontProviderPackage:I = 0x7f04024e
+
+.field public static final fontProviderQuery:I = 0x7f04024f
+
+.field public static final fontStyle:I = 0x7f040251
+
+.field public static final fontVariationSettings:I = 0x7f040252
+
+.field public static final fontWeight:I = 0x7f040253
+
+.field public static final ttcIndex:I = 0x7f04060f

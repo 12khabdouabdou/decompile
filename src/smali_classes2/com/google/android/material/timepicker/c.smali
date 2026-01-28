@@ -1,151 +1,67 @@
-.class public final Lcom/google/android/material/timepicker/c;
-.super LU4;
+.class public Lcom/google/android/material/timepicker/c;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Landroid/text/InputFilter;
 
 
 # instance fields
-.field public final synthetic d:Lcom/google/android/material/timepicker/ClockFaceView;
+.field public a:I
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/material/timepicker/ClockFaceView;)V
+.method public constructor <init>(I)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/google/android/material/timepicker/c;->d:Lcom/google/android/material/timepicker/ClockFaceView;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    invoke-direct {p0}, LU4;-><init>()V
+    iput p1, p0, Lcom/google/android/material/timepicker/c;->a:I
 
-    .line 4
-    .line 5
-    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(Landroid/view/View;Lk5;)V
-    .locals 8
+.method public filter(Ljava/lang/CharSequence;IILandroid/text/Spanned;II)Ljava/lang/CharSequence;
+    .locals 1
 
-    .line 1
-    iget-object v0, p0, LU4;->a:Landroid/view/View$AccessibilityDelegate;
+    :try_start_0
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    .line 2
-    .line 3
-    iget-object v1, p2, Lk5;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
+    invoke-direct {v0, p4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/CharSequence;)V
 
-    .line 4
-    .line 5
-    invoke-virtual {v0, p1, v1}, Landroid/view/View$AccessibilityDelegate;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V
+    invoke-interface {p1, p2, p3}, Ljava/lang/CharSequence;->subSequence(II)Ljava/lang/CharSequence;
 
-    .line 6
-    .line 7
-    .line 8
-    const v0, 0x7f0b0e63
-
-    .line 9
-    .line 10
-    .line 11
-    invoke-virtual {p1, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object v0
-
-    .line 15
-    check-cast v0, Ljava/lang/Integer;
-
-    .line 16
-    .line 17
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
-
-    .line 18
-    .line 19
-    .line 20
-    move-result v4
-
-    .line 21
-    if-lez v4, :cond_0
-
-    .line 22
-    .line 23
-    iget-object v0, p0, Lcom/google/android/material/timepicker/c;->d:Lcom/google/android/material/timepicker/ClockFaceView;
-
-    .line 24
-    .line 25
-    iget-object v0, v0, Lcom/google/android/material/timepicker/ClockFaceView;->v0:Landroid/util/SparseArray;
-
-    .line 26
-    .line 27
-    add-int/lit8 v2, v4, -0x1
-
-    .line 28
-    .line 29
-    invoke-virtual {v0, v2}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object v0
-
-    .line 33
-    check-cast v0, Landroid/view/View;
-
-    .line 34
-    .line 35
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    .line 36
-    .line 37
-    const/16 v3, 0x16
-
-    .line 38
-    .line 39
-    if-lt v2, v3, :cond_0
-
-    .line 40
-    .line 41
-    invoke-static {v0, v1}, LW4;->l(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V
-
-    .line 42
-    .line 43
-    .line 44
-    :cond_0
-    invoke-virtual {p1}, Landroid/view/View;->isSelected()Z
-
-    .line 45
-    .line 46
-    .line 47
-    move-result v7
-
-    .line 48
-    const/4 v3, 0x1
-
-    .line 49
-    const/4 v5, 0x1
-
-    .line 50
-    const/4 v2, 0x0
-
-    .line 51
-    const/4 v6, 0x0
-
-    .line 52
-    invoke-static/range {v2 .. v7}, Lj5;->a(IIIIZZ)Lj5;
-
-    .line 53
-    .line 54
-    .line 55
     move-result-object p1
 
-    .line 56
-    invoke-virtual {p2, p1}, Lk5;->k(Lj5;)V
+    invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
-    .line 57
-    .line 58
-    .line 59
-    return-void
+    move-result-object p1
+
+    invoke-virtual {v0, p5, p6, p1}, Ljava/lang/StringBuilder;->replace(IILjava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result p1
+
+    iget p2, p0, Lcom/google/android/material/timepicker/c;->a:I
+    :try_end_0
+    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-gt p1, p2, :cond_0
+
+    const/4 p1, 0x0
+
+    return-object p1
+
+    :catch_0
+    :cond_0
+    const-string p1, ""
+
+    return-object p1
 .end method

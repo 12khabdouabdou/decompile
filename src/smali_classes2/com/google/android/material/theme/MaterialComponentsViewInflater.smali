@@ -1,5 +1,5 @@
 .class public Lcom/google/android/material/theme/MaterialComponentsViewInflater;
-.super Landroidx/appcompat/app/AppCompatViewInflater;
+.super Lf/v;
 .source "SourceFile"
 
 
@@ -7,291 +7,73 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Landroidx/appcompat/app/AppCompatViewInflater;-><init>()V
+    invoke-direct {p0}, Lf/v;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroid/content/Context;Landroid/util/AttributeSet;)LvY;
-    .locals 1
-
-    .line 1
-    new-instance v0, LYrb;
-
-    .line 2
-    .line 3
-    invoke-direct {v0, p1, p2}, LYrb;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-object v0
-.end method
-
-.method public final b(Landroid/content/Context;Landroid/util/AttributeSet;)LxY;
+.method public c(Landroid/content/Context;Landroid/util/AttributeSet;)Landroidx/appcompat/widget/AppCompatButton;
     .locals 1
 
     .line 1
     new-instance v0, Lcom/google/android/material/button/MaterialButton;
 
-    .line 2
-    .line 3
     invoke-direct {v0, p1, p2}, Lcom/google/android/material/button/MaterialButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 4
-    .line 5
-    .line 6
     return-object v0
 .end method
 
-.method public final c(Landroid/content/Context;Landroid/util/AttributeSet;)LzY;
-    .locals 7
+.method public createAutoCompleteTextView(Landroid/content/Context;Landroid/util/AttributeSet;)Landroidx/appcompat/widget/AppCompatAutoCompleteTextView;
+    .locals 1
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    new-instance v0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;
+
+    invoke-direct {v0, p1, p2}, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    return-object v0
+.end method
+
+.method public d(Landroid/content/Context;Landroid/util/AttributeSet;)Landroidx/appcompat/widget/AppCompatCheckBox;
+    .locals 1
 
     .line 1
-    new-instance v0, Lhsb;
+    new-instance v0, Lcom/google/android/material/checkbox/MaterialCheckBox;
 
-    .line 2
-    .line 3
-    const v4, 0x7f0400d0
+    invoke-direct {v0, p1, p2}, Lcom/google/android/material/checkbox/MaterialCheckBox;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 4
-    .line 5
-    .line 6
-    const v1, 0x7f1404e7
-
-    .line 7
-    .line 8
-    .line 9
-    invoke-static {p1, p2, v4, v1}, LdUh;->h(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object p1
-
-    .line 13
-    invoke-direct {v0, p1, p2, v4}, LzY;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-
-    .line 14
-    .line 15
-    .line 16
-    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v1
-
-    .line 20
-    sget-object v3, LLMe;->r:[I
-
-    .line 21
-    .line 22
-    const/4 p1, 0x0
-
-    .line 23
-    new-array v6, p1, [I
-
-    .line 24
-    .line 25
-    const v5, 0x7f1404e7
-
-    .line 26
-    .line 27
-    .line 28
-    move-object v2, p2
-
-    .line 29
-    invoke-static/range {v1 .. v6}, LwEk;->i(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object p2
-
-    .line 33
-    invoke-virtual {p2, p1}, Landroid/content/res/TypedArray;->hasValue(I)Z
-
-    .line 34
-    .line 35
-    .line 36
-    move-result v2
-
-    .line 37
-    if-eqz v2, :cond_0
-
-    .line 38
-    .line 39
-    invoke-static {v1, p2, p1}, LbNk;->b(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
-
-    .line 40
-    .line 41
-    .line 42
-    move-result-object v1
-
-    .line 43
-    invoke-static {v0, v1}, LBI3;->c(Landroid/widget/CompoundButton;Landroid/content/res/ColorStateList;)V
-
-    .line 44
-    .line 45
-    .line 46
-    :cond_0
-    const/4 v1, 0x1
-
-    .line 47
-    invoke-virtual {p2, v1, p1}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
-
-    .line 48
-    .line 49
-    .line 50
-    move-result p1
-
-    .line 51
-    iput-boolean p1, v0, Lhsb;->e0:Z
-
-    .line 52
-    .line 53
-    invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
-
-    .line 54
-    .line 55
-    .line 56
     return-object v0
 .end method
 
-.method public final d(Landroid/content/Context;Landroid/util/AttributeSet;)Landroidx/appcompat/widget/AppCompatRadioButton;
-    .locals 8
+.method public j(Landroid/content/Context;Landroid/util/AttributeSet;)Landroidx/appcompat/widget/AppCompatRadioButton;
+    .locals 1
 
     .line 1
-    new-instance v0, Lksb;
+    new-instance v0, Lcom/google/android/material/radiobutton/MaterialRadioButton;
 
-    .line 2
-    .line 3
-    const v1, 0x7f1404e8
+    invoke-direct {v0, p1, p2}, Lcom/google/android/material/radiobutton/MaterialRadioButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 4
-    .line 5
-    .line 6
-    const v5, 0x7f0404ca
-
-    .line 7
-    .line 8
-    .line 9
-    invoke-static {p1, p2, v5, v1}, LdUh;->h(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object p1
-
-    .line 13
-    invoke-direct {v0, p1, p2, v5}, Landroidx/appcompat/widget/AppCompatRadioButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-
-    .line 14
-    .line 15
-    .line 16
-    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v2
-
-    .line 20
-    sget-object v4, LLMe;->s:[I
-
-    .line 21
-    .line 22
-    const/4 p1, 0x0
-
-    .line 23
-    new-array v7, p1, [I
-
-    .line 24
-    .line 25
-    const v6, 0x7f1404e8
-
-    .line 26
-    .line 27
-    .line 28
-    move-object v3, p2
-
-    .line 29
-    invoke-static/range {v2 .. v7}, LwEk;->i(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object p2
-
-    .line 33
-    invoke-virtual {p2, p1}, Landroid/content/res/TypedArray;->hasValue(I)Z
-
-    .line 34
-    .line 35
-    .line 36
-    move-result v1
-
-    .line 37
-    if-eqz v1, :cond_0
-
-    .line 38
-    .line 39
-    invoke-static {v2, p2, p1}, LbNk;->b(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
-
-    .line 40
-    .line 41
-    .line 42
-    move-result-object v1
-
-    .line 43
-    invoke-static {v0, v1}, LBI3;->c(Landroid/widget/CompoundButton;Landroid/content/res/ColorStateList;)V
-
-    .line 44
-    .line 45
-    .line 46
-    :cond_0
-    const/4 v1, 0x1
-
-    .line 47
-    invoke-virtual {p2, v1, p1}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
-
-    .line 48
-    .line 49
-    .line 50
-    move-result p1
-
-    .line 51
-    iput-boolean p1, v0, Lksb;->e0:Z
-
-    .line 52
-    .line 53
-    invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
-
-    .line 54
-    .line 55
-    .line 56
     return-object v0
 .end method
 
-.method public final e(Landroid/content/Context;Landroid/util/AttributeSet;)Landroidx/appcompat/widget/AppCompatTextView;
+.method public n(Landroid/content/Context;Landroid/util/AttributeSet;)Landroidx/appcompat/widget/AppCompatTextView;
     .locals 1
 
     .line 1
     new-instance v0, Lcom/google/android/material/textview/MaterialTextView;
 
-    .line 2
-    .line 3
     invoke-direct {v0, p1, p2}, Lcom/google/android/material/textview/MaterialTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 4
-    .line 5
-    .line 6
     return-object v0
 .end method

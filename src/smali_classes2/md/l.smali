@@ -1,0 +1,74 @@
+.class public Lmd/l;
+.super Lhe/h;
+.source "SourceFile"
+
+
+# direct methods
+.method public constructor <init>(Ljava/util/List;Landroid/app/Activity;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Lhe/h;-><init>(Ljava/util/List;Landroid/app/Activity;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic q(Landroid/view/ViewGroup;)Ld4/a;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lmd/l;->s(Landroid/view/ViewGroup;)Lkc/f1;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic r(Ld4/a;Ljava/lang/Object;I)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Lkc/f1;
+
+    check-cast p2, Ljava/lang/String;
+
+    invoke-virtual {p0, p1, p2, p3}, Lmd/l;->t(Lkc/f1;Ljava/lang/String;I)V
+
+    return-void
+.end method
+
+.method public s(Landroid/view/ViewGroup;)Lkc/f1;
+    .locals 2
+
+    .line 1
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-static {v0, p1, v1}, Lkc/f1;->inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lkc/f1;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public t(Lkc/f1;Ljava/lang/String;I)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Lkc/f1;->b()Landroid/widget/TextView;
+
+    move-result-object p1
+
+    invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    return-void
+.end method

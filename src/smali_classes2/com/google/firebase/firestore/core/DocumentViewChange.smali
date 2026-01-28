@@ -1,0 +1,181 @@
+.class public Lcom/google/firebase/firestore/core/DocumentViewChange;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/google/firebase/firestore/core/DocumentViewChange$Type;
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Lcom/google/firebase/firestore/core/DocumentViewChange$Type;
+
+.field public final b:Lba/e;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/firebase/firestore/core/DocumentViewChange$Type;Lba/e;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/firebase/firestore/core/DocumentViewChange;->a:Lcom/google/firebase/firestore/core/DocumentViewChange$Type;
+
+    iput-object p2, p0, Lcom/google/firebase/firestore/core/DocumentViewChange;->b:Lba/e;
+
+    return-void
+.end method
+
+.method public static a(Lcom/google/firebase/firestore/core/DocumentViewChange$Type;Lba/e;)Lcom/google/firebase/firestore/core/DocumentViewChange;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/google/firebase/firestore/core/DocumentViewChange;
+
+    invoke-direct {v0, p0, p1}, Lcom/google/firebase/firestore/core/DocumentViewChange;-><init>(Lcom/google/firebase/firestore/core/DocumentViewChange$Type;Lba/e;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public b()Lba/e;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/firebase/firestore/core/DocumentViewChange;->b:Lba/e;
+
+    return-object v0
+.end method
+
+.method public c()Lcom/google/firebase/firestore/core/DocumentViewChange$Type;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/firebase/firestore/core/DocumentViewChange;->a:Lcom/google/firebase/firestore/core/DocumentViewChange$Type;
+
+    return-object v0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    instance-of v0, p1, Lcom/google/firebase/firestore/core/DocumentViewChange;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return v1
+
+    :cond_0
+    check-cast p1, Lcom/google/firebase/firestore/core/DocumentViewChange;
+
+    iget-object v0, p0, Lcom/google/firebase/firestore/core/DocumentViewChange;->a:Lcom/google/firebase/firestore/core/DocumentViewChange$Type;
+
+    iget-object v2, p1, Lcom/google/firebase/firestore/core/DocumentViewChange;->a:Lcom/google/firebase/firestore/core/DocumentViewChange$Type;
+
+    invoke-virtual {v0, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/google/firebase/firestore/core/DocumentViewChange;->b:Lba/e;
+
+    iget-object p1, p1, Lcom/google/firebase/firestore/core/DocumentViewChange;->b:Lba/e;
+
+    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    const/4 v1, 0x1
+
+    :cond_1
+    return v1
+.end method
+
+.method public hashCode()I
+    .locals 2
+
+    iget-object v0, p0, Lcom/google/firebase/firestore/core/DocumentViewChange;->a:Lcom/google/firebase/firestore/core/DocumentViewChange$Type;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    move-result v0
+
+    const/16 v1, 0x763
+
+    add-int/2addr v1, v0
+
+    mul-int/lit8 v1, v1, 0x1f
+
+    iget-object v0, p0, Lcom/google/firebase/firestore/core/DocumentViewChange;->b:Lba/e;
+
+    invoke-interface {v0}, Lba/e;->getKey()Lba/h;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lba/h;->hashCode()I
+
+    move-result v0
+
+    add-int/2addr v1, v0
+
+    mul-int/lit8 v1, v1, 0x1f
+
+    iget-object v0, p0, Lcom/google/firebase/firestore/core/DocumentViewChange;->b:Lba/e;
+
+    invoke-interface {v0}, Lba/e;->a()Lba/n;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lba/n;->hashCode()I
+
+    move-result v0
+
+    add-int/2addr v1, v0
+
+    return v1
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "DocumentViewChange("
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/google/firebase/firestore/core/DocumentViewChange;->b:Lba/e;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ","
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/google/firebase/firestore/core/DocumentViewChange;->a:Lcom/google/firebase/firestore/core/DocumentViewChange$Type;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ")"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

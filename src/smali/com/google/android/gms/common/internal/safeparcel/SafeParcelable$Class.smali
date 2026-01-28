@@ -1,0 +1,32 @@
+.class public interface abstract annotation Lcom/google/android/gms/common/internal/safeparcel/SafeParcelable$Class;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/annotation/Annotation;
+
+
+# annotations
+.annotation system Ldalvik/annotation/AnnotationDefault;
+    value = .subannotation Lcom/google/android/gms/common/internal/safeparcel/SafeParcelable$Class;
+        creatorIsFinal = true
+        doNotParcelTypeDefaultValues = false
+        validate = false
+    .end subannotation
+.end annotation
+
+
+# virtual methods
+.method public abstract creator()Ljava/lang/String;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end method
+
+.method public abstract creatorIsFinal()Z
+.end method
+
+.method public abstract doNotParcelTypeDefaultValues()Z
+.end method
+
+.method public abstract validate()Z
+.end method

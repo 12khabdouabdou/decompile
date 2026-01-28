@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/shape_radius_holder" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.shimmer.ShimmerFrameLayout android:id="@id/shimmer_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shimmer_auto_start="true" app:shimmer_base_color="@android:color/black" app:shimmer_duration="2000" app:shimmer_highlight_color="@android:color/white">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:id="@id/image_logo" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@mipmap/default_pic" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.6" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</FrameLayout>

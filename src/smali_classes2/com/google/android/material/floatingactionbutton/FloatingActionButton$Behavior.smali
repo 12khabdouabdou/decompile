@@ -40,3 +40,47 @@
 
     return-void
 .end method
+
+
+# virtual methods
+.method public bridge synthetic I(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/floatingactionbutton/FloatingActionButton;Landroid/graphics/Rect;)Z
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1, p2, p3}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton$BaseBehavior;->I(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/floatingactionbutton/FloatingActionButton;Landroid/graphics/Rect;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public bridge synthetic M(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/floatingactionbutton/FloatingActionButton;Landroid/view/View;)Z
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1, p2, p3}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton$BaseBehavior;->M(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/floatingactionbutton/FloatingActionButton;Landroid/view/View;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public bridge synthetic N(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/floatingactionbutton/FloatingActionButton;I)Z
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1, p2, p3}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton$BaseBehavior;->N(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/floatingactionbutton/FloatingActionButton;I)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public bridge synthetic k(Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton$BaseBehavior;->k(Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;)V
+
+    return-void
+.end method

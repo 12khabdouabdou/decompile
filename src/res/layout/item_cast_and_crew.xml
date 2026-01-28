@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="183.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.video_cloud.view.RoundImageView android:id="@id/riv_cc" android:layout_width="183.0dip" android:layout_height="183.0dip" android:scaleType="centerCrop" app:riv_roundAsCircle="true" />
+    <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/tv_cc_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:maxLines="2" android:textAlignment="center" />
+    <TextView android:textSize="24.0sp" android:textColor="@color/black_9" android:ellipsize="end" android:id="@id/tv_cc_character" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxLines="1" android:textAlignment="center" />
+</LinearLayout>

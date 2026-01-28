@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="60.0dip" android:paddingTop="80.0dip" android:paddingRight="60.0dip" android:paddingBottom="80.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="60.0dip" android:paddingVertical="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="40.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/tip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:baselineAligned="false">
+        <RelativeLayout android:id="@id/rl_cancel" android:background="@drawable/shape_radius_black6_empty_12" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_weight="1.0" android:layout_marginEnd="20.0dip">
+            <TextView android:textSize="36.0sp" android:textColor="@color/black" android:id="@id/tv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_confirm" android:background="@drawable/shape_radius_red_select_12" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_weight="1.0" android:layout_marginStart="20.0dip">
+            <TextView android:textSize="36.0sp" android:textColor="#ffffffff" android:id="@id/tv_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OK" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

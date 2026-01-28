@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/selector_group" android:paddingLeft="20.0dip" android:paddingTop="16.0dip" android:paddingRight="20.0dip" android:paddingBottom="16.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="48.0dip" android:layout_height="48.0dip">
+        <com.facebook.shimmer.ShimmerFrameLayout android:id="@id/live_channel_image_shimmer" android:background="@drawable/shape_radius_text" android:layout_width="48.0dip" android:layout_height="48.0dip" app:shimmer_duration="2000" app:shimmer_highlight_color="@color/color_write_80">
+            <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/live_channel_image_text" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:textAlignment="center" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+        <ImageView android:id="@id/live_channel_image" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+    </FrameLayout>
+    <TextView android:textSize="30.0sp" android:textColor="#ffffffff" android:id="@id/live_channel_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="20.0dip" />
+</LinearLayout>

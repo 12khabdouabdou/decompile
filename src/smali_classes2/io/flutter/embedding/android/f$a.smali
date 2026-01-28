@@ -1,0 +1,81 @@
+.class public Lio/flutter/embedding/android/f$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lio/flutter/embedding/engine/renderer/m;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lio/flutter/embedding/android/f;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Lio/flutter/embedding/android/f;
+
+
+# direct methods
+.method public constructor <init>(Lio/flutter/embedding/android/f;)V
+    .locals 0
+
+    iput-object p1, p0, Lio/flutter/embedding/android/f$a;->a:Lio/flutter/embedding/android/f;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public b()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lio/flutter/embedding/android/f$a;->a:Lio/flutter/embedding/android/f;
+
+    invoke-static {v0}, Lio/flutter/embedding/android/f;->a(Lio/flutter/embedding/android/f;)Lio/flutter/embedding/android/f$d;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lio/flutter/embedding/android/f$d;->b()V
+
+    iget-object v0, p0, Lio/flutter/embedding/android/f$a;->a:Lio/flutter/embedding/android/f;
+
+    const/4 v1, 0x0
+
+    invoke-static {v0, v1}, Lio/flutter/embedding/android/f;->e(Lio/flutter/embedding/android/f;Z)Z
+
+    return-void
+.end method
+
+.method public d()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lio/flutter/embedding/android/f$a;->a:Lio/flutter/embedding/android/f;
+
+    invoke-static {v0}, Lio/flutter/embedding/android/f;->a(Lio/flutter/embedding/android/f;)Lio/flutter/embedding/android/f$d;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lio/flutter/embedding/android/f$d;->d()V
+
+    iget-object v0, p0, Lio/flutter/embedding/android/f$a;->a:Lio/flutter/embedding/android/f;
+
+    const/4 v1, 0x1
+
+    invoke-static {v0, v1}, Lio/flutter/embedding/android/f;->e(Lio/flutter/embedding/android/f;Z)Z
+
+    iget-object v0, p0, Lio/flutter/embedding/android/f$a;->a:Lio/flutter/embedding/android/f;
+
+    invoke-static {v0, v1}, Lio/flutter/embedding/android/f;->f(Lio/flutter/embedding/android/f;Z)Z
+
+    return-void
+.end method

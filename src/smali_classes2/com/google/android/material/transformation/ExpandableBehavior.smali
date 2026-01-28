@@ -1,12 +1,12 @@
 .class public abstract Lcom/google/android/material/transformation/ExpandableBehavior;
-.super Lj84;
+.super Landroidx/coordinatorlayout/widget/CoordinatorLayout$c;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lj84;"
+        "Landroidx/coordinatorlayout/widget/CoordinatorLayout$c;"
     }
 .end annotation
 
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public a:I
+.field public p:I
 
 
 # direct methods
@@ -23,12 +23,11 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$c;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
-    iput v0, p0, Lcom/google/android/material/transformation/ExpandableBehavior;->a:I
+    iput v0, p0, Lcom/google/android/material/transformation/ExpandableBehavior;->p:I
 
     return-void
 .end method
@@ -36,298 +35,299 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 2
+    invoke-direct {p0, p1, p2}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$c;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const/4 p1, 0x0
 
-    .line 4
-    iput p1, p0, Lcom/google/android/material/transformation/ExpandableBehavior;->a:I
+    iput p1, p0, Lcom/google/android/material/transformation/ExpandableBehavior;->p:I
 
     return-void
 .end method
 
+.method public static synthetic I(Lcom/google/android/material/transformation/ExpandableBehavior;)I
+    .locals 0
 
-# virtual methods
-.method public abstract b(Landroid/view/View;Landroid/view/View;)Z
+    .line 1
+    iget p0, p0, Lcom/google/android/material/transformation/ExpandableBehavior;->p:I
+
+    return p0
 .end method
 
-.method public final d(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
+.method public static from(Landroid/view/View;Ljava/lang/Class;)Lcom/google/android/material/transformation/ExpandableBehavior;
+    .locals 1
+    .param p0    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Ljava/lang/Class;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/android/material/transformation/ExpandableBehavior;",
+            ">(",
+            "Landroid/view/View;",
+            "Ljava/lang/Class<",
+            "TT;>;)TT;"
+        }
+    .end annotation
+
+    invoke-virtual {p0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object p0
+
+    instance-of v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;
+
+    if-eqz v0, :cond_1
+
+    check-cast p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;
+
+    invoke-virtual {p0}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->f()Landroidx/coordinatorlayout/widget/CoordinatorLayout$c;
+
+    move-result-object p0
+
+    instance-of v0, p0, Lcom/google/android/material/transformation/ExpandableBehavior;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p1, p0}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/google/android/material/transformation/ExpandableBehavior;
+
+    return-object p0
+
+    :cond_0
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    const-string p1, "The view is not associated with ExpandableBehavior"
+
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+
+    :cond_1
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    const-string p1, "The view is not a child of CoordinatorLayout"
+
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+
+# virtual methods
+.method public final J(Z)Z
     .locals 3
 
     .line 1
-    check-cast p3, Ld07;
+    const/4 v0, 0x0
 
-    .line 2
-    .line 3
-    move-object p1, p3
-
-    .line 4
-    check-cast p1, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
-
-    .line 5
-    .line 6
-    iget-object p1, p1, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->l0:Ltq;
-
-    .line 7
-    .line 8
-    iget-boolean p1, p1, Ltq;->b:Z
-
-    .line 9
-    .line 10
-    const/4 v0, 0x2
-
-    .line 11
     const/4 v1, 0x1
 
-    .line 12
-    if-eqz p1, :cond_0
-
-    .line 13
-    .line 14
-    iget v2, p0, Lcom/google/android/material/transformation/ExpandableBehavior;->a:I
-
-    .line 15
-    .line 16
-    if-eqz v2, :cond_1
-
-    .line 17
-    .line 18
-    if-ne v2, v0, :cond_3
-
-    .line 19
-    .line 20
-    goto :goto_0
-
-    .line 21
-    :cond_0
-    iget v2, p0, Lcom/google/android/material/transformation/ExpandableBehavior;->a:I
-
-    .line 22
-    .line 23
-    if-ne v2, v1, :cond_3
-
-    .line 24
-    .line 25
-    :cond_1
-    :goto_0
     if-eqz p1, :cond_2
 
-    .line 26
-    .line 27
+    iget p1, p0, Lcom/google/android/material/transformation/ExpandableBehavior;->p:I
+
+    if-eqz p1, :cond_0
+
+    const/4 v2, 0x2
+
+    if-ne p1, v2, :cond_1
+
+    :cond_0
     const/4 v0, 0x1
 
-    .line 28
+    :cond_1
+    return v0
+
     :cond_2
-    iput v0, p0, Lcom/google/android/material/transformation/ExpandableBehavior;->a:I
+    iget p1, p0, Lcom/google/android/material/transformation/ExpandableBehavior;->p:I
 
-    .line 29
-    .line 30
-    check-cast p3, Landroid/view/View;
+    if-ne p1, v1, :cond_3
 
-    .line 31
-    .line 32
-    invoke-virtual {p0, p3, p2, p1, v1}, Lcom/google/android/material/transformation/ExpandableBehavior;->t(Landroid/view/View;Landroid/view/View;ZZ)V
+    const/4 v0, 0x1
 
-    .line 33
-    .line 34
-    .line 35
-    return v1
-
-    .line 36
     :cond_3
+    return v0
+.end method
+
+.method public abstract K(Landroid/view/View;Landroid/view/View;ZZ)Z
+.end method
+
+.method public findExpandableWidget(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;)Lc8/a;
+    .locals 5
+    .param p1    # Landroidx/coordinatorlayout/widget/CoordinatorLayout;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    invoke-virtual {p1, p2}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->z(Landroid/view/View;)Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    :goto_0
+    if-ge v2, v1, :cond_1
+
+    invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Landroid/view/View;
+
+    invoke-virtual {p0, p1, p2, v3}, Lcom/google/android/material/transformation/ExpandableBehavior;->i(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    check-cast v3, Lc8/a;
+
+    return-object v3
+
+    :cond_0
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    :cond_1
     const/4 p1, 0x0
 
-    .line 37
+    return-object p1
+.end method
+
+.method public abstract i(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
+.end method
+
+.method public l(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
+    .locals 1
+
+    .line 1
+    check-cast p3, Lc8/a;
+
+    invoke-interface {p3}, Lc8/a;->a()Z
+
+    move-result p1
+
+    invoke-virtual {p0, p1}, Lcom/google/android/material/transformation/ExpandableBehavior;->J(Z)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    invoke-interface {p3}, Lc8/a;->a()Z
+
+    move-result p1
+
+    const/4 v0, 0x1
+
+    if-eqz p1, :cond_0
+
+    const/4 p1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x2
+
+    :goto_0
+    iput p1, p0, Lcom/google/android/material/transformation/ExpandableBehavior;->p:I
+
+    move-object p1, p3
+
+    check-cast p1, Landroid/view/View;
+
+    invoke-interface {p3}, Lc8/a;->a()Z
+
+    move-result p3
+
+    invoke-virtual {p0, p1, p2, p3, v0}, Lcom/google/android/material/transformation/ExpandableBehavior;->K(Landroid/view/View;Landroid/view/View;ZZ)Z
+
+    move-result p1
+
+    return p1
+
+    :cond_1
+    const/4 p1, 0x0
+
     return p1
 .end method
 
-.method public final h(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)Z
-    .locals 5
+.method public p(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)Z
+    .locals 2
 
     .line 1
-    const/4 p3, 0x1
-
-    .line 2
-    sget-object v0, Lb8k;->a:Ljava/util/WeakHashMap;
-
-    .line 3
-    .line 4
     invoke-virtual {p2}, Landroid/view/View;->isLaidOut()Z
 
-    .line 5
-    .line 6
-    .line 7
-    move-result v0
+    move-result p3
 
-    .line 8
-    const/4 v1, 0x0
+    if-nez p3, :cond_1
 
-    .line 9
-    if-nez v0, :cond_5
+    invoke-virtual {p0, p1, p2}, Lcom/google/android/material/transformation/ExpandableBehavior;->findExpandableWidget(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;)Lc8/a;
 
-    .line 10
-    .line 11
-    invoke-virtual {p1, p2}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n(Landroid/view/View;)Ljava/util/ArrayList;
-
-    .line 12
-    .line 13
-    .line 14
     move-result-object p1
 
-    .line 15
-    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
+    if-eqz p1, :cond_1
 
-    .line 16
-    .line 17
-    .line 18
-    move-result v0
+    invoke-interface {p1}, Lc8/a;->a()Z
 
-    .line 19
-    const/4 v2, 0x0
+    move-result p3
 
-    .line 20
-    :goto_0
-    if-ge v2, v0, :cond_1
+    invoke-virtual {p0, p3}, Lcom/google/android/material/transformation/ExpandableBehavior;->J(Z)Z
 
-    .line 21
-    .line 22
-    invoke-virtual {p1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    move-result p3
 
-    .line 23
-    .line 24
-    .line 25
-    move-result-object v3
+    if-eqz p3, :cond_1
 
-    .line 26
-    check-cast v3, Landroid/view/View;
+    invoke-interface {p1}, Lc8/a;->a()Z
 
-    .line 27
-    .line 28
-    invoke-virtual {p0, p2, v3}, Lcom/google/android/material/transformation/ExpandableBehavior;->b(Landroid/view/View;Landroid/view/View;)Z
+    move-result p3
 
-    .line 29
-    .line 30
-    .line 31
-    move-result v4
+    if-eqz p3, :cond_0
 
-    .line 32
-    if-eqz v4, :cond_0
+    const/4 p3, 0x1
 
-    .line 33
-    .line 34
-    check-cast v3, Ld07;
-
-    .line 35
-    .line 36
-    goto :goto_1
-
-    .line 37
-    :cond_0
-    add-int/2addr v2, p3
-
-    .line 38
     goto :goto_0
 
-    .line 39
-    :cond_1
-    const/4 v3, 0x0
-
-    .line 40
-    :goto_1
-    if-eqz v3, :cond_5
-
-    .line 41
-    .line 42
-    move-object p1, v3
-
-    .line 43
-    check-cast p1, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
-
-    .line 44
-    .line 45
-    iget-object p1, p1, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->l0:Ltq;
-
-    .line 46
-    .line 47
-    iget-boolean p1, p1, Ltq;->b:Z
-
-    .line 48
-    .line 49
-    const/4 v0, 0x2
-
-    .line 50
-    if-eqz p1, :cond_2
-
-    .line 51
-    .line 52
-    iget v2, p0, Lcom/google/android/material/transformation/ExpandableBehavior;->a:I
-
-    .line 53
-    .line 54
-    if-eqz v2, :cond_3
-
-    .line 55
-    .line 56
-    if-ne v2, v0, :cond_5
-
-    .line 57
-    .line 58
-    goto :goto_2
-
-    .line 59
-    :cond_2
-    iget v2, p0, Lcom/google/android/material/transformation/ExpandableBehavior;->a:I
-
-    .line 60
-    .line 61
-    if-ne v2, p3, :cond_5
-
-    .line 62
-    .line 63
-    :cond_3
-    :goto_2
-    if-eqz p1, :cond_4
-
-    .line 64
-    .line 65
-    goto :goto_3
-
-    .line 66
-    :cond_4
+    :cond_0
     const/4 p3, 0x2
 
-    .line 67
-    :goto_3
-    iput p3, p0, Lcom/google/android/material/transformation/ExpandableBehavior;->a:I
+    :goto_0
+    iput p3, p0, Lcom/google/android/material/transformation/ExpandableBehavior;->p:I
 
-    .line 68
-    .line 69
     invoke-virtual {p2}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
-    .line 70
-    .line 71
-    .line 72
-    move-result-object p1
+    move-result-object v0
 
-    .line 73
-    new-instance v0, La07;
+    new-instance v1, Lcom/google/android/material/transformation/ExpandableBehavior$a;
 
-    .line 74
-    .line 75
-    invoke-direct {v0, p0, p2, p3, v3}, La07;-><init>(Lcom/google/android/material/transformation/ExpandableBehavior;Landroid/view/View;ILd07;)V
+    invoke-direct {v1, p0, p2, p3, p1}, Lcom/google/android/material/transformation/ExpandableBehavior$a;-><init>(Lcom/google/android/material/transformation/ExpandableBehavior;Landroid/view/View;ILc8/a;)V
 
-    .line 76
-    .line 77
-    .line 78
-    invoke-virtual {p1, v0}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
+    invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
 
-    .line 79
-    .line 80
-    .line 81
-    :cond_5
-    return v1
-.end method
+    :cond_1
+    const/4 p1, 0x0
 
-.method public abstract t(Landroid/view/View;Landroid/view/View;ZZ)V
+    return p1
 .end method

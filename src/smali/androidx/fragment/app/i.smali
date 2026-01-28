@@ -1,65 +1,48 @@
-.class public abstract Landroidx/fragment/app/i;
-.super LFM7;
+.class public final synthetic Landroidx/fragment/app/i;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final a:Landroidx/fragment/app/FragmentActivity;
+.field public final synthetic p:Landroidx/fragment/app/SpecialEffectsController$Operation;
 
-.field public final b:Landroidx/fragment/app/FragmentActivity;
+.field public final synthetic q:Landroidx/fragment/app/SpecialEffectsController$Operation;
 
-.field public final c:Landroid/os/Handler;
-
-.field public final d:Landroidx/fragment/app/k;
+.field public final synthetic r:Landroidx/fragment/app/DefaultSpecialEffectsController$TransitionEffect;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/fragment/app/FragmentActivity;)V
-    .locals 2
+.method public synthetic constructor <init>(Landroidx/fragment/app/SpecialEffectsController$Operation;Landroidx/fragment/app/SpecialEffectsController$Operation;Landroidx/fragment/app/DefaultSpecialEffectsController$TransitionEffect;)V
+    .locals 0
 
     .line 1
-    iget-object v0, p1, Landroidx/fragment/app/FragmentActivity;->c:Landroid/os/Handler;
-
-    .line 2
-    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4
-    .line 5
-    .line 6
-    new-instance v1, Landroidx/fragment/app/k;
+    iput-object p1, p0, Landroidx/fragment/app/i;->p:Landroidx/fragment/app/SpecialEffectsController$Operation;
 
-    .line 7
-    .line 8
-    invoke-direct {v1}, Landroidx/fragment/app/k;-><init>()V
+    iput-object p2, p0, Landroidx/fragment/app/i;->q:Landroidx/fragment/app/SpecialEffectsController$Operation;
 
-    .line 9
-    .line 10
-    .line 11
-    iput-object v1, p0, Landroidx/fragment/app/i;->d:Landroidx/fragment/app/k;
+    iput-object p3, p0, Landroidx/fragment/app/i;->r:Landroidx/fragment/app/DefaultSpecialEffectsController$TransitionEffect;
 
-    .line 12
-    .line 13
-    iput-object p1, p0, Landroidx/fragment/app/i;->a:Landroidx/fragment/app/FragmentActivity;
+    return-void
+.end method
 
-    .line 14
-    .line 15
-    iput-object p1, p0, Landroidx/fragment/app/i;->b:Landroidx/fragment/app/FragmentActivity;
 
-    .line 16
-    .line 17
-    const-string p1, "handler == null"
+# virtual methods
+.method public final run()V
+    .locals 3
 
-    .line 18
-    .line 19
-    invoke-static {v0, p1}, LrZ3;->o(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 1
+    iget-object v0, p0, Landroidx/fragment/app/i;->p:Landroidx/fragment/app/SpecialEffectsController$Operation;
 
-    .line 20
-    .line 21
-    .line 22
-    iput-object v0, p0, Landroidx/fragment/app/i;->c:Landroid/os/Handler;
+    iget-object v1, p0, Landroidx/fragment/app/i;->q:Landroidx/fragment/app/SpecialEffectsController$Operation;
 
-    .line 23
-    .line 24
+    iget-object v2, p0, Landroidx/fragment/app/i;->r:Landroidx/fragment/app/DefaultSpecialEffectsController$TransitionEffect;
+
+    invoke-static {v0, v1, v2}, Landroidx/fragment/app/DefaultSpecialEffectsController$TransitionEffect;->k(Landroidx/fragment/app/SpecialEffectsController$Operation;Landroidx/fragment/app/SpecialEffectsController$Operation;Landroidx/fragment/app/DefaultSpecialEffectsController$TransitionEffect;)V
+
     return-void
 .end method

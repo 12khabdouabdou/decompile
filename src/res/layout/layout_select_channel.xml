@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.video_cloud.library_view.tvrecyclerview.TvRecyclerView android:orientation="vertical" android:id="@id/lv_group" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:focusable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:layout_weight="1.0" app:tv_isMenu="true" app:tv_layoutManager="V7LinearLayoutManager" />
+    <com.video_cloud.library_view.tvrecyclerview.TvRecyclerView android:orientation="vertical" android:id="@id/lv_channel" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:focusable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" android:fadeScrollbars="false" app:tv_isMenu="true" app:tv_layoutManager="V7LinearLayoutManager" app:tv_selectedItemIsCentered="true" />
+    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+</LinearLayout>

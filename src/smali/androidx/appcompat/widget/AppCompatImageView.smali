@@ -2,20 +2,30 @@
 .super Landroid/widget/ImageView;
 .source "SourceFile"
 
+# interfaces
+.implements Landroidx/core/view/z0;
+.implements Lv0/p;
+
 
 # instance fields
-.field private final a:LwY;
+.field public final p:Lm/d;
 
-.field private final b:LTY;
+.field public final q:Lm/k;
+
+.field public r:Z
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-
-    const/4 v0, 0x0
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
+    const/4 v0, 0x0
+
     invoke-direct {p0, p1, v0}, Landroidx/appcompat/widget/AppCompatImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -23,10 +33,18 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-
-    const/4 v0, 0x0
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 2
+    const/4 v0, 0x0
+
     invoke-direct {p0, p1, p2, v0}, Landroidx/appcompat/widget/AppCompatImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -34,31 +52,47 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 3
-    invoke-static {p1}, Landroidx/appcompat/widget/TintContextWrapper;->a(Landroid/content/Context;)V
+    invoke-static {p1}, Lm/n0;->b(Landroid/content/Context;)Landroid/content/Context;
+
+    move-result-object p1
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 4
-    new-instance p1, LwY;
+    const/4 p1, 0x0
 
-    invoke-direct {p1, p0}, LwY;-><init>(Landroid/view/View;)V
+    iput-boolean p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->r:Z
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->a:LwY;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
-    .line 5
-    invoke-virtual {p1, p2, p3}, LwY;->d(Landroid/util/AttributeSet;I)V
+    move-result-object p1
 
-    .line 6
-    new-instance p1, LTY;
+    invoke-static {p0, p1}, Lm/m0;->a(Landroid/view/View;Landroid/content/Context;)V
 
-    invoke-direct {p1, p0}, LTY;-><init>(Landroid/widget/ImageView;)V
+    new-instance p1, Lm/d;
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->b:LTY;
+    invoke-direct {p1, p0}, Lm/d;-><init>(Landroid/view/View;)V
 
-    .line 7
-    invoke-virtual {p1, p2, p3}, LTY;->c(Landroid/util/AttributeSet;I)V
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->p:Lm/d;
+
+    invoke-virtual {p1, p2, p3}, Lm/d;->loadFromAttributes(Landroid/util/AttributeSet;I)V
+
+    new-instance p1, Lm/k;
+
+    invoke-direct {p1, p0}, Lm/k;-><init>(Landroid/widget/ImageView;)V
+
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->q:Lm/k;
+
+    invoke-virtual {p1, p2, p3}, Lm/k;->g(Landroid/util/AttributeSet;I)V
 
     return-void
 .end method
@@ -68,198 +102,199 @@
 .method public drawableStateChanged()V
     .locals 1
 
-    .line 1
     invoke-super {p0}, Landroid/widget/ImageView;->drawableStateChanged()V
 
-    .line 2
-    .line 3
-    .line 4
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->a:LwY;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->p:Lm/d;
 
-    .line 5
-    .line 6
     if-eqz v0, :cond_0
 
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LwY;->a()V
+    invoke-virtual {v0}, Lm/d;->b()V
 
-    .line 9
-    .line 10
-    .line 11
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->b:LTY;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->q:Lm/k;
 
-    .line 12
-    .line 13
     if-eqz v0, :cond_1
 
-    .line 14
-    .line 15
-    invoke-virtual {v0}, LTY;->a()V
+    invoke-virtual {v0}, Lm/k;->c()V
 
-    .line 16
-    .line 17
-    .line 18
     :cond_1
     return-void
 .end method
 
-.method public final hasOverlappingRendering()Z
+.method public getSupportBackgroundTintList()Landroid/content/res/ColorStateList;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->b:LTY;
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->r:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LTY;->b()Z
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->p:Lm/d;
 
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
     if-eqz v0, :cond_0
 
-    .line 8
-    .line 9
-    invoke-super {p0}, Landroid/widget/ImageView;->hasOverlappingRendering()Z
+    invoke-virtual {v0}, Lm/d;->c()Landroid/content/res/ColorStateList;
 
-    .line 10
-    .line 11
-    .line 12
-    move-result v0
+    move-result-object v0
 
-    .line 13
-    if-eqz v0, :cond_0
+    goto :goto_0
 
-    .line 14
-    .line 15
-    const/4 v0, 0x1
-
-    .line 16
-    return v0
-
-    .line 17
     :cond_0
     const/4 v0, 0x0
 
-    .line 18
+    :goto_0
+    return-object v0
+.end method
+
+.method public getSupportBackgroundTintMode()Landroid/graphics/PorterDuff$Mode;
+    .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->r:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
+
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->p:Lm/d;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Lm/d;->d()Landroid/graphics/PorterDuff$Mode;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return-object v0
+.end method
+
+.method public getSupportImageTintList()Landroid/content/res/ColorStateList;
+    .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->r:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
+
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->q:Lm/k;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Lm/k;->d()Landroid/content/res/ColorStateList;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return-object v0
+.end method
+
+.method public getSupportImageTintMode()Landroid/graphics/PorterDuff$Mode;
+    .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->r:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
+
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->q:Lm/k;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Lm/k;->e()Landroid/graphics/PorterDuff$Mode;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return-object v0
+.end method
+
+.method public hasOverlappingRendering()Z
+    .locals 1
+
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->q:Lm/k;
+
+    invoke-virtual {v0}, Lm/k;->f()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-super {p0}, Landroid/widget/ImageView;->hasOverlappingRendering()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
     return v0
 .end method
 
-.method public final n(Landroid/content/res/ColorStateList;)V
-    .locals 3
+.method public setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+    .locals 1
+    .param p1    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->b:LTY;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_1
-
-    .line 4
-    .line 5
-    iget-object v1, v0, LTY;->b:LAa0;
-
-    .line 6
-    .line 7
-    if-nez v1, :cond_0
-
-    .line 8
-    .line 9
-    new-instance v1, LAa0;
-
-    .line 10
-    .line 11
-    const/16 v2, 0x1a
-
-    .line 12
-    .line 13
-    invoke-direct {v1, v2}, LAa0;-><init>(I)V
-
-    .line 14
-    .line 15
-    .line 16
-    iput-object v1, v0, LTY;->b:LAa0;
-
-    .line 17
-    .line 18
-    :cond_0
-    iget-object v1, v0, LTY;->b:LAa0;
-
-    .line 19
-    .line 20
-    iput-object p1, v1, LAa0;->t:Ljava/lang/Object;
-
-    .line 21
-    .line 22
-    const/4 p1, 0x1
-
-    .line 23
-    iput-boolean p1, v1, LAa0;->c:Z
-
-    .line 24
-    .line 25
-    invoke-virtual {v0}, LTY;->a()V
-
-    .line 26
-    .line 27
-    .line 28
-    :cond_1
-    return-void
-.end method
-
-.method public final setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
-    .locals 0
-
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/ImageView;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 2
-    .line 3
-    .line 4
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->a:LwY;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->p:Lm/d;
 
-    .line 5
-    .line 6
-    if-eqz p1, :cond_0
+    if-eqz v0, :cond_0
 
-    .line 7
-    .line 8
-    invoke-virtual {p1}, LwY;->e()V
+    invoke-virtual {v0, p1}, Lm/d;->e(Landroid/graphics/drawable/Drawable;)V
 
-    .line 9
-    .line 10
-    .line 11
     :cond_0
     return-void
 .end method
 
-.method public final setBackgroundResource(I)V
+.method public setBackgroundResource(I)V
     .locals 1
+    .param p1    # I
+        .annotation build Landroidx/annotation/DrawableRes;
+        .end annotation
+    .end param
 
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
-    .line 2
-    .line 3
-    .line 4
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->a:LwY;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->p:Lm/d;
 
-    .line 5
-    .line 6
     if-eqz v0, :cond_0
 
-    .line 7
-    .line 8
-    invoke-virtual {v0, p1}, LwY;->f(I)V
+    invoke-virtual {v0, p1}, Lm/d;->f(I)V
 
-    .line 9
-    .line 10
-    .line 11
     :cond_0
     return-void
 .end method
@@ -267,98 +302,190 @@
 .method public setImageBitmap(Landroid/graphics/Bitmap;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
-    .line 2
-    .line 3
-    .line 4
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->b:LTY;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->q:Lm/k;
 
-    .line 5
-    .line 6
     if-eqz p1, :cond_0
 
-    .line 7
-    .line 8
-    invoke-virtual {p1}, LTY;->a()V
+    invoke-virtual {p1}, Lm/k;->c()V
 
-    .line 9
-    .line 10
-    .line 11
     :cond_0
     return-void
 .end method
 
 .method public setImageDrawable(Landroid/graphics/drawable/Drawable;)V
-    .locals 0
+    .locals 2
+    .param p1    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
-    .line 1
-    invoke-super {p0, p1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->q:Lm/k;
 
-    .line 2
-    .line 3
-    .line 4
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->b:LTY;
+    if-eqz v0, :cond_0
 
-    .line 5
-    .line 6
     if-eqz p1, :cond_0
 
-    .line 7
-    .line 8
-    invoke-virtual {p1}, LTY;->a()V
+    iget-boolean v1, p0, Landroidx/appcompat/widget/AppCompatImageView;->r:Z
 
-    .line 9
-    .line 10
-    .line 11
+    if-nez v1, :cond_0
+
+    invoke-virtual {v0, p1}, Lm/k;->h(Landroid/graphics/drawable/Drawable;)V
+
     :cond_0
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->q:Lm/k;
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p1}, Lm/k;->c()V
+
+    iget-boolean p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->r:Z
+
+    if-nez p1, :cond_1
+
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->q:Lm/k;
+
+    invoke-virtual {p1}, Lm/k;->b()V
+
+    :cond_1
+    return-void
+.end method
+
+.method public setImageLevel(I)V
+    .locals 0
+
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->setImageLevel(I)V
+
+    const/4 p1, 0x1
+
+    iput-boolean p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->r:Z
+
     return-void
 .end method
 
 .method public setImageResource(I)V
     .locals 1
+    .param p1    # I
+        .annotation build Landroidx/annotation/DrawableRes;
+        .end annotation
+    .end param
 
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->b:LTY;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->q:Lm/k;
 
-    .line 2
-    .line 3
     if-eqz v0, :cond_0
 
-    .line 4
-    .line 5
-    invoke-virtual {v0, p1}, LTY;->d(I)V
+    invoke-virtual {v0, p1}, Lm/k;->i(I)V
 
-    .line 6
-    .line 7
-    .line 8
     :cond_0
     return-void
 .end method
 
 .method public setImageURI(Landroid/net/Uri;)V
     .locals 0
+    .param p1    # Landroid/net/Uri;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/ImageView;->setImageURI(Landroid/net/Uri;)V
 
-    .line 2
-    .line 3
-    .line 4
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->b:LTY;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->q:Lm/k;
 
-    .line 5
-    .line 6
     if-eqz p1, :cond_0
 
-    .line 7
-    .line 8
-    invoke-virtual {p1}, LTY;->a()V
+    invoke-virtual {p1}, Lm/k;->c()V
 
-    .line 9
-    .line 10
-    .line 11
+    :cond_0
+    return-void
+.end method
+
+.method public setSupportBackgroundTintList(Landroid/content/res/ColorStateList;)V
+    .locals 1
+    .param p1    # Landroid/content/res/ColorStateList;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->r:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
+
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->p:Lm/d;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0, p1}, Lm/d;->h(Landroid/content/res/ColorStateList;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public setSupportBackgroundTintMode(Landroid/graphics/PorterDuff$Mode;)V
+    .locals 1
+    .param p1    # Landroid/graphics/PorterDuff$Mode;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->r:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
+
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->p:Lm/d;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0, p1}, Lm/d;->i(Landroid/graphics/PorterDuff$Mode;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public setSupportImageTintList(Landroid/content/res/ColorStateList;)V
+    .locals 1
+    .param p1    # Landroid/content/res/ColorStateList;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->r:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
+
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->q:Lm/k;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0, p1}, Lm/k;->j(Landroid/content/res/ColorStateList;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public setSupportImageTintMode(Landroid/graphics/PorterDuff$Mode;)V
+    .locals 1
+    .param p1    # Landroid/graphics/PorterDuff$Mode;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->r:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
+
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->q:Lm/k;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0, p1}, Lm/k;->k(Landroid/graphics/PorterDuff$Mode;)V
+
     :cond_0
     return-void
 .end method

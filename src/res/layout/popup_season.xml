@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="#ff222222" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="136.0dip">
+        <TextView android:textSize="40.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_season_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:id="@id/iv_season_close" android:layout_width="68.0dip" android:layout_height="68.0dip" android:src="@mipmap/icon_close" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_season" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="136.0dip" android:layout_marginBottom="40.0sp" android:divider="@color/transparent" />
+    <FrameLayout android:gravity="center" android:id="@id/fl_loading" android:background="#80000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <pl.droidsonroids.gif.GifImageView android:layout_gravity="center" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@mipmap/loading" />
+    </FrameLayout>
+</FrameLayout>

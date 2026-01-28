@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff222222" android:paddingLeft="40.0dip" android:paddingRight="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="136.0dip">
+        <TextView android:textSize="40.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_episode_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:id="@id/iv_episode_close" android:layout_width="68.0dip" android:layout_height="68.0dip" android:src="@mipmap/icon_close" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_episode_index" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_episode" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_download" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0sp">
+        <TextView android:textSize="36.0sp" android:textStyle="bold" android:textColor="@color/main_color" android:gravity="center" android:id="@id/download_all" android:background="@drawable/shape_radius_red_empty_12" android:layout_width="0.0dip" android:layout_height="120.0dip" android:layout_weight="1.0" android:layout_marginEnd="20.0dip" />
+        <TextView android:textSize="36.0sp" android:textStyle="bold" android:textColor="@color/black_9" android:gravity="center" android:id="@id/download_selected" android:background="@drawable/shape_radius_black6" android:layout_width="0.0dip" android:layout_height="120.0dip" android:layout_weight="1.0" android:layout_marginStart="20.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="28.0sp" android:textColor="@color/black_9" android:layout_gravity="center" android:id="@id/tv_space" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="60.0dip" />
+</LinearLayout>

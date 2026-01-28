@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="60.0dip" android:paddingHorizontal="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_live_group_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+    <TextView android:textSize="28.0sp" android:textColor="#ffffffff" android:ellipsize="marquee" android:id="@id/live_group_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="20.0dip" />
+</LinearLayout>

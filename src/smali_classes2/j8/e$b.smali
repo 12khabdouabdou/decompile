@@ -1,0 +1,63 @@
+.class public Lj8/e$b;
+.super Landroid/animation/AnimatorListenerAdapter;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lj8/e;->getExpandAnimator(Lcom/google/android/material/search/SearchBar;Landroid/view/View;Lcom/google/android/material/appbar/AppBarLayout;)Landroid/animation/Animator;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Lcom/google/android/material/search/SearchBar;
+
+.field public final synthetic b:Lj8/e;
+
+
+# direct methods
+.method public constructor <init>(Lj8/e;Lcom/google/android/material/search/SearchBar;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lj8/e$b;->b:Lj8/e;
+
+    iput-object p2, p0, Lj8/e$b;->a:Lcom/google/android/material/search/SearchBar;
+
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 1
+
+    .line 1
+    iget-object p1, p0, Lj8/e$b;->b:Lj8/e;
+
+    const/4 v0, 0x0
+
+    invoke-static {p1, v0}, Lj8/e;->d(Lj8/e;Z)Z
+
+    return-void
+.end method
+
+.method public onAnimationStart(Landroid/animation/Animator;)V
+    .locals 1
+
+    .line 1
+    iget-object p1, p0, Lj8/e$b;->a:Lcom/google/android/material/search/SearchBar;
+
+    const/4 v0, 0x4
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
+
+    return-void
+.end method

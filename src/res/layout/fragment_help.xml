@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@mipmap/setting_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/layout_title" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/iv_help" android:layout_width="320.0dip" android:layout_height="320.0dip" app:layout_constraintEnd_toStartOf="@id/iv_help_2" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="36.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="Telegram" app:layout_constraintEnd_toEndOf="@id/iv_help" app:layout_constraintStart_toStartOf="@id/iv_help" app:layout_constraintTop_toBottomOf="@id/iv_help" />
+        <ImageView android:id="@id/iv_help_2" android:visibility="gone" android:layout_width="320.0dip" android:layout_height="320.0dip" android:layout_marginStart="100.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/iv_help" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="36.0sp" android:textColor="@color/white" android:id="@id/tv_help_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="WhatsApp" app:layout_constraintEnd_toEndOf="@id/iv_help_2" app:layout_constraintStart_toStartOf="@id/iv_help_2" app:layout_constraintTop_toBottomOf="@id/iv_help_2" />
+        <TextView android:textSize="32.0sp" android:textColor="@color/black_9" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_help" android:layout_width="700.0dip" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" android:text="@string/contack_us" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/iv_help" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

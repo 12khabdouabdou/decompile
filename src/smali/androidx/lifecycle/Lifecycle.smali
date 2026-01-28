@@ -6,43 +6,38 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroidx/lifecycle/Lifecycle$Event;,
         Landroidx/lifecycle/Lifecycle$State;
     }
 .end annotation
 
 
+# instance fields
+.field public a:Ljava/util/concurrent/atomic/AtomicReference;
+
+
 # direct methods
 .method public constructor <init>()V
-    .locals 2
+    .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
     new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 5
-    .line 6
-    const/4 v1, 0x0
+    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
-    .line 7
-    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>(Ljava/lang/Object;)V
+    iput-object v0, p0, Landroidx/lifecycle/Lifecycle;->a:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 8
-    .line 9
-    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract a(Lyxa;)V
+.method public abstract a(Landroidx/lifecycle/l;)V
 .end method
 
 .method public abstract b()Landroidx/lifecycle/Lifecycle$State;
 .end method
 
-.method public abstract c(Lyxa;)V
+.method public abstract c(Landroidx/lifecycle/l;)V
 .end method

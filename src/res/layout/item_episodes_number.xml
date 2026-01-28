@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/cv_item_episodes" android:layout_width="140.0dip" android:layout_height="140.0dip" app:cardBackgroundColor="#ff333333" app:cardCornerRadius="12.0dip">
+        <TextView android:textSize="36.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_episodes" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/iv_download" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginTop="5.0dip" android:src="@mipmap/push_down" />
+        <ImageView android:layout_gravity="end" android:id="@id/iv_play_now" android:layout_width="50.0dip" android:layout_height="32.0dip" android:src="@mipmap/play_now" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
