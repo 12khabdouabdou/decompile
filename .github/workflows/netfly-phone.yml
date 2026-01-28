@@ -1,0 +1,74 @@
+name: 2. Auto-Patch & Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      apk_url:
+        description: 'Direct Download URL'
+        required: true
+        type: string
+
+jobs:
+  patch-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Download Tools
+        run: |
+          # Download Apktool
+          wget https://github.com/iBotPeaches/Apktool/releases/download/v2.10.0/apktool_2.10.0.jar -O apktool.jar -q
+          
+          # Download Uber-APK-Signer (To sign the app later)
+          wget https://github.com/patrickfav/uber-apk-signer/releases/download/v1.3.0/uber-apk-signer-1.3.0.jar -O signer.jar -q
+
+      - name: Download APK
+        run: |
+          echo "Downloading APK..."
+          wget -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" -v "${{ inputs.apk_url }}" -O target.apk
+
+      - name: Decompile
+        run: |
+          # Decompile to 'src' folder
+          java -Xmx4096M -jar apktool.jar d -f target.apk -o src
+
+      - name: Auto-Patch Manifest (The Magic Step)
+        run: |
+          cd src
+          
+          echo "Patching: Disabling Leanback (TV Mode)..."
+          sed -i 's/android.software.leanback" android:required="true"/android.software.leanback" android:required="false"/g' AndroidManifest.xml
+          
+          echo "Patching: Enabling Touchscreen..."
+          sed -i 's/android.hardware.touchscreen" android:required="false"/android.hardware.touchscreen" android:required="true"/g' AndroidManifest.xml
+          
+          echo "Patching: Forcing Portrait Mode..."
+          # This replaces EVERY "landscape" with "portrait" in the file
+          sed -i 's/android:screenOrientation="landscape"/android:screenOrientation="portrait"/g' AndroidManifest.xml
+          
+          echo "Patching Complete."
+
+      - name: Rebuild APK
+        run: |
+          echo "Building APK..."
+          # b = build, -o = output file
+          java -Xmx4096M -jar apktool.jar b src -o unsigned.apk
+
+      - name: Sign APK
+        run: |
+          echo "Signing APK..."
+          # Sign the APK so Android accepts it
+          java -jar signer.jar -a unsigned.apk
+          
+          # Rename the result to something nice
+          mv unsigned-aligned-debugSigned.apk Modded-Portrait.apk
+
+      - name: Upload Result
+        uses: actions/upload-artifact@v4
+        with:
+          name: Modded-APK
+          path: Modded-Portrait.apk
