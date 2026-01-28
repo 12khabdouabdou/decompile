@@ -18,7 +18,7 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v4
       with:
-        fetch-depth: 0 # Fetch full history
+        fetch-depth: 0
 
     - name: Setup Java
       uses: actions/setup-java@v4
@@ -28,42 +28,37 @@ jobs:
 
     - name: Download Tools & APK
       run: |
-        # Download Apktool
-        wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.11.0.jar -O apktool.jar
+        # FIXED: Download Apktool v2.10.0 from GitHub (not Bitbucket)
+        wget https://github.com/iBotPeaches/Apktool/releases/download/v2.10.0/apktool_2.10.0.jar -O apktool.jar -q
         
-        # Download APK from user input
         echo "Downloading APK..."
-        wget "${{ inputs.apk_url }}" -O snapchat.apk
+        wget "${{ inputs.apk_url }}" -O snapchat.apk -q
         
-        # Verify file size (Must be > 1MB)
         filesize=$(stat -c%s "snapchat.apk")
         echo "File size: $filesize"
         if [ "$filesize" -lt 1000000 ]; then
-          echo "Error: Downloaded file is too small. Check your URL."
+          echo "Error: Downloaded file is too small."
           exit 1
         fi
 
-    - name: Decompile (Skip Resources)
+    - name: Decompile (With Resources)
       run: |
-        # -r : Do NOT decode resources (Fixes the styles.xml error)
-        # -f : Force overwrite existing folder
+        # REMOVED -r flag so you can edit AndroidManifest.xml
+        # -f : Force overwrite
         # -o src : Output to 'src' folder
-        java -Xmx4096M -jar apktool.jar d -r -f snapchat.apk -o src
+        # We increase memory to 6GB for large apps like Snapchat
+        java -Xmx6144M -jar apktool.jar d -f snapchat.apk -o src
 
     - name: Push to GitHub
       run: |
-        # 1. Configure Git
         git config --global user.name "GitHub Action"
         git config --global user.email "action@github.com"
         
-        # 2. Stage the new 'src' folder
+        # Add files
+        # Note: Large apps have thousands of files, this might take a moment
         git add src/
         
-        # 3. Commit
-        git commit -m "Auto-decompiled Snapchat (No Resources)" || echo "No changes to commit"
+        git commit -m "Auto-decompiled Snapchat (Resources Included)" || echo "No changes to commit"
         
-        # 4. Pull latest changes to align history
         git pull --rebase origin main
-        
-        # 5. Force Push (Overwrites old bad data)
         git push -f origin main
