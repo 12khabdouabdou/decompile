@@ -1,4 +1,4 @@
-name: Snapchat Decompiler (Final Fix)
+name: Snapchat Decompiler (v1.5.5)
 on:
   workflow_dispatch:
     inputs:
@@ -19,15 +19,11 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Install and Patch JADX
+      - name: Install Latest JADX (1.5.5)
         run: |
-          wget https://github.com/skylot/jadx/releases/download/v1.5.0/jadx-1.5.0.zip
-          unzip jadx-1.5.0.zip -d jadx
-          
-          # PHYSICALLY REMOVE the Kotlin Metadata plugin to prevent the crash
-          # This forces JADX to treat Kotlin classes as plain Java.
-          rm jadx/lib/jadx-kotlin-metadata-*.jar
-          
+          # Upgrading from 1.5.0 to 1.5.5 prevents the Kotlin Metadata crash natively
+          wget https://github.com/skylot/jadx/releases/download/v1.5.5/jadx-1.5.5.zip
+          unzip jadx-1.5.5.zip -d jadx
           echo "$GITHUB_WORKSPACE/jadx/bin" >> $GITHUB_PATH
 
       - name: Download APK
@@ -35,11 +31,11 @@ jobs:
           curl -L -o snapchat.apk "${{ github.event.inputs.apk_url }}"
           if [ ! -s snapchat.apk ]; then echo "Download failed"; exit 1; fi
 
-      - name: Decompile
+      - name: Decompile Code
         run: |
           export JAVA_OPTS="-Xmx6G -XX:+UseG1GC"
           
-          # We only use basic, universally accepted flags now
+          # No hacky flags needed anymore, just pure decompilation optimized for RAM
           jadx -d out_folder snapchat.apk \
             --no-res \
             --no-imports \
