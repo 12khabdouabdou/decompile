@@ -29,26 +29,28 @@ jobs:
       - name: Download APK
         run: |
           curl -L -o snapchat.apk "${{ github.event.inputs.apk_url }}"
-          if [ ! -s snapchat.apk ]; then echo "Download failed or file is empty"; exit 1; fi
+          if [ ! -s snapchat.apk ]; then echo "Download failed"; exit 1; fi
 
-      - name: Decompile with Crash Fixes
+      - name: Decompile with High Compatibility
         run: |
           export JAVA_OPTS="-Xmx6G -XX:+UseG1GC"
           
-          # We use -Djadx.kotlin-metadata=false as a fallback if --plugins-disable isn't recognized
-          # This forces the Kotlin metadata plugin to stay inactive.
+          # Using the legacy flag --no-kotlin-metadata which is widely supported
+          # We also add --comments-level none to save memory during the write phase
           jadx -d out_folder snapchat.apk \
+            --no-kotlin-metadata \
             --no-res \
             --no-imports \
             --show-bad-code \
-            -Djadx.kotlin-metadata=false \
+            --comments-level none \
             --log-level error
 
-      - name: ZIP Results
-        run: zip -r decompiled_code.zip out_folder/
-
+      - name: ZIP and Upload
+        run: |
+          zip -r decompiled_code.zip out_folder/
+      
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: snapchat-source-java
+          name: snapchat-source
           path: decompiled_code.zip
