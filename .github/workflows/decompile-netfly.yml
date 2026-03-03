@@ -1,11 +1,14 @@
-name: Decompile Large APK
+name: Remote APK Decompiler
 on:
-  push:
-    branches: [ main ]
   workflow_dispatch:
+    inputs:
+      apk_url:
+        description: 'Direct URL to the APK file'
+        required: true
+        default: 'https://example.com/app.apk'
 
 jobs:
-  decompile:
+  decompile_remote:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -19,27 +22,27 @@ jobs:
 
       - name: Install JADX
         run: |
-          sudo apt-get update
           wget https://github.com/skylot/jadx/releases/download/v1.5.0/jadx-1.5.0.zip
           unzip jadx-1.5.0.zip -d jadx
           echo "$GITHUB_WORKSPACE/jadx/bin" >> $GITHUB_PATH
 
-      - name: Decompile APK
+      - name: Download APK
         run: |
-          # Find the APK
-          APK_FILE=$(find apks -name "*.apk" | head -n 1)
-          echo "Decompiling $APK_FILE..."
-          
-          # Increase Java Heap Memory to 6GB (standard runner limit is ~7GB)
+          wget -O target_app.apk "${{ github.event.inputs.apk_url }}"
+          if [ ! -f target_app.apk ]; then echo "Download failed!"; exit 1; fi
+
+      - name: Decompile with Optimized Memory
+        run: |
+          # Snapchat is massive; use 6GB of the 7GB available on standard runners
           export JAVA_OPTS="-Xmx6G -XX:+UseG1GC"
           
-          # Run JADX with optimized flags:
-          # --no-res: Skip resources (speeds up heavily packed apps)
-          # --no-debug-info: Reduces memory footprint
-          jadx -d out_folder "$APK_FILE" --no-res --no-debug-info --log-level error
-          
-      - name: Upload Results
+          # Flags: 
+          # --no-res: Skips resources (essential for massive apps like Snapchat to avoid OOM)
+          # --no-imports: Reduces memory footprint by not trying to organize imports
+          jadx -d decompiled_source target_app.apk --no-res --no-imports --log-level error
+
+      - name: ZIP and Upload Source
         uses: actions/upload-artifact@v4
         with:
-          name: decompiled-source
-          path: out_folder/
+          name: decompiled-java-code
+          path: decompiled_source/
