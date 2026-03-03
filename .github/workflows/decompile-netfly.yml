@@ -1,4 +1,4 @@
-name:  Decompiler Pro
+name: Decompiler Pro
 on:
   workflow_dispatch:
     inputs:
@@ -22,7 +22,6 @@ jobs:
 
       - name: Install JADX
         run: |
-          # Downloading the latest stable version
           wget https://github.com/skylot/jadx/releases/download/v1.5.0/jadx-1.5.0.zip
           unzip jadx-1.5.0.zip -d jadx
           echo "$GITHUB_WORKSPACE/jadx/bin" >> $GITHUB_PATH
@@ -34,20 +33,15 @@ jobs:
 
       - name: Decompile with Crash Fixes
         run: |
-          # 6GB Heap + G1GC is the sweet spot for 7GB runners
           export JAVA_OPTS="-Xmx6G -XX:+UseG1GC"
           
-          # FLAGS EXPLAINED:
-          # --plugins-disable kotlin-metadata: Fixes the InconsistentKotlinMetadataException
-          # --no-res: Prevents OOM by skipping heavy XML/Asset processing
-          # --show-bad-code: Forces output even if decompilation is partial
-          # --no-imports: Saves RAM by not trying to clean up Java imports
-          
+          # We use -Djadx.kotlin-metadata=false as a fallback if --plugins-disable isn't recognized
+          # This forces the Kotlin metadata plugin to stay inactive.
           jadx -d out_folder snapchat.apk \
-            --plugins-disable kotlin-metadata \
             --no-res \
             --no-imports \
             --show-bad-code \
+            -Djadx.kotlin-metadata=false \
             --log-level error
 
       - name: ZIP Results
