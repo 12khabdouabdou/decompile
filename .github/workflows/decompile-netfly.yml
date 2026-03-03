@@ -31,23 +31,23 @@ jobs:
           curl -L -o snapchat.apk "${{ github.event.inputs.apk_url }}"
           if [ ! -s snapchat.apk ]; then echo "Download failed"; exit 1; fi
 
-      - name: Decompile with High Compatibility
+      - name: Decompile with Plugin Overrides
         run: |
           export JAVA_OPTS="-Xmx6G -XX:+UseG1GC"
           
-          # Using the legacy flag --no-kotlin-metadata which is widely supported
-          # We also add --comments-level none to save memory during the write phase
+          # JADX 1.5.0+ Plugin Syntax:
+          # -Pkotlin-metadata.enabled=false (Explicitly turns off the crashing plugin)
+          # We keep --no-res and --no-imports to ensure the 7GB RAM limit isn't hit.
+          
           jadx -d out_folder snapchat.apk \
-            --no-kotlin-metadata \
+            -Pkotlin-metadata.enabled=false \
             --no-res \
             --no-imports \
             --show-bad-code \
-            --comments-level none \
             --log-level error
 
       - name: ZIP and Upload
-        run: |
-          zip -r decompiled_code.zip out_folder/
+        run: zip -r decompiled_code.zip out_folder/
       
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
