@@ -1,4 +1,4 @@
-name: Decompiler Pro
+name: Snapchat Decompiler Pro
 on:
   workflow_dispatch:
     inputs:
