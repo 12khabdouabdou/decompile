@@ -1,11 +1,10 @@
-name: Snapchat Decompiler Pro
+name: Snapchat Decompiler (Final Fix)
 on:
   workflow_dispatch:
     inputs:
       apk_url:
-        description: 'Direct URL to the Snapchat APK'
+        description: 'Direct URL to the APK'
         required: true
-        default: ''
 
 jobs:
   decompile:
@@ -20,10 +19,15 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Install JADX
+      - name: Install and Patch JADX
         run: |
           wget https://github.com/skylot/jadx/releases/download/v1.5.0/jadx-1.5.0.zip
           unzip jadx-1.5.0.zip -d jadx
+          
+          # PHYSICALLY REMOVE the Kotlin Metadata plugin to prevent the crash
+          # This forces JADX to treat Kotlin classes as plain Java.
+          rm jadx/lib/jadx-kotlin-metadata-*.jar
+          
           echo "$GITHUB_WORKSPACE/jadx/bin" >> $GITHUB_PATH
 
       - name: Download APK
@@ -31,26 +35,23 @@ jobs:
           curl -L -o snapchat.apk "${{ github.event.inputs.apk_url }}"
           if [ ! -s snapchat.apk ]; then echo "Download failed"; exit 1; fi
 
-      - name: Decompile with Plugin Overrides
+      - name: Decompile
         run: |
           export JAVA_OPTS="-Xmx6G -XX:+UseG1GC"
           
-          # JADX 1.5.0+ Plugin Syntax:
-          # -Pkotlin-metadata.enabled=false (Explicitly turns off the crashing plugin)
-          # We keep --no-res and --no-imports to ensure the 7GB RAM limit isn't hit.
-          
+          # We only use basic, universally accepted flags now
           jadx -d out_folder snapchat.apk \
-            -Pkotlin-metadata.enabled=false \
             --no-res \
             --no-imports \
             --show-bad-code \
             --log-level error
 
       - name: ZIP and Upload
-        run: zip -r decompiled_code.zip out_folder/
-      
+        run: |
+          zip -r source_code.zip out_folder/
+          
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: snapchat-source
-          path: decompiled_code.zip
+          name: snapchat-java-source
+          path: source_code.zip
