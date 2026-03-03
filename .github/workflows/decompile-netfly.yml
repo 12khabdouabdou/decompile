@@ -21,9 +21,12 @@ jobs:
 
       - name: Install Latest JADX (1.5.5)
         run: |
-          # Upgrading from 1.5.0 to 1.5.5 prevents the Kotlin Metadata crash natively
           wget https://github.com/skylot/jadx/releases/download/v1.5.5/jadx-1.5.5.zip
           unzip jadx-1.5.5.zip -d jadx
+          
+          # Fix Exit Code 126 by making the binary executable
+          chmod +x jadx/bin/jadx
+          
           echo "$GITHUB_WORKSPACE/jadx/bin" >> $GITHUB_PATH
 
       - name: Download APK
@@ -35,7 +38,6 @@ jobs:
         run: |
           export JAVA_OPTS="-Xmx6G -XX:+UseG1GC"
           
-          # No hacky flags needed anymore, just pure decompilation optimized for RAM
           jadx -d out_folder snapchat.apk \
             --no-res \
             --no-imports \
