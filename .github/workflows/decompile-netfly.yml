@@ -1,55 +1,81 @@
-name: Snapchat Decompiler (v1.5.5)
+name: Headless Emulator Unpacker
 on:
   workflow_dispatch:
     inputs:
       apk_url:
-        description: 'Direct URL to the APK'
+        description: 'Direct URL to the packed APK'
         required: true
 
 jobs:
-  decompile:
+  dynamic_unpack:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Set up JDK 17
-        uses: actions/setup-java@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          java-version: '17'
-          distribution: 'temurin'
+          python-version: '3.10'
 
-      - name: Install Latest JADX (1.5.5)
+      - name: Install Unpacking Tools
         run: |
-          wget https://github.com/skylot/jadx/releases/download/v1.5.5/jadx-1.5.5.zip
-          unzip jadx-1.5.5.zip -d jadx
-          
-          # Fix Exit Code 126 by making the binary executable
-          chmod +x jadx/bin/jadx
-          
-          echo "$GITHUB_WORKSPACE/jadx/bin" >> $GITHUB_PATH
+          sudo apt-get update && sudo apt-get install -y aapt
+          pip install frida-tools frida-dexdump
 
       - name: Download APK
         run: |
-          curl -L -o snapchat.apk "${{ github.event.inputs.apk_url }}"
-          if [ ! -s snapchat.apk ]; then echo "Download failed"; exit 1; fi
+          curl -L -o target.apk "${{ github.event.inputs.apk_url }}"
+          if [ ! -s target.apk ]; then echo "Download failed"; exit 1; fi
 
-      - name: Decompile Code
+      - name: Extract Target Package Name
+        id: pkg
         run: |
-          export JAVA_OPTS="-Xmx6G -XX:+UseG1GC"
-          
-          jadx -d out_folder snapchat.apk \
-            --no-res \
-            --no-imports \
-            --show-bad-code \
-            --log-level error
+          # Automatically finds the app's internal package name (e.g., com.snapchat.android)
+          PKG_NAME=$(aapt dump badging target.apk | awk -F" " '/package/ {print $2}' | awk -F"'" '/name=/ {print $2}')
+          echo "Found package: $PKG_NAME"
+          echo "name=$PKG_NAME" >> $GITHUB_OUTPUT
 
-      - name: ZIP and Upload
-        run: |
-          zip -r source_code.zip out_folder/
+      - name: Boot Emulator & Dump Memory
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 29
+          target: default
+          arch: x86_64
+          profile: Nexus 6
+          script: |
+            echo "Installing APK..."
+            adb install target.apk
+            
+            echo "Setting up Frida Server on Emulator..."
+            FRIDA_VERSION=$(frida --version)
+            wget "https://github.com/frida/frida/releases/download/${FRIDA_VERSION}/frida-server-${FRIDA_VERSION}-android-x86_64.xz"
+            unxz frida-server-*-android-x86_64.xz
+            mv frida-server-*-android-x86_64 frida-server
+            
+            adb root
+            sleep 2
+            adb push frida-server /data/local/tmp/
+            adb shell "chmod 755 /data/local/tmp/frida-server"
+            adb shell "/data/local/tmp/frida-server &"
+            sleep 3
+            
+            echo "Launching the App to trigger decryption..."
+            adb shell monkey -p ${{ steps.pkg.outputs.name }} -c android.intent.category.LAUNCHER 1
+            
+            echo "Waiting 15 seconds for the packer to load the real code into RAM..."
+            sleep 15
+            
+            echo "Dumping decrypted DEX files from memory..."
+            mkdir dumped_dex
+            # This connects to the app and extracts the raw bytecode
+            frida-dexdump -U -f ${{ steps.pkg.outputs.name }} -o ./dumped_dex
+
+      - name: ZIP Decrypted Files
+        run: zip -r unpacked_code.zip dumped_dex/
           
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: snapchat-java-source
-          path: source_code.zip
+          name: raw-unpacked-dex-files
+          path: unpacked_code.zip
