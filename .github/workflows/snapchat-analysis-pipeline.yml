@@ -1,4 +1,4 @@
-name: JADX APK Decompilation
+name: JADX APK Decompilation snapchat
 
 on:
   workflow_dispatch:
